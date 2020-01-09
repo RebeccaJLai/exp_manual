@@ -1,0 +1,71 @@
+--- 
+title: "Experimentum: Delivering Behavioural Experiments Online"
+author: "Rebecca J. Lai, Rifah Abdullah, Lisa DeBruine"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+# About Experimentum {-}
+
+```{r include = FALSE, eval = FALSE}
+
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+
+# auto-populate list of the input files when rendering the book
+input_files <- list.files()[endsWith(list.files(), ".Rmd")]
+
+bookdown::render_book(input_files)
+```
+
+### Getting Support {- #support} 
+
+#### For Experimentum @ University of Glasgow Users {-}
+
+Admins play a double role. In addition to helping you with Experimentum we are active researchers and teaching staff with additional jobs to do elsewhere. Our inboxes are often full, and emails will often go unread. 
+
+As a result of this, all students and staff who are experiencing technical issues should use the Slack workspace [https://experimentum-web.slack.com/]("Experimentum-web") to get support. Additionally, we are using the queries on the slack workspace to best update the user documentation, so it is important to keep all correspondence in one neat location.
+
+**You should never post data on this workspace, either in data file or screenshot form, as this would be a violation of the GDPR.**
+
+During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Slack workspace and on appropriate Moodle pages.
+
+If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the "Experimentum-Web" workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
+
+If you require assistance to navigate this document or create your study due to disability please admins directly, preferably Rebecca, who will be able to offer appointments to help you.
+
+#### For Other Users  {-}
+
+If you download and use the code for this experiment delivery platform you should establish clear guidelines outlining the role of the admins and methods of support. 
+
+Staff from the University of Glasgow will not provide support for users of other systems based upon this code.
+
+## Code {-}
+
+<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode"><img src="images/logos/cc-by-sa.png" width="150px" align="right"></a>
+
+Open code for the site and installation instructions are available to download [here](https://github.com/debruine/experimentum). This is provided under a [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode) license.
+
+The same is provided for this user guide [here](https://github.com/RebeccaJLai/exp_manual), and under this same [license](https://creativecommons.org/licenses/by-sa/3.0/legalcode). This document was authored using bookdown [@R-bookdown]. See [here](https://bookdown.org/yihui/bookdown/) for instructions on making modifications, rendering and publishing such documents.
+
+## Acknowledgements {-}
+
+```{r echo=FALSE, message = FALSE}
+library(tidyverse)
+
+read_csv("misc_files/acknowledgments.csv") %>%
+  arrange(surname) %>%
+  unite(col = "name", c(first_name, surname), sep = " ") %>%
+  mutate(`Our thanks to:` = paste0(name, ": "),
+         ` ` = Deeds) %>%
+  select(`Our thanks to:`, ` `) %>%
+  knitr::kable()
+```
+ 
+ 
