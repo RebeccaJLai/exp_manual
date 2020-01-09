@@ -32,7 +32,9 @@ Admins play a double role. In addition to helping you with Experimentum we are a
 
 As a result of this, all students and staff who are experiencing technical issues should use the Slack workspace [https://experimentum-web.slack.com/]("Experimentum-web") to get support. Additionally, we are using the queries on the slack workspace to best update the user documentation, so it is important to keep all correspondence in one neat location.
 
+```{block, type = "danger"}
 **You should never post data on this workspace, either in data file or screenshot form, as this would be a violation of the GDPR.**
+```
 
 During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Slack workspace and on appropriate Moodle pages.
 
