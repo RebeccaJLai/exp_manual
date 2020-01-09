@@ -1,1 +1,3 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+Codebase for the user guide for Experimentum, the platform used by the University of Glasgow School of Psychology to deliver behavioural experiments and questionnaires online. 
+
+Provided under a CC-BY-SA [license](https://creativecommons.org/licenses/by-sa/3.0/legalcode).
