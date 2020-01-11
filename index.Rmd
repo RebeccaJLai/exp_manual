@@ -1,5 +1,5 @@
 --- 
-title: "Experimentum: Delivering Behavioural Experiments Online"
+title: "Experimentum: Web-based Software for Psychology Studies"
 author: "Rebecca J. Lai, Rifah Abdullah, Lisa DeBruine"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -28,25 +28,68 @@ bookdown::render_book(input_files)
 
 #### For Experimentum @ University of Glasgow Users {-}
 
+Currently there are two active admins available to provide support, these are [Rebecca Lai](mailto:rebecca.lai@glasgow.ac.uk) and [Professor Lisa DeBruine](mailto:lisa.debruine@glasgow.ac.uk).
+
 Admins play a double role. In addition to helping you with Experimentum we are active researchers and teaching staff with additional jobs to do elsewhere. Our inboxes are often full, and emails will often go unread. 
 
-As a result of this, all students and staff who are experiencing technical issues should use the Slack workspace [https://experimentum-web.slack.com/]("Experimentum-web") to get support. Additionally, we are using the queries on the slack workspace to best update the user documentation, so it is important to keep all correspondence in one neat location.
+As a result of this, all students and staff who are experiencing technical issues should use the Slack workspace ["Experimentum-web"](https://experimentum-web.slack.com/) to get support. Additionally, we are using the queries on the slack workspace to best update the user documentation, so it is important to keep all correspondence in one neat location.
 
-```{block, type = "danger"}
-**You should never post data on this workspace, either in data file or screenshot form, as this would be a violation of the GDPR.**
+```{block, type = "rainbow"}
+You should never post data on this workspace, either in data file or screenshot form, as this would be a violation of the GDPR. All such files will be removed and your supervisor will be informed. 
+
+If you need to share your data please use one of the university approved services available to you, such as OneDrive or OwnCloud.
 ```
+
+##### Tutorial Sessions {-}
 
 During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Slack workspace and on appropriate Moodle pages.
 
-If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the "Experimentum-Web" workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
+If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the ["Experimentum-web"](https://experimentum-web.slack.com/)"Experimentum-Web" workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
 
 If you require assistance to navigate this document or create your study due to disability please admins directly, preferably Rebecca, who will be able to offer appointments to help you.
 
 #### For Other Users  {-}
 
 If you download and use the code for this experiment delivery platform you should establish clear guidelines outlining the role of the admins and methods of support. 
-
 Staff from the University of Glasgow will not provide support for users of other systems based upon this code.
+
+## Privacy Notices {-}
+
+### Cookies {-}
+
+Cookies are used for Experimentum to allow us to track user sessions, which allows participants to navigate between pages during a session without having to log in to every page. In the case of anonymous logins, the session is tracked to maintain the same identity across multiple elements of the same study.  
+
+Cookies are not tracked beyond a single session, for either registered users or anonymous participants. By closing the browser, the current session is ended, and cookies tracking the session are discarded.
+
+Cookies are not used in any other way by us, and the information is not retained or shared with any other organisations.
+
+### Data Management {-}
+
+Your study's data is your responsibility. Please ensure that it is protected and used appropriately. University of Glasgow guidelines with regard to data protection are available to view [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/) and more general data management guidelines [here](https://www.gla.ac.uk/myglasgow/datamanagement/rdmatglasgow/).  
+
+Experimentum saves your data to the University of Glasgow School of Psychology secure servers, which are on-site in Hillhead Street. Data will be output in Comma Separated Variable (.csv) files in "tidy" format and is available for download from your project or from each component of your study.
+
+Whilst data processing questions should be directed to your supervisor(s) and advisors, there are a couple of common tasks that you might find yourself needing to do. See the examples in the section Commonly used R code for help with some common code segments.
+
+### About your data {-}
+
+With all account types, besides anonymous participation, your user ID is linked to the data that you submit. This allows us to track users in multi-part studies, but it also means that our servers will contain multiple bits of information about you built up through your participation.
+
+Individual researchers will only be able to access the data that you submit on their studies, and not data you submit to studies belonging to other researchers. In real terms, this means that individual researchers will only see the data that you give to them, not the data that you give across the entire site.
+
+In cases where you participate in multiple studies for the same researcher, they will be able to see your data across these studies. Individual researchers are responsible for the protection of your privacy, ensuring that there is no way for any third party to use this information to "triangulate" your identity using the information you have provided. 
+
+If you have any concerns about how your data is used please contact the researchers involved in the study or studies that you are taking/have taken part in. To see the University's guidelines on how researchers should treat data see [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/). 
+
+You have rights concerning your own data and how it is used, and responsible researchers should always hold these in the highest regard.
+
+### Consent {-}
+
+Upon registration, users are asked to complete a standardised consent form:
+
+<center>![](images/screenshots/consent.png)</center>
+ 
+When constructing studies, you should also include your own consent form, including all relevant information specified by your supervisor(s) and regulatory body relevant to your work.
 
 ## Code {-}
 

@@ -1,0 +1,41 @@
+# Supervisor Cheatsheet
+
+## Overview
+
+This is a collection of sections from the document directed at the everyday operations that supervisors would need to carry out assembled in one place for easy reference.
+
+If there is anything missing please file an issue on the GitHub codebase for this book by clicking [here](https://github.com/RebeccaJLai/exp_manual/issues).
+
+## Approving Student and Researcher Status Requests
+
+Supervisors have a responsibility to ensure that their students have the status that they require to carry out their projects. This includes assigning them sufficient permissions to construct and deploy their studies. 
+
+Once the supervisor has "researcher" status they will have a new area of the website opened to them, accessible through the researchers' link in the menu on the right, which will contain a section called "Admin": 
+
+<center>![](images/screenshots/admin_button.png)</center>
+
+Clicking on this button will take them to a page with more options. To see and make changes to the privileges of those who have requested you as a supervisor and requested researcher status select the option "Supervision" from the menu.
+
+<center>![](images/screenshots/admin_options.png)</center>
+
+Here you will see a list of individuals who have requested you as a supervisor. To change their status, select the appropriate account type from the right-most drop-down menu under the column "Status".
+
+<center>![](images/screenshots/status_bar.png)</center>
+
+The account you are making changes to will have to log out and back in again to be updated with their new permissions. When you press "Send" an email will be sent to the student to inform them of the status change.
+
+```{block, type = "info"}
+If you are a supervising member of teaching or research staff, you should request Lisa DeBruine or Rebecca Lai as your supervisor. 
+
+More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor agrees, to it*.
+
+In such a case they should request Lisa or Rebecca as thier supervisor.
+```
+
+
+
+
+
+
+
+

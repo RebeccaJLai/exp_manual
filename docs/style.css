@@ -43,7 +43,7 @@ pre code {
 
 /* set styles for alert boxes */
 
-.danger, .funfact, .solved, .info, .warning, .question, .task {
+.danger, .funfact, .solved, .info, .warning, .question, .task, .rainbow {
   color: black;
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
@@ -99,3 +99,22 @@ pre code {
   border-radius: 5px;
 }
 
+.rainbow {
+  background-image: url("images/logos/favicon-flipped.png");
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 5px;
+}
+
+/* change the width of the toc to make the logo look better*/
+.book .book-summary {
+  width: 250px;
+}
+
+.book.with-summary .book-header.fixed {
+    left: 250px;
+}
+
+.book.with-summary .book-body {
+    left: 250px;
+}
