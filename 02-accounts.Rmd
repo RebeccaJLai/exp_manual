@@ -59,7 +59,7 @@ An admin account basically allows us to "supervise" all users, including researc
 
 In order to sign up to the site you will select "Sign up" on the top right-hand side of the page. Once there you will be taken to a new page as below and asked to create a username, set a password and confirm it, provide your gender identity and birthday. Completing these steps alone will create a "registered" account type. 
 
-<center>![](images/screenshots/registration.png)</center>
+<center>![](images/screenshots/register.png)</center>
  
 With this account type you can participate in studies on the site. Your participation record is tracked, meaning that you can be linked across multiple-part studies. Under no circumstances will you be linked across multiple studies without your explicit permission and we will never use data to "triangulate" your identity. Researchers and students can only access your data from their own studies, not the studies of others.
 
