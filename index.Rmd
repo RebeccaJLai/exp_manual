@@ -1,6 +1,6 @@
 --- 
 title: "Experimentum: Web-based Software for Psychology Studies"
-author: "Rebecca J. Lai, Rifah Abdullah, Lisa DeBruine"
+author: "Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -40,18 +40,35 @@ You should never post data on this workspace, either in data file or screenshot 
 If you need to share your data please use one of the university approved services available to you, such as OneDrive or OwnCloud.
 ```
 
+### Lost Passwords {-}
+
+For security reasons we do not allow users to request a password reset automatically. 
+
+If you are any type of account holder who has lost their password, please contact the admins or your supervisor to ask for it to be reset. This request should only be honoured if sent from the email address associated with the account. A temporary password will be issued, which is case-sensitive, and should be changed as soon as possible. 
+
+For accounts types which have access to participant data (student & researcher), contact your supervisor or admins. Be prepared to visit with your student card to have your password reset.
+
+### Changing Your Password {-}
+
+You can change your password by signing in, navigating to "My Account" from the menu on the right of the page and clicking the link "change your password" under "Username":
+
+<center>![](images/screenshots/change_password.png)</center>
+
 ##### Tutorial Sessions {-}
 
 During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Slack workspace and on appropriate Moodle pages.
 
-If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the ["Experimentum-web"](https://experimentum-web.slack.com/)"Experimentum-Web" workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
+If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the ["Experimentum-web"](https://experimentum-web.slack.com/) workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
 
-If you require assistance to navigate this document or create your study due to disability please admins directly, preferably Rebecca, who will be able to offer appointments to help you.
+If you require assistance to navigate this document or create your study due to disability please contact your supervisor who may refer you to the admins.
 
 #### For Other Users  {-}
 
-If you download and use the code for this experiment delivery platform you should establish clear guidelines outlining the role of the admins and methods of support. 
-Staff from the University of Glasgow will not provide support for users of other systems based upon this code.
+If you download and use the code for this online psychology study platform you should establish clear guidelines outlining the role of the admins and methods of support. 
+
+Staff from the University of Glasgow will not provide support for users of other systems based upon this code. Our Slack workspace is for internal use only.
+
+If you find an issue with the Experimentum codebase, please file an issue [here](https://github.com/debruine/experimentum/issues). If you find an issue with the codebase for this manual you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
 
 ## Privacy Notices {-}
 
@@ -81,7 +98,9 @@ In cases where you participate in multiple studies for the same researcher, they
 
 If you have any concerns about how your data is used please contact the researchers involved in the study or studies that you are taking/have taken part in. To see the University's guidelines on how researchers should treat data see [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/). 
 
+```{block, type = "warning"}
 You have rights concerning your own data and how it is used, and responsible researchers should always hold these in the highest regard.
+```
 
 ### Consent {-}
 
@@ -91,7 +110,7 @@ Upon registration, users are asked to complete a standardised consent form:
  
 When constructing studies, you should also include your own consent form, including all relevant information specified by your supervisor(s) and regulatory body relevant to your work.
 
-## Code {-}
+## Codebase {-}
 
 <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode"><img src="images/logos/cc-by-sa.png" width="150px" align="right"></a>
 

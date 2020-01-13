@@ -2,6 +2,7 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: section
       before: |
         <img src="images/logos/widelogo.png" width="250px" height>
       after: |

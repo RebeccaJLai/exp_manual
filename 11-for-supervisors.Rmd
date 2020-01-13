@@ -27,15 +27,45 @@ The account you are making changes to will have to log out and back in again to 
 ```{block, type = "info"}
 If you are a supervising member of teaching or research staff, you should request Lisa DeBruine or Rebecca Lai as your supervisor. 
 
-More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor agrees, to it*.
+More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it*.
 
 In such a case they should request Lisa or Rebecca as thier supervisor.
 ```
 
+## Resetting Passwords
 
+Researcher status accounts also have permission to reset some passwords, found by searching in the “Participant Data” section in the admin page, but they should limit this to resetting the passwords of their own students or participants.
 
+```{block, type = "danger"}
+ You must be satisfied that the account holder is the person that is requesting the change of password.
+ 
+In terms of students conducting research projects I would recommend that they present themselves to you in person to request a password change as these students have access to participant data.
+```
 
+To change a password, you can either:
 
+*	Navigate to Researchers, then Admin and finally to Participants and search for either the entire or partial username or ID number and click “reset password”.
 
+*	Find your student under your supervisory list by going to Researchers, then Admin, then Supervision and selecting their name from the list and selecting “reset password.
+
+The new password will be displayed on the page straight away on the page:
+
+<center>![](images/screenshots/reset_password.png)</center>
+
+```{block, type = "danger"}
+This password is supposed to be temporary, but it does not expire. It should be changed as soon as possible as it will have likely be communicated via e-mail or will have been written down.
+```
+
+## Autologin Links
+
+Autologin links allow you to by-pass password verification and access the accounts of those that you supervise. These exist to allow admins and supervisors to log in to student’s accounts to examine their studies and help when required.
+
+You can access your student’s autologin link by navigating to “Researchers” > “Admin” > “Supervision” and clicking on the student’s name from your list of supervisees:
+
+<center>![](images/screenshots/autologin.png)</center>
+
+Clicking on the autologin link will log you into the account of this user which allows you to examine what is going on in their account from the perspective of their account. This should be used for troubleshooting issues such as lack of access to the researchers section of the website and bugs that may be specific to their account. 
+
+These links are the same ones that the admins use to examine user accounts.
 
 

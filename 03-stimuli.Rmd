@@ -1,0 +1,15 @@
+# Stimuli
+
+## Overview
+
+## Accepted File Formats
+
+## Pre-Processing
+
+### Images
+
+### Audio
+
+### Video
+
+## Uploading
