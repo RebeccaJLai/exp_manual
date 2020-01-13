@@ -1,0 +1,8 @@
+﻿Column Header:,Refers to:,Options:,type
+name ,dv_name (in data = q_name),"Names must only contain letters, underscores and numbers (numbers must not be the first characters).",mixed
+question ,The question that you are asking the participant.,Whatever you want to ask the participant.,mixed
+type ,"The type of question, akin to the options selected from the menu opened by the cog",* select: pulldown menu \n* selectnum: numeric pulldown menu \n* radio: radiobuttons \n* radioanchor: radiobuttons with anchors \n* datemenu: date menu \n* text: short text,mixed
+options ,Where you would specify the response options available to the participants.,"Applicable to select and radio types. \n*  Numerical code, followed by "":"", and then text option. \n*  Specifying multiple by separating options using a semi-colon (;)",mixed
+maxlength ,Where you would specify the length of the response,Applicable to radioanchor and text. \n*  Radioanchor: how many points in the range. \n*  Text: how many characters allowed.,mixed
+low_anchor,Specifying the low anchor for the selected option.,"Applicable to selectnum, radioanchor and datemenu. \n*  Selectnum specifies the lowest number in the range of the dropdown menu \n*  Radioanchor specifies the text for low anchor \n*  Datemenu specified the lower end of the year range.",mixed
+high_anchor,Specifying the high anchor for the selected option.,"Applicable to selectnum, radioanchor and datemenu. \n*  Selectnum specifies the highest number in the range of the dropdown menu\n*  Radioanchor specifies the text for high anchor\n*  Datemenu specified the higher end of the year range.",mixed

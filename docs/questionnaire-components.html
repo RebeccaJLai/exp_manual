@@ -116,7 +116,13 @@
 <li class="chapter" data-level="4.3" data-path="planning-your-project.html"><a href="planning-your-project.html#implementing-your-plan"><i class="fa fa-check"></i><b>4.3</b> Implementing Your Plan</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="questionnaire-components.html"><a href="questionnaire-components.html"><i class="fa fa-check"></i><b>5</b> Questionnaire Components</a><ul>
-<li class="chapter" data-level="5.1" data-path="questionnaire-components.html"><a href="questionnaire-components.html#overview-3"><i class="fa fa-check"></i><b>5.1</b> Overview</a></li>
+<li class="chapter" data-level="5.1" data-path="questionnaire-components.html"><a href="questionnaire-components.html#overview-3"><i class="fa fa-check"></i><b>5.1</b> Overview</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="questionnaire-components.html"><a href="questionnaire-components.html#save-questionnaire-and-reset-button"><i class="fa fa-check"></i><b>5.1.1</b> Save Questionnaire and Reset Button</a></li>
+<li class="chapter" data-level="5.1.2" data-path="questionnaire-components.html"><a href="questionnaire-components.html#questionnaires-information"><i class="fa fa-check"></i><b>5.1.2</b> Questionnaires Information</a></li>
+<li class="chapter" data-level="5.1.3" data-path="questionnaire-components.html"><a href="questionnaire-components.html#questionnaire-tab"><i class="fa fa-check"></i><b>5.1.3</b> Questionnaire Tab</a></li>
+<li class="chapter" data-level="5.1.4" data-path="questionnaire-components.html"><a href="questionnaire-components.html#feedback-tab"><i class="fa fa-check"></i><b>5.1.4</b> Feedback Tab</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="questionnaire-components.html"><a href="questionnaire-components.html#section"><i class="fa fa-check"></i><b>5.2</b> </a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="experimental-components.html"><a href="experimental-components.html"><i class="fa fa-check"></i><b>6</b> Experimental Components</a><ul>
 <li class="chapter" data-level="6.1" data-path="experimental-components.html"><a href="experimental-components.html#overview-4"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
@@ -138,8 +144,10 @@
 <li class="chapter" data-level="10.3" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#resetting-passwords"><i class="fa fa-check"></i><b>10.3</b> Resetting Passwords</a></li>
 <li class="chapter" data-level="10.4" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#autologin-links"><i class="fa fa-check"></i><b>10.4</b> Autologin Links</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="appendices-and-references.html"><a href="appendices-and-references.html"><i class="fa fa-check"></i><b>11</b> Appendices and References</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="appendices-and-references.html"><a href="appendices-and-references.html"><i class="fa fa-check"></i>Appendices and References</a><ul>
+<li class="chapter" data-level="" data-path="appendices-and-references.html"><a href="appendices-and-references.html#appendices"><i class="fa fa-check"></i>Appendices</a></li>
+<li class="chapter" data-level="" data-path="appendices-and-references.html"><a href="appendices-and-references.html#references"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -164,6 +172,48 @@
 <h1><span class="header-section-number">Chapter 5</span> Questionnaire Components</h1>
 <div id="overview-3" class="section level2">
 <h2><span class="header-section-number">5.1</span> Overview</h2>
+<p>Questionnaires are currently the most used item on Experimentum. They are available in 3 different types: mixed, radiopage and ranking.</p>
+<p>To create a new questionnaire, navigate to the researcher’s section of the page by using the menu on the right and selecting the questionnaires option.</p>
+<center>
+<img src="images/screenshots/questionnaire_button.png" />
+</center>
+<p>From here, you will be able to see the questionnaires for which you have ownership status (ones you have created yourself, or ones that someone else has shared with you). To create a new questionnaire, click the button on the top right “New Questionnaire”:</p>
+<center>
+<img src="images/screenshots/new_questionnaire.png" />
+</center>
+<p>The following pop-up box will appear, allowing you to choose the type that you want to create:</p>
+<center>
+<img src="images/screenshots/questionnaire_dialogue.png" />
+</center>
+<p>The types that you choose will depend on what type of functionality your study requires. You should note that pencil and paper questionnaires will not always be able to be copied exactly onto Experimentum. If you make any changes to questionnaires to deliver them electronically you should discuss required changes with your supervisor to ensure their validity has not been compromised.</p>
+<div id="save-questionnaire-and-reset-button" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Save Questionnaire and Reset Button</h3>
+<p>Once you have entered information about the questionnaire you should save it. Saving regularly is good practice.</p>
+<p>The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimise loss of work.</p>
+<p>The reset button is akin to a “revert” button, where any changes made after the last save can be discarded and you return to the last saved version. Please note that the site currently does not support version control, so once you save a change the previous version will be overwritten.</p>
+</div>
+<div id="questionnaires-information" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Questionnaires Information</h3>
+<p>All types of questionnaires will ask you to provide information about it, the only difference will be the Questionnaire Type, which will correspond to the type of questionnaire you have chosen on the previous pop-up box.</p>
+<ul>
+<li>Name for Users: this is the name of this component that will be displayed to users. Please ensure that it is appropriate.</li>
+<li>Name for Researchers: this is the name of this component for researchers. It will be displayed on lists and visible to you, your supervisor and admin staff. It should be informative and appropriate.</li>
+<li>Question Order: this indicates how you want Experimentum to display the questions contained in this component only. Fixed will display the questions to the participants in the order you have put them on this page. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</li>
+<li>Limited to: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown and may not be allowed to do these sections of the study if participants refuse this information.</li>
+<li>Labnotes: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about. The following sections will describe each questionnaire type and what they can do.</li>
+</ul>
+</div>
+<div id="questionnaire-tab" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> Questionnaire Tab</h3>
+<p>The questionnaire tab on the lower half of the page is different for each questionnaire. Please see the appropriate sections below for more information on these.</p>
+</div>
+<div id="feedback-tab" class="section level3">
+<h3><span class="header-section-number">5.1.4</span> Feedback Tab</h3>
+<p>In most cases you should leave this empty. The feedback for the top-most set is normally where you would put your debriefing information. You can see the later sections on projects and debriefing.</p>
+</div>
+</div>
+<div id="section" class="section level2">
+<h2><span class="header-section-number">5.2</span> </h2>
 
 </div>
 </div>

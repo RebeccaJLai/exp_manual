@@ -15,7 +15,7 @@ link-citations: yes
 
 # automatically create a bib database for R packages
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'pander'
 ), 'packages.bib')
 
 # auto-populate list of the input files when rendering the book
