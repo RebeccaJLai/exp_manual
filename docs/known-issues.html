@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Sets | Experimentum: Web-based Software for Psychology Studies</title>
-  <meta name="description" content="Chapter 7 Sets | Experimentum: Web-based Software for Psychology Studies" />
+  <title>Known Issues | Experimentum: Web-based Software for Psychology Studies</title>
+  <meta name="description" content="Known Issues | Experimentum: Web-based Software for Psychology Studies" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Sets | Experimentum: Web-based Software for Psychology Studies" />
+  <meta property="og:title" content="Known Issues | Experimentum: Web-based Software for Psychology Studies" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Sets | Experimentum: Web-based Software for Psychology Studies" />
+  <meta name="twitter:title" content="Known Issues | Experimentum: Web-based Software for Psychology Studies" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="experimental-components.html"/>
-<link rel="next" href="projects.html"/>
+<link rel="prev" href="projects.html"/>
+<link rel="next" href="faqs.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -186,11 +186,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sets" class="section level1">
-<h1><span class="header-section-number">Chapter 7</span> Sets</h1>
-<div id="overview-5" class="section level2">
-<h2><span class="header-section-number">7.1</span> Overview</h2>
+<div id="known-issues" class="section level1 unnumbered">
+<h1>Known Issues</h1>
+<div id="overview-7" class="section level2 unnumbered">
+<h2>Overview</h2>
+<p>This is a list of issues that are known and that we are working on to fix.</p>
+<p>If you discover another issue that is not listed here you can report the issue <a href="https://github.com/RebeccaJLai/exp_manual/issues">here</a>- but please check that it has not been reported before you open another issue for it.</p>
+</div>
+<div id="issues" class="section level2 unnumbered">
+<h2>Issues…</h2>
+<div id="which-do-not-interfere-with-the-operation-of-the-site" class="section level3 unnumbered">
+<h3>Which do NOT interfere with the operation of the site</h3>
+<p>These issues are bugs which do not prevent the intended function of the action being carried out at the time of their occurrance and are considered to be of low priority.</p>
+<div id="the-supervisor-or-supervised-could-not-be-found-when-changing-account-type" class="section level4 unnumbered">
+<h4>“The supervisor or supervised could not be found” when changing account type</h4>
+<p>This happens when a supervisor attempts to change the account type of a student from “registered” to “student”. The account changes are carried out regardless of the message.</p>
+<p>To check this log out, log back in and then check the status of the student.</p>
+<div class="info">
+<p>
+The account being changed must log out and then back in for any changes to take effect, regardless of whether you experience this bug or not.
+</p>
+</div>
+</div>
+</div>
+<div id="which-do-interfere-with-the-operation-of-the-site" class="section level3 unnumbered">
+<h3>Which DO interfere with the operation of the site</h3>
+<p>These issues are bugs which in some way inhibit the function of the site and are considered high priority for fixes and workarounds.</p>
+<div id="email-notifications" class="section level4 unnumbered">
+<h4>Email Notifications</h4>
+<p>Email notifications are not always sent.</p>
+<p>E-mails notifying students and supervisors of changes of account type work seemingly without issue. In particular, e-mails requesting supervisors turn studies to “active” are not being sent.</p>
+<div class="workaround">
+<p>
+<strong>Workaround:</strong> Please e-mail your supervisor directly if you require them to review and activate your study.
+</p>
+</div>
+</div>
+<div id="cannot-share-ownership-of-components-with-students" class="section level4 unnumbered">
+<h4>Cannot Share Ownership of Components With Students</h4>
+<p>At the moment it is not possible to share components with students. This stems from a work-around regarding access to data. Anyone who is an owner of a component may download the data gathered by it, even if that component is also used by others.</p>
+<div class="workaround">
+<p>
+<strong>Workaround:</strong> At the moment it is recommended that students create their own components to suit their needs or that the supervisor duplicate the component and assign the duplicate to the student in need.
+</p>
+<p>
+If the supervisor is making a component specifically for that student and no-one else will or should have access to that data contact an admin on the Slack workspace for another workaround.
+</p>
+</div>
 
+</div>
+</div>
 </div>
 </div>
             </section>
@@ -198,8 +243,8 @@
           </div>
         </div>
       </div>
-<a href="experimental-components.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="projects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="projects.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="faqs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

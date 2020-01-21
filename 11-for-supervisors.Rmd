@@ -1,12 +1,35 @@
-# Supervisor Cheatsheet
+# Supervisor Cheatsheet {-}
 
-## Overview
+## Overview {-}
 
 This is a collection of sections from the document directed at the everyday operations that supervisors would need to carry out assembled in one place for easy reference.
 
 If there is anything missing please file an issue on the GitHub codebase for this book by clicking [here](https://github.com/RebeccaJLai/exp_manual/issues).
 
-## Approving Student and Researcher Status Requests
+## Admins {-}
+
+Lisa is busy and Rebecca is contracted for 1 hour per week for Experimentum support. Much of the day-to-day of handling your students will fall on you, the supervisor. 
+
+### Admin Responsibilities {-}
+
+Our responsibilities are:
+
+* To try to ensure smooth operation of the site with regards to technical difficulties and instruction of staff and students. 
+    * We will hold workshops at specific time points throughout the academic year, update this manual and answer questions on Slack.
+* To troubleshoot prpoblematic issues experienced by staff and students.
+
+### Supervisor Responsibilities {-}
+
+* To ensure that you have a researcher account to supervise any of your students who wish to use the site.
+    * You may be comfortable allowing some more senior and trustworthy students almost complete autonomy by granting them full researcher status but it is still advisable to have an account of your own. ***If you wish for them to have full researcher status this must be confirmed by the supervisor to Rebecca directly, not through your student.***
+* To handle the day-to-day needs of your own students:
+    * Ensure that you have the knowledge to know how to implement designs you expect your students to use  through the site.
+    * To check the correctness of your students work.
+    * To approve student researcher status of your own student.
+    * To activate the projects of your own students.
+    * To manage your students expectations of what the site can provide (it will not be perfect or even workable for some types of study).
+    
+## Approving Student and Researcher Status Requests {-}
 
 Supervisors have a responsibility to ensure that their students have the status that they require to carry out their projects. This includes assigning them sufficient permissions to construct and deploy their studies. 
 
@@ -27,12 +50,12 @@ The account you are making changes to will have to log out and back in again to 
 ```{block, type = "info"}
 If you are a supervising member of teaching or research staff, you should request Lisa DeBruine or Rebecca Lai as your supervisor. 
 
-More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it*.
+More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it and contacts Rebecca about it directly*. No such request will be accepted on the word of a student alone.
 
-In such a case they should request Lisa or Rebecca as thier supervisor.
+In such a case they should request Lisa or Rebecca as their supervisor.
 ```
 
-## Resetting Passwords
+## Resetting Passwords {-}
 
 Researcher status accounts also have permission to reset some passwords, found by searching in the “Participant Data” section in the admin page, but they should limit this to resetting the passwords of their own students or participants.
 
@@ -56,7 +79,7 @@ The new password will be displayed on the page straight away on the page:
 This password is supposed to be temporary, but it does not expire. It should be changed as soon as possible as it will have likely be communicated via e-mail or will have been written down.
 ```
 
-## Autologin Links
+## Autologin Links {-}
 
 Autologin links allow you to by-pass password verification and access the accounts of those that you supervise. These exist to allow admins and supervisors to log in to student’s accounts to examine their studies and help when required.
 

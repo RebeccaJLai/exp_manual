@@ -43,7 +43,7 @@ pre code {
 
 /* set styles for alert boxes */
 
-.danger, .funfact, .solved, .info, .warning, .question, .task, .rainbow {
+.danger, .funfact, .solved, .info, .warning, .question, .task, .rainbow, .workaround {
   color: black;
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
@@ -101,6 +101,13 @@ pre code {
 
 .rainbow {
   background-image: url("images/logos/favicon-flipped.png");
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 5px;
+}
+
+.workaround {
+  background-image: url("images/alerts/traffic-cone.png");
   background-color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 0%);
   border-radius: 5px;

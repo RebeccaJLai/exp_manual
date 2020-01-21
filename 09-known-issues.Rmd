@@ -1,0 +1,48 @@
+# Known Issues {-}
+
+## Overview {-}
+
+This is a list of issues that are known and that we are working on to fix. 
+
+If you discover another issue that is not listed here you can report the issue [here](https://github.com/RebeccaJLai/exp_manual/issues)- but please check that it has not been reported before you open another issue for it.
+
+## Issues... {-}
+
+### Which do NOT interfere with the operation of the site {-}
+
+These issues are bugs which do not prevent the intended function of the action being carried out at the time of their occurrance and are considered to be of low priority.
+
+#### "The supervisor or supervised could not be found" when changing account type  {-}
+
+This happens when a supervisor attempts to change the account type of a student from "registered" to "student". The account changes are carried out regardless of the message. 
+
+To check this log out, log back in and then check the status of the student. 
+
+```{block, type = "info"}
+The account being changed must log out and then back in for any changes to take effect, regardless of whether you experience this bug or not.
+```
+
+### Which DO interfere with the operation of the site {-}
+
+These issues are bugs which in some way inhibit the function of the site and are considered high priority for fixes and workarounds.
+
+#### Email Notifications {-}
+
+Email notifications are not always sent. 
+
+E-mails notifying students and supervisors of changes of account type work seemingly without issue. In particular, e-mails requesting supervisors turn studies to "active" are not being sent.
+
+```{block, type = "workaround"}
+**Workaround:** Please e-mail your supervisor directly if you require them to review and activate your study.
+```
+
+#### Cannot Share Ownership of Components With Students {-}
+
+At the moment it is not possible to share components with students. This stems from a work-around regarding access to data. Anyone who is an owner of a component may download the data gathered by it, even if that component is also used by others.
+
+```{block, type = "workaround"}
+**Workaround:** At the moment it is recommended that students create their own components to suit their needs or that the supervisor duplicate the component and assign the duplicate to the student in need.
+
+If the supervisor is making a component specifically for that student and no-one else will or should have access to that data contact an admin on the Slack workspace for another workaround.
+```
+

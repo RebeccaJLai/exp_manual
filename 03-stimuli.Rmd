@@ -1,12 +1,91 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Stimuli
 
 ## Overview
 
+This chapter will cover how to upload your own stimuli, tips on naming conventions for the easiest possible way to assign stimuli to trials, accepted file formats and a rough guide to how to convert to the required formats.
+
 ## Accepted File Formats
+
+Experimentum uses what we hope to be the most universally applicable file formats to deliver your study.
+
+These are the file formats that can be successfully displayed through the site. Please ensure that you conform to these types as others may not be tolerated by the system.
+
+```{r, echo = F}
+formats <- tibble("Stimuli Type" = c("Images", "Audio", "Video"), "Accepted Formats" = c("JPEG, GIF and PNG", "MP3", "M4V"))
+
+knitr::kable(formats)
+```
 
 ## Pre-Processing
 
+In order to get your stimuli up with the minimal amount of fuss, please ensure that you do any required pre-processing.
+
 ### Images
+
+Images should be of uniform size and of the correct file formats before uploading.
+
+#### Converting Images {-}
+
+GNU Image Manipulation Program ["GIMP", @gimp] is a free software that allows you to modify and export image files to a variety of file formats.
+
+<center>![](images/screenshots/gimp.png)</center>
+
+This software was developed as a free and open source equivalent to photo-editing software such as Adobe Photoshop and can achieve very complex tasks. However, there are only 3 basic operations that you should be able to perform in GIMP order to convert your images to the correct formats. More complex operations are beyond the scope of this tutorial.
+
+If there are any further instructions that would prove helpful please file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues) describing what you want me to include in future versions of the manual.
+
+##### Importing Images {-}
+
+There are a number of ways that you can import images into GIMP.
+
+###### "Open With" {-}
+
+If you already have the image file saved on your PC, you can navigate to the file's location and right click on it. Select "Open With" in the menu that pops up. This will open the GIMP GUI and should open a new tab with that image inside it. 
+
+On some machines GIMP will not be automatically recognised as a type of software associated with image files. In this case you will need to select "Choose another app" and navigate to the executable file for GIMP (location may vary depending on machine and operating system type).
+
+It is not advisable to permanently change all image files to be associated with GIMP, as the software can run slowly and sometimes you only want to view an image in a photo browser, not edit it.
+
+###### File > Open {-}
+
+
+
+###### "Paste as New Image" {-}
+
+Finally, if the image file is not saved on your computer you can copy it to the clipboard and paste it directly into GIMP. Do this by going to Edit > Paste as... > New Image.
+
+This will create a new image in GIMP that is not yet saved. I recommend saving immediately. The file format will be `.xcf`.
+
+<center>![](images/screenshots/paste_as_new_gimp.png)</center>
+
+``` {block, type = "warning"}
+Remember that not all images are free for use. Check the license and terms of use of the images before you copy and paste them for your use.
+```
+
+##### Changing Image Size {-}
+
+##### Exporting Images {-}
+
+GIMP is capable of exporting GIF, JPEG and PNG file formats. 
+
+To export your image go to File > Export As. You will then be asked to enter a file name in the text box at the top of the dialogue box that opens up. 
+
+You can specify the type of file by typing the file extension at the end of the file name, ".gif", ".jpg" or ".png" for each of the aforementioned file types respectively.
+
+Once you have done this, press the "export" button at the bottom of the dialogue box.
+
+You may be asked to specify compression options after pressing the button. This is just to ask how much (if any) quality you are willing to sacrifice to save on the size of the file.
+
+This is an example from a PNG file. This image was compressed with the default options. As you can tell the quality is good, but the image is not very rich. A richer image with higher levels of variation in the pixels may do worse that this one with the same level of compression.
+
+<center>![](images/screenshots/export_1.png)</center>
+
+Experiment with the levels of comrpression in the image and examine the outputs carefully for any artifacts in the images resulting from the compression process. If you find the quality lacking, lower the amount of compression allowed and try again until you find the level appropriate for your images.
 
 ### Audio
 
