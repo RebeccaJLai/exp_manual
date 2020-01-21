@@ -10,24 +10,31 @@ If there is anything missing please file an issue on the GitHub codebase for thi
 
 Lisa is busy and Rebecca is contracted for 1 hour per week for Experimentum support. Much of the day-to-day of handling your students will fall on you, the supervisor. 
 
+If you are not prepared to accept this you may need to consider using another system.
+
 ### Admin Responsibilities {-}
 
 Our responsibilities are:
 
 * To try to ensure smooth operation of the site with regards to technical difficulties and instruction of staff and students. 
     * We will hold workshops at specific time points throughout the academic year, update this manual and answer questions on Slack.
-* To troubleshoot prpoblematic issues experienced by staff and students.
+* To troubleshoot problematic issues experienced by staff and students.
 
 ### Supervisor Responsibilities {-}
 
 * To ensure that you have a researcher account to supervise any of your students who wish to use the site.
-    * You may be comfortable allowing some more senior and trustworthy students almost complete autonomy by granting them full researcher status but it is still advisable to have an account of your own. ***If you wish for them to have full researcher status this must be confirmed by the supervisor to Rebecca directly, not through your student.***
+    * You may be comfortable allowing some more senior and trustworthy students almost complete autonomy by granting them full researcher status but it is still advisable to have an account of your own. 
+    ***If you wish for them to have full researcher status this must be confirmed by the supervisor to Rebecca directly, not through your student or third party.***
 * To handle the day-to-day needs of your own students:
-    * Ensure that you have the knowledge to know how to implement designs you expect your students to use  through the site.
-    * To check the correctness of your students work.
-    * To approve student researcher status of your own student.
-    * To activate the projects of your own students.
+    * Ensure that you have the knowledge to know how to implement designs you expect your students to use through the site.
+    * To check the standards of your students work.
+    * To approve "student" researcher status of your own students.
+    * To activate the projects of your own students, even when they deactivate them by making edits after an initial activation.
     * To manage your students expectations of what the site can provide (it will not be perfect or even workable for some types of study).
+    
+```{block, type = "warning"}
+Supervisors should supervise their own students' accounts only, unless they have the expertise to double-check the veracity of the students' work and are prepared to accept the responsibilities outlined above for these students.
+```
     
 ## Approving Student and Researcher Status Requests {-}
 
@@ -50,9 +57,19 @@ The account you are making changes to will have to log out and back in again to 
 ```{block, type = "info"}
 If you are a supervising member of teaching or research staff, you should request Lisa DeBruine or Rebecca Lai as your supervisor. 
 
-More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it and contacts Rebecca about it directly*. No such request will be accepted on the word of a student alone.
+More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it and contacts Rebecca about it directly*. No such request will be accepted on the word of a student or request via third party.
 
-In such a case they should request Lisa or Rebecca as their supervisor.
+In such a case where this is agreed they should request Lisa or Rebecca as their supervisor as any other "researcher" account would.
+```
+
+## Activating Studies {-}
+
+```{block, type = "warning"}
+Once you activate a study for a "student" researcher account it cannot be edited without resetting it back to "test" status, essentially deactivating it.
+
+Students should confirm that they are completely happy with the study before they ask you to activate it.
+
+If a student makes a change to the study after activation, rendering it inactive, you the supervisor are the point of contact for the student to reactivate it. You may wish to check that the edits made have not changed the quality of the project.
 ```
 
 ## Resetting Passwords {-}
@@ -60,20 +77,22 @@ In such a case they should request Lisa or Rebecca as their supervisor.
 Researcher status accounts also have permission to reset some passwords, found by searching in the “Participant Data” section in the admin page, but they should limit this to resetting the passwords of their own students or participants.
 
 ```{block, type = "danger"}
- You must be satisfied that the account holder is the person that is requesting the change of password.
+ You must be satisfied that the account holder is the person requesting the change of password.
  
 In terms of students conducting research projects I would recommend that they present themselves to you in person to request a password change as these students have access to participant data.
 ```
 
 To change a password, you can either:
 
-*	Navigate to Researchers, then Admin and finally to Participants and search for either the entire or partial username or ID number and click “reset password”.
+*	Navigate to Researchers, then Admin and finally to Participants and search for either the entire or partial username or ID number and click “reset password” **or**
 
 *	Find your student under your supervisory list by going to Researchers, then Admin, then Supervision and selecting their name from the list and selecting “reset password.
 
 The new password will be displayed on the page straight away on the page:
 
 <center>![](images/screenshots/reset_password.png)</center>
+
+<br>
 
 ```{block, type = "danger"}
 This password is supposed to be temporary, but it does not expire. It should be changed as soon as possible as it will have likely be communicated via e-mail or will have been written down.
@@ -87,7 +106,7 @@ You can access your student’s autologin link by navigating to “Researchers�
 
 <center>![](images/screenshots/autologin.png)</center>
 
-Clicking on the autologin link will log you into the account of this user which allows you to examine what is going on in their account from the perspective of their account. This should be used for troubleshooting issues such as lack of access to the researchers section of the website and bugs that may be specific to their account. 
+Clicking on the autologin link will log you into the account of this user which allows you to examine what is going on in their account from the perspective of their account. This should be used for troubleshooting issues such as lack of access to the researchers section of the website and bugs that may be specific to their account or project(s). 
 
 These links are the same ones that the admins use to examine user accounts.
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Quick Start Guide | Experimentum: Web-based Software for Psychology Studies</title>
   <meta name="description" content="Chapter 1 Quick Start Guide | Experimentum: Web-based Software for Psychology Studies" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Quick Start Guide | Experimentum: Web-based Software for Psychology Studies" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine" />
 
 
-<meta name="date" content="2020-01-20" />
+<meta name="date" content="2020-01-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -103,12 +103,17 @@
 <li class="chapter" data-level="3" data-path="stimuli.html"><a href="stimuli.html"><i class="fa fa-check"></i><b>3</b> Stimuli</a><ul>
 <li class="chapter" data-level="3.1" data-path="stimuli.html"><a href="stimuli.html#overview-1"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
 <li class="chapter" data-level="3.2" data-path="stimuli.html"><a href="stimuli.html#accepted-file-formats"><i class="fa fa-check"></i><b>3.2</b> Accepted File Formats</a></li>
-<li class="chapter" data-level="3.3" data-path="stimuli.html"><a href="stimuli.html#pre-processing"><i class="fa fa-check"></i><b>3.3</b> Pre-Processing</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="stimuli.html"><a href="stimuli.html#images"><i class="fa fa-check"></i><b>3.3.1</b> Images</a></li>
-<li class="chapter" data-level="3.3.2" data-path="stimuli.html"><a href="stimuli.html#audio"><i class="fa fa-check"></i><b>3.3.2</b> Audio</a></li>
-<li class="chapter" data-level="3.3.3" data-path="stimuli.html"><a href="stimuli.html#video"><i class="fa fa-check"></i><b>3.3.3</b> Video</a></li>
+<li class="chapter" data-level="3.3" data-path="stimuli.html"><a href="stimuli.html#naming-conventions"><i class="fa fa-check"></i><b>3.3</b> Naming Conventions</a></li>
+<li class="chapter" data-level="3.4" data-path="stimuli.html"><a href="stimuli.html#pre-processing"><i class="fa fa-check"></i><b>3.4</b> Pre-Processing</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="stimuli.html"><a href="stimuli.html#images"><i class="fa fa-check"></i><b>3.4.1</b> Images</a></li>
+<li class="chapter" data-level="3.4.2" data-path="stimuli.html"><a href="stimuli.html#audio"><i class="fa fa-check"></i><b>3.4.2</b> Audio</a></li>
+<li class="chapter" data-level="3.4.3" data-path="stimuli.html"><a href="stimuli.html#video"><i class="fa fa-check"></i><b>3.4.3</b> Video</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="stimuli.html"><a href="stimuli.html#uploading"><i class="fa fa-check"></i><b>3.4</b> Uploading</a></li>
+<li class="chapter" data-level="3.5" data-path="stimuli.html"><a href="stimuli.html#uploading-stimuli"><i class="fa fa-check"></i><b>3.5</b> Uploading Stimuli</a></li>
+<li class="chapter" data-level="3.6" data-path="stimuli.html"><a href="stimuli.html#using-stimuli"><i class="fa fa-check"></i><b>3.6</b> Using Stimuli</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="stimuli.html"><a href="stimuli.html#assigning-stimuli-to-experimental-trials"><i class="fa fa-check"></i><b>3.6.1</b> Assigning Stimuli to Experimental Trials</a></li>
+<li class="chapter" data-level="3.6.2" data-path="stimuli.html"><a href="stimuli.html#using-stimuli-in-questionnaires"><i class="fa fa-check"></i><b>3.6.2</b> Using Stimuli in Questionnaires</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="planning-your-project.html"><a href="planning-your-project.html"><i class="fa fa-check"></i><b>4</b> Planning Your Project</a><ul>
 <li class="chapter" data-level="4.1" data-path="planning-your-project.html"><a href="planning-your-project.html#overview-2"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
@@ -159,6 +164,7 @@
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#supervisor-responsibilities"><i class="fa fa-check"></i>Supervisor Responsibilities</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#approving-student-and-researcher-status-requests-1"><i class="fa fa-check"></i>Approving Student and Researcher Status Requests</a></li>
+<li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#activating-studies"><i class="fa fa-check"></i>Activating Studies</a></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#resetting-passwords"><i class="fa fa-check"></i>Resetting Passwords</a></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#autologin-links"><i class="fa fa-check"></i>Autologin Links</a></li>
 </ul></li>
@@ -218,11 +224,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
+"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -234,10 +241,6 @@ gitbook.start({
 "text": null
 },
 "history": {
-"link": null,
-"text": null
-},
-"view": {
 "link": null,
 "text": null
 },
