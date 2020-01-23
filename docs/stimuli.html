@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Stimuli | Experimentum: Web-based Software for Psychology Studies</title>
   <meta name="description" content="Chapter 3 Stimuli | Experimentum: Web-based Software for Psychology Studies" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.15 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Stimuli | Experimentum: Web-based Software for Psychology Studies" />
   <meta property="og:type" content="book" />
@@ -147,7 +147,7 @@
 <li class="chapter" data-level="8.2" data-path="projects.html"><a href="projects.html#project-urls"><i class="fa fa-check"></i><b>8.2</b> Project URLs</a></li>
 <li class="chapter" data-level="8.3" data-path="projects.html"><a href="projects.html#anon"><i class="fa fa-check"></i><b>8.3</b> Anonymous Participation</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html"><i class="fa fa-check"></i>Known Issues</a><ul>
+<li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html"><i class="fa fa-check"></i>Known Issues and Bugs</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#overview-7"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#issues"><i class="fa fa-check"></i>Issues…</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#which-do-not-interfere-with-the-operation-of-the-site"><i class="fa fa-check"></i>Which do NOT interfere with the operation of the site</a></li>
@@ -272,7 +272,7 @@ Remember that not all image, video and audio files are free for use. Check the l
 <p>Images should be of uniform size and of the correct file formats before uploading.</p>
 <div id="converting-images" class="section level4 unnumbered">
 <h4>Converting Images</h4>
-<p>GNU Image Manipulation Program <span class="citation">(“GIMP”, The GIMP Development Team <a href="#ref-gimp">2019</a>)</span> is a free software that allows you to modify and export image files to a variety of file formats.</p>
+<p>GNU Image Manipulation Program <span class="citation">(“GIMP”, The GIMP Development Team <a href="#ref-gimp" role="doc-biblioref">2019</a>)</span> is a free software that allows you to modify and export image files to a variety of file formats.</p>
 <center>
 <img src="images/screenshots/gimp.png" />
 </center>
@@ -355,7 +355,73 @@ In this case you could save a layer or export a different .GIF, .JPG or .PNG fro
 </div>
 <div id="audio" class="section level3">
 <h3><span class="header-section-number">3.4.2</span> Audio</h3>
-<p>Gaby will do this bit.</p>
+<p>Since Experimentum requires auditory stimuli to be uploaded as .mp3 files, here is an easy way to convert audio files (like .wav) to mp3s using audacity’s batch-processing feature.</p>
+<div id="audacity-2.1.2" class="section level4">
+<h4><span class="header-section-number">3.4.2.1</span> Audacity 2.1.2</h4>
+<p>If you are still on an older version of audacity, go to <strong>File -&gt; Edit Chains</strong></p>
+<center>
+<img src="images/screenshots/audacity1.png" >
+</center>
+<p>There is already a chain set up for mp3 conversion, which contains 3 steps: Normalising, exporting as mp3, and an END process. You will probably have already normalised your stimuli, so highlight the first step of the chain and press delete.</p>
+<center>
+<img src="images/screenshots/audacity2.png" >
+</center>
+<p>All you should have in the chain “MP3 Conversion” is 1. ExportMP3, and 2. -END-. Click “OK” to save the chain.</p>
+<center>
+<img src="images/screenshots/audacity3.png" >
+</center>
+<p>Now, go to <strong>File -&gt; Apply Chain…</strong></p>
+<center>
+<img src="images/screenshots/audacity4.png" >
+</center>
+<p>… select MP3 Conversion, and confirm with “Apply to Files…”</p>
+<center>
+<img src="images/screenshots/audacity5.png" >
+</center>
+<p>Locate the files you want to convert into mp3s from the folder on your computer, select all, and confirm with “Open”.</p>
+<center>
+<img src="images/screenshots/audacity6.png" >
+</center>
+<p>The selected files will then be converted into mp3s. You will find an additional folder called “cleaned” within the folder your original files are located in.</p>
+<center>
+<img src="images/screenshots/audacity7.png" >
+</center>
+<p>Content of the folder “cleaned”:</p>
+<center>
+<img src="images/screenshots/audacity8.png" >
+</center>
+</div>
+<div id="audacity-2.3.0" class="section level4">
+<h4><span class="header-section-number">3.4.2.2</span> Audacity 2.3.0</h4>
+<p>Audacity version 2.3.0 changed the batch-processing process, relabelling chains as “Macros”. The menu for accessing the Macros got relocated to <strong>Tools -&gt; Macros…</strong></p>
+<center>
+<img src="images/screenshots/audacity_1.png" >
+</center>
+<p>The following steps are fairly similar to older versions of audacity.</p>
+<p>Within the macros you will find one already labelled “MP3 Conversion”. In the window “Edit Steps”, select the normalise step (Num 01) and delete it.</p>
+<center>
+<img src="images/screenshots/audacity_2.png" >
+</center>
+<p>Make sure you have only the steps “ExportMP3” and “-END-” left in your macro; then click on “Files…”</p>
+<center>
+<img src="images/screenshots/audacity_3.png" >
+</center>
+<p>Locate the files you want to convert to mp3s on your computer, select/ highlight all of them, and confirm with “Open”.</p>
+<center>
+<img src="images/screenshots/audacity_4.png" >
+</center>
+<p>There might be a warning message popping up asking you for an input method. Select the safer or faster option according to your personality, and confirm with “OK”.</p>
+<center>
+<img src="images/screenshots/audacity_5.png" >
+</center>
+<p>Once the process is done, you can find the converted mp3s in a separate folder called “cleaned” that is located within the folder of your original files.</p>
+<center>
+<img src="images/screenshots/audacity_6.png" >
+</center>
+<center>
+<img src="images/screenshots/audacity_7.png" >
+</center>
+</div>
 </div>
 <div id="video" class="section level3">
 <h3><span class="header-section-number">3.4.3</span> Video</h3>
@@ -378,7 +444,7 @@ In this case you could save a layer or export a different .GIF, .JPG or .PNG fro
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-gimp">
-<p>The GIMP Development Team. 2019. <em>GNU Image Manipulation Program</em> (version 2.10.14). <a href="https://www.gimp.org/" class="uri">https://www.gimp.org/</a>.</p>
+<p>The GIMP Development Team. 2019. <em>GNU Image Manipulation Program</em> (version 2.10.14). <a href="https://www.gimp.org/">https://www.gimp.org/</a>.</p>
 </div>
 </div>
             </section>
@@ -403,15 +469,13 @@ In this case you could save a layer or export a different .GIF, .JPG or .PNG fro
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",

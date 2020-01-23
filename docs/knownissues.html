@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Known Issues | Experimentum: Web-based Software for Psychology Studies</title>
-  <meta name="description" content="Known Issues | Experimentum: Web-based Software for Psychology Studies" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <title>Known Issues and Bugs | Experimentum: Web-based Software for Psychology Studies</title>
+  <meta name="description" content="Known Issues and Bugs | Experimentum: Web-based Software for Psychology Studies" />
+  <meta name="generator" content="bookdown 0.15 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Known Issues | Experimentum: Web-based Software for Psychology Studies" />
+  <meta property="og:title" content="Known Issues and Bugs | Experimentum: Web-based Software for Psychology Studies" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Known Issues | Experimentum: Web-based Software for Psychology Studies" />
+  <meta name="twitter:title" content="Known Issues and Bugs | Experimentum: Web-based Software for Psychology Studies" />
   
   
   
@@ -147,7 +147,7 @@
 <li class="chapter" data-level="8.2" data-path="projects.html"><a href="projects.html#project-urls"><i class="fa fa-check"></i><b>8.2</b> Project URLs</a></li>
 <li class="chapter" data-level="8.3" data-path="projects.html"><a href="projects.html#anon"><i class="fa fa-check"></i><b>8.3</b> Anonymous Participation</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html"><i class="fa fa-check"></i>Known Issues</a><ul>
+<li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html"><i class="fa fa-check"></i>Known Issues and Bugs</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#overview-7"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#issues"><i class="fa fa-check"></i>Issues…</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#which-do-not-interfere-with-the-operation-of-the-site"><i class="fa fa-check"></i>Which do NOT interfere with the operation of the site</a></li>
@@ -221,7 +221,7 @@
 
             <section class="normal" id="section-">
 <div id="knownissues" class="section level1 unnumbered">
-<h1>Known Issues</h1>
+<h1>Known Issues and Bugs</h1>
 <div id="overview-7" class="section level2 unnumbered">
 <h2>Overview</h2>
 <p>This is a list of issues that are known and that we are working on to fix.</p>
@@ -258,13 +258,13 @@ The account being changed must log out and then back in for any changes to take 
 </div>
 <div id="cannot-share-ownership-of-components-with-students" class="section level4 unnumbered">
 <h4>Cannot Share Ownership of Components With Students</h4>
-<p>At the moment it is not possible to share components with students. This stems from a work-around regarding access to data. Anyone who is an owner of a component may download the data gathered by it, even if that component is also used by others.</p>
+<p>At the moment it is not possible to share components with students. This stems from a work-around regarding access to and protection of data. Anyone who is an owner of a component may download the data gathered by it, even if that component is also used by others.</p>
 <div class="workaround">
 <p>
 <strong>Workaround:</strong> At the moment it is recommended that students create their own components to suit their needs or that the supervisor duplicate the component and assign the duplicate to the student in need.
 </p>
 <p>
-If the supervisor is making a component specifically for that student and no-one else will or should have access to that data contact an admin on the Slack workspace for another workaround.
+If the supervisor is making a component specifically for that student and no-one else will or should have access to that data contact an admin on the Slack workspace for another workaround that only they have the ability to implement.
 </p>
 </div>
 
@@ -294,15 +294,13 @@ If the supervisor is making a component specifically for that student and no-one
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
