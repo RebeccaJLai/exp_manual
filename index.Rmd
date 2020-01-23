@@ -64,7 +64,7 @@ If you require assistance to navigate this document or create your study due to 
 
 #### For Other Users  {-}
 
-If you download and use the code for this online psychology study platform you should establish clear guidelines outlining the role of the admins and methods of support. 
+If you download and use the code for this platform you should establish clear guidelines outlining the role of the admins and methods of support in accordance with any relevant regulations. 
 
 Staff from the University of Glasgow will not provide support for users of other systems based upon this code. Our Slack workspace is for internal use only.
 
@@ -76,7 +76,7 @@ If you find an issue with the Experimentum codebase, please file an issue [here]
 
 Cookies are used for Experimentum to allow us to track user sessions, which allows participants to navigate between pages during a session without having to log in to every page. In the case of anonymous logins, the session is tracked to maintain the same identity across multiple elements of the same study.  
 
-Cookies are not tracked beyond a single session, for either registered users or anonymous participants. By closing the browser, the current session is ended, and cookies tracking the session are discarded.
+Cookies are not tracked beyond a single session, for either registered or anonymous participants. By closing the browser the current session is ended and cookies tracking the session are discarded.
 
 Cookies are not used in any other way by us, and the information is not retained or shared with any other organisations.
 
@@ -84,9 +84,9 @@ Cookies are not used in any other way by us, and the information is not retained
 
 Your study's data is your responsibility. Please ensure that it is protected and used appropriately. University of Glasgow guidelines with regard to data protection are available to view [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/) and more general data management guidelines [here](https://www.gla.ac.uk/myglasgow/datamanagement/rdmatglasgow/).  
 
-Experimentum saves your data to the University of Glasgow School of Psychology secure servers, which are on-site in Hillhead Street. Data will be output in Comma Separated Variable (.csv) files in "tidy" format and is available for download from your project or from each component of your study.
+Experimentum saves your data to the University of Glasgow School of Psychology secure servers, which are on-site in Hillhead Street. Data will be output in Comma Separated Value (.csv) files in "tidy" format and is available for download from by the researcher(s) who own the study, their supervisors and admins **only**.
 
-Whilst data processing questions should be directed to your supervisor(s) and advisors, there are a couple of common tasks that you might find yourself needing to do. See the examples in the section Commonly used R code for help with some common code segments.
+Whilst data processing questions should be directed to the researcher (or your supervisor(s) and advisors if you are a student/researcher), there are a couple of common tasks that you might find yourself needing to do. See the examples in the section [Commonly used R code](#commoncode) for help with some common code segments.
 
 ### About your data {-}
 
@@ -100,6 +100,12 @@ If you have any concerns about how your data is used please contact the research
 
 ```{block, type = "warning"}
 You have rights concerning your own data and how it is used, and responsible researchers should always hold these in the highest regard.
+
+If you have any concerns about how your data is being used you should contact the researcher in question in the first instance. 
+
+If you are reluctant to speak to them directly you can speak to their supervisor, whose contact information should be given to you at the time of undertaking the study or upon request from the researcher. 
+
+Alternatively, you can contact the Data Protection and Freedom of Information Office [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/contact/).
 ```
 
 ### Consent {-}

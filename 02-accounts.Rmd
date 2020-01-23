@@ -44,6 +44,14 @@ If you plan on supervising students using Experimentum you should set up a resea
 
 When you have established your researcher account your name will appear in the list of potential supervisors for students to choose from.
 
+```{block, type = "warning"} 
+Supervisors should have a researcher account if they intend for their students to use this system.
+
+Supervision duties in this system should not be passed to another member of staff so that you can avoid registering. Admins will not accept any of the duties of the supervisor. 
+
+See the [Supervisor Cheatsheet](#roles) for a breakdown of the roles of the admins and the supervisors.
+```
+
 ### "Test" Accounts 
 
 For students and staff. This account type gives you the same amount of privileges as the registered account for participants, but any data collected from these accounts is saved in data sets with a status of "test". 
@@ -116,5 +124,7 @@ Here you will see a list of individuals who have requested you as a supervisor. 
 
 The account you are making changes to will have to log out and back in again to be updated with their new permissions. When you press "Send" an email will be sent to the student to inform them of the status change.
 
-
+```{block, type = "bug"}
+There is a known issue with changing the statuses of research accounts regarding accounts not being found by the system, [see here](#notfound)
+```
 

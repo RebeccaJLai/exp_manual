@@ -6,7 +6,7 @@ This is a collection of sections from the document directed at the everyday oper
 
 If there is anything missing please file an issue on the GitHub codebase for this book by clicking [here](https://github.com/RebeccaJLai/exp_manual/issues).
 
-## Admins {-}
+## Admins {- #roles} 
 
 Lisa is busy and Rebecca is contracted for 1 hour per week for Experimentum support. Much of the day-to-day of handling your students will fall on you, the supervisor. 
 

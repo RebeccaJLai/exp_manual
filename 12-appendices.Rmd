@@ -1,5 +1,22 @@
-# Appendices and References {-}
+# Appendices {-}
 
 ## Appendices {-}
+
+### Commonly Used R Code {- #commoncode}
+
+### Image Sources
+
+All images original with the exception of the following:
+
+* Rainbow Free Icon [@rainbow]
+* Tech Support Icon Pack [@techpack]
+* Traffic Cone Icon [@cone]
+
+### Software {-}
+
+This manual was written using R [@baser], RStudio [@rstudio] and bookdown [@xie2015]. 
+
+Custom graphics created and screenshots edited with GIMP [@gimp].
+
 
 ## References {-}

@@ -43,7 +43,7 @@ pre code {
 
 /* set styles for alert boxes */
 
-.danger, .funfact, .solved, .info, .warning, .question, .task, .rainbow, .workaround {
+.danger, .security, .info, .warning, .question, .rainbow, .workaround, .bug {
   color: black;
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
@@ -57,17 +57,10 @@ pre code {
   border-radius: 5px;
 }
 
-.funfact {
-  background-image: url("images/alerts/funfact.png");
+.security {
+  background-image: url("images/alerts/security.png");
   background-color: hsl(340, 80%, 95%);
   border: 2px solid hsl(340, 80%, 90%);
-  border-radius: 5px;
-}
-
-.solved {
-  background-image: url("images/alerts/solution.png");
-  background-color: hsl(25, 80%, 95%);
-  border: 2px solid hsl(25, 80%, 90%);
   border-radius: 5px;
 }
 
@@ -79,7 +72,14 @@ pre code {
 }
 
 .warning {
-  background-image: url("images/alerts/warning.svg");
+  background-image: url("images/alerts/warning.png");
+  background-color: hsl(45, 100%, 80%);
+  border: 3px solid hsl(360, 80%, 50%);
+  border-radius: 5px;
+}
+
+.bug {
+  background-image: url("images/alerts/bug.png");
   background-color: hsl(45, 100%, 80%);
   border: 3px solid hsl(360, 80%, 50%);
   border-radius: 5px;
@@ -92,15 +92,8 @@ pre code {
   border-radius: 5px;
 }
 
-.task {
-  background-image: url("images/alerts/task.png");
-  background-color: hsl(280, 60%, 95%);
-  border: 2px solid hsl(280, 60%, 85%);
-  border-radius: 5px;
-}
-
 .rainbow {
-  background-image: url("images/logos/favicon-flipped.png");
+  background-image: url("images/alerts/rainbow.png");
   background-color: hsl(0, 0%, 100%);
   border: 2px solid hsl(0, 0%, 0%);
   border-radius: 5px;
