@@ -138,23 +138,21 @@ The first is 100% quality, no compression. The second has minimal pixelation art
 
 Since Experimentum requires auditory stimuli to be uploaded as .mp3 files, here is an easy way to convert audio files (like .wav) to mp3s using audacity's batch-processing feature.
 
-
 #### Audacity 2.1.2
 
-If you are still on an older version of audacity, go to **File -> Edit Chains**
+If you are still on an older version of audacity, go to File > Edit Chains
 
 <center> <img src="images/screenshots/audacity1.png" > </center>
 
 There is already a chain set up for mp3 conversion, which contains 3 steps: Normalising, exporting as mp3, and an END process. You will probably have already normalised your stimuli, so highlight the first step of the chain and press delete.
 
 <center> <img src="images/screenshots/audacity2.png" > </center>
-
  
 All you should have in the chain "MP3 Conversion" is 1. ExportMP3, and 2. -END-. Click "OK" to save the chain.
 
 <center> <img src="images/screenshots/audacity3.png" > </center>
 
-Now, go to **File -> Apply Chain…**
+Now, go to File > Apply Chain…
 
 <center> <img src="images/screenshots/audacity4.png" > </center>
  
@@ -162,12 +160,10 @@ Now, go to **File -> Apply Chain…**
 
 <center> <img src="images/screenshots/audacity5.png" > </center>
  
-
 Locate the files you want to convert into mp3s from the folder on your computer, select all, and confirm with “Open”.
 
 <center> <img src="images/screenshots/audacity6.png" > </center>
  
-
 The selected files will then be converted into mp3s. You will find an additional folder called “cleaned” within the folder your original files are located in.
 
 <center> <img src="images/screenshots/audacity7.png" > </center>
@@ -176,10 +172,9 @@ Content of the folder “cleaned”:
 
 <center> <img src="images/screenshots/audacity8.png" > </center>
  
-
 #### Audacity 2.3.0
 
-Audacity version 2.3.0 changed the batch-processing process, relabelling chains as "Macros". The menu for accessing the Macros got relocated to **Tools -> Macros…**
+Audacity version 2.3.0 changed the batch-processing process, relabelling chains as "Macros". The menu for accessing the Macros got relocated to Tools > Macros…
 
 <center> <img src="images/screenshots/audacity_1.png" > </center>
   
@@ -204,6 +199,9 @@ There might be a warning message popping up asking you for an input method. Sele
 Once the process is done, you can find the converted mp3s in a separate folder called “cleaned” that is located within the folder of your original files.  
  
 <center> <img src="images/screenshots/audacity_6.png" > </center>
+
+Content of the folder "cleaned":
+
 <center> <img src="images/screenshots/audacity_7.png" > </center>
 
 
