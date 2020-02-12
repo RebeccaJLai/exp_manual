@@ -1,3 +1,7 @@
 # Experimental Components
 
 ## Overview
+
+
+## Assigning Stimuli to Trials {#assignstimexp}
+

@@ -1,7 +1,38 @@
-# Projects
+# Projects: Making your study go!
 
 ## Overview
 
 ## Project URLs
+
+## Testing Your Study {#testingyourstudy}
+
+## Activating Projects
+
+### Is my study ready?: Student Checklist
+
+Before you ask your supervisor to turn the study status to “active”, please ensure that you have done the following:
+
+1.	Checked spelling and grammar across all components and sets and the project.
+2.	Checked the stimuli presentation is correct and as expected within all components.
+3.	Tested the order of presentation of components, including debrief/feedback using the test button outlined in the section [“Testing Your Study”](#testingyourstudy). 
+4.	Run through your study (multiple times) as if you were a participant.
+5.	Examined the test run data to ensure that you are getting exactly what you expect and that you can successfully interpret it.
+6.	Saved a copy of your test data so that you can later exclude it, separating the test data from the real data.
+
+```{block, type = "info"}
+Do not ask admins to activate your study. This is something that your supervisor does for you. They must be able to check the validity and quality of the study you have created before they allow you to start collecting data.
+```
+
+The process of activating studies is outlined in the supervisor page under the heading ["Activating Studies"](#activating)
+
+```{block, type = "warning"}
+Once your study is active it cannot be edited without resetting it back to "test" status, essentially deactivating it.
+
+Students should confirm that they are completely happy with the study before they ask their supervisor to activate it. This is why the checklist above has been provided. Supervisors have been made aware of this checklist.
+
+When a you attempt to edit an active item this warning is displayed at the top of the page next to the "Save" button:
+
+![](images/screenshots/editwarning.png)
+```
 
 ## Anonymous Participation {#anon}

@@ -56,7 +56,7 @@ The questionnaire tab on the lower half of the page is different for each questi
 
 In most cases you should leave this empty. The feedback for the top-most set is normally where you would put your debriefing information. You can see the later sections on projects and debriefing. 
 
-## Adding and Deleting questions
+## Adding/Deleting Questions
 
 ### Adding Individually
 
@@ -69,7 +69,7 @@ Experimentum will add a new question by directly duplicating the previous questi
 The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimise loss of work in the event of an error. 
 ```
 
-### Adding in Bulk
+### Adding in Bulk {#addfromspreadsheet}
 
 It is also possible to add some types of questions in bulk by using a spreadsheet. Unfortunately, not all types are covered, but the most basic and most frequently used types are. 
 Spreadsheet templates are available by clicking “add from spreadsheet” and selecting the underlined type of questionnaire from the options just above the buttons.
@@ -102,6 +102,13 @@ q_spread <- read_csv("quest_spreadsheet.csv") %>%
 knitr::kable(q_spread)
 ```
 
+Each of the three types of questionnaire component has their own template spreadsheet available for download, which are linked in the dialogue box you get when you click to "add from spreadsheet". If you intend to add questions in bulk you should consult these spreadsheets for guidance in the first instance as examples are given.
+
+### Re-Order Questions
+
+If you wish to present your questions in a specific order, and this order is different than what you have in your questionnaire component, you can click on the arrows button between the dv_name and the question text to move the question up or down the order of presentation.
+
+<center>![](images/screenshots/qreorder.png)</center>   
 
 ### Deleting Questions
 
@@ -123,12 +130,16 @@ Allows you to present multiple question types and gather multiple response types
  
 As you can see you have the same questionnaire information section at the top, as you will have in all questionnaires. The differences lie in the types of questions that you can include. Mixed questionnaires can accommodate multiple types of questions on a single page. 
 
+#### Attributes {-}
+
 *	**Instructions**: when you click the part that says “Click here to set instructions” you will be able to enter text instructions to the participants for this entire component. You will also be able to enter Markdown and HTML code, which allows you to link to and embed additional media or format the text in specific ways. 
     * If you use HTML tags you must ensure that you have matching opening and closing tags, as unmatched ones will prevent the component from recording data.
 *	**dv_name**: this is the name of the dependent variable, the name that will be assigned to the column q_name in the downloaded data indicating which question the participant has answered. You should set one which is unique to this component and perhaps across all components.
+<center>![](images/screenshots/qname.png)</center> 
 *	**Question**: clicking the part which says “click here to set your question” will allow you to enter the question text that the participants will see, the question that you want to ask them.
+<center>![](images/screenshots/qtext.png)</center> 
 
-#### Changing Question and Response Type
+#### Changing Question and Response Type {-}
 
 Clicking the cog next to the question and then the arrow in the resulting menu will allow you to choose the type of question you want to set. 
  
@@ -142,7 +153,7 @@ When you have selected the type of question, you can then edit the response type
 You must close this editing mode by clicking the pencil a second time, getting rid of the yellow surround, **before** you add a new question, click the cog or save the questionnaire.
 ```
 
-In the section below I will cover the types of questions and information about the changes to the participant responses in the appropriate sections below.
+#### Question Types {-}
 
 *	**Pulldown Menu**: pulldown menus give your participants a set of text option responses to choose from. Each text option has a numeric coding value associated with it, which will be the returned value in the downloaded data in place of the text. This is specified before the colon. The text options are specified after the colon, these are not returned in the data. 
 <center>![](images/screenshots/quest_mixed_3.png)</center> 
@@ -154,15 +165,78 @@ In the section below I will cover the types of questions and information about t
 *	**Slider**: sliders provide you with a way for participants to return a finer-grained numerical response on a spectrum between two anchor points. A slider scale will be displayed to participants, with the low end of the range associated with the low anchor, and the high end the high anchor. Participants will move a slider along the scale, and a numerical value associated with the position they put it in returned in the data. You set the scale limits and increments, in this example from 0 to 100 in increments of 1. 
     * You can also change the text anchors by clicking on them as shown here.
 <center>![](images/screenshots/quest_mixed_6.png)</center> 
+    * Slider knobs do not appear until the participant has clicked somewhere on the scale.
 *	**Radio Buttons with Anchors**: this option allows you to set a scale with a low anchor and a high anchor, which you can change by clicking the text. You can add or remove points to the scale by pressing the + and – buttons on either side of the response. On this scale example below, a number will be returned associated with the point on the scale the participant submitted, here 1 (lowest) to 5 (highest).
 <center>![](images/screenshots/quest_mixed_7.png)</center> 
 *	**Date Menu**: date menus allow the participants to choose a specific date. You can set the range of dates to choose from, in the example below the participant is allowed to go back 100 years from the current date (-100y) but cannot go further into the future than today (+0y). When participants click on the response, they will be given a calendar to pick from, instead of typing the date.
 <center>![](images/screenshots/quest_mixed_8.png)</center> 
 <center>![](images/screenshots/quest_mixed_9.png)</center> 
-* **Countries**: participants can choose from a list countries. Returned in the data as the two letter ISO-3166-1 code.
+* **Countries**: participants can choose from a list countries. Returned in the data as the two letter ISO-3166-1 alpha-2 code.
 <center>![](images/screenshots/quest_mixed_10.png)</center> 
-*	**Short Text**: allows participants to enter free-response text up to and including 255 characters. Returned in the data as character strings.
+*	**Short Text**: allows participants to enter free-response text up to and including 255 characters. Returned in the data as character strings. The maximum number of characters can be changed by changing the number after `maxlength:`.
 <center>![](images/screenshots/quest_mixed_11.png)</center> 
 *	**Long Text**: allows participants to enter free-response text over 255 characters. Returned in the data as character strings. If you do not need more than 255 characters, please use the short text to minimise strain on the server.
 <center>![](images/screenshots/quest_mixed_12.png)</center> 
+* **Message**: allows you to put a line of text into a questionnaire which does not require a response amongst other questions. Note that to ensure that this appears where it should that these questions should be presented in a fixed order.
+<center>![](images/screenshots/quest_mixed_13.png)</center> 
+
+### Radiopage
+
+Radiopage questionnaires contain the same questionnaire information section at the top of the page as a Mixed Questionnaire. 
+
+The format of this questionnaire allows the user to set a number of questions with radio button responses on a single page, with a single response scale for all questions. 
+
+Each point on the scale has its own text label, and an “option value” number associated with it, rather than only the two extremities of a multiple point scale as in the radio buttons with anchors in the mixed questionnaire.
  
+<center>![](images/screenshots/radio_1.png)</center> 
+ 
+#### Attributes {-}
+*	**Instructions**: when you click the part that says “Click here to set instructions” you will be able to enter text instructions to the participants for this entire component. You will also be able to enter Markdown and HTML code, which allows you to link to and embed additional media or format the text in specific ways. See [stimuli](#htmlstim) for more information on this.
+* **Option values**: these are the numerical equivalents of the text labels for each of the responses a participant can make to any question on the page. This number is not displayed to participants. The number you set is largely arbitrary, but the numerical figure associates with the choice rendered by participants is returned in the data set upon download and text values are not. You will need to know what number corresponds to which text response in order to carry out and interpret your analyses. It is possible to have automatic reverse scoring- see [here](#fwdrev) for more information.
+* **Option text**: this is the text label associated with each response the participant can make to any question on the page. The associated text is what the participant sees, and it is displayed in the construction page directly below the numerical value you set. The option text is not returned in the downloaded data set.
+* **Adding/removing options**: you can add or remove the number of response options on the scale you give to participants by pressing the + or – symbols in circles on the right of the scale at the top of the questionnaire.
+
+<center>![](images/screenshots/radio_2.png)</center>
+ 
+* **dv_name**: this is the name of the dependent variable, the name that will be assigned to the column q_name in the downloaded data indicating which question the participant has answered. You should set one which is unique within this component, or perhaps across all components in your study.
+<center>![](images/screenshots/qname.png)</center> 
+* **Question**: clicking the part which says “click here to set your question” will allow you to enter the question text that the participants will see, the question that you want to ask them.
+<center>![](images/screenshots/qtext.png)</center> 
+
+#### Forward and Reverse Scoring {- #fwdrev}
+
+In many questionnaires it is common to find items which should be “reverse-scored”. Here you can indicate if the question is forward or reverse scored, and the system will make the changes to the data for you, saving you from having to recode them later.
+
+Example: your scale at the top indicates 1-5 as below. As you can see “much less than average” is associated option value of 1. The forward scored question is marked “fwd” in the pulldown menu on the right of the table and the reverse scored question is marked “rev”.
+
+<center>![](images/screenshots/radio_3.png)</center> 
+ 
+If a participant chooses “much less than average” on a forward scored question the dv in the output will be “1”. But what happens to the reverse scored question?
+
+<center>![](images/screenshots/radio_4.png)</center> 
+ 
+This is the data output here. As you can see where the participant chose the option that returned a “1” for the forward scored question, for the reverse scored question that same choice returns a “5” in the data. 
+
+<center>![](images/screenshots/radio_5.png)</center> 
+
+### Rank Order
+
+Ranking questionnaires present a list of text options to participants to put into a specific order, based on some judgement they are asked to make on them.
+
+<center>![](images/screenshots/rank1.png)</center>
+ 
+As you can see, there are no response types associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomise it.
+
+Each question will be an option in the list of items to rank order. Participants will be able to drag each text item to rank order them, with the number specified in the column next to the text. The final presentation to participants looks like this:
+
+<center>![](images/screenshots/rank2a.png)</center>
+
+<center>![](images/screenshots/rank2b.png)</center>
+
+<center>![](images/screenshots/rank2c.png)</center>
+ 
+In the data, the question name is saved as q_name and the rank order assigned by the participant is saved as the dv in the downloaded data:
+ 
+<center>![](images/screenshots/rank3.png)</center> 
+
+

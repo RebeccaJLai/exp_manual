@@ -34,7 +34,7 @@ In order to get your stimuli up with the minimal amount of fuss, please ensure t
 
 ### Images
 
-Images should be of uniform size and of the correct file formats before uploading.
+Images should be of uniform size and of the correct file formats before uploading. The following information is but one way that you can amend your files to the correct format and resolution for the site. There may be other ways to acheive the same goal.
 
 #### Converting Images {-}
 
@@ -132,11 +132,19 @@ These images are saved as JPEG, and are at 100%, 50% and 0% quality. This gives 
 
 <center>![](images/screenshots/087_03_min.jpg)![](images/screenshots/087_03_mid.jpg)![](images/screenshots/087_03_max.jpg)</center>
 
-The first is 100% quality, no compression. The second has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a ittle yellower in image 2. Number 3 is unusable. 
+The first is 100% quality, no compression. The second has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2. Number 3 is unusable for the vast majorit of purposes.
+
+The level of compression that you choose will be a compromise between what the system can successfully deliver and what the level of compression does to the images that you are using.
 
 ### Audio
 
-Since Experimentum requires auditory stimuli to be uploaded as .mp3 files, here is an easy way to convert audio files (like .wav) to mp3s using audacity's batch-processing feature.
+Since Experimentum requires auditory stimuli to be uploaded as .mp3 files, here is an easy way to convert audio files (like .wav) to mp3s using Audacity's batch-processing feature.
+
+<center>![](images/screenshots/audacity_logo.png)</center>
+
+Audacity is free and open source cross-platform software which can be used to record (with suitable microphone), import, edit and export audio files in many different formats. This is also software that both the Voice Perception Lab and Face Research Lab use in their research.
+
+Here you will find the minimal instructions that will allow you to convert your audio files to `.mp3` format in Audacity. For the full user guide see [here](https://manual.audacityteam.org/index.html).
 
 #### Audacity 2.1.2
 
@@ -144,7 +152,11 @@ If you are still on an older version of audacity, go to File > Edit Chains
 
 <center> <img src="images/screenshots/audacity1.png" > </center>
 
-There is already a chain set up for mp3 conversion, which contains 3 steps: Normalising, exporting as mp3, and an END process. You will probably have already normalised your stimuli, so highlight the first step of the chain and press delete.
+There is already a chain set up for mp3 conversion, which contains 3 steps: Normalising, exporting as mp3, and an END process. 
+
+Normalisation is a process by which you standardise the aplitude of the audio signal. If you have recorded your own stimuli you will need to normalise it first to ensure that no audio clips are excessively loud or quiet in comparison to the others. 
+
+If you are using stimuli sourced from elsewhere it may already be normalised. In this case, highlight the first step of the chain and press delete.
 
 <center> <img src="images/screenshots/audacity2.png" > </center>
  
@@ -180,7 +192,7 @@ Audacity version 2.3.0 changed the batch-processing process, relabelling chains 
   
 The following steps are fairly similar to older versions of audacity. 
 
-Within the macros you will find one already labelled “MP3 Conversion”. In the window “Edit Steps”, select the normalise step (Num 01) and delete it.
+Within the macros you will find one already labelled “MP3 Conversion”. In the window “Edit Steps”, select the normalise step (Num 01) and delete it if you have already normalised the amplitude of the stimuli you are using.
  
 <center> <img src="images/screenshots/audacity_2.png" > </center>
 
@@ -204,14 +216,59 @@ Content of the folder "cleaned":
 
 <center> <img src="images/screenshots/audacity_7.png" > </center>
 
-
-
 ### Video
+
+Experimentum required video stimuli to be uploaded in `.m4v` format. Here is a short tutorial based upon Reed [-@m4vconv]
+
+These are similar to the files with `.mp4` extensions – the main difference is that `.m4v` files are Digital Rights Management (DRM) copyright protected and are mostly used by Apple. 
+
+If you have a Windows laptop, you can manually change `.mp4` video files to `.m4v` ones without downloading additional software sometimes. 
+
+```{block, type = "warning"}
+This process will only work when the videos are not already copyrighted. Remember that not all files are free to use!
+
+This could mean that any file you attempt to convert that has copyright protection will not run again on your computer's standard video viewer so be sure to make copies in case the conversion fails.
+```
+
+First go to the file where you have placed your videos. If not already showing, make sure you change the settings so that you can see the file extension. 
+
+<center>![](images/screenshots/video_conv_1.png)</center>
+
+To include the file extension in the name, click on View > File name extensions and check the box or Options > Change folder and search options > View > Advanced settings and uncheck Hide extensions for known file types. You will see that it now says “videoname”.mp4
+
+<center>![](images/screenshots/video_conv_2.png)</center>
+
+You can change this by simply renaming the file to “videoname”.m4v and clicking “Yes”, This should make it compatible with the Experimentum website however it may not work if the file is copyright protected. This should not be an issue if you are creating your own custom video stimuli.
+
+<center>![](images/screenshots/video_conv_3.png)</center>
 
 ## Uploading Stimuli
 
+For the purposes of demonstration of uploading stimuli I will be using The MR2 face stimuli set [@mr2], which is available to download and use under a Creative Commons License.
+
 ## Using Stimuli
 
-### Assigning Stimuli to Experimental Trials
+### Using Stimuli Items In Questionnaires, Set and Component Introductions {#htmlstim}
 
-### Using Stimuli in Questionnaires
+You may use stimuli items uploaded to the server in questionnaire introduction sections and individual question fields by using either Markdown or HTML syntax.
+
+```{r, eval =FALSE}
+# The HTML code
+<img src="image file path goes here with extension">
+  
+# The Markdown code
+![](image file path goes here with file extension)
+```
+
+The image file path can be found by navigating to Researchers > Stimuli > Uploads, selecting the folder name you gave it when you uploaded it and then the image:
+
+![](images/screenshots/img_file_path.png)
+
+The image file path is on the right hand side of the page above where the image is displayed.
+
+For additional information on using HTML code please see this tutorial on [W3Schools](https://www.w3schools.com/html/).
+
+### Assigning Stimuli to Experimental Trials 
+
+Assigning stimuli to trials is a fundamental part of the process of constructing experimental components so this is covered in the section regarding experimental components [here](#assignstimexp).
+

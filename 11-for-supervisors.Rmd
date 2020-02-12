@@ -56,20 +56,59 @@ The account you are making changes to will have to log out and back in again to 
 
 ```{block, type = "info"}
 If you are a supervising member of teaching or research staff, you should request Lisa DeBruine or Rebecca Lai as your supervisor. 
-
 More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it and contacts Rebecca about it directly*. No such request will be accepted on the word of a student or request via third party.
 
 In such a case where this is agreed they should request Lisa or Rebecca as their supervisor as any other "researcher" account would.
 ```
 
-## Activating Studies {-}
+## Activating Studies {- #activating}
+
+### Is this study ready?: Student Checklist
+
+Students should use the following checklist before they request their supervisor review and activate their study:
+
+1.	Checked spelling and grammar across all components, sets and the project.
+2.	Checked the stimuli presentation is correct and as expected within all components.
+3.	Tested the order of presentation of components, including debrief/feedback using the test button outlined in the section [“Testing Your Study”](#testingyourstudy). 
+4.	Run through the study (multiple times) as if they were a participant.
+5.	Examined the test run data to ensure that they are getting exactly what they expect and that they can successfully interpret it.
+6.	Saved a copy of their test data so that they can later exclude it, separating the test data from the real data.
+
+### Making a Study Active
 
 ```{block, type = "warning"}
 Once you activate a study for a "student" researcher account it cannot be edited without resetting it back to "test" status, essentially deactivating it.
 
-Students should confirm that they are completely happy with the study before they ask you to activate it.
+Students should confirm that they are completely happy with the study before they ask you to activate it. This is why the checklist above has been provided to them.
 
-If a student makes a change to the study after activation, rendering it inactive, you the supervisor are the point of contact for the student to reactivate it. You may wish to check that the edits made have not changed the quality of the project.
+When a student attempts to edit an active item this warning is displayed at the top of the page next to the "Save" button:
+
+![](images/screenshots/editwarning.png)
+
+If a student makes a change to the study after activation, rendering it inactive, you the supervisor are the point of contact for the student to reactivate it. You may wish to check that the edits made have not impacted the quality of the project.
+```
+
+To activate the student's study, follow these steps:
+
+1.	Login to your supervisor account.
+2.	Navigate to the researcher’s section of the site using the menu at the right-hand side of the page:
+
+<center>![](images/screenshots/active1.png)</center>
+
+3.	Next, go to the Projects section by using the Projects button on this page:
+
+<center>![](images/screenshots/active2.png)</center>
+
+4.	On the Projects page, they will be able to find the names of your supervised students in the drop-down menu. They should select the student in question’s name:
+
+<center>![](images/screenshots/active3.png)</center>
+
+5.	Projects that belong to the student will be displayed here. Click on the project that you want to be turned to active. Under the section that says “Status” it should currently read “test”. To change the entire project (including all sets and components within) select “active” from the drop-down menu and click the button next to it that says “Set all component statuses to project status”:
+
+<center>![](images/screenshots/active4.png)</center>
+ 
+```{block, type = "warning"}
+If you do not change all component statuses to active some will remain in test mode, leaving participants to only be able to access parts of the study and this will result in incomplete or missing data.
 ```
 
 ## Resetting Passwords {-}

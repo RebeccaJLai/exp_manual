@@ -6,7 +6,7 @@ There are several account types that you can have with Experimentum, each with i
 
 This chapter explains what account types exist, what they do, which type of account you might want to have and how to change account types for supervisors.
 
-## Account Types
+## Account Types {#accounttypes}
 
 ### "Guest" Accounts
 
@@ -30,7 +30,7 @@ Under no circumstances should you be linked across multiple studies without your
 
 ### "Student" Accounts
 
-For students who are conducting research as part of a mini project, undergraduate dissertation, master's or doctoral thesis. To create and run studies you must first register and then request researcher status. 
+For students who are conducting research as part of a 3rd year quantitative project, undergraduate dissertation, master's or doctoral thesis. To create and run studies you must first register and then request researcher status. 
 
 Your supervisor will be the person who changes your account status and you can check the status of your account by looking at your account info. When approved, students will be given "student" status, a special type of research account.
 
@@ -38,16 +38,16 @@ You may still use this account to participate in experiments, but we advise sett
 
 ### "Researcher" Accounts
 
-For staff, more senior students and anyone who may be supervising students using Experimentum. Follow the instructions for students as above, but staff should set either Lisa DeBruine or Rebecca Lai as their supervisor, who will grant them "researcher" status. 
+For staff, more senior students and anyone who may be supervising other students using Experimentum. Follow the instructions for students as above, but these users should set either Lisa DeBruine or Rebecca Lai as their supervisor, who will grant them "researcher" status. 
 
 If you plan on supervising students using Experimentum you should set up a researcher account to be able to oversee the construction of their studies, share components and change studies to "active" before data collection can begin. 
 
 When you have established your researcher account your name will appear in the list of potential supervisors for students to choose from.
 
 ```{block, type = "warning"} 
-Supervisors should have a researcher account if they intend for their students to use this system.
+Supervisors should have a researcher account if they intend for their students to use this system. If supervisors do not engage with the system then their students will not be able to use it.
 
-Supervision duties in this system should not be passed to another member of staff so that you can avoid registering. Admins will not accept any of the duties of the supervisor. 
+Supervision duties in this system should not be passed to another member of staff so that you can avoid registering. Admins will not cover the duties of the supervisor. 
 
 See the [Supervisor Cheatsheet](#roles) for a breakdown of the roles of the admins and the supervisors.
 ```
@@ -109,6 +109,8 @@ If your supervisor is experiencing technical difficulties in accepting your requ
 ## Approving Student and Researcher Status Requests
 
 Supervisors have a responsibility to ensure that their students have the status that they require to carry out their projects. This includes assigning them sufficient permissions to construct and deploy their studies. 
+
+If you are a supervisor and unsure as to what type of account to give a student, refer to the [account types section](#accounttypes).
 
 Once the supervisor has "researcher" status they will have a new area of the website opened to them, accessible through the researchers' link in the menu on the right, which will contain a section called "Admin": 
 

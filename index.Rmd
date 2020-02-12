@@ -40,7 +40,7 @@ You should never post data on this workspace, either in data file or screenshot 
 If you need to share your data please use one of the university approved services available to you, such as OneDrive or OwnCloud.
 ```
 
-### Lost Passwords {-}
+#### Lost Passwords {-}
 
 For security reasons we do not allow users to request a password reset automatically. 
 
@@ -48,13 +48,13 @@ If you are any type of account holder who has lost their password, please contac
 
 For accounts types which have access to participant data (student & researcher), contact your supervisor or admins. Be prepared to visit with your student card to have your password reset.
 
-### Changing Your Password {-}
+#### Changing Your Password {-}
 
 You can change your password by signing in, navigating to "My Account" from the menu on the right of the page and clicking the link "change your password" under "Username":
 
 <center>![](images/screenshots/change_password.png)</center>
 
-##### Tutorial Sessions {-}
+#### Tutorial Sessions {-}
 
 During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Slack workspace and on appropriate Moodle pages.
 
@@ -62,13 +62,15 @@ If you are experiencing an issue that is particularly difficult to fix remotely,
 
 If you require assistance to navigate this document or create your study due to disability please contact your supervisor who may refer you to the admins.
 
-#### For Other Users  {-}
+#### For Other Users @ Other Institutions {-}
 
 If you download and use the code for this platform you should establish clear guidelines outlining the role of the admins and methods of support in accordance with any relevant regulations. 
 
 Staff from the University of Glasgow will not provide support for users of other systems based upon this code. Our Slack workspace is for internal use only.
 
-If you find an issue with the Experimentum codebase, please file an issue [here](https://github.com/debruine/experimentum/issues). If you find an issue with the codebase for this manual you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
+If you find an issue with the Experimentum codebase, you can file an issue [here](https://github.com/debruine/experimentum/issues).
+
+If you find an issue with the codebase for this manual you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
 
 ## Privacy Notices {-}
 

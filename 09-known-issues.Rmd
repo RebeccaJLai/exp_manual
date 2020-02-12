@@ -1,10 +1,16 @@
-# Known Issues and Bugs {- #knownissues}
+# Known Issues, Bugs and Common Errors{- #knownissues}
 
 ## Overview {-}
 
 This is a list of issues that are known and that we are working on to fix. 
 
 If you discover another issue that is not listed here you can report the issue [here](https://github.com/RebeccaJLai/exp_manual/issues)- but please check that it has not been reported before you open another issue for it.
+
+## Common Errors {-}
+
+### Data not being saved despite questions being completed.
+
+If you use HTML tags, you must ensure that you have matching opening and closing tags. Unmatched tags will prevent data from being recorded from this component.
 
 ## Issues... {-}
 
@@ -41,8 +47,18 @@ E-mails notifying students and supervisors of changes of account type work seemi
 At the moment it is not possible to share components with students. This stems from a work-around regarding access to and protection of data. Anyone who is an owner of a component may download the data gathered by it, even if that component is also used by others.
 
 ```{block, type = "workaround"}
-**Workaround:** At the moment it is recommended that students create their own components to suit their needs or that the supervisor duplicate the component and assign the duplicate to the student in need.
+**Workaround:** At the moment it is recommended that students create their own components to suit their needs or that the supervisor create any regularly used components, duplicate them and assign the duplicate to the student in need.
 
-If the supervisor is making a component specifically for that student and no-one else will or should have access to that data contact an admin on the Slack workspace for another workaround that only they have the ability to implement.
+If you are using questionnaires you may want to consider creating a spreadsheet with the questions, following the templates discussed in the section about [adding questions in bulk](#addfromspreadsheet).
+```
+
+#### One of (equal) preventing sets from running {- #oneofequal}
+
+The "one of (equal)" randomisation. There has been a report of this preventing the set from working. On testing no items in the set were run, and no items shown in the "test" sampling of assignment to items in the set. 
+
+```{block, type = "workaround"}
+Unless there is a *strong theoretical basis* for attempting to recruit equal numbers of men and women into each item within a set it is suggested that you use "one of (random)".
+
+If you need to recruit specific number of individuals into each item (where gender identification is not theoretically relevant) we recommend that you monitor the number of completions and work with your supervisor and admins to turn off specific components when the required number is reached.
 ```
 
