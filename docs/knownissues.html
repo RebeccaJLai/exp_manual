@@ -24,7 +24,7 @@
 <meta name="author" content="Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine" />
 
 
-<meta name="date" content="2020-02-06" />
+<meta name="date" content="2020-03-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -189,7 +189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6" data-path="questionnaires.html"><a href="questionnaires.html#feedback-tab"><i class="fa fa-check"></i><b>5.6</b> Feedback Tab</a></li>
 <li class="chapter" data-level="5.7" data-path="questionnaires.html"><a href="questionnaires.html#addingdeleting-questions"><i class="fa fa-check"></i><b>5.7</b> Adding/Deleting Questions</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="questionnaires.html"><a href="questionnaires.html#adding-individually"><i class="fa fa-check"></i><b>5.7.1</b> Adding Individually</a></li>
-<li class="chapter" data-level="5.7.2" data-path="questionnaires.html"><a href="questionnaires.html#adding-in-bulk"><i class="fa fa-check"></i><b>5.7.2</b> Adding in Bulk</a></li>
+<li class="chapter" data-level="5.7.2" data-path="questionnaires.html"><a href="questionnaires.html#addfromspreadsheet"><i class="fa fa-check"></i><b>5.7.2</b> Adding in Bulk</a></li>
 <li class="chapter" data-level="5.7.3" data-path="questionnaires.html"><a href="questionnaires.html#re-order-questions"><i class="fa fa-check"></i><b>5.7.3</b> Re-Order Questions</a></li>
 <li class="chapter" data-level="5.7.4" data-path="questionnaires.html"><a href="questionnaires.html#deleting-questions"><i class="fa fa-check"></i><b>5.7.4</b> Deleting Questions</a></li>
 </ul></li>
@@ -201,7 +201,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="experimental-components.html"><a href="experimental-components.html"><i class="fa fa-check"></i><b>6</b> Experimental Components</a><ul>
 <li class="chapter" data-level="6.1" data-path="experimental-components.html"><a href="experimental-components.html#overview-4"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
-<li class="chapter" data-level="6.2" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.2</b> Assigning Stimuli to Trials</a></li>
+<li class="chapter" data-level="6.2" data-path="experimental-components.html"><a href="experimental-components.html#creating-a-new-component"><i class="fa fa-check"></i><b>6.2</b> Creating a New Component</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="experimental-components.html"><a href="experimental-components.html#experiment-information"><i class="fa fa-check"></i><b>6.2.1</b> Experiment Information</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="experimental-components.html"><a href="experimental-components.html#saving-your-component"><i class="fa fa-check"></i><b>6.3</b> Saving your Component</a></li>
+<li class="chapter" data-level="6.4" data-path="experimental-components.html"><a href="experimental-components.html#accessing-and-editing-previously-saved-experiments"><i class="fa fa-check"></i><b>6.4</b> Accessing and Editing Previously Saved Experiments</a></li>
+<li class="chapter" data-level="6.5" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.5</b> Assigning Stimuli to Trials</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="sets.html"><a href="sets.html"><i class="fa fa-check"></i><b>7</b> Sets</a><ul>
 <li class="chapter" data-level="7.1" data-path="sets.html"><a href="sets.html#overview-5"><i class="fa fa-check"></i><b>7.1</b> Overview</a></li>
@@ -326,7 +331,27 @@ The account being changed must log out and then back in for any changes to take 
 </div>
 <div id="which-do-interfere-with-the-operation-of-the-site" class="section level3 unnumbered">
 <h3>Which DO interfere with the operation of the site</h3>
+<div id="questionnaires-occassionally-wont-save" class="section level4 unnumbered">
+<h4>Questionnaires occassionally won’t save</h4>
+<p>Occassionally the Javascript that allows us to save questionnaires stops working.</p>
+<p>We have yet to determine a pattern or cause for this.</p>
+<p>Please save your questionnaires <em>frequently</em> to prevent any substantial loss of work (recommended to save every 3 questions added) or to consider using <a href="questionnaires.html#addfromspreadsheet">bulk upload of questions</a>.</p>
+</div>
+<div id="user_age" class="section level4 unnumbered">
+<h4><code>user_age</code> displayed as “2020.1”</h4>
+<p>There have been some instances where the age in the <code>user_age</code> column of a data set is logges as “2020.1”. This is the age drawn directly from the system.</p>
+<p>The source of this bug is unknown, as the admins have not been able to directly replicate it. It has only been observed, however, with anonymous participation (guest users). I would suggest that it may be some artifact from the guest user login dialogue box:</p>
+<center>
+<img src="images/screenshots/guest_dialogue.png" />
+</center>
+<p>It is recommended that you do not rely on this dialogue box or registered user details for the system to automatically provide participant ages. To prevent data loss, please include a separate age related question in your demographics questionnaire.</p>
+</div>
+<div id="video-stimuli-is-not-loading" class="section level4 unnumbered">
+<h4>Video stimuli is not loading</h4>
+<p>Video stimuli which is in excess of 3Mb may not load in good time, or may fail to load completely.</p>
+<p>The site is designed to function with short snippets of video, not long clips. If you cannot compress your files to below 3Mb per stimuli item it is recommended that you host your larger files on other platforms (such as YouTube) and then embed them into a questionnaire component.</p>
 <p>These issues are bugs which in some way inhibit the function of the site and are considered high priority for fixes and workarounds.</p>
+</div>
 <div id="email-notifications" class="section level4 unnumbered">
 <h4>Email Notifications</h4>
 <p>Email notifications are not always sent.</p>
@@ -342,10 +367,10 @@ The account being changed must log out and then back in for any changes to take 
 <p>At the moment it is not possible to share components with students. This stems from a work-around regarding access to and protection of data. Anyone who is an owner of a component may download the data gathered by it, even if that component is also used by others.</p>
 <div class="workaround">
 <p>
-<strong>Workaround:</strong> At the moment it is recommended that students create their own components to suit their needs or that the supervisor duplicate the component and assign the duplicate to the student in need.
+<strong>Workaround:</strong> At the moment it is recommended that students create their own components to suit their needs or that the supervisor create any regularly used components, duplicate them and assign the duplicate to the student in need.
 </p>
 <p>
-If the supervisor is making a component specifically for that student and no-one else will or should have access to that data contact an admin on the Slack workspace for another workaround that only they have the ability to implement.
+If you are using questionnaires you may want to consider creating a spreadsheet with the questions, following the templates discussed in the section about <a href="questionnaires.html#addfromspreadsheet">adding questions in bulk</a>.
 </p>
 </div>
 </div>

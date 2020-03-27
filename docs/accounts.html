@@ -24,7 +24,7 @@
 <meta name="author" content="Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine" />
 
 
-<meta name="date" content="2020-02-06" />
+<meta name="date" content="2020-03-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -189,7 +189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6" data-path="questionnaires.html"><a href="questionnaires.html#feedback-tab"><i class="fa fa-check"></i><b>5.6</b> Feedback Tab</a></li>
 <li class="chapter" data-level="5.7" data-path="questionnaires.html"><a href="questionnaires.html#addingdeleting-questions"><i class="fa fa-check"></i><b>5.7</b> Adding/Deleting Questions</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="questionnaires.html"><a href="questionnaires.html#adding-individually"><i class="fa fa-check"></i><b>5.7.1</b> Adding Individually</a></li>
-<li class="chapter" data-level="5.7.2" data-path="questionnaires.html"><a href="questionnaires.html#adding-in-bulk"><i class="fa fa-check"></i><b>5.7.2</b> Adding in Bulk</a></li>
+<li class="chapter" data-level="5.7.2" data-path="questionnaires.html"><a href="questionnaires.html#addfromspreadsheet"><i class="fa fa-check"></i><b>5.7.2</b> Adding in Bulk</a></li>
 <li class="chapter" data-level="5.7.3" data-path="questionnaires.html"><a href="questionnaires.html#re-order-questions"><i class="fa fa-check"></i><b>5.7.3</b> Re-Order Questions</a></li>
 <li class="chapter" data-level="5.7.4" data-path="questionnaires.html"><a href="questionnaires.html#deleting-questions"><i class="fa fa-check"></i><b>5.7.4</b> Deleting Questions</a></li>
 </ul></li>
@@ -201,7 +201,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="experimental-components.html"><a href="experimental-components.html"><i class="fa fa-check"></i><b>6</b> Experimental Components</a><ul>
 <li class="chapter" data-level="6.1" data-path="experimental-components.html"><a href="experimental-components.html#overview-4"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
-<li class="chapter" data-level="6.2" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.2</b> Assigning Stimuli to Trials</a></li>
+<li class="chapter" data-level="6.2" data-path="experimental-components.html"><a href="experimental-components.html#creating-a-new-component"><i class="fa fa-check"></i><b>6.2</b> Creating a New Component</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="experimental-components.html"><a href="experimental-components.html#experiment-information"><i class="fa fa-check"></i><b>6.2.1</b> Experiment Information</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="experimental-components.html"><a href="experimental-components.html#saving-your-component"><i class="fa fa-check"></i><b>6.3</b> Saving your Component</a></li>
+<li class="chapter" data-level="6.4" data-path="experimental-components.html"><a href="experimental-components.html#accessing-and-editing-previously-saved-experiments"><i class="fa fa-check"></i><b>6.4</b> Accessing and Editing Previously Saved Experiments</a></li>
+<li class="chapter" data-level="6.5" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.5</b> Assigning Stimuli to Trials</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="sets.html"><a href="sets.html"><i class="fa fa-check"></i><b>7</b> Sets</a><ul>
 <li class="chapter" data-level="7.1" data-path="sets.html"><a href="sets.html#overview-5"><i class="fa fa-check"></i><b>7.1</b> Overview</a></li>
@@ -316,6 +321,14 @@ If a guest participant closes their browser mid-way through a study their progre
 <img src="images/screenshots/guest_dialogue.png" />
 </center>
 <p>This information is used to prevent those who should not take part from taking part and inserted into the user information in the downloaded data files. If you need to collect further demographic information, we suggest constructing a demographics questionnaire component.</p>
+<div class="bug">
+<p>
+There is a known issue with the gathering of participant ages which has only been observed and reported through guest type logins, <a href="knownissues.html#user_age">see known issues for more information</a>.
+</p>
+<p>
+To prevent irritrevable data loss should you experience this bug, it is recommended that you do not rely on this method to gather ages alone. Including a secondary age question in your demographics should give you a backup should you need it.
+</p>
+</div>
 </div>
 <div id="registered-accounts" class="section level3">
 <h3><span class="header-section-number">2.2.2</span> “Registered” Accounts</h3>

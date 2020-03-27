@@ -24,7 +24,7 @@
 <meta name="author" content="Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine" />
 
 
-<meta name="date" content="2020-02-06" />
+<meta name="date" content="2020-03-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -189,7 +189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6" data-path="questionnaires.html"><a href="questionnaires.html#feedback-tab"><i class="fa fa-check"></i><b>5.6</b> Feedback Tab</a></li>
 <li class="chapter" data-level="5.7" data-path="questionnaires.html"><a href="questionnaires.html#addingdeleting-questions"><i class="fa fa-check"></i><b>5.7</b> Adding/Deleting Questions</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="questionnaires.html"><a href="questionnaires.html#adding-individually"><i class="fa fa-check"></i><b>5.7.1</b> Adding Individually</a></li>
-<li class="chapter" data-level="5.7.2" data-path="questionnaires.html"><a href="questionnaires.html#adding-in-bulk"><i class="fa fa-check"></i><b>5.7.2</b> Adding in Bulk</a></li>
+<li class="chapter" data-level="5.7.2" data-path="questionnaires.html"><a href="questionnaires.html#addfromspreadsheet"><i class="fa fa-check"></i><b>5.7.2</b> Adding in Bulk</a></li>
 <li class="chapter" data-level="5.7.3" data-path="questionnaires.html"><a href="questionnaires.html#re-order-questions"><i class="fa fa-check"></i><b>5.7.3</b> Re-Order Questions</a></li>
 <li class="chapter" data-level="5.7.4" data-path="questionnaires.html"><a href="questionnaires.html#deleting-questions"><i class="fa fa-check"></i><b>5.7.4</b> Deleting Questions</a></li>
 </ul></li>
@@ -201,7 +201,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="experimental-components.html"><a href="experimental-components.html"><i class="fa fa-check"></i><b>6</b> Experimental Components</a><ul>
 <li class="chapter" data-level="6.1" data-path="experimental-components.html"><a href="experimental-components.html#overview-4"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
-<li class="chapter" data-level="6.2" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.2</b> Assigning Stimuli to Trials</a></li>
+<li class="chapter" data-level="6.2" data-path="experimental-components.html"><a href="experimental-components.html#creating-a-new-component"><i class="fa fa-check"></i><b>6.2</b> Creating a New Component</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="experimental-components.html"><a href="experimental-components.html#experiment-information"><i class="fa fa-check"></i><b>6.2.1</b> Experiment Information</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="experimental-components.html"><a href="experimental-components.html#saving-your-component"><i class="fa fa-check"></i><b>6.3</b> Saving your Component</a></li>
+<li class="chapter" data-level="6.4" data-path="experimental-components.html"><a href="experimental-components.html#accessing-and-editing-previously-saved-experiments"><i class="fa fa-check"></i><b>6.4</b> Accessing and Editing Previously Saved Experiments</a></li>
+<li class="chapter" data-level="6.5" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.5</b> Assigning Stimuli to Trials</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="sets.html"><a href="sets.html"><i class="fa fa-check"></i><b>7</b> Sets</a><ul>
 <li class="chapter" data-level="7.1" data-path="sets.html"><a href="sets.html#overview-5"><i class="fa fa-check"></i><b>7.1</b> Overview</a></li>
@@ -296,6 +301,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="stimuli" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Stimuli</h1>
+<div class="warning">
+<p>
+Note to self: this entire page needs a restructure!
+</p>
+<p>
+Creating image stimuli will need to have it’s own section, this can incorporate individual image conversion and resizing via GIMP
+</p>
+<p>
+IrfanView for batch processing- resizing and conversion.
+</p>
+</div>
 <div id="overview-1" class="section level2">
 <h2><span class="header-section-number">3.1</span> Overview</h2>
 <p>This chapter will cover how to upload your own stimuli, tips on naming conventions for the easiest possible way to assign stimuli to trials, accepted file formats and a rough guide to how to convert to the required formats.</p>
@@ -344,14 +360,15 @@ Remember that not all image, video and audio files are free for use. Check the l
 <div id="images" class="section level3">
 <h3><span class="header-section-number">3.4.1</span> Images</h3>
 <p>Images should be of uniform size and of the correct file formats before uploading. The following information is but one way that you can amend your files to the correct format and resolution for the site. There may be other ways to acheive the same goal.</p>
-<div id="converting-images" class="section level4 unnumbered">
-<h4>Converting Images</h4>
+<div id="converting-images" class="section level5 unnumbered">
+<h5>Converting Images</h5>
 <p>GNU Image Manipulation Program <span class="citation">(“GIMP”, The GIMP Development Team <a href="#ref-gimp" role="doc-biblioref">2019</a>)</span> is a free software that allows you to modify and export image files to a variety of file formats.</p>
 <center>
 <img src="images/screenshots/gimp.png" />
 </center>
 <p>This software was developed as a free and open source equivalent to photo-editing software such as Adobe Photoshop and can achieve very complex tasks. However, there are only 3 basic operations that you should be able to perform in GIMP order to convert your images to the correct formats. More complex operations are beyond the scope of this tutorial, but there are plenty of resources online should you choose to want to look them up.</p>
 <p>If there are any further instructions that would prove helpful please file an issue <a href="https://github.com/RebeccaJLai/exp_manual/issues">here</a> describing what you want me to include in future versions of the manual.</p>
+</div>
 <div id="importing-images" class="section level5 unnumbered">
 <h5>Importing Images</h5>
 <p>There are a number of ways that you can import images into GIMP.</p>
@@ -423,8 +440,8 @@ In this case you could save a layer or export a different .GIF, .JPG or .PNG fro
 <center>
 <img src="images/screenshots/087_03_min.jpg" /><img src="images/screenshots/087_03_mid.jpg" /><img src="images/screenshots/087_03_max.jpg" />
 </center>
-<p>The first is 100% quality, no compression. The second has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2. Number 3 is unusable.</p>
-</div>
+<p>The first is 100% quality, no compression. The second has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2. Number 3 is unusable for the vast majorit of purposes.</p>
+<p>The level of compression that you choose will be a compromise between what the system can successfully deliver and what the level of compression does to the images that you are using.</p>
 </div>
 </div>
 <div id="audio" class="section level3">
@@ -530,6 +547,17 @@ This could mean that any file you attempt to convert that has copyright protecti
 <center>
 <img src="images/screenshots/video_conv_3.png" />
 </center>
+<div class="warning">
+<p>
+The presentation of video stimuli is designed for short snippets, rather than longer clips.
+</p>
+<p>
+For optimal performance keep your file sizes in the 2-3Mb range.
+</p>
+<p>
+If you require longer videos you may need to host the content externally (such as on YouTube) and use HTML to embed it into a questionnaire component.
+</p>
+</div>
 </div>
 </div>
 <div id="uploading-stimuli" class="section level2">

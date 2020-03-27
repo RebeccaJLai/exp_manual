@@ -1,5 +1,13 @@
 # Stimuli
 
+```{block, type ="warning"}
+Note to self: this entire page needs a restructure!
+
+Creating image stimuli will need to have it's own section, this can incorporate individual image conversion and resizing via GIMP
+
+IrfanView for batch processing- resizing and conversion.
+```
+
 ## Overview
 
 This chapter will cover how to upload your own stimuli, tips on naming conventions for the easiest possible way to assign stimuli to trials, accepted file formats and a rough guide to how to convert to the required formats.
@@ -36,7 +44,8 @@ In order to get your stimuli up with the minimal amount of fuss, please ensure t
 
 Images should be of uniform size and of the correct file formats before uploading. The following information is but one way that you can amend your files to the correct format and resolution for the site. There may be other ways to acheive the same goal.
 
-#### Converting Images {-}
+
+##### Converting Images {-}
 
 GNU Image Manipulation Program ["GIMP", @gimp] is a free software that allows you to modify and export image files to a variety of file formats.
 
@@ -241,6 +250,14 @@ To include the file extension in the name, click on View > File name extensions 
 You can change this by simply renaming the file to “videoname”.m4v and clicking “Yes”, This should make it compatible with the Experimentum website however it may not work if the file is copyright protected. This should not be an issue if you are creating your own custom video stimuli.
 
 <center>![](images/screenshots/video_conv_3.png)</center>
+
+```{block, type = "warning"}
+The presentation of video stimuli is designed for short snippets, rather than longer clips.
+
+For optimal performance keep your file sizes in the 2-3Mb range. 
+
+If you require longer videos you may need to host the content externally (such as on YouTube) and use HTML to embed it into a questionnaire component.
+```
 
 ## Uploading Stimuli
 

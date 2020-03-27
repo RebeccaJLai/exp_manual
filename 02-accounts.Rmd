@@ -22,6 +22,12 @@ As guest users do not have a profile, we do not store their age, gender or any o
 
 This information is used to prevent those who should not take part from taking part and inserted into the user information in the downloaded data files. If you need to collect further demographic information, we suggest constructing a demographics questionnaire component. 
 
+```{block, type = "bug"}
+There is a known issue with the gathering of participant ages which has only been observed and reported through guest type logins, [see known issues for more information](#user_age).
+
+To prevent irritrevable data loss should you experience this bug, it is recommended that you do not rely on this method to gather ages alone. Including a secondary age question in your demographics should give you a backup should you need it.
+```
+
 ### "Registered" Accounts 
 
 These accounts are for participants. You have created an account and given us your date of birth and gender identification. You can participate in studies on the site. Your participation record is tracked, meaning that you can be linked across multiple-part studies. 

@@ -30,6 +30,30 @@ The account being changed must log out and then back in for any changes to take 
 
 ### Which DO interfere with the operation of the site {-}
 
+#### Questionnaires occassionally won't save {-}
+
+Occassionally the Javascript that allows us to save questionnaires stops working. 
+
+We have yet to determine a pattern or cause for this.
+
+Please save your questionnaires *frequently* to prevent any substantial loss of work (recommended to save every 3 questions added) or to consider using [bulk upload of questions](#addfromspreadsheet).
+
+#### `user_age` displayed as "2020.1" {- #user_age}
+
+There have been some instances where the age in the `user_age` column of a data set is logges as "2020.1". This is the age drawn directly from the system. 
+
+The source of this bug is unknown, as the admins have not been able to directly replicate it. It has only been observed, however, with anonymous participation (guest users). I would suggest that it may be some artifact from the guest user login dialogue box:
+
+<center>![](images/screenshots/guest_dialogue.png)</center>
+
+It is recommended that you do not rely on this dialogue box or registered user details for the system to automatically provide participant ages. To prevent data loss, please include a separate age related question in your demographics questionnaire.
+
+#### Video stimuli is not loading {-}
+
+Video stimuli which is in excess of 3Mb may not load in good time, or may fail to load completely.
+
+The site is designed to function with short snippets of video, not long clips. If you cannot compress your files to below 3Mb per stimuli item it is recommended that you host your larger files on other platforms (such as YouTube) and then embed them into a questionnaire component. 
+
 These issues are bugs which in some way inhibit the function of the site and are considered high priority for fixes and workarounds.
 
 #### Email Notifications {-}

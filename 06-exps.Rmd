@@ -2,6 +2,87 @@
 
 ## Overview
 
+Experiments can also be run through Experimentum, using a variety of different stimuli media and with a wide selection of design choices that can be implemented. To create a new experiment component, navigate to the “researchers” section by using the menu on the right side of the page. 
+
+## Creating a New Component
+
+Click on the “New experiment” button at the top of the page to create a new experiment, and select the type of experiment that you want to make from the dialogue box:
+
+<center>![](images/screenshots/exp_1.png)</center>
+<center>![](images/screenshots/exp_2.png)</center>
+
+This displays all of currently available experimental component types available for you to use.
+
+### Experiment Information
+
+All experiment types have a generic information fields in common, but some have extra depending on their functionality. Each of the options common across all types of experiment will be discussed in the following section. Where information is specific to a certain type of experiment it will be specified in brackets what type of experiment it refers to.
+
+You should make your information section as detailed as possible to remind your future self of what you have done, but also to explain what you have done to your supervisor(s) and the admins who will use this information to provide support.
+Here is an information section from a 2-AFC questionnaire for reference:
+
+<center>![](images/screenshots/exp_6.png)</center>
+ 
+* **Name for Users**: this is the name of this component that will be displayed to users. Please ensure that it is suitable.
+* **Name for Researchers**: this is the name of this component for researchers. It will be displayed on lists and visible to you, your supervisor and admin staff. It should be informative and appropriate.
+
+* **Design**: within or between subjects, allow for multiple completions or single completion only.
+* **Slider range**: (slider only). This determines the numerical value associated with each position on the slider, and the increments along it.
+ 
+* **Trial Order**: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.
+* **Image side**: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.
+* **Images**: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.
+* **Limited to**: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.
+* **Labnotes**: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about. 
+* **Number of images to display**: this specifies the number of images to display per trial. You may wish to display 1, 2 or more depending on your design.
+
+#### Experiment info: what are these tabs?
+
+All experiment components will present you with 3 tabs under the experiment information section. The following section discusses when the participants will see them, and make suggestions on how you may want to use these.
+
+##### Introduction Tab {-} 
+
+Before each component starts to run participants will be greeted with a short introduction to the component. You should include some instructions to the participants here. Here is an example from the 2 AFC type of experiment:
+
+<center>![](images/screenshots/exp_7.png)</center>
+
+The text above will appear to the participants immediately prior to the start of the first trial:
+
+<center>![](images/screenshots/exp_8.png)</center>
+
+This text can be formatted with HTML or Markdown code. If you use HTML tags you must ensure that you have matching opening and closing tags, as unmatched ones will prevent the component from recording data.
+
+##### Experiment Tab {-}
+
+Once you have written your instructions to your participants, click on the experiment tab next to introduction. Set the question here if the question is to remain the same across all trials within this component. 
+
+<center>![](images/screenshots/exp_9.png)</center>
+
+If you choose to leave the question blank, delete the question and “{{blank}}” will be displayed above the stimuli images on this tab, and will be empty on each trial displayed to participants. If you wish to have the question vary by trial, you should leave the question blank. When you come to assign stimuli to trials you can type in questions according to which trial is being displayed.
+
+If your experiment uses a scale with anchor points or text labels for buttons, you would click them to edit in the same way as the questions. Here is an example from the Slider type experiment, where there are anchors at the left and right most extremes of the scale: 
+
+<center>![](images/screenshots/exp_10.png)</center>
+
+## Saving your Component
+
+Saving experiments differs slightly from saving questionnaires. When you save an experiment, you will be taken to the trial editing page (see individual experiment types on how to fill in your stimuli). The reset button remains the same, it will revert to the last saved version of the experiment:
+
+<center>![](images/screenshots/exp_3.png)</center>
+
+## Accessing and Editing Previously Saved Experiments
+
+To access your previously saved questionnaire component, navigate to the researcher’s area of the site by selecting “Researchers” from the menu on the right-hand side of the page.
+
+You can access your experiments by accessing the experiments section of the page by using the button below:
+
+<center>![](images/screenshots/exp_4.png)</center>
+ 
+Alternatively, if you remember the number of the experiment component, you can type it in to the grey rectangle in the experiments button. When you press return you will be taken straight to the information page of the experiment.
+
+To edit the experiment, press the “edit” button at the top of the page and you will be taken back into the editable version:
+
+<center>![](images/screenshots/exp_5.png)</center>
+
 
 ## Assigning Stimuli to Trials {#assignstimexp}
 
