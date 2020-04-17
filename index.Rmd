@@ -1,12 +1,14 @@
 --- 
-title: "Experimentum: Web-based Software for Psychology Studies"
+title: 'Experimentum: Web-based Software for Psychology Studies'
 author: "Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine"
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
 link-citations: yes
+bibliography:
+- book.bib
+- packages.bib
+site: bookdown::bookdown_site
+biblio-style: apalike
 ---
 
 # About Experimentum {-}
@@ -40,13 +42,19 @@ You should never post data on this workspace, either in data file or screenshot 
 If you need to share your data please use one of the university approved services available to you, such as OneDrive or OwnCloud.
 ```
 
-#### Lost Passwords {-}
+#### Lost Passwords {- #lost_password}
 
-For security reasons we do not allow users to request a password reset automatically. 
+You can now reset your password without having to consult a system admin. You can do this by going to the login page, supplying your user ID or email address in the "Username" box and pressing the "Reset Password" button, as shown below:
 
-If you are any type of account holder who has lost their password, please contact the admins or your supervisor to ask for it to be reset. This request should only be honoured if sent from the email address associated with the account. A temporary password will be issued, which is case-sensitive, and should be changed as soon as possible. 
+<center>![](images/screenshots/login.png)</center>
 
-For accounts types which have access to participant data (student & researcher), contact your supervisor or admins. Be prepared to visit with your student card to have your password reset.
+```{block, type = "warning"}
+If you have reset your password you will be supplied with a randomly generated one to your *registered email address*.
+
+You should change this as soon as possible, if not immediately.
+```
+
+If you do not have access to the registered email inbox please speak to your supervisor or the admins who may be able to reset your password for you on production of valid ID.
 
 #### Changing Your Password {-}
 
@@ -68,9 +76,13 @@ If you download and use the code for this platform you should establish clear gu
 
 Staff from the University of Glasgow will not provide support for users of other systems based upon this code. Our Slack workspace is for internal use only.
 
+```{block, type = "rainbow"}
+Experimentum is an evolving platform.
+
 If you find an issue with the Experimentum codebase, you can file an issue [here](https://github.com/debruine/experimentum/issues).
 
 If you find an issue with the codebase for this manual you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
+```
 
 ## Privacy Notices {-}
 

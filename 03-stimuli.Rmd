@@ -1,11 +1,10 @@
-# Stimuli
+# Stimuli {#stimuli}
 
 ```{block, type ="warning"}
-Note to self: this entire page needs a restructure!
+Things to add:
 
-Creating image stimuli will need to have it's own section, this can incorporate individual image conversion and resizing via GIMP
+* Creating image stimuli will need to have it's own section, this can incorporate individual image conversion and resizing via GIMP
 
-IrfanView for batch processing- resizing and conversion.
 ```
 
 ## Overview
@@ -34,7 +33,21 @@ In order to make the process of assigning stimuli to trials as easy as possible 
 
 The stage of assigning stimuli to trials goes much faster and smoother if you can search for the stimuli files names using some sort of common text string in the names of the files.
 
-****** more info and a working example is required.
+For example, here I have 24 stimuli items. These are stylized face images of both mal and female gender [@mooneys]. I have named them using the convention "mooneyxn.jpg", where x is either m or f (for male and female) and n for the number of the pair that I will present them in: 
+
+<center>![](images/screenshots/stim_1.png)</center>
+
+This systematic naming helps in searching for your stimuli later when you come to assign them to trials. Here I can use the search box to find all stimuli containing the string "mooneyf". I can then assign them to one of two images displayed in each trial of this two alternative forced choice (2AFC) experiment below:
+
+<center>![](images/screenshots/stim_3.png)</center>
+
+I can also search for "mooneym" and repeat the process for the other image for the male faces.
+
+It is also beneficial to store their names in an Excel spreadsheet. Here I have stored them in pairs under column headers. I can use this later when assigning them to trials. I have also assigned trial names; this will come in handy should I need to know which trial each data point refers to in my analysis.
+
+<center>![](images/screenshots/stim_2.png)</center>
+
+This example above is where each male face will be compared to a corresponding female face in a trial with two images. You may have more or less than two stimuli items per trial and your spreadsheet should vary accordingly.
 
 ## Pre-Processing
 
@@ -44,10 +57,37 @@ In order to get your stimuli up with the minimal amount of fuss, please ensure t
 
 Images should be of uniform size and of the correct file formats before uploading. The following information is but one way that you can amend your files to the correct format and resolution for the site. There may be other ways to acheive the same goal.
 
+If you do not resize your stimuli to the appropriate size you might find inconsistencies in the presentation of your stimuli that could act as a confounding factor in your experiments:
+
+<center>![](images/screenshots/not_pre_processed.png)</center>
+
+#### Creating Images {-}
+
+You may be required to make your own image stimuli, either a modification of previously used stimuli or something completely new. This section talks about some of the basic functions of GIMP, but cannot give an in depth tutorial. There are many available online as this software if quite popular.
+
+##### New Image {-}
+
+##### GIMP File Format {- #gimp_format}
+
+The file extension of files created in GIMP will be `.xcf`. These types of files allow for saving of `image layers` and `text path information`, allowing you to have an image made of multiple layers and with text that can be edited at a later point.
+
+<center>![](images/screenshots/paste_as_new_gimp.png)</center>
+
+```{block, type = "info"}
+Saving images with layers and text path information could come in handy if you are generating your own image stimuli which features small changes (such as different words), but remains mostly the same (same background colour, size, fonts, etc).
+
+In this case you could save a layer or export a different .GIF, .JPG or .PNG from the same .XCF file for each change that you need to make.
+```
+
+##### Layers {-}
+
+#### Individual Images {-}
+
+If you need to work on a single image, such as resizing, or need to create your own images, then GNU Image Manipulation Program ["GIMP", @gimp] may be a good choice of software for you.
 
 ##### Converting Images {-}
 
-GNU Image Manipulation Program ["GIMP", @gimp] is a free software that allows you to modify and export image files to a variety of file formats.
+GIMP is a free software that allows you to create images from scratch and modify and export export existing image files to a variety of file formats.
 
 <center>![](images/screenshots/gimp.png)</center>
 
@@ -85,17 +125,7 @@ Finally, if the image file is not saved on your computer you can copy it to the 
 
 This will create a new image in GIMP that is not yet saved. I recommend saving immediately in the first instance and periodically thereafter. 
 
-##### GIMP File Format {-}
-
-The file extension of files created in GIMP will be `.xcf`. These types of files allow for saving of `image layers` and `text path information`, allowing you to have an image made of multiple layers and with text that can be edited at a later point.
-
-<center>![](images/screenshots/paste_as_new_gimp.png)</center>
-
-```{block, type = "info"}
-Saving images with layers and text path information could come in handy if you are generating your own image stimuli which features small changes (such as different words), but remains mostly the same (same background colour, size, fonts, etc).
-
-In this case you could save a layer or export a different .GIF, .JPG or .PNG from the same .XCF file for each change that you need to make.
-```
+These will be in the GIMP file format, [`.xcf`](#gimp_format).
 
 ##### Changing Image Size {-}
 
@@ -145,6 +175,92 @@ The first is 100% quality, no compression. The second has minimal pixelation art
 
 The level of compression that you choose will be a compromise between what the system can successfully deliver and what the level of compression does to the images that you are using.
 
+#### Batch Images {-}
+
+If you have pre-existing stimuli that need to be resized or converted to another format you may want to use IrfanView (@irfanview).
+
+<center>![](images/screenshots/irfanview_1.png)</center>
+
+IrfanView is a fast, compact image viewer and editor for Windows XP, Vista, 7, 8 and 10 available in 32 and 64 bit versions. 
+
+##### Batch Conversion {-}
+
+```{block, type = "info"}
+You can resize and convert images at the same time by setting the appropriate options in one process.
+```
+
+If you need to convert images to JPG, GIF or PNG in bulk, you can do this easily.
+
+First, ensure that all of your files are in the same folder. Open IrfanView and go to "File" > "Batch Conversion/Rename":
+
+<center>![](images/screenshots/irfanview_2.png)</center>
+
+This will open the Batch conversion dialogue:
+
+<center>![](images/screenshots/irfanview_3.png)</center>
+
+In the top left, ensure that batch conversion and the intended output format are selected:
+
+<center>![](images/screenshots/irfanview_4.png)</center>
+
+In the top centre, use the "Look in:" part of the window to naviagte to the folder in which the images to be converted are stored. Highlight the images to be converted and press "Add", or if you are converting all the files in the folder, press "Add all":
+
+<center>![](images/screenshots/irfanview_5.png)</center>
+
+The bottom box showing "Input files" should now be populated with your files. Check that the count (shown in brackets) corresponds to the number of items that you expect:
+
+<center>![](images/screenshots/irfanview_5a.png)</center>
+
+To the left of this select the output folder. This is where the converted image files will be placed. It is best to create a new folder to keep the types of image separate:
+
+<center>![](images/screenshots/irfanview_6.png)</center>
+
+This is the file browser dialogue that you will see. Find the folder you want to store the converted files in and press "OK":
+
+<center>![](images/screenshots/irfanview_6a.png)</center>
+
+Click "Start Batch" to begin the conversion process:
+
+<center>![](images/screenshots/irfanview_7.png)</center>
+
+You will be shown a dialogue box showing the processing. Once conversion is complete you will be shown a one line summary. you can now press "Exit batch" if you are finished:
+
+<center>![](images/screenshots/irfanview_7a.png)</center>
+
+Double check that your output files are correct after you have run the batch processing by navigating to them using your file system browser.
+
+##### Batch Resize {-}
+
+```{block, type = "info"}
+You can resize and convert images at the same time by setting the appropriate options in one process.
+```
+
+If your images are the wrong size you can also resize the images in bulk too. 
+
+Select the input files and output folder as explained above in the previous section .Access the "Bulk Conversion/Rename" dialogue again from the file menu:
+
+<center>![](images/screenshots/irfanview_2.png)</center>
+
+In the dialogue, select "Use advanced options (for bulk resize)" and then press the "Advanced" button:
+
+<center>![](images/screenshots/irfanview_8.png)</center>
+
+Use the "Resize" section to set a new size: 
+
+<center>![](images/screenshots/irfanview_9.png)</center>
+
+Here I have reduced my images from 1024\*1024 pixels to 400\*400 pixels (as the dimensions match on each side).
+
+Press OK to return to the previous dialogue where, if you have set the other options as indicated above, you can press the "Start Batch" button:
+
+<center>![](images/screenshots/irfanview_10.png)</center>
+
+You will get the processing dialogue showing the processing and the completion message should it all go well:
+
+<center>![](images/screenshots/irfanview_10a.png)</center>
+
+You can use the other options to achieve other goals, but this is the simplest way to resize images.
+
 ### Audio
 
 Since Experimentum requires auditory stimuli to be uploaded as .mp3 files, here is an easy way to convert audio files (like .wav) to mp3s using Audacity's batch-processing feature.
@@ -155,7 +271,7 @@ Audacity is free and open source cross-platform software which can be used to re
 
 Here you will find the minimal instructions that will allow you to convert your audio files to `.mp3` format in Audacity. For the full user guide see [here](https://manual.audacityteam.org/index.html).
 
-#### Audacity 2.1.2
+#### Audacity 2.1.2 {-}
 
 If you are still on an older version of audacity, go to File > Edit Chains
 
@@ -193,7 +309,7 @@ Content of the folder “cleaned”:
 
 <center> <img src="images/screenshots/audacity8.png" > </center>
  
-#### Audacity 2.3.0
+#### Audacity 2.3.0 {-}
 
 Audacity version 2.3.0 changed the batch-processing process, relabelling chains as "Macros". The menu for accessing the Macros got relocated to Tools > Macros…
 
@@ -236,7 +352,7 @@ If you have a Windows laptop, you can manually change `.mp4` video files to `.m4
 ```{block, type = "warning"}
 This process will only work when the videos are not already copyrighted. Remember that not all files are free to use!
 
-This could mean that any file you attempt to convert that has copyright protection will not run again on your computer's standard video viewer so be sure to make copies in case the conversion fails.
+This could mean that any file you attempt to convert that has copyright protection will not run again on your computer's standard video viewer so be sure to make copies **if you have permission to use it** in case the conversion fails.
 ```
 
 First go to the file where you have placed your videos. If not already showing, make sure you change the settings so that you can see the file extension. 
@@ -259,7 +375,7 @@ For optimal performance keep your file sizes in the 2-3Mb range.
 If you require longer videos you may need to host the content externally (such as on YouTube) and use HTML to embed it into a questionnaire component.
 ```
 
-## Uploading Stimuli
+## Uploading Stimuli {#stimupload}
 
 For the purposes of demonstration of uploading stimuli I will be using The MR2 face stimuli set [@mr2], which is available to download and use under a Creative Commons License.
 
@@ -289,3 +405,6 @@ For additional information on using HTML code please see this tutorial on [W3Sch
 
 Assigning stimuli to trials is a fundamental part of the process of constructing experimental components so this is covered in the section regarding experimental components [here](#assignstimexp).
 
+### Using Stimuli in Questionnaires
+
+You can link to stimuli in your questionnaires too. Please read the section in the [questionnaires](#assignstimquest) about using stimuli in conjuction with your questionnaires.

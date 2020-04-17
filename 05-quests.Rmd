@@ -1,4 +1,4 @@
-# Questionnaires
+# Questionnaire Components
 
 ## Overview
 
@@ -32,7 +32,7 @@ The JavaScript for saving the questionnaire occasionally stops working on some b
 Please note that the site currently does not support version control, so once you save a change the previous version will be overwritten.
 ```
 
-## Questionnaires Information
+## Questionnaire Information
 
 All types of questionnaires will ask you to provide information about it, the only difference will be the Questionnaire Type, which will correspond to the type of questionnaire you have chosen on the previous pop-up box.
 
@@ -58,9 +58,18 @@ In most cases you should leave this empty. The feedback for the top-most set is 
 
 ## Adding/Deleting Questions
 
+```{block, type = "warning"}
+All questions **must** be given unique names within the component they are in. Components cannot be saved if you have questions with duplicate names.
+
+This applies to questions added individually or in bulk.
+
+You might find it easier to give each question across the entire study unique names.
+```
+
 ### Adding Individually
 
 In order to add a new question, you must ensure that all editing options are closed on the existing questions by clicking the pencil to get rid of the yellow surround or the cog to close the menu.
+
 Pressing the button at the bottom of the page will allow you to add a new question. 
  
 Experimentum will add a new question by directly duplicating the previous question, with all the same text and attributes. Please ensure that you set a unique name for the new question before you attempt to save the questionnaire as questions with duplicate names will be removed by the system.
@@ -120,7 +129,7 @@ Questions can be erased by clicking the picture of the trash/bin next to the que
 Please note that the site currently does not support version control, so once you save a change the previous version will be overwritten. This includes deleted questions- once you have saved the changes they are gone.
 ```
 
-## Questionnaire Types
+## Questionnaire Types {#quest_types}
 
 ### Mixed Questionnaire
 
@@ -170,7 +179,11 @@ You must close this editing mode by clicking the pencil a second time, getting r
 <center>![](images/screenshots/quest_mixed_7.png)</center> 
 *	**Date Menu**: date menus allow the participants to choose a specific date. You can set the range of dates to choose from, in the example below the participant is allowed to go back 100 years from the current date (-100y) but cannot go further into the future than today (+0y). When participants click on the response, they will be given a calendar to pick from, instead of typing the date.
 <center>![](images/screenshots/quest_mixed_8.png)</center> 
-<center>![](images/screenshots/quest_mixed_9.png)</center> 
+<center>![](images/screenshots/quest_mixed_9.png)</center>
+* **Time**: This allows participants to enter a time, in 24 hour format, using hours and minutes.
+<center>![](images/screenshots/quest_mixed_14.png)</center> 
+<center>![](images/screenshots/quest_mixed_15.png)</center> 
+    You can change the response options (from single minutes to increments of 15, for example), but it is not advised.
 * **Countries**: participants can choose from a list countries. Returned in the data as the two letter ISO-3166-1 alpha-2 code.
 <center>![](images/screenshots/quest_mixed_10.png)</center> 
 *	**Short Text**: allows participants to enter free-response text up to and including 255 characters. Returned in the data as character strings. The maximum number of characters can be changed by changing the number after `maxlength:`.
@@ -221,6 +234,8 @@ This is the data output here. As you can see where the participant chose the opt
 
 ### Rank Order
 
+#### Attributes {-}
+
 Ranking questionnaires present a list of text options to participants to put into a specific order, based on some judgement they are asked to make on them.
 
 <center>![](images/screenshots/rank1.png)</center>
@@ -239,4 +254,68 @@ In the data, the question name is saved as q_name and the rank order assigned by
  
 <center>![](images/screenshots/rank3.png)</center> 
 
+## Using Stimuli with Questionnaires {#assignstimquest}
+
+In some cases you might wish to include some stimuli with a questionnaire. For example, you might want to present an image with a set of questions asking the user's opinions about that image.
+
+We would recommend that you upload your image as per the instructions given in the [stimuli](#stimuli) page and use HTML or Markdown in the instructions at the top of the questionnaire component that you want to display the stimuli on.
+
+First, you will need to find the path of the stimuli you have uploaded to the server by going to "My Uploaded Stimuli" by navigating to "Researchers" > "Stimuli" > "Upload Stimuli" and looking in the folders at the bottom of the page. Find the image that you want to use and click on it in the folders. It will display on the right hand side and the file path will be above it. Copy the file path, seen circled here:
+
+<center>![](images/screenshots/quest_stim_1.png)</center> 
+
+Next you will need to paste that into the introduction box using an appropriate image tag. Here you can see the HTML syntax to link to an image:
+
+<center>![](images/screenshots/quest_stim_2.png)</center> 
+
+The code is:
+
+```{r, eval = F} 
+<center><img src="file/path/here.jpg" width="500px"></center>
+```
+
+`width=500px` alters the image displayed by resizing the image to be 500 pixels wide whilst maintaining the aspect ratio.
+
+This is OK for one or two images, but if you are doing this with many images we would recommend that you resize the stimuli before uploading them.
+
+`<center>` ensures that the image stays in the middle of the page. `</center>` is a "closing tag" and must be put in place to ensure that data for the component is saved to the server.
+
+
+When participants go through the questionnaire this is what they will see:
+
+<center>![](images/screenshots/quest_stim_3.png)</center> 
+
+This method works for all types of compatible stimuli, although the code used to display them will vary.
+
+For audio:
+
+```{r, eval = F}
+<center><audio controls>
+  <source src="file/path/here.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></center> 
+```
+
+Displayed as a small media player:
+
+<center>![](images/screenshots/quest_stim_4.png)</center> 
+
+And for video:
+
+```{r, eval = F} 
+<center><video width="320" height="240" controls>
+  <source src="file/path/here.m4v" type="video/mp4">
+Your browser does not support the video tag.
+</video></center>
+```
+
+```{block, type="info"}
+Whilst you *can* link to externally hosted stimuli we would recommend that **if possible** you upload your stimuli to our server. This will ensure uninterrupted access to your media.
+
+We cannot always host all stimuli. Files larger than 3mb each should be uploaded elsewhere to suitable platforms, such as YouTube, as loading times are often too long for files which exceed this limit. 
+
+Embedding media from outside sources may require different code than provided above.
+```
+
+See the [stimuli](#stimuli) page for further information on preprocessing and uploading stimuli.
 

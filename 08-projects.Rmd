@@ -1,12 +1,184 @@
-# Projects: Making your study go!
+# Projects: Making your study go! 
 
 ## Overview
 
+In order to make your study available for completion you need to be able to put the entire thing into something called a "project". This will give it a URL for you to direct potential participants to and mean that your supervisor can make it active- essentially switch it on.
+
+## Creating a New Project
+
+Navigate to the researcher's page using the menu on the right-hand side of the page. You will then be taken to a page where you can select "Projects":
+
+<center>![](images/screenshots/proj_1.png)</center>
+
+After clicking "Projects" you will be taken to a page with all your currently saved projects, with the option to start a new project by pressing a button at the top of the page, as shown here:
+
+<center>![](images/screenshots/proj_2.png)</center>
+
+After this you will be taken to the new project information page.
+
+<center>![](images/screenshots/proj_3.png)</center>
+
+Just like any other component or set, you will need to set the information for the project. The following information is required: 
+
+*	**Name for participants**: This is the name that will be displayed to the participants when they click on your link, but also the name that appears on the "Studies" page that registered can access. Ensure that it is informative and appropriate.
+*	**Name for researchers**: this is the name that will be displayed to other researchers. Ensure that it is informative and appropriate.
+*	**URL**: this allows you to set the last part of the URL (the link) that you can disseminate to potential participants. It will be automatically stuck on to the rest of the site's address and you will be given the full address below the URL box, as shown in the image below. The text you enter here should be unique from other projects on the site. You will be told if the text you have entered is available:
+
+<center>![](images/screenshots/proj_4.png)</center>
+
+*	**Blurb**: this is a short description of your study that will be displayed to potential participants on the "Studies" page that registered users can access. Ensure that it is informative, appropriate and concise to prevent taking up too much space on the page.
+*	**Intro**: This is the information about the project. This is typically where you would place the information sheet for the study. It can be formatted with Markdown or HTML tags. If you use HTML tags, ensure that your opening and closing tags are matched to prevent data recording errors.
+*	**Show to**: Gender identity-based limitations. If you are planning to use anonymous participation you should not place limitations here.
+*	**Age limits**: age range-based limitations. If you are planning to use anonymous participation you should not place limitations here.
+*	**Labnotes**: These notes inform your future self, your supervisor and admins about your study. Ensure that you fill this in and that it is informative and appropriate.
+
+<center>![](images/screenshots/proj_5.png)</center>
+
+## Viewing and Editing Existing Projects
+
+## Adding Sets and Components
+
+Just as in the sets, you will add items to your project from the project information page. Typically, you will be looking to insert sets into the project but you can add individual components if required.
+
+You can search for what you are looking to insert by clicking the appropriate button next to "View Items" and either searching by the number assigned to that item or the "name for researchers" that you assigned it by typing in the search box.
+
+<center>![](images/screenshots/proj_6.png)</center>
+
+Click the option from the available components list on the left-hand side to move it into your project. 
+
+<center>![](images/screenshots/proj_7.png)</center>
+
+You can also remove items by double-clicking it in the project list on the left.
+
+### Component Statuses {-}
+
+This page also allows you to see the current status of the items you can place in your project. The green A relates to items which are active, and the red T denotes those which are still in test mode and unavailable to participants:
+
+<center>![](images/screenshots/proj_8.png)</center>
+
+### Filtering Participants Using Sets {- #filtering}
+
+```{block, type = "info"}
+It is not currently possible to filter participants in studies using any sort of server-side calculations, such as a calculated score from a screening questionnaire.
+```
+
+At the moment the only filtering tool is based on placing more than one set/superset within a project and allowing participants to self-select to a category.
+
+In most cases we would contain all components/sets within one superset and placing that set into the project. This allows for one single path for the participants to take.
+
+In some circumstances you might want to examine the difference between two different categories of participants who need to be assigned to specific branches of a study based on their characteristics. 
+
+For example, imagine I want to examine what people find attractive in potential partners. I want to also examine the motivations of those who are using dating apps- not all people seeking romantic partners will use dating apps!
+
+I could create one study with all components and ask those who do not use dating apps to skip the questions that do not apply to them. 
+
+I could also create a set for each type of user (dating app users versus non-users) with an added component asking about dating app users motivations only into the set for dating app users. I can then place two sets into the project, allowing the participants to self-select between the two branches:
+
+<center>![](images/screenshots/proj_13.png)</center>
+
+This is what the choice will look like to the participants:
+
+<center>![](images/screenshots/proj_12.png)</center>
+
+This is likely to be of limited use to most people running studies through the site, but the option is available for those who might find it useful.
+
+### Icons {-}
+
+Unlike sets, your project information page has a button labelled "Icons". You can use this to assign small icons to things in your set. Here I have searched for a clipart of a beaker, and I can drag that image tile to the set I want to assign it to:
+
+<center>![](images/screenshots/proj_9.png)</center>
+
+After I have dragged it across the image will be assigned to that set:
+
+<center>![](images/screenshots/proj_10.png)</center>
+
+When participants enter your study, the set will be assigned that clip art:
+
+<center>![](images/screenshots/proj_11.png)</center>
+
+When you place your items in the project and participants navigate to it, they will see a button for each item within your project. In most cases this will only be a single button instead of the two shown here.
+
+## Debriefs 
+
+Debreifing information should be put in the feedback tab of the top-most set of the project. See the sections in [Planning Your Study](#debrief) for more information.
+
 ## Project URLs
+
+In order for participants to access your study you will need to provide them with a URL (a web link/address).
+
+Each URL needs to be unique. For Experimentum, URLs usually follow a set pattern (where XXXXX is a suffix that you assign to your project):
+
+<center>**exp.psy.gla.ac.ukproject?XXXXX**</center>
+
+This suffix is set in the project information page:
+
+<center>![](images/screenshots/proj_3.png)</center>
+
+Specify the suffix in the box labelled URL. It should not contain special characters, so you can see here where I would have a space I have placed an underscore:
+
+<center>![](images/screenshots/proj_14.png)</center>
+
+The text underneath indicates if your chosen suffix is available. 
+
+The suffix does not need to be anything specific, but it should be appropriate for public display.
+
+```{block, type = "info"}
+This URL will be what you share with potential participants. 
+
+If you wish to enable anonymous participation there are further additions that need to be made. These are discussed in the section about [anonymous participation](#anon).
+```
+
+## Project Structure {#project_structure}
 
 ## Testing Your Study {#testingyourstudy}
 
+Before you ask your supervisor to activate your project it is important to test it extensively. There are a number of ways that you should do this.
+
+### Examining Structure
+
+#### Participant View {- #participant_view}
+
+It is important that you test your study from th viewpoint of a participant. You can do this by navigating to the project information and pressing the "Go" button at the top of the page:
+
+<center>![](images/screenshots/proj_15.png)</center>
+
+This will run you through your study as if you were a participant. It will also generate test data which will allow you to examine the output, ensure that you can interpret the data before you run your project with real participants and allow you to remove test data easily.
+
+```{block, type = "warning"}
+You should download and retain test data before your project is activated. This will allow you to filter out the test data from the real data easily at the analysis stage.
+```
+
+#### Info Page View {-}
+
+As in sets you can work out the structure of the study by looking at the project info page. 
+
+You can see how to do this in the [testing your study](#info_page_structure) section of the sets page.
+
+#### Sample Order {-}
+
+As in sets, you can also use sample order to examine how the participants will progress through your study by examining a "sample order" of the components. 
+
+You can see how to do this and interpret the output in the [testing your study](#sample_order) section of the sets page.
+
 ## Activating Projects
+
+When you create your study it will be in "test" mode. This allows you to see it, make changes and test it, but prevents participants from seeing it and doing it.
+
+For "student" researcher accounts you will need to ask your supervisor to activate the study for you. Before you do so, please use the checklist below to ensure that you are not wasting your supervisor's time.
+
+For researcher accounts, check and follow the guidance given in [the supervisor cheatsheet](#activating) on this topic.
+
+```{block, type = "warning"}
+Once your study is active it cannot be edited without resetting it back to "test" status, essentially deactivating it.
+
+Students should confirm that they are completely happy with the study before they ask their supervisor to activate it. This is why the checklist above has been provided. Supervisors have been made aware of this checklist.
+
+When a you attempt to edit an active item this warning is displayed at the top of the page next to the "Save" button:
+
+<center>![](images/screenshots/editwarning.png)</center>
+
+If you deactivate your study in this way, even for a minor change, it is **your supervisor's responsibility to reactivate it**.
+```
 
 ### Is my study ready?: Student Checklist
 
@@ -24,15 +196,5 @@ Do not ask admins to activate your study. This is something that your supervisor
 ```
 
 The process of activating studies is outlined in the supervisor page under the heading ["Activating Studies"](#activating)
-
-```{block, type = "warning"}
-Once your study is active it cannot be edited without resetting it back to "test" status, essentially deactivating it.
-
-Students should confirm that they are completely happy with the study before they ask their supervisor to activate it. This is why the checklist above has been provided. Supervisors have been made aware of this checklist.
-
-When a you attempt to edit an active item this warning is displayed at the top of the page next to the "Save" button:
-
-![](images/screenshots/editwarning.png)
-```
 
 ## Anonymous Participation {#anon}

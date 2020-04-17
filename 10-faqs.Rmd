@@ -32,9 +32,11 @@ If you are logged in when your supervisor makes these changes you will need to l
 
 ### I have lost my password {-}
 
-Automated password retrieval is not an option. All account holders can request a new, temporary password by contacting an admin or their supervisor.
+Automatic password resetting has now been added to the site. See the guidance at [Lost Passwords](#lost_password) to reset yours.
 
-Supervisors and researchers may also issue temporary passwords to their students and participants but should ensure that they take all necessary measures to verify their identity and right to access the account. This could be through the production of student or other photographic ID. If their identity cannot be verified the password should not be reset and instead they should be asked to register for a new account.
+If this is not an option, supervisors and researchers may also issue temporary passwords to their students and participants but should ensure that they take all necessary measures to verify their identity and right to access the account. 
+
+This could be through the production of student or other photographic ID. If their identity cannot be verified the password should not be reset and instead they should be asked to register for a new account.
 
 All temporary passwords should be changed as soon as possible through the Account options on Experimentum.
 
@@ -91,6 +93,18 @@ Not always. Paper questionnaires were limited by issues like available printing 
 If you are concerned that changing the presentation of the instrument you are using has impacted its validity you should discuss these concerns with your supervisors.
 
 ## About Study Participation {-}
+
+### Can participants skip questions? {-}
+
+Yes, on questionnaires participants can skip questions they do not want to answer.
+
+If participants choose not to submit data to specific parts they should be informed to continue through the study and leave questions blank. They will then be prompted to ensure that this is their intention:
+
+<center>![](images/screenshots/missing.png)</center>
+
+The questions that are incomplete will be highlighted yellow when this prompt is displayed, allowing participants to see what they have left out before they progress.
+
+Participants canno skip trials in experimental components. They can discontinue the study by closing their browser.
 
 ### My participants are not being allowed to take part in my study/a part of my study {-}
 

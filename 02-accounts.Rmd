@@ -99,7 +99,6 @@ As a general rule, all students completing a research project should be assigned
 ## Checking your account status
 
 When you first sign up your account will be the "registered" type and will remain as such until your researcher status is approved. 
-
 You can check on the status of your account by selecting "account" from the menu on the right-hand side of the page. Underneath the "My Information" section of the page will tell you your date of registration, number of logins and current account type.
 
 <center>![](images/screenshots/check_status.png)</center>

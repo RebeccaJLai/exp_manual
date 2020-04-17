@@ -17,14 +17,15 @@ If you are not prepared to accept this you may need to consider using another sy
 Our responsibilities are:
 
 * To try to ensure smooth operation of the site with regards to technical difficulties and instruction of staff and students. 
-    * We will hold workshops at specific time points throughout the academic year, update this manual and answer questions on Slack.
+    * We will do this by holding workshops at specific time points throughout the academic year, update this manual and answer questions on Slack.
 * To troubleshoot problematic issues experienced by staff and students.
 
 ### Supervisor Responsibilities {-}
 
 * To ensure that you have a researcher account to supervise any of your students who wish to use the site.
     * You may be comfortable allowing some more senior and trustworthy students almost complete autonomy by granting them full researcher status but it is still advisable to have an account of your own. 
-    ***If you wish for them to have full researcher status this must be confirmed by the supervisor to Rebecca directly, not through your student or third party.***
+    ***If you wish for them to have full researcher status this must be confirmed by the supervisor to admins directly, not through your student or third party.***
+    * If a PhD student takes responsibility for supervising other students they will need to have their own supervisor account.
 * To handle the day-to-day needs of your own students:
     * Ensure that you have the knowledge to know how to implement designs you expect your students to use through the site.
     * To check the standards of your students work.
@@ -33,7 +34,9 @@ Our responsibilities are:
     * To manage your students expectations of what the site can provide (it will not be perfect or even workable for some types of study).
     
 ```{block, type = "warning"}
-Supervisors should supervise their own students' accounts only, unless they have the expertise to double-check the veracity of the students' work and are prepared to accept the responsibilities outlined above for these students.
+Supervisors should supervise their own students' accounts only, unless they have the expertise to double-check the veracity of the other staff members students' work and are prepared to accept the responsibilities outlined above for these students.
+
+Admins will **not** absorb the extra workload for these students.
 ```
     
 ## Approving Student and Researcher Status Requests {-}
@@ -55,7 +58,8 @@ Here you will see a list of individuals who have requested you as a supervisor. 
 The account you are making changes to will have to log out and back in again to be updated with their new permissions. When you press "Send" an email will be sent to the student to inform them of the status change.
 
 ```{block, type = "info"}
-If you are a supervising member of teaching or research staff, you should request Lisa DeBruine or Rebecca Lai as your supervisor. 
+If you are a supervising member of teaching or research staff, you should request Lisa \*Admin or Rebecca \*Admin as your supervisor. 
+
 More senior students who are relatively self-sufficient or have their own supervising duties may request "researcher" accounts *if you, their supervisor, agrees to it and contacts Rebecca about it directly*. No such request will be accepted on the word of a student or request via third party.
 
 In such a case where this is agreed they should request Lisa or Rebecca as their supervisor as any other "researcher" account would.
@@ -99,26 +103,56 @@ To activate the student's study, follow these steps:
 
 <center>![](images/screenshots/active2.png)</center>
 
-4.	On the Projects page, they will be able to find the names of your supervised students in the drop-down menu. They should select the student in question’s name:
+4.	On the Projects page, they will be able to find the names of your supervised students in the drop-down menu. They should select the student's name:
 
+<br>
 <center>![](images/screenshots/active3.png)</center>
+<br>
 
-5.	Projects that belong to the student will be displayed here. Click on the project that you want to be turned to active. Under the section that says “Status” it should currently read “test”. To change the entire project (including all sets and components within) select “active” from the drop-down menu and click the button next to it that says “Set all component statuses to project status”:
+5.	Projects that belong to the student will be displayed here. Click on the project that you want to be turned to active. Under the section that says “Status” it should currently read “test”. To change the entire project (including all sets and components within) select “active” from the drop-down menu and click the button next to it that says “**Set all component statuses to project status**”:
 
+<br>
 <center>![](images/screenshots/active4.png)</center>
+<br>
  
 ```{block, type = "warning"}
-If you do not change all component statuses to active some will remain in test mode, leaving participants to only be able to access parts of the study and this will result in incomplete or missing data.
+If you do not click  "**Set all component statuses project status**" the project will be activated but not the components within.
+
+This means that participants will not complete the components and no data will be gathered for them.
+```
+
+## Sharing Components {-} 
+
+In some cases you may wish to share components that you have pre-made with other users, but this can present difficulties.
+
+Due to the way that data is attributed to components, if you add an owner to your items, they will be able to see and download all of the data collected by an item that you have added them to. This is obviously not what we want for the purposes of data protection, unless the person you are sharing with is a collaborator on your project and entitled to access this data.
+
+What we currently recommend is that, in cases where the person you are sharing with is not authorised to the data collected by your component, is that you **duplicate** the component using the duplicate button in the component information page:
+
+<center>![](images/screenshots/duplicate.png)</center>
+
+This new duplicate component is essentially a new component, divorced from the data collected by the previous one. You can now add another owner to this by searching for their name in the box, as shown here:
+
+<center>![](images/screenshots/add_owner.png)</center>
+
+Once you have added that person you can then press delete next to your own name should you wish to remove yourself.
+
+```{block, type = "info"}
+If you intend to regularly assign the same questionnaires or experiments to level 3 and 4 students for project work, and do not expect them to make their own from scratch each time, it may be an idea to construct your own stock of components and duplicate and share them in this way.
 ```
 
 ## Resetting Passwords {-}
+
+In instances where registered users have forgotten their password they should normally reset the password themselves using the [lost password instructions](#lost_password).
+
+In a limited number of cases this will not be an option, for example, if the email inbox of the user in question is not accessible.
 
 Researcher status accounts also have permission to reset some passwords, found by searching in the “Participant Data” section in the admin page, but they should limit this to resetting the passwords of their own students or participants.
 
 ```{block, type = "danger"}
  You must be satisfied that the account holder is the person requesting the change of password.
  
-In terms of students conducting research projects I would recommend that they present themselves to you in person to request a password change as these students have access to participant data.
+In terms of students conducting research projects I would recommend that they present themselves to you in person and/or produce a valid student ID to request a password change as these students have access to participant data.
 ```
 
 To change a password, you can either:
