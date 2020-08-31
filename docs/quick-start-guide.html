@@ -24,7 +24,7 @@
 <meta name="author" content="Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine" />
 
 
-<meta name="date" content="2020-04-07" />
+<meta name="date" content="2020-08-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -116,7 +116,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#privacy-notices"><i class="fa fa-check"></i>Privacy Notices</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#cookies"><i class="fa fa-check"></i>Cookies</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-management"><i class="fa fa-check"></i>Data Management</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-management"><i class="fa fa-check"></i>Data Management</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#for-participants"><i class="fa fa-check"></i>For Participants</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#for-researchers"><i class="fa fa-check"></i>For Researchers</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-your-data"><i class="fa fa-check"></i>About your data</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#consent"><i class="fa fa-check"></i>Consent</a></li>
 </ul></li>
@@ -125,7 +128,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="1" data-path="quick-start-guide.html"><a href="quick-start-guide.html"><i class="fa fa-check"></i><b>1</b> Quick Start Guide</a><ul>
 <li class="chapter" data-level="1.1" data-path="quick-start-guide.html"><a href="quick-start-guide.html#the-bare-essentials"><i class="fa fa-check"></i><b>1.1</b> The Bare Essentials</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="quick-start-guide.html"><a href="quick-start-guide.html#experiment-component-types"><i class="fa fa-check"></i><b>1.1.1</b> Experiment Component Types</a></li>
+<li class="chapter" data-level="1.1.1" data-path="quick-start-guide.html"><a href="quick-start-guide.html#questionnaire-component-types"><i class="fa fa-check"></i><b>1.1.1</b> Questionnaire Component Types</a></li>
+<li class="chapter" data-level="1.1.2" data-path="quick-start-guide.html"><a href="quick-start-guide.html#experiment-component-types"><i class="fa fa-check"></i><b>1.1.2</b> Experiment Component Types</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="accounts.html"><a href="accounts.html"><i class="fa fa-check"></i><b>2</b> User Accounts</a><ul>
@@ -381,8 +385,65 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">Chapter 1</span> Quick Start Guide</h1>
 <div id="the-bare-essentials" class="section level2">
 <h2><span class="header-section-number">1.1</span> The Bare Essentials</h2>
+<div id="questionnaire-component-types" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Questionnaire Component Types</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Column Header:</th>
+<th align="left">Refers to:</th>
+<th align="left">Options:</th>
+<th align="left">type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">name</td>
+<td align="left">dv_name (in data = q_name)</td>
+<td align="left">Names must only contain letters, underscores and numbers (numbers must not be the first characters).</td>
+<td align="left">mixed</td>
+</tr>
+<tr class="even">
+<td align="left">question</td>
+<td align="left">The question that you are asking the participant.</td>
+<td align="left">Whatever you want to ask the participant.</td>
+<td align="left">mixed</td>
+</tr>
+<tr class="odd">
+<td align="left">type</td>
+<td align="left">The type of question, akin to the options selected from the menu opened by the cog</td>
+<td align="left">* select: pulldown menu  selectnum: numeric pulldown menu  radio: radiobuttons  radioanchor: radiobuttons with anchors  datemenu: date menu  text: short text</td>
+<td align="left">mixed</td>
+</tr>
+<tr class="even">
+<td align="left">options</td>
+<td align="left">Where you would specify the response options available to the participants.</td>
+<td align="left">Applicable to select and radio types.  Numerical code, followed by “:”, and then text option.  Specifying multiple by separating options using a semi-colon (;)</td>
+<td align="left">mixed</td>
+</tr>
+<tr class="odd">
+<td align="left">maxlength</td>
+<td align="left">Where you would specify the length of the response</td>
+<td align="left">Applicable to radioanchor and text.  Radioanchor: how many points in the range.  Text: how many characters allowed.</td>
+<td align="left">mixed</td>
+</tr>
+<tr class="even">
+<td align="left">low_anchor</td>
+<td align="left">Specifying the low anchor for the selected option.</td>
+<td align="left">Applicable to selectnum, radioanchor and datemenu.  Selectnum specifies the lowest number in the range of the dropdown menu  Radioanchor specifies the text for low anchor  Datemenu specified the lower end of the year range.</td>
+<td align="left">mixed</td>
+</tr>
+<tr class="odd">
+<td align="left">high_anchor</td>
+<td align="left">Specifying the high anchor for the selected option.</td>
+<td align="left">Applicable to selectnum, radioanchor and datemenu.  Selectnum specifies the highest number in the range of the dropdown menu Radioanchor specifies the text for high anchor Datemenu specified the higher end of the year range.</td>
+<td align="left">mixed</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="experiment-component-types" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Experiment Component Types</h3>
+<h3><span class="header-section-number">1.1.2</span> Experiment Component Types</h3>
 <table>
 <thead>
 <tr class="header">

@@ -72,7 +72,7 @@ As a *minimum* I will need:
 
 <center>![](images/screenshots/plan_1.png)</center>
 
-## Sets and Supersets
+## Sets and Supersets 
 
 Next you need to be thinking about how to place these components into sets and supersets in order to achieve the desired flow of participants through your study.
 

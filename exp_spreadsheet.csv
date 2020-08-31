@@ -1,8 +1,8 @@
 ﻿Experiment Type,Response Type,DV 
-2AFC,Alternative force choice with 2 options to choose from,"Binary, defaulted to 0 or 1 assigned depending on how you assign the stimuli to trials."
-2-AFC with 8 button strength of choice,"Alternative force choice between two stimuli, but with the addition of strength of preference for the choice made on an 8-point scale.","Out of 8, with 0-3 indicating strength of choice in one direction for one piece of stimuli and 4-7 indicating strength of choice in the other direction for the other piece of stimuli."
+2AFC,Alternative forced-choice with 2 options.,"Binary, defaulted to 0 or 1 assigned depending on how you assign the stimuli to trials."
+2-AFC with 8 button strength of choice,"Alternative forced-choice between two stimuli, but with the addition of strength of preference for the choice made on an 8-point scale.","Out of 8, with 0-3 indicating strength of choice in one direction for one piece of stimuli and 4-7 indicating strength of choice in the other direction for the other piece of stimuli."
 Labelled Buttons,"Display 1, 2 or 3 stimuli items and participants respond on a scale set by the researcher. Akin to a Likert scale.",A numerical value corresponding to the values set by the researcher.
 Slider,A sliding scale between two numerical points where the number is not displayed to participants.,"Numerical, between upper and lower bounds and at increments set by the researcher."
-X-AFC,Alternative forced choice with more than 2 options. Participants pick only one.,"DV is a number which corresponds to the column the chosen stimuli item is assigned to on the stimuli assignment page, ranging from 1 to X."
+X-AFC,Alternative forced-choice with more than 2 options. Participants pick only one.,"DV is a number which corresponds to the column the chosen stimuli item is assigned to on the stimuli assignment page, ranging from 1 to X."
 Sorting,Participants put stimuli in order of some specified preference by dragging them into position on the screen,Number of times participants changed the order and the order the stimuli was placed in. Also provides stimuli original order of presentation.
 Slideshow,"Timed display of stimuli items where participants are only asked to watch, with no data collected or rendered. Usually used as a precursor to another component.",None.

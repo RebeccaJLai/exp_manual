@@ -1,4 +1,4 @@
-# Projects: Making your study go! 
+# Projects: Making your study go! {#projs}
 
 ## Overview
 
@@ -104,15 +104,19 @@ Debreifing information should be put in the feedback tab of the top-most set of 
 
 ## Project URLs
 
-In order for participants to access your study you will need to provide them with a URL (a web link/address).
+In order for participants to access your study you will need to provide them with a URL suffix (a web link/address).
 
-Each URL needs to be unique. For Experimentum, URLs usually follow a set pattern (where XXXXX is a suffix that you assign to your project):
+Each URL needs to be unique. For Experimentum, full URLs usually follow a set pattern (where XXXXX is a suffix that you assign to your project):
 
-<center>**exp.psy.gla.ac.ukproject?XXXXX**</center>
+<center>**exp.psy.gla.ac.ukproject?XXXXX**</center><p>
 
-This suffix is set in the project information page:
+This URL suffix is set in the project information page in the URL box:
 
 <center>![](images/screenshots/proj_3.png)</center>
+
+```{block, type = "warning"} 
+In order for your project to be accessible you should enter **only** the URL suffix in the URL box, omitting the "exp.psy.gla.ac.ukproject?" part. 
+```
 
 Specify the suffix in the box labelled URL. It should not contain special characters, so you can see here where I would have a space I have placed an underscore:
 
@@ -123,12 +127,13 @@ The text underneath indicates if your chosen suffix is available.
 The suffix does not need to be anything specific, but it should be appropriate for public display.
 
 ```{block, type = "info"}
-This URL will be what you share with potential participants. 
+This full URL will be what you share with potential participant- **exp.psy.gla.ac.ukproject?XXXXX**.
 
 If you wish to enable anonymous participation there are further additions that need to be made. These are discussed in the section about [anonymous participation](#anon).
 ```
 
 ## Project Structure {#project_structure}
+
 
 ## Testing Your Study {#testingyourstudy}
 
@@ -158,7 +163,7 @@ You can see how to do this in the [testing your study](#info_page_structure) sec
 
 As in sets, you can also use sample order to examine how the participants will progress through your study by examining a "sample order" of the components. 
 
-You can see how to do this and interpret the output in the [testing your study](#sample_order) section of the sets page.
+You can see how to do this and interpret the output in the [sample order](#sample_order) section of the sets page.
 
 ## Activating Projects
 
@@ -177,10 +182,12 @@ When a you attempt to edit an active item this warning is displayed at the top o
 
 <center>![](images/screenshots/editwarning.png)</center>
 
-If you deactivate your study in this way, even for a minor change, it is **your supervisor's responsibility to reactivate it**.
+If you deactivate your study in this way, even for a minor change, it is **your supervisor's responsibility to reactivate it**. 
+
+You may wish to check that the edits made have not impacted the validity or quality of the project, or how comparable data before and after the changes are.
 ```
 
-### Is my study ready?: Student Checklist
+### "Is my study ready?": Student Checklist {#checlist}
 
 Before you ask your supervisor to turn the study status to “active”, please ensure that you have done the following:
 
@@ -198,3 +205,34 @@ Do not ask admins to activate your study. This is something that your supervisor
 The process of activating studies is outlined in the supervisor page under the heading ["Activating Studies"](#activating)
 
 ## Anonymous Participation {#anon}
+
+To enable anonymous participation, you should take the full project URL that you will be giving to participants, as shown below in the project information page under the text entry box for URL ("exp.psy.gla.ac.uk/project?myurl"):
+ 
+<center>![](images/screenshots/anon_1.png)</center> 
+ 
+You would then place the following suffixes onto the end of it before sending it to participants:
+
+- **&guest**: this will take the participant to the project first page with a button to log them in as a guest.
+- **&auto**: this will automatically log the user in as a guest and display the dialogue box asking for age and gender identity information.
+- **&all**: will display 3 buttons asking the user to choose between logging in to an existing account, registering for an account and logging in as a guest.
+
+```{block, type = "warning"} 
+Do not put these suffixes into the URL box in the project information. It will not work.
+
+This is something you add later to the link that you are sending participants to.
+```
+
+So, this means that:
+
+- "**exp.psy.gla.ac.uk/project&myurl&guest**" would display the following button asking the users to press the button to log in as a guest. When they click this button to complete the project, they will receive a dialogue box asking for age and gender identity information.
+
+<center>![](images/screenshots/anon_2.png)</center> 
+ 
+- "**exp.psy.gla.ac.uk/project&myurl&auto**" will bypass the “login as guest” button, instead they are automatically are logged in as a guest to complete the project and presented with the dialogue box asking for age and gender identity information.
+ 
+<center>![](images/screenshots/anon_3.png)</center>  
+ 
+- "**exp.psy.gla.ac.uk/project&myurl&all**" will give the users the following 3 buttons where they can make the choice to login to an existing account, register for an account or login as a guest to complete the project.
+
+<center>![](images/screenshots/anon_4.png)</center> 
+ 

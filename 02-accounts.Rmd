@@ -8,15 +8,17 @@ This chapter explains what account types exist, what they do, which type of acco
 
 ## Account Types {#accounttypes}
 
+The following types of account are displayed in the downloaded data. Here is a brief explanation of the types of accounts and important informations about them.
+
 ### "Guest" Accounts
 
-For participants who are not required to have an account. You do not need to be signed in but you can still take part in some experiments on the site. When you close your browser, this account is discarded and no longer tracked. This allows for anonymous participation in some experiments. 
+For participants who are not required to have an account. You do not need to be signed in but you can still take part in some experiments on the site. When you close your browser, this account is discarded and no longer tracked. Essentially a disposable burner account, this allows for anonymous participation.
 
 ```{block, type = "warning"}
 If a guest participant closes their browser mid-way through a study their progress will not be saved and the data will read as an incomplete run.
 ```
 
-As guest users do not have a profile, we do not store their age, gender or any other types of information about them. We suggest that you do not place age or gender restrictions on studies where participants take part anonymously as guests. When guests sign into a study with age or gender restrictions, they will see a dialogue box asking them for their age and gender. 
+As guest users do not have a profile, we do not store their age, gender or any other types of information about them. **We suggest that you do not place age or gender restrictions on studies without strong theoretical or ethical reasons to do so, especially where participants take part anonymously as guests**. When guests sign into a study they will see a dialogue box asking them for their age and gender to "replace" where stored account information usually provides it. 
 
 <center>![](images/screenshots/guest_dialogue.png)</center>
 
@@ -25,12 +27,12 @@ This information is used to prevent those who should not take part from taking p
 ```{block, type = "bug"}
 There is a known issue with the gathering of participant ages which has only been observed and reported through guest type logins, [see known issues for more information](#user_age).
 
-To prevent irritrevable data loss should you experience this bug, it is recommended that you do not rely on this method to gather ages alone. Including a secondary age question in your demographics should give you a backup should you need it.
+To prevent irritrevable data loss should you experience this bug, it is recommended that you do not rely on this method to gather age and gender identity alone. Including a secondary age question in your demographics should give you a backup should you need it.
 ```
 
 ### "Registered" Accounts 
 
-These accounts are for participants. You have created an account and given us your date of birth and gender identification. You can participate in studies on the site. Your participation record is tracked, meaning that you can be linked across multiple-part studies. 
+These accounts are for participants. You have created an account and given us your date of birth and gender identification. You can participate in studies on the site. Your participation record is tracked, meaning that you can be linked across multiple-part studies **should you give permission for this to be done**. 
 
 Under no circumstances should you be linked across multiple studies without your explicit permission, we will never use data to "triangulate" your identity. Researchers can only access your data from their own studies, not the studies of other researchers. 
 
@@ -44,14 +46,26 @@ You may still use this account to participate in experiments, but we advise sett
 
 ### "Researcher" Accounts
 
-For staff, more senior students and anyone who may be supervising other students using Experimentum. Follow the instructions for students as above, but these users should set either Lisa DeBruine or Rebecca Lai as their supervisor, who will grant them "researcher" status. 
+For staff and more senior students using Experimentum. Researcher accounts no longer appear in the list of potential supervisors for students. If you have supervision duties, choose a "supervisor" account instead.
 
-If you plan on supervising students using Experimentum you should set up a researcher account to be able to oversee the construction of their studies, share components and change studies to "active" before data collection can begin. 
+Follow the instructions for students as above, but these users should set either Lisa DeBruine or Rebecca Lai as their supervisor, who will grant them "researcher" status. PGRs should have their supervisor confirm their autonomy with the admins before requesting this through the system to allow for speedy processing of your request.
 
-When you have established your researcher account your name will appear in the list of potential supervisors for students to choose from.
+This "supervision" is a formality to allow admins access to your account for support purposes, and not supervision in the traditional sense- for this type of support you should consult your own supervisor.
+
+```{block, type = "info"}
+Supervisors who want their more senior students to have their own "researcher" account will have to confirm this directly with the admins. 
+
+Such requests from students on behalf of their supervisor or third party will not be granted.
+```
+
+### "Supervisor" Accounts
+
+If you plan on supervising students using Experimentum you should set up a supervisor account to be able to oversee the construction of their studies, share components and change studies to "active" before data collection can begin. 
+
+When you have established your supervisor account your name will appear in the list of potential supervisors for students to choose from.
 
 ```{block, type = "warning"} 
-Supervisors should have a researcher account if they intend for their students to use this system. If supervisors do not engage with the system then their students will not be able to use it.
+Supervisors should have a supervisor account if they intend for their students to use this system. **If supervisors do not engage with the system then their students will not be able to use it.**
 
 Supervision duties in this system should not be passed to another member of staff so that you can avoid registering. Admins will not cover the duties of the supervisor. 
 
@@ -61,14 +75,19 @@ See the [Supervisor Cheatsheet](#roles) for a breakdown of the roles of the admi
 ### "Test" Accounts 
 
 For students and staff. This account type gives you the same amount of privileges as the registered account for participants, but any data collected from these accounts is saved in data sets with a status of "test". 
-
 This allows you and other test accounts to try out your study and easily identify and filter out which data should be excluded from the analysis. If you wish to have a test account contact an admin to set this up.
+
+```{block, type = "info"}
+Where students have erroneously registered multiple times, duplicate accounts will often be changed to "test" status.
+```
 
 ### "Admin" Accounts
 
-For staff who assist others constructing and managing their studies online. This is the highest level of access.
+For Experimentum support staff. This is the highest level of access.
 
-An admin account basically allows us to "supervise" all users, including researcher accounts. We use this to see what is happening when problems arise to help provide aid, not to take responsibility for approval of status changes of students or oversee the design or activation of studies.
+An admin account basically allows us to "supervise" all users, including researcher accounts. We use this to see what is happening when problems arise to help provide aid, not to take responsibility for approval of status changes of students or oversee the design or activation of studies. 
+
+This "supervision" is a formality to allow admins access to your account for support purposes, and not supervision in the traditional sense- for this type of support you should consult your own supervisor.
 
 ## Registration Process
 
@@ -93,7 +112,11 @@ If you are a supervising member of teaching or research staff, you should reques
 
 If you are a more senior student who is relatively self-sufficient or you have supervising duties of your own, *and your supervisor agrees to it*, you can also request Lisa or Rebecca as your supervisor, and we will set you as a "researcher" account type.
 
-As a general rule, all students completing a research project should be assigned "student" status. Some PhD students may be better off with "researcher" status. Such individuals should speak to their supervisors and the admins to determine which is the best account type for them.
+As a general rule, all students completing a research project should be assigned "student" status. Some PhD students may be better off with "researcher" or "supervisor" accounts (if they assist in supervising more junior students). Such individuals should speak to their supervisors and the admins to determine which is the best account type for them.
+
+Supervisors who want their more senior students to have their own "researcher" account will have to confirm this directly with the admins. 
+
+Such requests from students on behalf of their supervisor or third party will not be granted.
 ```
 
 ## Checking your account status
@@ -115,9 +138,9 @@ If your supervisor is experiencing technical difficulties in accepting your requ
 
 Supervisors have a responsibility to ensure that their students have the status that they require to carry out their projects. This includes assigning them sufficient permissions to construct and deploy their studies. 
 
-If you are a supervisor and unsure as to what type of account to give a student, refer to the [account types section](#accounttypes).
+If you are a supervisor and unsure as to what type of account to give a student, refer to the [account types section](#accounttypes) above.
 
-Once the supervisor has "researcher" status they will have a new area of the website opened to them, accessible through the researchers' link in the menu on the right, which will contain a section called "Admin": 
+Once the supervisor has "supervisor" status they will have a new area of the website opened to them, accessible through the researchers' link in the menu on the right, which will contain a section called "Admin": 
 
 <center>![](images/screenshots/admin_button.png)</center>
 

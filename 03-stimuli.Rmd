@@ -27,7 +27,7 @@ formats <- tibble("Stimuli Type" = c("Images", "Audio", "Video"), "Accepted Form
 knitr::kable(formats)
 ```
 
-## Naming Conventions
+## Naming Conventions {#naming}
 
 In order to make the process of assigning stimuli to trials as easy as possible it is recommended that you establish a systematic way of assigning names to files.
 
@@ -55,7 +55,7 @@ In order to get your stimuli up with the minimal amount of fuss, please ensure t
 
 ### Images
 
-Images should be of uniform size and of the correct file formats before uploading. The following information is but one way that you can amend your files to the correct format and resolution for the site. There may be other ways to acheive the same goal.
+Images should be of uniform size and of the correct file formats before uploading. The following information is but one way that you can amend your files to the correct format and resolution for the site. There may be other ways to achieve the same goal. The method you choose it up to you, this is provided for those who may need some help.
 
 If you do not resize your stimuli to the appropriate size you might find inconsistencies in the presentation of your stimuli that could act as a confounding factor in your experiments:
 
@@ -63,15 +63,44 @@ If you do not resize your stimuli to the appropriate size you might find inconsi
 
 #### Creating Images {-}
 
-You may be required to make your own image stimuli, either a modification of previously used stimuli or something completely new. This section talks about some of the basic functions of GIMP, but cannot give an in depth tutorial. There are many available online as this software if quite popular.
+You may be required to make your own image stimuli, either a modification of previously used stimuli or something completely new. This section talks about some of the basic functions of GNU Image Manipulation Program ["GIMP", @gimp], but cannot give an in depth tutorial. There are many available online as this software is fairly well used.
+
+GIMP is a free software that allows you to create images from scratch and modify and export export existing image files to a variety of file formats.
+
+<center>![](images/screenshots/gimp.png)</center>
+
+This software was developed as a free and open source equivalent to photo-editing software such as Adobe Photoshop and can achieve very complex tasks.
+
+Exporting images from `.xcf` to Experimentum compatible formats is covered in the [exporting images](#gimp_export) section below- the process is the same.
 
 ##### New Image {-}
+
+To create a new image, select `File > New...`:
+
+<center>![](images/screenshots/gimp_new.png)</center>
+
+A dialogue box will appear allowing you to set the size of the new image you are going to create. As shown, you can alter the size in many different units of measurement:
+
+<center>![](images/screenshots/gimp_new_2.png)</center>
+
+Once you have set and accepted these parameters you will be presented with your new, blank image:
+
+<center>![](images/screenshots/gimp_new_2.png)</center>
+
+```{block, type = "info"}
+If you are presented with a grey checker pattern instead of a white background as presented here, then the background is transparent instead of white. 
+
+When exporting images in some formats, like `PNG`, this transparency will be preserved in areas that you have not placed text or images.
+```
 
 ##### GIMP File Format {- #gimp_format}
 
 The file extension of files created in GIMP will be `.xcf`. These types of files allow for saving of `image layers` and `text path information`, allowing you to have an image made of multiple layers and with text that can be edited at a later point.
 
-<center>![](images/screenshots/paste_as_new_gimp.png)</center>
+```{block, type = "warning"}
+[Here](examples/layers demo.xcf) is an example of a `.xcf` file that I used to export multiple `.png` files from when creating the section on layers below. It uses multiple layers on the same graphic to circle the relevant discussion points, creating a standardised output. Layers with circles were duplicated and placed over the various buttons and made invisible when they were not required.
+```
+
 
 ```{block, type = "info"}
 Saving images with layers and text path information could come in handy if you are generating your own image stimuli which features small changes (such as different words), but remains mostly the same (same background colour, size, fonts, etc).
@@ -81,21 +110,55 @@ In this case you could save a layer or export a different .GIF, .JPG or .PNG fro
 
 ##### Layers {-}
 
-#### Individual Images {-}
+Layers allow you to create multiple layers of an image stacked on top of each other. This can be particularly handy when creating many images which need to be of a matching standard, such as text or images which differ vary slightly in a controlled way.
 
-If you need to work on a single image, such as resizing, or need to create your own images, then GNU Image Manipulation Program ["GIMP", @gimp] may be a good choice of software for you.
+Layers at the top of the stack will be "on top" of the others, with their content obscuring the parts below them if the ones on top are visible. You can move layers around in the stack, or toggle the visibility of layers to change what (and how) the image looks. You can then "export" the visible parts of images to create image stimuli.
 
-##### Converting Images {-}
+The layout of your interface may differ, but there should be either a free floating dialogue  box or "docked" dialogue open called "layers" or with a symbol of stacked layers as appears here:
 
-GIMP is a free software that allows you to create images from scratch and modify and export export existing image files to a variety of file formats.
+<center>![](images/screenshots/gimp_new_3.png)</center>
 
-<center>![](images/screenshots/gimp.png)</center>
+You start with one layer, called "background".
 
-This software was developed as a free and open source equivalent to photo-editing software such as Adobe Photoshop and can achieve very complex tasks. However, there are only 3 basic operations that you should be able to perform in GIMP order to convert your images to the correct formats. More complex operations are beyond the scope of this tutorial, but there are plenty of resources online should you choose to want to look them up.
+To make changes to a layer you must have that layer selected. Select layers by clicking on them. They should become highlighted.
+
+###### Layer Tools {-}
+
+There are a number of useful layer tools in the layer box. Here is a short explanation of some of the more useful ones.
+
+This button will create a new layer. The new layer will appear "on top" of the layers you already have:
+
+<center>![](images/screenshots/layer_new.png)</center>
+
+This button will duplicate a layer that you already have. It will duplicate the current layer you have selected or are editing:
+
+<center>![](images/screenshots/layer_duplicate.png)</center>
+
+These buttons move the layers up and down, dictating which layers obscure which. Alternatively you can click the layer you want to move and drag it up and down the layers in the box:
+
+<center>![](images/screenshots/layer_move.png)</center>
+
+To toggle the visibility of a layer click on the eye symbol next to the layer name. When the eye is visible, so is the layer:
+
+<center>![](images/screenshots/layer_visible.png)</center>
+
+If you want to get rid of a layer, select the layer in the layers box and press this button:
+
+<center>![](images/screenshots/layer_delete.png)</center>
+
+##### Basic Gimp Tools {-}
+
+```{block, type = "warning"}
+GIMP keeps crashing on me when I try to use the text tool. I'll need to access another computer to create this image.
+```
+
+#### Converting Pre-Existing Images {-}
+
+However, there are only 3 basic operations that you should be able to perform in GIMP order to convert your images to the correct formats. More complex operations are beyond the scope of this tutorial, but there are plenty of resources online should you choose to want to look them up.
 
 If there are any further instructions that would prove helpful please file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues) describing what you want me to include in future versions of the manual.
 
-##### Importing Images {-}
+###### Importing  Images {-}
 
 There are a number of ways that you can import images into GIMP.
 
@@ -103,17 +166,17 @@ There are a number of ways that you can import images into GIMP.
 
 This is the simplest way to open an image file in GIMP.
 
-Open the software first from your Start Menu or Launchpad. Then click on File > Open... 
+Open the software first from your Start Menu or Launchpad. Then click on `File > Open... `:
 
-***** image in here
+<center>![](images/screenshots/file_open.png)</center>
 
-A dialogue box will appear from which you can navigate to the location of the file you are attempting to open and select it. Click Open and the file will appear in a new tab.
-
-***** image in here
+A dialogue box will appear from which you can navigate to the location of the file you are attempting to open and select it. Click Open and the file will open.
 
 ###### "Open With" {-}
 
 If you already have the image file saved on your PC, you can navigate to the file's location through your file explorer or finder and right click on it. Select "Open With" in the menu that pops up. This will open the GIMP GUI and should open a new tab with that image inside it. 
+
+<center>![](images/screenshots/open_with.png)</center>
 
 On some machines GIMP will not be automatically recognised as a type of software associated with image files. In this case you will need to select "Choose another app" and navigate to the executable file for GIMP (location may vary depending on machine and operating system type).
 
@@ -121,7 +184,9 @@ It is not advisable to permanently change all image files to be associated with 
 
 ###### Edit > Paste as... > New Image {-}
 
-Finally, if the image file is not saved on your computer you can copy it to the clipboard and paste it directly into GIMP. Do this by going to Edit > Paste as... > New Image.
+Finally, if the image file is not saved on your computer you can copy it to the clipboard and paste it directly into GIMP. Do this by going to `Edit > Paste as... > New Image`.
+
+<center>![](images/screenshots/paste_as_new_gimp.png)</center>
 
 This will create a new image in GIMP that is not yet saved. I recommend saving immediately in the first instance and periodically thereafter. 
 
@@ -147,13 +212,13 @@ Linking these helps you avoid distortion that might happen if you resize one dim
 
 I have used images in the question field of a mixed questionnaire, as the blank spaces are more apparent to the participants. I have also limited their size to 25px to ensure that they do not seem too oversized in comparison to the text entry fields next to them.
 
-##### Exporting Images {-}
+#### Exporting Images {- #gimp_export}
 
 GIMP is capable of exporting GIF, JPEG and PNG file formats. 
 
-To export your image go to File > Export As. You will then be asked to enter a file name in the text box at the top of the dialogue box that opens up. 
+To export your image go to `File > Export As`. You will then be asked to enter a file name in the text box at the top of the dialogue box that opens up. 
 
-You can specify the type of file by typing the file extension at the end of the file name, ".gif", ".jpg" or ".png" for each of the aforementioned file types respectively.
+You can specify the type of file by typing the file extension at the end of the file name, `.gif`, `.jpg` or `.png` for each of the aforementioned file types respectively.
 
 Once you have done this, press the "export" button at the bottom of the dialogue box.
 
@@ -171,11 +236,15 @@ These images are saved as JPEG, and are at 100%, 50% and 0% quality. This gives 
 
 <center>![](images/screenshots/087_03_min.jpg)![](images/screenshots/087_03_mid.jpg)![](images/screenshots/087_03_max.jpg)</center>
 
-The first is 100% quality, no compression. The second has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2. Number 3 is unusable for the vast majorit of purposes.
+- The first is 100% quality, no compression or compression artefacts. 
+- The second is 50% quality and has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2, likely a result of a reduction in the available colour palette. 
+- The third image (0% quality) is unusable for the vast majority of purposes.
 
-The level of compression that you choose will be a compromise between what the system can successfully deliver and what the level of compression does to the images that you are using.
+```{block, type = "info"}
+The level of compression that you choose will be a compromise between what the system can successfully deliver, loading times and what the level of compression does to the images that you are using.
+```
 
-#### Batch Images {-}
+### Batch Procesing Images {-}
 
 If you have pre-existing stimuli that need to be resized or converted to another format you may want to use IrfanView (@irfanview).
 
@@ -183,7 +252,7 @@ If you have pre-existing stimuli that need to be resized or converted to another
 
 IrfanView is a fast, compact image viewer and editor for Windows XP, Vista, 7, 8 and 10 available in 32 and 64 bit versions. 
 
-##### Batch Conversion {-}
+#### Batch Conversion {-}
 
 ```{block, type = "info"}
 You can resize and convert images at the same time by setting the appropriate options in one process.
@@ -229,7 +298,7 @@ You will be shown a dialogue box showing the processing. Once conversion is comp
 
 Double check that your output files are correct after you have run the batch processing by navigating to them using your file system browser.
 
-##### Batch Resize {-}
+#### Batch Resize {-}
 
 ```{block, type = "info"}
 You can resize and convert images at the same time by setting the appropriate options in one process.
@@ -269,7 +338,7 @@ Since Experimentum requires auditory stimuli to be uploaded as .mp3 files, here 
 
 Audacity is free and open source cross-platform software which can be used to record (with suitable microphone), import, edit and export audio files in many different formats. This is also software that both the Voice Perception Lab and Face Research Lab use in their research.
 
-Here you will find the minimal instructions that will allow you to convert your audio files to `.mp3` format in Audacity. For the full user guide see [here](https://manual.audacityteam.org/index.html).
+Here you will find the minimal instructions that will allow you to convert your audio files to `.mp3` format in Audacity 2.1.2 [@audacity2.1.2] and Audacity 2.3.0 [@audacity2.3.0]. For the full user guide see [here](https://manual.audacityteam.org/index.html).
 
 #### Audacity 2.1.2 {-}
 
@@ -377,7 +446,43 @@ If you require longer videos you may need to host the content externally (such a
 
 ## Uploading Stimuli {#stimupload}
 
-For the purposes of demonstration of uploading stimuli I will be using The MR2 face stimuli set [@mr2], which is available to download and use under a Creative Commons License.
+```{block, type = "warning"}
+Prior to uploading your stimuli, ensure that it has been pre-processed to the standard that you expect as the system will not perform automatic transformations on it for you.
+
+For example, you should ensure that images are the correct size for presentation, audio segments should have normalised volume, the files in accepted formats etc.
+
+You should also establish a naming convention that allows you to easily search for and assign stimuli to trials. This is covered more under ["Naming Conventions"](#naming) above.
+```
+
+To upload your stimuli, navigate to the researcher’s area of the site and select the “Stimuli” button from the menu:
+
+<center>![](images/screenshots/stim_button.png)</center>
+
+Select “Upload” from the menu:
+
+<center>![](images/screenshots/stim_upload.png)</center>
+
+The following page is split into two sections. The upper section gives you the option to upload stimuli and the bottom section shows you what stimuli you already have uploaded. 
+
+<center>![](images/screenshots/stim_upload_1.png)</center>
+
+In the folder name field, enter the names of the folder you want to create. If you wish to create a subfolder type the folder name, a forward slash, then the subfolder name (*folder_name/subfolder_name*).
+
+<center>![](images/screenshots/stim_upload_2.png)</center>
+
+Click on the browse button and navigate to the folder where your stimuli are stored on your own storage device and select all the files you wish to upload. Click on the “open” button on the dialogue box.
+
+<center>![](images/screenshots/stim_upload_3.png)</center>
+
+Once you have clicked this the file names will appear in the upload section of the page. Check that these are the files that you wish to upload. Enter a description in the description box. This will help you, your supervisors and the admins should you ever require assistance.
+
+<center>![](images/screenshots/stim_upload_4.png)</center>
+
+Click on “Upload” to upload your files. Once you have done this the bottom of the page will change to show the name of the new folder. Clicking on the name of the new folder will open the folder and show you the files within. Clicking a file name will display the file path at the bottom right of the page:
+
+<center>![](images/screenshots/stim_upload_5.png)</center>
+
+Now that you have your stimuli uploaded you can put them into your experiment(s). These steps apply to all types of stimuli that can be uploaded to the site.
 
 ## Using Stimuli
 

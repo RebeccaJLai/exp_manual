@@ -6,6 +6,8 @@ This is a collection of sections from the document directed at the everyday oper
 
 If there is anything missing please file an issue on the GitHub codebase for this book by clicking [here](https://github.com/RebeccaJLai/exp_manual/issues).
 
+Many of the operations that can be done with a student account can also be done with a supervisor or researcher account, such as constructing components, sets and projects and testing them. Please see the relevant sections of the manual for these items. 
+
 ## Admins {- #roles} 
 
 Lisa is busy and Rebecca is contracted for 1 hour per week for Experimentum support. Much of the day-to-day of handling your students will fall on you, the supervisor. 
@@ -22,11 +24,11 @@ Our responsibilities are:
 
 ### Supervisor Responsibilities {-}
 
-* To ensure that you have a researcher account to supervise any of your students who wish to use the site.
+* **To ensure that you have a supervisor account to supervise any of your students who wish to use the site.**
     * You may be comfortable allowing some more senior and trustworthy students almost complete autonomy by granting them full researcher status but it is still advisable to have an account of your own. 
-    ***If you wish for them to have full researcher status this must be confirmed by the supervisor to admins directly, not through your student or third party.***
+    ***If you wish for them to have full researcher status this must be confirmed by the supervisor to admins directly, not through your student or other third party.***
     * If a PhD student takes responsibility for supervising other students they will need to have their own supervisor account.
-* To handle the day-to-day needs of your own students:
+* **To handle the day-to-day needs of your own students:**
     * Ensure that you have the knowledge to know how to implement designs you expect your students to use through the site.
     * To check the standards of your students work.
     * To approve "student" researcher status of your own students.
@@ -34,11 +36,29 @@ Our responsibilities are:
     * To manage your students expectations of what the site can provide (it will not be perfect or even workable for some types of study).
     
 ```{block, type = "warning"}
-Supervisors should supervise their own students' accounts only, unless they have the expertise to double-check the veracity of the other staff members students' work and are prepared to accept the responsibilities outlined above for these students.
+Supervisors should supervise their own students' accounts **only**, unless they have the expertise to double-check the veracity of the other staff members students' work and are prepared to accept the responsibilities outlined above for these students.
 
-Admins will **not** absorb the extra workload for these students.
+Admins will **not** absorb the extra workload for supervisors who refuse to use the system themselves want their students to use it.
+
+If you do not want to establish your own account and use it to supervise your students you may wish to consider using a different system.
 ```
     
+## Accessing Supervisees Projects, Sets and Components {-}
+
+Once someone is registered as your supervisee you should be access the items that they have created. This allows you to see every project, set and component that they have made. To do this, navigate to the researcher’s section of the website using the panel on the left after login.
+
+Next you should pick the option that is most applicable to your needs. If you are trying to access an experimental component, click on the experiments button, for questionnaires the questionnaire button and the same for sets and projects.
+ 
+This will take you to a page where you can see the items of this type that you own by default. To see the items that belong to your supervisees, select their name from the drop-down menu at the top of the page:
+
+<center>![](images/screenshots/sup_access_1.png)</center>
+ 
+Select the supervisee in question and then you will be able to see the items of that class that belong to them:
+ 
+<center>![](images/screenshots/sup_access_2.png)</center> 
+ 
+You can now access this item by clicking on its name or number. You will be able to inspect, edit and test items.
+
 ## Approving Student and Researcher Status Requests {-}
 
 Supervisors have a responsibility to ensure that their students have the status that they require to carry out their projects. This includes assigning them sufficient permissions to construct and deploy their studies. 
@@ -89,7 +109,7 @@ When a student attempts to edit an active item this warning is displayed at the 
 
 ![](images/screenshots/editwarning.png)
 
-If a student makes a change to the study after activation, rendering it inactive, you the supervisor are the point of contact for the student to reactivate it. You may wish to check that the edits made have not impacted the quality of the project.
+If a student makes a change to the study after activation, rendering it inactive, you the supervisor remain the point of contact for the student to reactivate it. You may wish to check that the edits made have not impacted the validity or quality of the project, or how comparable data before and after the changes are.
 ```
 
 To activate the student's study, follow these steps:
@@ -183,4 +203,9 @@ Clicking on the autologin link will log you into the account of this user which 
 
 These links are the same ones that the admins use to examine user accounts.
 
+```{block, type = "warning"}
+Autologin links should be used as the last resort when no other options for troubleshooting are available.
+
+These should never be saved anywhere on your computer or made public as this would constitute a serious data protection or security risk.
+```
 

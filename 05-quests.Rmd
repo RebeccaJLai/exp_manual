@@ -4,6 +4,12 @@
 
 Questionnaires are currently the most used items on Experimentum. They are made up of one or more individual components, available in 3 different types: mixed, radiopage and ranking. 
 
+```{r, echo = F, message = F}
+quests <- read_csv("quest_spreadsheet_2.csv")
+
+knitr::kable(quests)
+```
+
 ## New Questionnaire
 
 To create a new questionnaire, navigate to the researcher’s section of the page by using the menu on the right and selecting the questionnaires option.
@@ -31,6 +37,20 @@ The JavaScript for saving the questionnaire occasionally stops working on some b
 
 Please note that the site currently does not support version control, so once you save a change the previous version will be overwritten.
 ```
+
+## Accessing and Editing Previously Saved Questionnaires
+
+To access your previously saved questionnaire component, navigate to the researcher’s area of the site by selecting “Researchers” from the menu on the right-hand side of the page.
+
+You can access your questionnaires by accessing the questionnaires section of the page by using the button below:
+
+<center>![](images/screenshots/questionnaire_button.png)</center>
+ 
+Alternatively, if you remember the number of the questionnaire component, you can type it in to the grey rectangle in the experiments button. When you press return you will be taken straight to the information page of the questionnaires
+
+To edit the questionnaire, press the “edit” button at the top of the page and you will be taken back into the editable version:
+
+<center>![](images/screenshots/exp_5.png)</center>
 
 ## Questionnaire Information
 
@@ -240,7 +260,7 @@ Ranking questionnaires present a list of text options to participants to put int
 
 <center>![](images/screenshots/rank1.png)</center>
  
-As you can see, there are no response types associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomise it.
+As you can see, there is a single response type associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomise it.
 
 Each question will be an option in the list of items to rank order. Participants will be able to drag each text item to rank order them, with the number specified in the column next to the text. The final presentation to participants looks like this:
 

@@ -1,5 +1,5 @@
 --- 
-title: 'Experimentum: Web-based Software for Psychology Studies'
+title: 'Experimentum: Web-based Software for Psychological Studies'
 author: "Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine"
 date: "`r Sys.Date()`"
 documentclass: book
@@ -81,7 +81,7 @@ Experimentum is an evolving platform.
 
 If you find an issue with the Experimentum codebase, you can file an issue [here](https://github.com/debruine/experimentum/issues).
 
-If you find an issue with the codebase for this manual you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
+If you find an issue with the codebase for this manual, including missing or unclear information, you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
 ```
 
 ## Privacy Notices {-}
@@ -96,13 +96,13 @@ Cookies are not used in any other way by us, and the information is not retained
 
 ### Data Management {-}
 
-Your study's data is your responsibility. Please ensure that it is protected and used appropriately. University of Glasgow guidelines with regard to data protection are available to view [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/) and more general data management guidelines [here](https://www.gla.ac.uk/myglasgow/datamanagement/rdmatglasgow/).  
+#### For Participants {-}
 
-Experimentum saves your data to the University of Glasgow School of Psychology secure servers, which are on-site in Hillhead Street. Data will be output in Comma Separated Value (.csv) files in "tidy" format and is available for download from by the researcher(s) who own the study, their supervisors and admins **only**.
+The University of Glasgow guidelines with regard to data protection are available to view [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/) and more general data management guidelines [here](https://www.gla.ac.uk/myglasgow/datamanagement/rdmatglasgow/). Researchers must adhere to these when collecting, processing, storing and using your data.
 
-Whilst data processing questions should be directed to the researcher (or your supervisor(s) and advisors if you are a student/researcher), there are a couple of common tasks that you might find yourself needing to do. See the examples in the section [Commonly used R code](#commoncode) for help with some common code segments.
+If you have any questions about your data your first point of contact should be the researcher who collected it. Contact details will be given in the studies you take part in. Researchers are ethically and legally obligated to answer your questions about your data.
 
-### About your data {-}
+##### About your data {-}
 
 With all account types, besides anonymous participation, your user ID is linked to the data that you submit. This allows us to track users in multi-part studies, but it also means that our servers will contain multiple bits of information about you built up through your participation.
 
@@ -122,6 +122,14 @@ If you are reluctant to speak to them directly you can speak to their supervisor
 Alternatively, you can contact the Data Protection and Freedom of Information Office [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/contact/).
 ```
 
+#### For Researchers {-}
+
+Your study's data is your responsibility. Please ensure that it is protected and used appropriately. The University of Glasgow guidelines with regard to data protection are available to view [here](https://www.gla.ac.uk/myglasgow/dpfoioffice/) and more general data management guidelines [here](https://www.gla.ac.uk/myglasgow/datamanagement/rdmatglasgow/).  
+
+Experimentum saves your data to the University of Glasgow School of Psychology secure servers, which are on-site within the department. Data will be output in Comma Separated Value (.csv) files in "tidy" format and is available for download from by the researcher(s) who own the study, their supervisors and admins **only**.
+
+Whilst data processing questions should be directed to the researcher (or your supervisor(s) and advisors if you are a student/researcher), there are a couple of common tasks that you might find yourself needing to do. See the examples in the section [Commonly used R code](#commoncode) for help with some common code segments.
+
 ### Consent {-}
 
 Upon registration, users are asked to complete a standardised consent form:
@@ -129,6 +137,12 @@ Upon registration, users are asked to complete a standardised consent form:
 <center>![](images/screenshots/consent.png)</center>
  
 When constructing studies, you should also include your own consent form, including all relevant information specified by your supervisor(s) and regulatory body relevant to your work.
+
+Consent forms usually take the form of an additional mixed questionnaire component presented at the start of your study.
+
+## Citing Experimentum {-}
+
+Currently we recommend that you cite either the website (https://exp.psy.gla.ac.uk/), the codebase on GitHub (https://github.com/debruine/experimentum) or this manual, following the appropriate citation format for your discipline.
 
 ## Codebase {-}
 
@@ -138,10 +152,23 @@ Open code for the site and installation instructions are available to download [
 
 The same is provided for this user guide [here](https://github.com/RebeccaJLai/exp_manual), and under this same [license](https://creativecommons.org/licenses/by-sa/3.0/legalcode). This document was authored using bookdown [@R-bookdown]. See [here](https://bookdown.org/yihui/bookdown/) for instructions on making modifications, rendering and publishing such documents.
 
-## Acknowledgements {-}
+## Author Contributions {-}
 
 ```{r echo=FALSE, message = FALSE}
 library(tidyverse)
+
+read_csv("misc_files/author_contribs.csv") %>%
+  arrange(surname) %>%
+  unite(col = "name", c(first_name, surname), sep = " ") %>%
+  mutate(`Author:` = paste0(name, ": "),
+         ` ` = Contribution) %>%
+  select(`Author:`, ` `) %>%
+  knitr::kable()
+```
+
+## Acknowledgements {-}
+
+```{r echo=FALSE, message = FALSE}
 
 read_csv("misc_files/acknowledgments.csv") %>%
   arrange(surname) %>%

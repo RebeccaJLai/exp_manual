@@ -2,21 +2,20 @@
 
 ## Appendices {-}
 
-### Commonly Used R Code {- #commoncode}
-
 ### Image Sources
 
 All images original with the exception of the following:
 
+* Traffic Cone Icon [@cone]
 * Rainbow Free Icon [@rainbow]
 * Tech Support Icon Pack [@techpack]
-* Traffic Cone Icon [@cone]
+* Face Research Lab London Set [@DeBruine2017]
+* Incomplete human faces [@mooneys]
 
 ### Software {-}
 
 This manual was written using R [@baser], RStudio [@rstudio] and bookdown [@xie2015]. 
 
 Custom graphics created and screenshots edited with GIMP [@gimp].
-
 
 ## References {-}

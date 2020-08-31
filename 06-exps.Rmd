@@ -115,7 +115,7 @@ If you are a student researcher this will mean you will need to contact your sup
 
 There are different types of experimental components for you to choose from. They each have their own features, response types and type of DV that they return in your data. The following section will discuss each of the options available to you.
 
-### 2-AFC (alternative forced choice) 
+### 2-AFC 
 
 2-AFC experiments present participants with 2 options and ask them to make a choice between them. Here you will present 2 stimuli items together and ask participants to make a binary judgment between the two by clicking on one item only. The DV returned will be either a 1 or a 0, depending on the choice the participant makes and what stimuli item you define as a 1 or a 0 when you assign stimuli to trials (see [Notes specific to 2-AFC](#twoafc_notes) below). 
 
@@ -130,12 +130,20 @@ Once you have finished on this page and press "Save" you will be taken to the pa
 
 #### Notes Specific to 2-AFC {- #twoafc_notes}
 
+##### Assigning Stimuli to Trials {-}
+
+```{block, type = "warning"}
+NEEDS SOMETHING HERE
+```
+
+##### Interpretting the Data {-}
+
 When you assign stimuli to the 2-AFC be sure that you assign the correct stimuli according to the DV that you expect to be returned. 
 
 In the screenshot below you can see that one column corresponds to a DV of 1 and the other a DV of 0. Ensure that you assign the stimuli you wish to return a DV of 1 and the stimuli you wish to return a DV of 0 to the appropriate columns.
 
 <center>![](images/screenshots/stim_2afc.png)</center>
- 
+
 #### Participant View {-}
 
 When this experimental component is presented to the participants it will look like this:
@@ -229,6 +237,12 @@ The value of the DV will come from the buttons of the scale. The DV value is the
 
 <center>![](images/screenshots/exp_12.png)</center>
 
+##### Interpretting the Data {-}
+
+```{block, type = "warning"}
+NEEDS SOMETHING HERE
+```
+
 #### Participant View {-}
 
 This is how a 7 labelled button scale appears to participants:
@@ -254,6 +268,12 @@ Once you have finished on this page and press "Save" you will be taken to the pa
 Specific columns on the assignment screen do not carry specific DV values, as indicated by the lack of the black panels above them:
 
 <center>![](images/screenshots/stim_lb.png)</center>
+
+##### Interpretting the Data {-}
+
+```{block, type = "warning"}
+NEEDS SOMETHING HERE
+```
 
 #### Participant View {-}
 
@@ -283,6 +303,12 @@ Despite the lack of black panels above the columns on the assignment page, the D
 
 If, for example, participants experiencing the first trial (first row) from the screenshot above choose option 3, the value of 3 will be presented in the data under the DV column.
 
+##### Interpretting the Data {-}
+
+```{block, type = "warning"}
+NEEDS SOMETHING HERE
+```
+
 #### Participant view {-}
 
 This is what the X-AFC looks like, with 3 stimuli items displayed:
@@ -302,7 +328,9 @@ First, you should complete the experiment information at the top of the page, th
 
 Once you have finished on this page and press "Save" you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. 
 
-Here you can see that each row (representing an individual trial) will have 3 images presented. I set image side to randomisation on the information page so the presentation will not be kept in order of the columns here.
+Here you can see that each row (representing an individual trial) will have 5 images presented. I set image side to randomisation on the information page so the presentation will not be kept in order of the columns here.
+
+<center>![](images/screenshots/stim_sorting.png)</center>
 
 #### Notes Specific to Sorting Components {-}
 
@@ -312,15 +340,21 @@ For this experiment I am using Ishihara colour deficiency plate test items. Thes
 
 If the participant can successfully order the numbers in a small number of changes then we should be able to assume that they can perceive the shape of the number in the circle. Those who cannot experience colour deficiency may make more mistakes in ordering the numbers. The sets used here test for deuteranopia, the most common type of colour deficiency.
 
-As you can see, I have numbered the stimuli in a systematic way: "ishihara_x_y.jpg", where x is the number displayed in the circle and y is the set that it belongs in. By searching for "ishihara_5" I have found all images which have this string in their file name, resulting in the display of two images of the number 5 from set one and two, displayed on the right of the image below.
+As you can see, I have numbered the stimuli in a systematic way: "ishihara_x_y.jpg", where x is the number displayed in the circle and y is the set that it belongs in. 
+
+By searching for "ishihara_5" I have found all images which have this string in their file name, resulting in the display of two images of the number 5 from set one and two, displayed on the right of the image below.
 
 <center>![](images/screenshots/stim_sorting.png)</center>
 
-As I am displaying 5 images per trial, there are 5 columns on the stimuli assignment page. By double clicking on the first box in column 5, the system inserts all of the files found into that column in the order shown in the search results.
+As I am displaying 5 images per trial, there are 5 columns on the stimuli assignment page. 
+
+By double clicking on the first box in column 5, the system inserts all of the files found into that column in the order shown in the search results.
+
+<center>![](images/screenshots/stim_sorting_2.png)</center>
 
 Stimuli items set in the first column return a DV of 1, the second a DV of 2 and so on, even though there is no black block at the top of each column to specify this. This will mean that the order of assignment on this page will influence how you come to interpret your data output. This is partially why I have named my stimuli as "ishihara_x_y.jpg", where x represents the number displayed in the image. It helps me establish where to place the item in the stimuli assignment columns.
 
-##### Interpretting Data Output {-}
+##### Interpretting the Data  {-}
 
 The DV and side variables in the downloaded datasets for the sorting experiments are slightly different and need to be interpreted differently.
 
@@ -365,7 +399,7 @@ Once you have finished on this page and press "Save" you will be taken to the pa
 
 The slideshow is a way to present stimuli to participants, **but it does not allow participants to provide any sort of input and as a result it does not return any DV based on a participant response**. 
 
-You may wish to pay more attention to variables such as order and side which give you information about how the stimuli was presented. This might be useful when you combine slideshows with components which do take collect data from participants.
+Depending on your aim, you may wish to pay more attention to variables such as order and side which give you information about how the stimuli was presented. This might be useful when you combine slideshows with components which do take collect data from participants.
 
 *	**session_id**: experimental session ID. Each time a participant completes the study they will be assigned a new session ID. You should discourage participants from completing more than one study at a time to ensure that the session ID remains unique to your project. Please instruct users to close their browser between studies to ensure this happens.
 *	**project_id**: the number of the project that contained the component when this line of data was generated. Here it displays 0 because the component was not in a project when I tested it.

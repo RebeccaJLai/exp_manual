@@ -1,4 +1,4 @@
-# FAQs {-}
+# FAQs {- #faqs}
 
 ## Overview {-}
 
@@ -44,17 +44,29 @@ All temporary passwords should be changed as soon as possible through the Accoun
 
 ### My questionnaire/responses to questions won’t save {-}
 
-Occasionally the JavaScript that allows you to save changes you have made to your questionnaire will stop working, meaning that you will lose those changes. You should save your questionnaires regularly to ensure that if this happens you won’t lose too much work. I recommend saving after every 2-3 questions.
+Occassionally the Javascript that allows us to save questionnaires stops working.
 
-Codes assigned to response variables should be unique within that question, otherwise they will overwrite each other, and duplicate options will be removed.
+We have yet to determine a pattern or cause for this.
+
+Please save your questionnaires *frequently* to prevent any substantial loss of work (recommended to save every 3 questions added) or to consider using [bulk upload of questions](#addfromspreadsheet). You should save your questionnaires regularly to ensure that if this happens you won’t lose too much work. I recommend saving after every 2-3 questions.
+
+Codes assigned to response variables (the number before the colon in the image below) should be unique within that question, otherwise they will overwrite each other, and duplicate options will be removed.
 
 Editing options for responses to questions must be closed before you attempt to save the questionnaire by re-clicking the pencil icon next to the cog. You can tell that editing is open by the yellow colour surrounding the response options as below.
+
+<center>![](images/screenshots/quest_mixed_2.png)</center>
  
 ### Can the system make studies which branch depending on the responses given by participants? {-}
 
-This is currently an extremely limited option. It is possible to allow participants to self-select a set by placing multiple sets within a project. Participants will then complete the set that they have selected. 
+This is currently an **extremely limited** option. 
+
+It is possible to allow participants to self-select to a set by placing multiple supersets within a project rather than one superset as you normally would. Participants will then complete the set that they have selected:
+
+<center>![](images/screenshots/proj_branch.png)</center>
  
-Unfortunately, it is not possible to filter participants to specific components based upon their responses to questionnaires or experiments (i.e. screening, where you would want participants to complete the Beck Depression Inventory (Beck et al., 1988) or the Autism Spectrum Quotient, 10-item (Booth et al., 2013) and having only those who meet a certain threshold complete further components).
+```{block, type = "infor"}
+We cannot do server-side calculations to filter participants to specific components based upon their responses to questionnaires or experiments.
+```
 
 ### I edited my study and it changed from active to test. How do I change it back? {-}
 
@@ -76,7 +88,7 @@ As we do not have expertise in your specialisation, we cannot assess that it mee
 
 Your information sheet should usually be entered on the introduction section of the project page. The debrief sheet, likewise, should usually be entered into the feedback section of the top-most set within the project. 
 
-See the diagrams at the “Debriefing” section of this document. 
+<center>![](images/screenshots/structure.png)</center>
 
 In certain circumstances it might be put elsewhere, such as when your participants complete different study components. If you do not know where to put your debrief, seek support.
 
@@ -122,11 +134,17 @@ We recommend that if you do not have a strong theoretical or ethical reason to l
 
 ### Missing Data {-}
 
-Truly missing data is rare. Data can be misattributed to a different study if participants are completing more than one study at the same time. Therefore, we recommend that you download your data from each of the individual components from your study rather than downloading the data from the entire project page- see “Downloading Your Data”. 
+A number of system users have reported "missing data", however the data was later found to be misattributed to a different project. **Truly missing data is rare**. 
+
+Data can be misattributed to a different study if participants are completing more than one study at the same time. Therefore, we recommend that you download your data from each of the individual components from your study rather than downloading the data from the entire project page- see [“Downloading Your Data”](#data). 
 
 All data recorded under the individual components will be contained in the CSV file, regardless of what project it has been attributed to.
 
-You should also bear in mind that online studies are particularly prone to attrition, especially if they are longer in duration. If you have concerns about missing data, contact the admins for support.
+```{block, type = "info"}
+You should also bear in mind that online studies are particularly prone to attrition, especially if they are longer in duration, repetitive or require high effort levels from participants. 
+
+If you have concerns about missing data and have tried examining the data from individual components as above without success, contact the admins for support.
+```
 
 ### Where is my data stored? {-}
 
