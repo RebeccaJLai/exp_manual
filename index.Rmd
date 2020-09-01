@@ -152,21 +152,29 @@ Open code for the site and installation instructions are available to download [
 
 The same is provided for this user guide [here](https://github.com/RebeccaJLai/exp_manual), and under this same [license](https://creativecommons.org/licenses/by-sa/3.0/legalcode). This document was authored using bookdown [@R-bookdown]. See [here](https://bookdown.org/yihui/bookdown/) for instructions on making modifications, rendering and publishing such documents.
 
-## Author Contributions/Roles {-}
+## Author Contributions: CRediT Statement {-}
 
-Rebecca Lai: project admin, validation, visualisation, writing draft, writing editing.
-Rifah Abdullah: writing draft, writing editing.
-Gaby Mahrholtz: writing draft, writing editing.
-Benedict Jones: Conceptualization, funding acquisition, investigation, methodology, project admin, resources, supervision, validation.
-Lisa DeBruine: All except original draft writing.
+Author contribution statement following the Contributor Roles Taxonomy [(CRediT)](https://www.elsevier.com/authors/journal-authors/policies-and-ethics/credit-author-statement).
 
-## Acknowledgements {-}
+* Lisa DeBruine: All except original draft writing.
+* Rebecca Lai: project admin, validation, visualisation, writing draft, writing editing.
+* Benedict Jones: Conceptualization, funding acquisition, investigation, methodology, project admin, resources, supervision, validation.
+* Rifah Abdullah: writing draft, writing editing.
+* Gaby Mahrholtz: writing draft, writing editing.
 
 ```{r echo=FALSE, message = FALSE}
 
 library(tidyverse)
 
-read_csv("misc_files/acknowledgments.csv") %>%
+read_csv("_bookdown_files/misc_files/CRediT.csv") %>%
+  knitr::kable()
+```
+
+## Acknowledgements {-}
+
+```{r echo=FALSE, message = FALSE}
+
+read_csv("_bookdown_files/misc_files/acknowledgments.csv") %>%
   arrange(surname) %>%
   unite(col = "name", c(first_name, surname), sep = " ") %>%
   mutate(`Our thanks to:` = paste0(name, ": "),
