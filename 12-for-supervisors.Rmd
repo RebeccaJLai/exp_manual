@@ -19,7 +19,7 @@ If you are not prepared to accept this you may need to consider using another sy
 Our responsibilities are:
 
 * To try to ensure smooth operation of the site with regards to technical difficulties and instruction of staff and students. 
-    * We will do this by holding workshops at specific time points throughout the academic year, update this manual and answer questions on Slack.
+    * We will do this by holding workshops at specific time points throughout the academic year, update this manual and answer questions on [Microsoft Team Experimentum channel](@support) .
 * To troubleshoot problematic issues experienced by staff and students.
 
 ### Supervisor Responsibilities {-}

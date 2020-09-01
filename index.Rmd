@@ -34,13 +34,7 @@ Currently there are two active admins available to provide support, these are [R
 
 Admins play a double role. In addition to helping you with Experimentum we are active researchers and teaching staff with additional jobs to do elsewhere. Our inboxes are often full, and emails will often go unread. 
 
-As a result of this, all students and staff who are experiencing technical issues should use the Slack workspace ["Experimentum-web"](https://experimentum-web.slack.com/) to get support. Additionally, we are using the queries on the slack workspace to best update the user documentation, so it is important to keep all correspondence in one neat location.
-
-```{block, type = "rainbow"}
-You should never post data on this workspace, either in data file or screenshot form, as this would be a violation of the GDPR. All such files will be removed and your supervisor will be informed. 
-
-If you need to share your data please use one of the university approved services available to you, such as OneDrive or OwnCloud.
-```
+As a result of this, all students and staff who are experiencing technical issues should use Microsoft Teams: ["Experimentum"](https://teams.microsoft.com/l/team/19%3a173a62977b2445529504bc4a5128dca4%40thread.tacv2/conversations?groupId=38922d94-16b9-42ca-97a4-ee9d04a56d6a&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8) to get support. 
 
 #### Lost Passwords {- #lost_password}
 
@@ -64,9 +58,9 @@ You can change your password by signing in, navigating to "My Account" from the 
 
 #### Tutorial Sessions {-}
 
-During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Slack workspace and on appropriate Moodle pages.
+During times of particularly heavy use through the academic year we may schedule specific help sessions to deal with common issues and to help you fix specific problems that you might have. These will be advertised on the Microsoft Teams and on appropriate Moodle pages.
 
-If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the ["Experimentum-web"](https://experimentum-web.slack.com/) workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
+If you are experiencing an issue that is particularly difficult to fix remotely, you can make an appointment with Rebecca via private message on the ["Experimentum Team"](https://teams.microsoft.com/l/team/19%3a173a62977b2445529504bc4a5128dca4%40thread.tacv2/conversations?groupId=38922d94-16b9-42ca-97a4-ee9d04a56d6a&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8) workspace. However, you should have made attempts to solve the issue remotely first as time available for these appointments is extremely limited.
 
 If you require assistance to navigate this document or create your study due to disability please contact your supervisor who may refer you to the admins.
 
@@ -74,7 +68,7 @@ If you require assistance to navigate this document or create your study due to 
 
 If you download and use the code for this platform you should establish clear guidelines outlining the role of the admins and methods of support in accordance with any relevant regulations. 
 
-Staff from the University of Glasgow will not provide support for users of other systems based upon this code. Our Slack workspace is for internal use only.
+Staff from the University of Glasgow will not provide support for users of other systems based upon this code. Our Microsoft Team is for internal use only.
 
 ```{block, type = "rainbow"}
 Experimentum is an evolving platform.
