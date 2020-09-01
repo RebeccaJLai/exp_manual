@@ -65,7 +65,7 @@ All data recorded under the individual components will be contained in the CSV f
 ```{block, type = "info"}
 You should also bear in mind that online studies are particularly prone to attrition, especially if they are longer in duration, repetitive or require high effort levels from participants. 
 
-If you have concerns about missing data and have tried examining the data from individual components as above without success, contact the admins for support.
+If you have concerns about missing data and have tried examining the data from individual components as above without success, contact the admins for [support](#support).
 ```
 
 ### My questionnaire/responses to questions won’t save {-}

@@ -30,6 +30,7 @@ This displays all of currently available experimental component types available 
 All experiment types have a generic information fields in common, but some have extra depending on their functionality. Each of the options common across all types of experiment will be discussed in the following section. Where information is specific to a certain type of experiment it will be specified in brackets what type of experiment it refers to.
 
 You should make your information section as detailed as possible to remind your future self of what you have done, but also to explain what you have done to your supervisor(s) and the admins who will use this information to provide support.
+
 Here is an information section from a 2-AFC questionnaire for reference:
 
 <center>![](images/screenshots/exp_6.png)</center>
