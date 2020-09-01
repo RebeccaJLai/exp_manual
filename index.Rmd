@@ -1,6 +1,6 @@
 --- 
 title: 'Experimentum: Web-based Software for Psychological Studies'
-author: "Rebecca J. Lai, Rifah Abdullah, Gaby Mahrholz, Lisa DeBruine"
+author: "Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz."
 date: "`r Sys.Date()`"
 documentclass: book
 link-citations: yes
@@ -142,7 +142,7 @@ Consent forms usually take the form of an additional mixed questionnaire compone
 
 ## Citing Experimentum {-}
 
-Currently we recommend that you cite either the website (https://exp.psy.gla.ac.uk/), the codebase on GitHub (https://github.com/debruine/experimentum) or this manual, following the appropriate citation format for your discipline.
+Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz. (2020). Experimentum (Version v.0.2). Zenodo. doi:10.5281/zenodo.2634355
 
 ## Codebase {-}
 
@@ -152,23 +152,19 @@ Open code for the site and installation instructions are available to download [
 
 The same is provided for this user guide [here](https://github.com/RebeccaJLai/exp_manual), and under this same [license](https://creativecommons.org/licenses/by-sa/3.0/legalcode). This document was authored using bookdown [@R-bookdown]. See [here](https://bookdown.org/yihui/bookdown/) for instructions on making modifications, rendering and publishing such documents.
 
-## Author Contributions {-}
+## Author Contributions/Roles {-}
 
-```{r echo=FALSE, message = FALSE}
-library(tidyverse)
-
-read_csv("misc_files/author_contribs.csv") %>%
-  arrange(surname) %>%
-  unite(col = "name", c(first_name, surname), sep = " ") %>%
-  mutate(`Author:` = paste0(name, ": "),
-         ` ` = Contribution) %>%
-  select(`Author:`, ` `) %>%
-  knitr::kable()
-```
+Rebecca Lai: project admin, validation, visualisation, writing draft, writing editing.
+Rifah Abdullah: writing draft, writing editing.
+Gaby Mahrholtz: writing draft, writing editing.
+Benedict Jones: Conceptualization, funding acquisition, investigation, methodology, project admin, resources, supervision, validation.
+Lisa DeBruine: All except original draft writing.
 
 ## Acknowledgements {-}
 
 ```{r echo=FALSE, message = FALSE}
+
+library(tidyverse)
 
 read_csv("misc_files/acknowledgments.csv") %>%
   arrange(surname) %>%
