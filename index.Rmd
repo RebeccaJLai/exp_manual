@@ -160,7 +160,7 @@ Author contribution statement following the Contributor Roles Taxonomy [(CRediT)
 
 library(tidyverse)
 
-read_csv("_bookdown_files/misc_files/CRediT.csv") %>%
+read_csv("CRediT.csv") %>%
   knitr::kable()
 ```
 
@@ -168,13 +168,14 @@ read_csv("_bookdown_files/misc_files/CRediT.csv") %>%
 
 ```{r echo=FALSE, message = FALSE}
 
-read_csv("_bookdown_files/misc_files/acknowledgments.csv") %>%
+read_csv("acknowledgments.csv") %>%
   arrange(surname) %>%
   unite(col = "name", c(first_name, surname), sep = " ") %>%
   mutate(`Our thanks to:` = paste0(name, ": "),
          ` ` = Deeds) %>%
   select(`Our thanks to:`, ` `) %>%
   knitr::kable()
+
 ```
  
  

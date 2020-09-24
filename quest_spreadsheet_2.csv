@@ -2,3 +2,4 @@
 Mixed Questionnaire,Multiple types of questions can be combined in a single component.,Variable by question type. See each [questionnaire type](#quest_types) for more information.
 Radiopage,Multiple questions asked across a single radio button response scale,Numeric value which is not seen by participants that corresponds to text labels which are seen by participants. Can incorporate automatic reverse-scoring.
 Rank Order,A list of options which are dragged into relative rank order by participants.,Rank position assigned by participants of the various items.
+Info,None,None

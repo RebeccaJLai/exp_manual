@@ -2,7 +2,7 @@
 
 ## Overview
 
-Questionnaires are currently the most used items on Experimentum. They are made up of one or more individual components, available in 3 different types: mixed, radiopage and ranking. 
+Questionnaires are currently the most used items on Experimentum. They are made up of one or more individual components, available in 3 different types: mixed, radiopage, info and ranking. 
 
 ```{r, echo = F, message = F}
 quests <- read_csv("quest_spreadsheet_2.csv")
@@ -22,7 +22,7 @@ From here, you will be able to see the questionnaires for which you have ownersh
 
 The following pop-up box will appear, allowing you to choose the type that you want to create:
 
-<center>![](images/screenshots/questionnaire_dialogue.png)</center>
+<center>![](images/screenshots/quest_menu.png)</center> 
  
 The types that you choose will depend on what type of functionality your study requires. You should note that pencil and paper questionnaires will not always be able to be copied exactly onto Experimentum. If you make any changes to questionnaires to deliver them electronically you should discuss required changes with your supervisor to ensure their validity has not been compromised. 
 
@@ -67,6 +67,10 @@ All types of questionnaires will ask you to provide information about it, the on
     * If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown and may not be allowed to do these sections of the study if participants refuse this information.
 *	**Labnotes**: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about. 
 The following sections will describe each questionnaire type and what they can do.
+
+The questionnaire information for the type "info" differs in that it has less fields, reflecting its lesser functionality:
+
+<center>![](images/screenshots/quest_info_1.png)</center> 
 
 ## Questionnaire Tab
 
@@ -273,6 +277,24 @@ Each question will be an option in the list of items to rank order. Participants
 In the data, the question name is saved as q_name and the rank order assigned by the participant is saved as the dv in the downloaded data:
  
 <center>![](images/screenshots/rank3.png)</center> 
+
+### Info
+
+#### Attributes {-}
+
+Info type questionnaire components do not present participants with any questions, but gives you the option of presenting them with a block of text and a single continue button to press once they have read that text.
+
+The questionnaire information page differs from the other types, having less options because it has less functions:
+
+<center>![](images/screenshots/quest_info_1.png)</center> 
+
+Click on the section that says "Click here to set instructions" to set the text to be displayed.
+
+When participants are presented with this component, this is what they will see:
+
+<center>![](images/screenshots/quest_info_2.png)</center> 
+
+Participants will move onto the next component or set after clicking the continue button.
 
 ## Using Stimuli with Questionnaires {#assignstimquest}
 

@@ -24,7 +24,7 @@
 <meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz." />
 
 
-<meta name="date" content="2020-09-01" />
+<meta name="date" content="2020-09-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -218,6 +218,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="5.9.3" data-path="questionnaire-components.html"><a href="questionnaire-components.html#rank-order"><i class="fa fa-check"></i><b>5.9.3</b> Rank Order</a><ul>
 <li class="chapter" data-level="" data-path="questionnaire-components.html"><a href="questionnaire-components.html#attributes-2"><i class="fa fa-check"></i>Attributes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.9.4" data-path="questionnaire-components.html"><a href="questionnaire-components.html#info"><i class="fa fa-check"></i><b>5.9.4</b> Info</a><ul>
+<li class="chapter" data-level="" data-path="questionnaire-components.html"><a href="questionnaire-components.html#attributes-3"><i class="fa fa-check"></i>Attributes</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5.10" data-path="questionnaire-components.html"><a href="questionnaire-components.html#assignstimquest"><i class="fa fa-check"></i><b>5.10</b> Using Stimuli with Questionnaires</a></li>
@@ -419,7 +422,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">Chapter 5</span> Questionnaire Components</h1>
 <div id="overview-3" class="section level2">
 <h2><span class="header-section-number">5.1</span> Overview</h2>
-<p>Questionnaires are currently the most used items on Experimentum. They are made up of one or more individual components, available in 3 different types: mixed, radiopage and ranking.</p>
+<p>Questionnaires are currently the most used items on Experimentum. They are made up of one or more individual components, available in 3 different types: mixed, radiopage, info and ranking.</p>
 <table>
 <thead>
 <tr class="header">
@@ -444,6 +447,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td align="left">A list of options which are dragged into relative rank order by participants.</td>
 <td align="left">Rank position assigned by participants of the various items.</td>
 </tr>
+<tr class="even">
+<td align="left">Info</td>
+<td align="left">None</td>
+<td align="left">None</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -459,7 +467,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </center>
 <p>The following pop-up box will appear, allowing you to choose the type that you want to create:</p>
 <center>
-<img src="images/screenshots/questionnaire_dialogue.png" />
+<img src="images/screenshots/quest_menu.png" />
 </center>
 <p>The types that you choose will depend on what type of functionality your study requires. You should note that pencil and paper questionnaires will not always be able to be copied exactly onto Experimentum. If you make any changes to questionnaires to deliver them electronically you should discuss required changes with your supervisor to ensure their validity has not been compromised.</p>
 </div>
@@ -509,6 +517,10 @@ Please note that the site currently does not support version control, so once yo
 </ul></li>
 <li><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about. The following sections will describe each questionnaire type and what they can do.</li>
 </ul>
+<p>The questionnaire information for the type “info” differs in that it has less fields, reflecting its lesser functionality:</p>
+<center>
+<img src="images/screenshots/quest_info_1.png" />
+</center>
 </div>
 <div id="questionnaire-tab" class="section level2">
 <h2><span class="header-section-number">5.6</span> Questionnaire Tab</h2>
@@ -803,6 +815,23 @@ You can change the response options (from single minutes to increments of 15, fo
 <center>
 <img src="images/screenshots/rank3.png" />
 </center>
+</div>
+</div>
+<div id="info" class="section level3">
+<h3><span class="header-section-number">5.9.4</span> Info</h3>
+<div id="attributes-3" class="section level4 unnumbered">
+<h4>Attributes</h4>
+<p>Info type questionnaire components do not present participants with any questions, but gives you the option of presenting them with a block of text and a single continue button to press once they have read that text.</p>
+<p>The questionnaire information page differs from the other types, having less options because it has less functions:</p>
+<center>
+<img src="images/screenshots/quest_info_1.png" />
+</center>
+<p>Click on the section that says “Click here to set instructions” to set the text to be displayed.</p>
+<p>When participants are presented with this component, this is what they will see:</p>
+<center>
+<img src="images/screenshots/quest_info_2.png" />
+</center>
+<p>Participants will move onto the next component or set after clicking the continue button.</p>
 </div>
 </div>
 </div>
