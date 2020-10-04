@@ -204,25 +204,30 @@ Do not ask admins to activate your study. This is something that your supervisor
 
 The process of activating studies is outlined in the supervisor page under the heading ["Activating Studies"](#activating)
 
-## Anonymous Participation {#anon}
+## Participation {#anon}
 
-To enable anonymous participation, you should take the full project URL that you will be giving to participants, as shown below in the project information page under the text entry box for URL ("exp.psy.gla.ac.uk/project?myurl"):
+### Anonymous/Registered Participation
+
+Different types of participation require different suffixes to be attached to the URL, which you defined in the project information page:
  
 <center>![](images/screenshots/anon_1.png)</center> 
+
+For your convenience, you do not need to add anything to the URL yourself, but rather return to the project information page and you will be presented with the following buttons:
+
+<center>![](images/screenshots/anon1a.png)</center> 
+
+Clicking on one of the three buttons will copy the text to the clipboard for you to paste elsewhere.
  
-You would then place the following suffixes onto the end of it before sending it to participants:
+The different links will lead to different types of sign in pages:
 
-- **&guest**: this will take the participant to the project first page with a button to log them in as a guest.
-- **&auto**: this will automatically log the user in as a guest and display the dialogue box asking for age and gender identity information.
-- **&all**: will display 3 buttons asking the user to choose between logging in to an existing account, registering for an account and logging in as a guest.
-
-```{block, type = "warning"} 
-Do not put these suffixes into the URL box in the project information. It will not work.
-
-This is something you add later to the link that you are sending participants to.
-```
+- **requires account**: participants will be required to sign in to a registered account before they can proceed to the study.
+- **ending in "&guest"**: this will take the participant to the project first page with a button to log them in as a guest.
+- **ending in "&auto"**: this will automatically log the user in as a guest and display the dialogue box asking for age and gender identity information.
+- **ending in "&all"**: will display 3 buttons asking the user to choose between logging in to an existing account, registering for an account and logging in as a guest.
 
 So, this means that:
+
+- "**exp.psy.gla.ac.uk/project&myurl**" would require participants to sign in to an existing account or be required to create an account.
 
 - "**exp.psy.gla.ac.uk/project&myurl&guest**" would display the following button asking the users to press the button to log in as a guest. When they click this button to complete the project, they will receive a dialogue box asking for age and gender identity information.
 
@@ -236,3 +241,17 @@ So, this means that:
 
 <center>![](images/screenshots/anon_4.png)</center> 
  
+### Participation Credits {#credits}
+ 
+ From 5th October 2020 participants will be able to recieve participation credits automatically, provided that you have:
+ 
+ - Posted your advertisement in the INSoP subject pool. 
+ - Used the full experimentum URL (as copied from the project information page and *not* a modified URL such as a "tinyURL") in your advertisement on the subject pool.
+ 
+<center>![](images/screenshots/anon1a.png)</center> 
+ 
+ - The participant accesses your study whilst signed in to the subject pool, using the full experimentum URL in your subject pool advertisement.
+ 
+ Please ensure that you have adequate participation credits to cover the amount of participation that you expect to recieve. 
+ 
+ If you require further participation credits to be assigned to your account please speak to your supervisor.

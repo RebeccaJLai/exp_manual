@@ -24,7 +24,7 @@
 <meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz." />
 
 
-<meta name="date" content="2020-09-24" />
+<meta name="date" content="2020-10-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,41 +53,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -137,7 +162,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#testing-your-study"><i class="fa fa-check"></i><b>1.5</b> Testing Your Study</a></li>
 <li class="chapter" data-level="1.6" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#activating-projects"><i class="fa fa-check"></i><b>1.6</b> Activating Projects</a></li>
-<li class="chapter" data-level="1.7" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#favouritespinned-items"><i class="fa fa-check"></i><b>1.7</b> Favourites/Pinned Items</a></li>
+<li class="chapter" data-level="1.7" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#anonymous-participation"><i class="fa fa-check"></i><b>1.7</b> Anonymous Participation</a></li>
+<li class="chapter" data-level="1.8" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#favouritespinned-items"><i class="fa fa-check"></i><b>1.8</b> Favourites/Pinned Items</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="accounts.html"><a href="accounts.html"><i class="fa fa-check"></i><b>2</b> User Accounts</a><ul>
 <li class="chapter" data-level="2.1" data-path="accounts.html"><a href="accounts.html#overview"><i class="fa fa-check"></i><b>2.1</b> Overview</a></li>
@@ -186,7 +212,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.1" data-path="planning-your-project.html"><a href="planning-your-project.html#overview-2"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
 <li class="chapter" data-level="4.2" data-path="planning-your-project.html"><a href="planning-your-project.html#planning-your-project-1"><i class="fa fa-check"></i><b>4.2</b> Planning Your Project</a></li>
 <li class="chapter" data-level="4.3" data-path="planning-your-project.html"><a href="planning-your-project.html#agegender-limitations"><i class="fa fa-check"></i><b>4.3</b> Age/Gender Limitations</a></li>
-<li class="chapter" data-level="4.4" data-path="stimuli.html"><a href="stimuli.html#stimuli"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
+<li class="chapter" data-level="4.4" data-path="planning-your-project.html"><a href="planning-your-project.html#stimuli-1"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
 <li class="chapter" data-level="4.5" data-path="planning-your-project.html"><a href="planning-your-project.html#individual-components"><i class="fa fa-check"></i><b>4.5</b> Individual Components</a></li>
 <li class="chapter" data-level="4.6" data-path="planning-your-project.html"><a href="planning-your-project.html#sets-and-supersets"><i class="fa fa-check"></i><b>4.6</b> Sets and Supersets</a></li>
 <li class="chapter" data-level="4.7" data-path="planning-your-project.html"><a href="planning-your-project.html#info_sheet"><i class="fa fa-check"></i><b>4.7</b> Information Sheet</a></li>
@@ -305,7 +331,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="8.9" data-path="projs.html"><a href="projs.html#activating-projects-1"><i class="fa fa-check"></i><b>8.9</b> Activating Projects</a><ul>
 <li class="chapter" data-level="8.9.1" data-path="projs.html"><a href="projs.html#checlist"><i class="fa fa-check"></i><b>8.9.1</b> “Is my study ready?”: Student Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="8.10" data-path="projs.html"><a href="projs.html#anon"><i class="fa fa-check"></i><b>8.10</b> Anonymous Participation</a></li>
+<li class="chapter" data-level="8.10" data-path="projs.html"><a href="projs.html#anon"><i class="fa fa-check"></i><b>8.10</b> Participation</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="projs.html"><a href="projs.html#anonymousregistered-participation"><i class="fa fa-check"></i><b>8.10.1</b> Anonymous/Registered Participation</a></li>
+<li class="chapter" data-level="8.10.2" data-path="projs.html"><a href="projs.html#credits"><i class="fa fa-check"></i><b>8.10.2</b> Participation Credits</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>9</b> Data</a><ul>
 <li class="chapter" data-level="9.1" data-path="data.html"><a href="data.html#data-formats"><i class="fa fa-check"></i><b>9.1</b> Data Formats</a><ul>
@@ -345,6 +374,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#about-study-participation"><i class="fa fa-check"></i>About Study Participation</a><ul>
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#can-participants-skip-questions"><i class="fa fa-check"></i>Can participants skip questions?</a></li>
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#my-participants-are-not-being-allowed-to-take-part-in-my-studya-part-of-my-study"><i class="fa fa-check"></i>My participants are not being allowed to take part in my study/a part of my study</a></li>
+<li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#anonymous-participation-1"><i class="fa fa-check"></i>Anonymous Participation</a></li>
+<li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#assigning-participation-credits"><i class="fa fa-check"></i>Assigning Participation Credits</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#about-data"><i class="fa fa-check"></i>About Data</a><ul>
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#missing-data"><i class="fa fa-check"></i>Missing Data</a></li>
@@ -493,15 +524,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <img src="images/screenshots/exp_6.png" />
 </center>
 <ul>
-<li><strong>Name for Users</strong>: this is the name of this component that will be displayed to users. Please ensure that it is suitable.</li>
+<li><p><strong>Name for Users</strong>: this is the name of this component that will be displayed to users. Please ensure that it is suitable.</p></li>
 <li><p><strong>Name for Researchers</strong>: this is the name of this component for researchers. It will be displayed on lists and visible to you, your supervisor and admin staff. It should be informative and appropriate.</p></li>
-<li><strong>Design</strong>: within or between subjects, allow for multiple completions or single completion only.</li>
+<li><p><strong>Design</strong>: within or between subjects, allow for multiple completions or single completion only.</p></li>
 <li><p><strong>Slider range</strong>: (slider only). This determines the numerical value associated with each position on the slider, and the increments along it.</p></li>
-<li><strong>Trial Order</strong>: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</li>
-<li><strong>Image side</strong>: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.</li>
-<li><strong>Images</strong>: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.</li>
-<li><strong>Limited to</strong>: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.</li>
-<li><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.</li>
+<li><p><strong>Trial Order</strong>: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</p></li>
+<li><p><strong>Image side</strong>: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.</p></li>
+<li><p><strong>Images</strong>: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.</p></li>
+<li><p><strong>Limited to</strong>: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.</p></li>
+<li><p><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.</p></li>
 <li><p><strong>Number of images to display</strong>: this specifies the number of images to display per trial. You may wish to display 1, 2 or more depending on your design.</p></li>
 </ul>
 <div id="experiment-info-what-are-these-tabs" class="section level4">
@@ -672,7 +703,8 @@ NEEDS SOMETHING HERE
 <center>
 <img src="images/screenshots/exp_2.png" />
 </center>
-<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section, so I would change the number of total images to 12. Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
+<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section, so I would change the number of total images to 12.
+Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
 <div id="notes-specific-to-labelled-buttons" class="section level4 unnumbered">
 <h4>Notes Specific to Labelled Buttons</h4>
 <div id="length-of-the-scale-setting-text-labels-dv-values-and-scale-anchors" class="section level5 unnumbered">
@@ -833,7 +865,8 @@ new image required
 <li><strong>trial_name</strong>: name of the trial assigned by you in the stimuli assignment page, or the default of t1, t2, etc.</li>
 <li><strong>trial_n</strong>: the number of the trial, indicating row from the stimuli assignment page.</li>
 <li><strong>order</strong>: the number of the trial encountered by the user, indicating the order which the participant completed the trials.</li>
-<li><strong>dv</strong>: a series of numbers is provided in the sorting experiment. Taking the first data line displayed below, indicating “3:1;2;3;4;5”, the 3 preceding the colon (:) indicates that the user moved the stimuli items 3 times in total to settle on the order that they did. The numbers after the colon, separated by the semi-colons (;) indicate the order that the stimuli items were placed in. In our Ishihara example, the stimuli were assigned in the order of 1,2,3,4 and 5. This means that on this trial the participant was able to place the stimuli in the correct order using only 3 moves.</li>
+<li><strong>dv</strong>: a series of numbers is provided in the sorting experiment. Taking the first data line displayed below, indicating “3:1;2;3;4;5”, the 3 preceding the colon (:) indicates that the user moved the stimuli items 3 times in total to settle on the order that they did. The numbers after the colon, separated by the semi-colons (;) indicate the order that the stimuli items were placed in. In our Ishihara example, the stimuli were assigned in the order of 1,2,3,4 and 5.
+This means that on this trial the participant was able to place the stimuli in the correct order using only 3 moves.</li>
 <li><strong>rt</strong>: reaction time. Only serves as an indicator, as you cannot really predict the conditions of each participant’s internet connection and any latency issues associated with them.</li>
 <li><strong>side</strong>: the original order of the stimuli displayed on the page before the participant manipulated them.</li>
 <li><strong>dt</strong>: date and time of the submission of this line of the data.</li>
@@ -858,7 +891,8 @@ new image required
 <center>
 <img src="images/screenshots/exp_2.png" />
 </center>
-<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. Here you can see that each row (representing an individual trial) will have 3 images presented.</p>
+<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab.
+Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. Here you can see that each row (representing an individual trial) will have 3 images presented.</p>
 <div id="notes-specific-to-slideshows" class="section level4 unnumbered">
 <h4>Notes Specific to Slideshows</h4>
 <div id="interpretting-the-data-output" class="section level5 unnumbered">

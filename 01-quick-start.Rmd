@@ -71,6 +71,13 @@ If you make a change to the study after activation, rendering it inactive, the s
 You may wish to check that the edits made have not impacted the validity or quality of the project, or how comparable data before and after the changes are.
 ```
 
+
+## Anonymous Participation
+
+It is possible for participants to take part in your studies anonymously, even those who need to be assigned participation credits.
+
+Please see the sections on [participation](#anon) and [participation credits](#credits) for more information on how this works.
+
 ## Favourites/Pinned Items
 
 You can add frequently used items to your favourite’s menu to help you find them more quickly. This is done by navigating to the appropriate section of the page depending on what item you want to add to your favourites.
