@@ -68,7 +68,7 @@ You should also bear in mind that online studies are particularly prone to attri
 If you have concerns about missing data and have tried examining the data from individual components as above without success, contact the admins for [support](#support).
 ```
 
-### My questionnaire/responses to questions won’t save {-}
+#### My questionnaire/responses to questions won’t save {-}
 
 Occassionally the Javascript that allows us to save questionnaires stops working. 
 
@@ -106,10 +106,10 @@ Video stimuli which is in excess of 3Mb may not load in good time, or may fail t
 
 Email notifications are not always sent. 
 
-E-mails notifying students and supervisors of changes of account type work seemingly without issue. In particular, e-mails requesting supervisors turn studies to "active" are not being sent.
+E-mails notifying students and supervisors of changes of account type work seemingly without issue. In particular, e-mails requesting supervisors accept researcher status requests and turn studies to "active" are not being sent or sent consistently.
 
 ```{block, type = "workaround"}
-**Workaround:** Please e-mail your supervisor directly if you require them to review and activate your study.
+**Workaround:** Please e-mail your supervisor directly if you require researcher status or to review and activate your study.
 ```
 
 #### Cannot Share Ownership of Components With Students {-}
