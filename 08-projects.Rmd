@@ -259,7 +259,7 @@ You should not place more than ONE URL in any given subject pool advert.
  
 Please ensure that you have adequate participation credits to cover the amount of participation that you expect to recieve. If you require further participation credits to be assigned to your account please speak to your supervisor.
  
-When credits are allocated they will be issued in the name of the project from the subject pool:
+When credits are allocated they will be issued in the name of the project or advert title from the subject pool:
 
 <center>![](images/screenshots/subj_pool.png)</center> 
 
