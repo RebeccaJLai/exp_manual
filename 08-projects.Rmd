@@ -247,11 +247,20 @@ So, this means that:
  
  - Posted your advertisement in the INSoP subject pool. 
  - Used the full experimentum URL (as copied from the project information page and *not* a modified URL such as a "tinyURL") in your advertisement on the subject pool.
- 
-<center>![](images/screenshots/anon1a.png)</center> 
- 
  - The participant accesses your study whilst signed in to the subject pool, using the full experimentum URL in your subject pool advertisement.
  
- Please ensure that you have adequate participation credits to cover the amount of participation that you expect to recieve. 
+The full URL is available to copy from the project page. Clicking the buttons here will copy it to your clipboard:
+
+<center>![](images/screenshots/anon1a.png)</center> 
  
- If you require further participation credits to be assigned to your account please speak to your supervisor.
+```{block, type = "warning"}
+You should not place more than ONE URL in any given subject pool advert.
+```
+ 
+Please ensure that you have adequate participation credits to cover the amount of participation that you expect to recieve. If you require further participation credits to be assigned to your account please speak to your supervisor.
+ 
+When credits are allocated they will be issued in the name of the project from the subject pool:
+
+<center>![](images/screenshots/subj_pool.png)</center> 
+
+

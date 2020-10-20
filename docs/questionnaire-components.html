@@ -24,7 +24,7 @@
 <meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz." />
 
 
-<meta name="date" content="2020-10-16" />
+<meta name="date" content="2020-10-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,66 +53,41 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -212,7 +187,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="planning-your-project.html"><a href="planning-your-project.html#overview-2"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
 <li class="chapter" data-level="4.2" data-path="planning-your-project.html"><a href="planning-your-project.html#planning-your-project-1"><i class="fa fa-check"></i><b>4.2</b> Planning Your Project</a></li>
 <li class="chapter" data-level="4.3" data-path="planning-your-project.html"><a href="planning-your-project.html#agegender-limitations"><i class="fa fa-check"></i><b>4.3</b> Age/Gender Limitations</a></li>
-<li class="chapter" data-level="4.4" data-path="planning-your-project.html"><a href="planning-your-project.html#stimuli-1"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
+<li class="chapter" data-level="4.4" data-path="stimuli.html"><a href="stimuli.html#stimuli"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
 <li class="chapter" data-level="4.5" data-path="planning-your-project.html"><a href="planning-your-project.html#individual-components"><i class="fa fa-check"></i><b>4.5</b> Individual Components</a></li>
 <li class="chapter" data-level="4.6" data-path="planning-your-project.html"><a href="planning-your-project.html#sets-and-supersets"><i class="fa fa-check"></i><b>4.6</b> Sets and Supersets</a></li>
 <li class="chapter" data-level="4.7" data-path="planning-your-project.html"><a href="planning-your-project.html#info_sheet"><i class="fa fa-check"></i><b>4.7</b> Information Sheet</a></li>
@@ -545,8 +520,7 @@ Please note that the site currently does not support version control, so once yo
 <ul>
 <li>If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown and may not be allowed to do these sections of the study if participants refuse this information.</li>
 </ul></li>
-<li><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.
-The following sections will describe each questionnaire type and what they can do.</li>
+<li><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about. The following sections will describe each questionnaire type and what they can do.</li>
 </ul>
 <p>The questionnaire information for the type “info” differs in that it has less fields, reflecting its lesser functionality:</p>
 <center>
@@ -587,8 +561,7 @@ The JavaScript for saving the questionnaire occasionally stops working on some b
 </div>
 <div id="addfromspreadsheet" class="section level3">
 <h3><span class="header-section-number">5.8.2</span> Adding in Bulk</h3>
-<p>It is also possible to add some types of questions in bulk by using a spreadsheet. Unfortunately, not all types are covered, but the most basic and most frequently used types are.
-Spreadsheet templates are available by clicking “add from spreadsheet” and selecting the underlined type of questionnaire from the options just above the buttons.</p>
+<p>It is also possible to add some types of questions in bulk by using a spreadsheet. Unfortunately, not all types are covered, but the most basic and most frequently used types are. Spreadsheet templates are available by clicking “add from spreadsheet” and selecting the underlined type of questionnaire from the options just above the buttons.</p>
 <center>
 <img src="images/screenshots/quest_spread_1.png" />
 </center>
@@ -596,8 +569,7 @@ Spreadsheet templates are available by clicking “add from spreadsheet” and s
 <center>
 <img src="images/screenshots/quest_spread_2.png" />
 </center>
-<p>Fill the template spreadsheet in and save it onto your own storage, copy the cells that contain your question information. See the section below for more about question information.
-Double click on the section that says, “Double-click to paste data from a spreadsheet” and paste it when in the new entry box that appears:</p>
+<p>Fill the template spreadsheet in and save it onto your own storage, copy the cells that contain your question information. See the section below for more about question information. Double click on the section that says, “Double-click to paste data from a spreadsheet” and paste it when in the new entry box that appears:</p>
 <center>
 <img src="images/screenshots/quest_spread_3.png" />
 </center>
@@ -624,27 +596,27 @@ Double click on the section that says, “Double-click to paste data from a spre
 <tr class="odd">
 <td align="left">type</td>
 <td align="left">The type of question, akin to the options selected from the menu opened by the cog</td>
-<td align="left">* select: pulldown menu selectnum: numeric pulldown menu radio: radiobuttons radioanchor: radiobuttons with anchors datemenu: date menu text: short text</td>
+<td align="left">* select: pulldown menu  selectnum: numeric pulldown menu  radio: radiobuttons  radioanchor: radiobuttons with anchors  datemenu: date menu  text: short text</td>
 </tr>
 <tr class="even">
 <td align="left">options</td>
 <td align="left">Where you would specify the response options available to the participants.</td>
-<td align="left">Applicable to select and radio types. Numerical code, followed by “:”, and then text option. Specifying multiple by separating options using a semi-colon (;)</td>
+<td align="left">Applicable to select and radio types.  Numerical code, followed by “:”, and then text option.  Specifying multiple by separating options using a semi-colon (;)</td>
 </tr>
 <tr class="odd">
 <td align="left">maxlength</td>
 <td align="left">Where you would specify the length of the response</td>
-<td align="left">Applicable to radioanchor and text. Radioanchor: how many points in the range. Text: how many characters allowed.</td>
+<td align="left">Applicable to radioanchor and text.  Radioanchor: how many points in the range.  Text: how many characters allowed.</td>
 </tr>
 <tr class="even">
 <td align="left">low_anchor</td>
 <td align="left">Specifying the low anchor for the selected option.</td>
-<td align="left">Applicable to selectnum, radioanchor and datemenu. Selectnum specifies the lowest number in the range of the dropdown menu Radioanchor specifies the text for low anchor Datemenu specified the lower end of the year range.</td>
+<td align="left">Applicable to selectnum, radioanchor and datemenu.  Selectnum specifies the lowest number in the range of the dropdown menu  Radioanchor specifies the text for low anchor  Datemenu specified the lower end of the year range.</td>
 </tr>
 <tr class="odd">
 <td align="left">high_anchor</td>
 <td align="left">Specifying the high anchor for the selected option.</td>
-<td align="left">Applicable to selectnum, radioanchor and datemenu. Selectnum specifies the highest number in the range of the dropdown menuRadioanchor specifies the text for high anchorDatemenu specified the higher end of the year range.</td>
+<td align="left">Applicable to selectnum, radioanchor and datemenu.  Selectnum specifies the highest number in the range of the dropdown menu Radioanchor specifies the text for high anchor Datemenu specified the higher end of the year range.</td>
 </tr>
 </tbody>
 </table>
@@ -881,7 +853,7 @@ You can change the response options (from single minutes to increments of 15, fo
 <img src="images/screenshots/quest_stim_2.png" />
 </center>
 <p>The code is:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>img src=<span class="st">&quot;file/path/here.jpg&quot;</span> width=<span class="st">&quot;500px&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>img src=<span class="st">&quot;file/path/here.jpg&quot;</span> width=<span class="st">&quot;500px&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></code></pre></div>
 <p><code>width=500px</code> alters the image displayed by resizing the image to be 500 pixels wide whilst maintaining the aspect ratio.</p>
 <p>This is OK for one or two images, but if you are doing this with many images we would recommend that you resize the stimuli before uploading them.</p>
 <p><code>&lt;center&gt;</code> ensures that the image stays in the middle of the page. <code>&lt;/center&gt;</code> is a “closing tag” and must be put in place to ensure that data for the component is saved to the server.</p>
@@ -891,19 +863,19 @@ You can change the response options (from single minutes to increments of 15, fo
 </center>
 <p>This method works for all types of compatible stimuli, although the code used to display them will vary.</p>
 <p>For audio:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>audio controls<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.mp3&quot;</span> type=<span class="st">&quot;audio/mpeg&quot;</span><span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb3-3" title="3">Your browser does not support the audio element.</a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="op">&lt;</span><span class="er">/</span>audio<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span><span class="st"> </span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>audio controls<span class="op">&gt;</span>
+<span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.mp3&quot;</span> type=<span class="st">&quot;audio/mpeg&quot;</span><span class="op">&gt;</span>
+Your browser does not support the audio element.
+<span class="op">&lt;</span><span class="er">/</span>audio<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span><span class="st"> </span></code></pre></div>
 <p>Displayed as a small media player:</p>
 <center>
 <img src="images/screenshots/quest_stim_4.png" />
 </center>
 <p>And for video:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>video width=<span class="st">&quot;320&quot;</span> height=<span class="st">&quot;240&quot;</span> controls<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.m4v&quot;</span> type=<span class="st">&quot;video/mp4&quot;</span><span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb4-3" title="3">Your browser does not support the video tag.</a>
-<a class="sourceLine" id="cb4-4" title="4"><span class="op">&lt;</span><span class="er">/</span>video<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>video width=<span class="st">&quot;320&quot;</span> height=<span class="st">&quot;240&quot;</span> controls<span class="op">&gt;</span>
+<span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.m4v&quot;</span> type=<span class="st">&quot;video/mp4&quot;</span><span class="op">&gt;</span>
+Your browser does not support the video tag.
+<span class="op">&lt;</span><span class="er">/</span>video<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></code></pre></div>
 <div class="info">
 <p>
 Whilst you <em>can</em> link to externally hosted stimuli we would recommend that <strong>if possible</strong> you upload your stimuli to our server. This will ensure uninterrupted access to your media.
