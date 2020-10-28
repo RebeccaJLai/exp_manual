@@ -299,7 +299,7 @@ IrfanView is a fast, compact image viewer and editor for Windows XP, Vista, 7, 8
 You can resize and convert images at the same time by setting the appropriate options in one process.
 ```
 
-If you need to convert images to JPG, GIF or PNG in bulk, you can do this easily.
+If you need to convert images to JPG, GIF or PNG in bulk, you can do this easily. Here you can see me demonstrating this on a selection of faces from the Social Perception Lab [@todorovfaces1; @todorovfaces2]. The originals come in `.BMP` format and have to be converted to `.JPG` so that I can use them on Experimentum.
 
 First, ensure that all of your files are in the same folder. Open IrfanView and go to "File" > "Batch Conversion/Rename":
 
