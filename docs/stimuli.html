@@ -24,7 +24,7 @@
 <meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz." />
 
 
-<meta name="date" content="2020-10-20" />
+<meta name="date" content="2020-10-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,41 +53,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -187,7 +212,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.1" data-path="planning-your-project.html"><a href="planning-your-project.html#overview-2"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
 <li class="chapter" data-level="4.2" data-path="planning-your-project.html"><a href="planning-your-project.html#planning-your-project-1"><i class="fa fa-check"></i><b>4.2</b> Planning Your Project</a></li>
 <li class="chapter" data-level="4.3" data-path="planning-your-project.html"><a href="planning-your-project.html#agegender-limitations"><i class="fa fa-check"></i><b>4.3</b> Age/Gender Limitations</a></li>
-<li class="chapter" data-level="4.4" data-path="stimuli.html"><a href="stimuli.html#stimuli"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
+<li class="chapter" data-level="4.4" data-path="planning-your-project.html"><a href="planning-your-project.html#stimuli-1"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
 <li class="chapter" data-level="4.5" data-path="planning-your-project.html"><a href="planning-your-project.html#individual-components"><i class="fa fa-check"></i><b>4.5</b> Individual Components</a></li>
 <li class="chapter" data-level="4.6" data-path="planning-your-project.html"><a href="planning-your-project.html#sets-and-supersets"><i class="fa fa-check"></i><b>4.6</b> Sets and Supersets</a></li>
 <li class="chapter" data-level="4.7" data-path="planning-your-project.html"><a href="planning-your-project.html#info_sheet"><i class="fa fa-check"></i><b>4.7</b> Information Sheet</a></li>
@@ -266,6 +291,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6.6" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.6</b> Assigning Stimuli to Trials</a></li>
+<li class="chapter" data-level="6.7" data-path="experimental-components.html"><a href="experimental-components.html#assigning-names-to-trials"><i class="fa fa-check"></i><b>6.7</b> Assigning Names to Trials</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#sets"><i class="fa fa-check"></i><b>7</b> Sets</a><ul>
 <li class="chapter" data-level="7.1" data-path="sets.html"><a href="sets.html"><i class="fa fa-check"></i><b>7.1</b> Overview</a></li>
@@ -425,16 +451,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="stimuli" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Stimuli</h1>
-<div class="warning">
-<p>
-Things to add:
-</p>
-<ul>
-<li>
-Creating image stimuli will need to have it’s own section, this can incorporate individual image conversion and resizing via GIMP
-</li>
-</ul>
-</div>
 <div id="overview-1" class="section level2">
 <h2><span class="header-section-number">3.1</span> Overview</h2>
 <p>This chapter will cover how to upload your own stimuli, tips on naming conventions for the easiest possible way to assign stimuli to trials, accepted file formats and a rough guide to how to convert to the required formats.</p>
@@ -475,7 +491,7 @@ Remember that not all image, video and audio files are free for use. Check the l
 <h2><span class="header-section-number">3.3</span> Naming Conventions</h2>
 <p>In order to make the process of assigning stimuli to trials as easy as possible it is recommended that you establish a systematic way of assigning names to files.</p>
 <p>The stage of assigning stimuli to trials goes much faster and smoother if you can search for the stimuli files names using some sort of common text string in the names of the files.</p>
-<p>For example, here I have 24 stimuli items. These are stylized face images of both mal and female gender <span class="citation">(Mooney <a href="#ref-mooneys">1957</a>)</span>. I have named them using the convention “mooneyxn.jpg”, where x is either m or f (for male and female) and n for the number of the pair that I will present them in:</p>
+<p>For example, here I have 24 stimuli items. These are stylized face images of both male and female gender <span class="citation">(Mooney <a href="#ref-mooneys" role="doc-biblioref">1957</a>)</span>. I have named them using the convention “mooneyxn.jpg”, where x is either m or f (for male and female) and n for the number of the pair that I will present them in:</p>
 <center>
 <img src="images/screenshots/stim_1.png" />
 </center>
@@ -502,7 +518,12 @@ Remember that not all image, video and audio files are free for use. Check the l
 </center>
 <div id="creating-images" class="section level4 unnumbered">
 <h4>Creating Images</h4>
-<p>You may be required to make your own image stimuli, either a modification of previously used stimuli or something completely new. This section talks about some of the basic functions of GNU Image Manipulation Program <span class="citation">(“GIMP”, The GIMP Development Team <a href="#ref-gimp">2019</a>)</span>, but cannot give an in depth tutorial. There are many available online as this software is fairly well used.</p>
+<p>You may be required to make your own image stimuli, either a modification of previously used stimuli or something completely new. This section talks about some of the basic functions of GNU Image Manipulation Program <span class="citation">(“GIMP”, The GIMP Development Team <a href="#ref-gimp" role="doc-biblioref">2019</a>)</span>, but cannot give an in depth tutorial. There are many available online as this software is fairly well used.</p>
+<div class="info">
+<p>
+Admin Rebecca may be able to provide limited support for <strong>basic</strong> GIMP functions.
+</p>
+</div>
 <p>GIMP is a free software that allows you to create images from scratch and modify and export export existing image files to a variety of file formats.</p>
 <center>
 <img src="images/screenshots/gimp.png" />
@@ -586,10 +607,50 @@ In this case you could save a layer or export a different .GIF, .JPG or .PNG fro
 </div>
 <div id="basic-gimp-tools" class="section level5 unnumbered">
 <h5>Basic Gimp Tools</h5>
-<div class="warning">
-<p>
-GIMP keeps crashing on me when I try to use the text tool. I’ll need to access another computer to create this image.
-</p>
+<center>
+<img src="images/screenshots/gimp_tools.png" />
+</center>
+<div id="select-tools" class="section level6 unnumbered">
+<h6>Select Tools</h6>
+<p>Select tools allow you to select an area to work within. If selections are shown by a broken line aaround the area selected to work in. If you have an active selection you can only make changes within that area and within the layer you are working in.</p>
+<p>The four tools differ by the shape of selection that they create. Rectangles make rectangles and circles make circles. The lasso and the wand make irregularly shaped selections, with the lasso requiring you to do it manually and the wand selecting all pixels of a certain colour (with a set tolerance) attached to where you click to automatically form the shape of selection.</p>
+<p>To remove the selection so that you can edit other areas go to the <code>Select</code> menu and choose <code>None</code>. Here you can also <code>Invert</code> the selection- select all the other parts besides the part you choose.</p>
+<p>The red circles in many of the images here are created using the circle selection and the fill tools. I create a new layer for the circle, use the circle selection tool to create the outer perimeter of the circle, use the fill tool to fill it with my chosen colour to create a solid circle. I then navigate to the <code>Select</code> menu at the top and press <code>Shrink</code> and in the resulting dialogue box give it a number of pixels to shrink the selection by (usually I use 4 pixels). I then press the <code>Delete</code> button on my keyboard (not the <code>Backspace</code> one) to remove the inner section of the circle.</p>
+</div>
+<div id="eyedropper-and-cropper-tools" class="section level6 unnumbered">
+<h6>Eyedropper and Cropper Tools</h6>
+<p>The eyedropper allows you to select a colour from the current image. If you click on a certain pixel it will sample that colour and put it as the foreground colour in the selector at the bottom of the toolbox.</p>
+<p>The cropper allows you to select a certain part of the image and discard all other parts by double clicking the selection you have made. This will shrink the image and the canvas size.</p>
+</div>
+<div id="text-and-fill-tools" class="section level6 unnumbered">
+<h6>Text and Fill Tools</h6>
+<p>Text tools allow you to insert text into your image. Clicking will bring up a cursor and an font selection box will pop up:</p>
+<center>
+<img src="images/screenshots/gimp_text.png" />
+</center>
+<p>When you click to insert text it will be put into it’s own new layer with text path information preserved- this means it is saved as text information rather than as an image. This allows you to return to edit the text as you would in a word processor. To edit the text, choose the text tool again, the correct layer and then click on the text.</p>
+<p>To make changes to text as if it is an image you must discard the text information. This will mean that you can no-longer change this as if it were text (resizing, fixing typos, colour changes, etc):</p>
+<center>
+<img src="images/screenshots/gimp_discard_text.png" />
+</center>
+</div>
+<div id="pencil-brush-and-eraser-tools" class="section level6 unnumbered">
+<h6>Pencil, Brush and Eraser Tools</h6>
+<p>The pencil, brush and eraser tools allow you to draw and make changes to images. You can choose different brushes and change the sizes in the brushes dialogue. They’re pretty self-explanatory.</p>
+<center>
+<img src="images/screenshots/gimp_brushes.png" />
+</center>
+</div>
+<div id="foreground-and-background-colour-selection-tools" class="section level6 unnumbered">
+<h6>Foreground and Background Colour Selection Tools</h6>
+<p>These tools allow you to change the colours. You can pick them from different displays of spectra or use CYMK (for printing), HTML notation or RGB levels (for computer display) to set specific colours. You could also use the eyedropper to select a colour from the image if you wish to reuse that. GIMP will also save a number of your previously used colours in this screen</p>
+<center>
+<img src="images/screenshots/gimp_colours.png" /><img src="images/screenshots/gimp_colours_2.png" />
+</center>
+<p>You can use the arrows next to the colour selector to swap the foreground and background colours.</p>
+<center>
+<img src="images/screenshots/gimp_colour_swap.png" />
+</center>
 </div>
 </div>
 </div>
@@ -642,7 +703,8 @@ GIMP keeps crashing on me when I try to use the text tool. I’ll need to access
 <center>
 <img src="images/screenshots/image_size_example.png" />
 </center>
-<p>I have used images in the question field of a mixed questionnaire, as the blank spaces are more apparent to the participants. I have also limited their size to 25px to ensure that they do not seem too oversized in comparison to the text entry fields next to them.</p>
+<p>I have used images in the question field of a mixed questionnaire for a word-completion task. I created these using GIMP in order to standardise the size of the image, the text and the background of each stimuli item. It also makes the blank spaces are more apparent by using underscores. I can create a layer for each item, hide all but one and then export them one by one to create standardised images.</p>
+<p>I have also limited their size to 25px to ensure that they do not seem too oversized in comparison to the text entry fields next to them.</p>
 </div>
 </div>
 <div id="gimp_export" class="section level4 unnumbered">
@@ -664,7 +726,7 @@ GIMP keeps crashing on me when I try to use the text tool. I’ll need to access
 </center>
 <ul>
 <li>The first is 100% quality, no compression or compression artefacts.</li>
-<li>The second is 50% quality and has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2, likely a result of a reduction in the available colour palette.</li>
+<li>The second is 50% quality and has minimal pixelation artifacts around the periphery of the face, neck, hair and some issues with the skin texture in places. It also seems (to my office mates and I at least) that the skin tone is a little yellower in image 2, likely a result of a reduction in the available colour palette. If your experiment concerns skin tone this may be problematic.</li>
 <li>The third image (0% quality) is unusable for the vast majority of purposes.</li>
 </ul>
 <div class="info">
@@ -676,7 +738,7 @@ The level of compression that you choose will be a compromise between what the s
 </div>
 <div id="batch-procesing-images" class="section level3 unnumbered">
 <h3>Batch Procesing Images</h3>
-<p>If you have pre-existing stimuli that need to be resized or converted to another format you may want to use IrfanView (<span class="citation">Skiljan, Irfan (<a href="#ref-irfanview">2019</a>)</span>).</p>
+<p>If you have pre-existing stimuli that need to be resized or converted to another format you may want to use IrfanView (<span class="citation">Skiljan, Irfan (<a href="#ref-irfanview" role="doc-biblioref">2019</a>)</span>).</p>
 <center>
 <img src="images/screenshots/irfanview_1.png" />
 </center>
@@ -766,7 +828,7 @@ You can resize and convert images at the same time by setting the appropriate op
 <img src="images/screenshots/audacity_logo.png" />
 </center>
 <p>Audacity is free and open source cross-platform software which can be used to record (with suitable microphone), import, edit and export audio files in many different formats. This is also software that both the Voice Perception Lab and Face Research Lab use in their research.</p>
-<p>Here you will find the minimal instructions that will allow you to convert your audio files to <code>.mp3</code> format in Audacity 2.1.2 <span class="citation">(Audacity Team <a href="#ref-audacity2.1.2">2016</a>)</span> and Audacity 2.3.0 <span class="citation">(Audacity Team <a href="#ref-audacity2.3.0">2018</a>)</span>. For the full user guide see <a href="https://manual.audacityteam.org/index.html">here</a>.</p>
+<p>Here you will find the minimal instructions that will allow you to convert your audio files to <code>.mp3</code> format in Audacity 2.1.2 <span class="citation">(Audacity Team <a href="#ref-audacity2.1.2" role="doc-biblioref">2016</a>)</span> and Audacity 2.3.0 <span class="citation">(Audacity Team <a href="#ref-audacity2.3.0" role="doc-biblioref">2018</a>)</span>. For the full user guide see <a href="https://manual.audacityteam.org/index.html">here</a>.</p>
 <div id="audacity-2.1.2" class="section level4 unnumbered">
 <h4>Audacity 2.1.2</h4>
 <p>If you are still on an older version of audacity, go to File &gt; Edit Chains</p>
@@ -839,7 +901,7 @@ You can resize and convert images at the same time by setting the appropriate op
 </div>
 <div id="video" class="section level3">
 <h3><span class="header-section-number">3.4.3</span> Video</h3>
-<p>Experimentum required video stimuli to be uploaded in <code>.m4v</code> format. Here is a short tutorial based upon Reed <span class="citation">(<a href="#ref-m4vconv">2016</a>)</span></p>
+<p>Experimentum required video stimuli to be uploaded in <code>.m4v</code> format. Here is a short tutorial based upon Reed <span class="citation">(<a href="#ref-m4vconv" role="doc-biblioref">2016</a>)</span></p>
 <p>These are similar to the files with <code>.mp4</code> extensions – the main difference is that <code>.m4v</code> files are Digital Rights Management (DRM) copyright protected and are mostly used by Apple.</p>
 <p>If you have a Windows laptop, you can manually change <code>.mp4</code> video files to <code>.m4v</code> ones without downloading additional software sometimes.</p>
 <div class="warning">
@@ -923,16 +985,13 @@ You should also establish a naming convention that allows you to easily search f
 <div id="htmlstim" class="section level3">
 <h3><span class="header-section-number">3.6.1</span> Using Stimuli Items In Questionnaires, Set and Component Introductions</h3>
 <p>You may use stimuli items uploaded to the server in questionnaire introduction sections and individual question fields by using either Markdown or HTML syntax.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># The HTML code</span>
-<span class="op">&lt;</span>img src=<span class="st">&quot;image file path goes here with extension&quot;</span><span class="op">&gt;</span>
-<span class="st">  </span>
-<span class="co"># The Markdown code</span>
-<span class="op">!</span>[](image file path goes here with file extension)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># The HTML code</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="op">&lt;</span>img src=<span class="st">&quot;image file path goes here with extension&quot;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="st">  </span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># The Markdown code</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="op">!</span>[](image file path goes here with file extension)</a></code></pre></div>
 <p>The image file path can be found by navigating to Researchers &gt; Stimuli &gt; Uploads, selecting the folder name you gave it when you uploaded it and then the image:</p>
-<div class="figure">
-<img src="images/screenshots/img_file_path.png" />
-
-</div>
+<p><img src="images/screenshots/img_file_path.png" /></p>
 <p>The image file path is on the right hand side of the page above where the image is displayed.</p>
 <p>For additional information on using HTML code please see this tutorial on <a href="https://www.w3schools.com/html/">W3Schools</a>.</p>
 </div>
@@ -950,22 +1009,22 @@ You should also establish a naming convention that allows you to easily search f
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-audacity2.1.2">
-<p>Audacity Team. 2016. <em>Audacity(R): Free Audio Editor and Recorder</em> (version 2.1.2). <a href="https://audacityteam.org/" class="uri">https://audacityteam.org/</a>.</p>
+<p>Audacity Team. 2016. <em>Audacity(R): Free Audio Editor and Recorder</em> (version 2.1.2). <a href="https://audacityteam.org/">https://audacityteam.org/</a>.</p>
 </div>
 <div id="ref-audacity2.3.0">
-<p>Audacity Team. 2018. <em>Audacity(R): Free Audio Editor and Recorder</em> (version 2.3.0). <a href="https://audacityteam.org/" class="uri">https://audacityteam.org/</a>.</p>
+<p>Audacity Team. 2018. <em>Audacity(R): Free Audio Editor and Recorder</em> (version 2.3.0). <a href="https://audacityteam.org/">https://audacityteam.org/</a>.</p>
 </div>
 <div id="ref-mooneys">
-<p>Mooney, Craig M. 1957. “Closure as Affected by Viewing Time and Multiple Visual Fixations.” <em>Canadian Journal of Psychology</em> 11 (1): 21–21. doi:<a href="https://doi.org/10.1037/h0083687">10.1037/h0083687</a>.</p>
+<p>Mooney, Craig M. 1957. “Closure as Affected by Viewing Time and Multiple Visual Fixations.” <em>Canadian Journal of Psychology</em> 11 (1): 21–21. <a href="https://doi.org/10.1037/h0083687">https://doi.org/10.1037/h0083687</a>.</p>
 </div>
 <div id="ref-m4vconv">
-<p>Reed, Ada. 2016. “Easy Tricks to Convert Mp4 to M4v on Windows/Mac.” <a href="https://www.apowersoft.com/convert-mp4-to-m4v.html" class="uri">https://www.apowersoft.com/convert-mp4-to-m4v.html</a>.</p>
+<p>Reed, Ada. 2016. “Easy Tricks to Convert Mp4 to M4v on Windows/Mac.” 2016. <a href="https://www.apowersoft.com/convert-mp4-to-m4v.html">https://www.apowersoft.com/convert-mp4-to-m4v.html</a>.</p>
 </div>
 <div id="ref-irfanview">
-<p>Skiljan, Irfan. 2019. <em>IrfanView</em> (version 4.54 - 64 bit). <a href="https://www.irfanview.com/" class="uri">https://www.irfanview.com/</a>.</p>
+<p>Skiljan, Irfan. 2019. <em>IrfanView</em> (version 4.54 - 64 bit). <a href="https://www.irfanview.com/">https://www.irfanview.com/</a>.</p>
 </div>
 <div id="ref-gimp">
-<p>The GIMP Development Team. 2019. <em>GNU Image Manipulation Program</em> (version 2.10.14). <a href="https://www.gimp.org/" class="uri">https://www.gimp.org/</a>.</p>
+<p>The GIMP Development Team. 2019. <em>GNU Image Manipulation Program</em> (version 2.10.14). <a href="https://www.gimp.org/">https://www.gimp.org/</a>.</p>
 </div>
 </div>
             </section>

@@ -24,7 +24,7 @@
 <meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz." />
 
 
-<meta name="date" content="2020-10-20" />
+<meta name="date" content="2020-10-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,41 +53,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -187,7 +212,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.1" data-path="planning-your-project.html"><a href="planning-your-project.html#overview-2"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
 <li class="chapter" data-level="4.2" data-path="planning-your-project.html"><a href="planning-your-project.html#planning-your-project-1"><i class="fa fa-check"></i><b>4.2</b> Planning Your Project</a></li>
 <li class="chapter" data-level="4.3" data-path="planning-your-project.html"><a href="planning-your-project.html#agegender-limitations"><i class="fa fa-check"></i><b>4.3</b> Age/Gender Limitations</a></li>
-<li class="chapter" data-level="4.4" data-path="stimuli.html"><a href="stimuli.html#stimuli"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
+<li class="chapter" data-level="4.4" data-path="planning-your-project.html"><a href="planning-your-project.html#stimuli-1"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
 <li class="chapter" data-level="4.5" data-path="planning-your-project.html"><a href="planning-your-project.html#individual-components"><i class="fa fa-check"></i><b>4.5</b> Individual Components</a></li>
 <li class="chapter" data-level="4.6" data-path="planning-your-project.html"><a href="planning-your-project.html#sets-and-supersets"><i class="fa fa-check"></i><b>4.6</b> Sets and Supersets</a></li>
 <li class="chapter" data-level="4.7" data-path="planning-your-project.html"><a href="planning-your-project.html#info_sheet"><i class="fa fa-check"></i><b>4.7</b> Information Sheet</a></li>
@@ -266,6 +291,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6.6" data-path="experimental-components.html"><a href="experimental-components.html#assignstimexp"><i class="fa fa-check"></i><b>6.6</b> Assigning Stimuli to Trials</a></li>
+<li class="chapter" data-level="6.7" data-path="experimental-components.html"><a href="experimental-components.html#assigning-names-to-trials"><i class="fa fa-check"></i><b>6.7</b> Assigning Names to Trials</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="quick-reference-guide.html"><a href="quick-reference-guide.html#sets"><i class="fa fa-check"></i><b>7</b> Sets</a><ul>
 <li class="chapter" data-level="7.1" data-path="sets.html"><a href="sets.html"><i class="fa fa-check"></i><b>7.1</b> Overview</a></li>
@@ -498,15 +524,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <img src="images/screenshots/exp_6.png" />
 </center>
 <ul>
-<li><strong>Name for Users</strong>: this is the name of this component that will be displayed to users. Please ensure that it is suitable.</li>
+<li><p><strong>Name for Users</strong>: this is the name of this component that will be displayed to users. Please ensure that it is suitable.</p></li>
 <li><p><strong>Name for Researchers</strong>: this is the name of this component for researchers. It will be displayed on lists and visible to you, your supervisor and admin staff. It should be informative and appropriate.</p></li>
-<li><strong>Design</strong>: within or between subjects, allow for multiple completions or single completion only.</li>
+<li><p><strong>Design</strong>: within or between subjects, allow for multiple completions or single completion only.</p></li>
 <li><p><strong>Slider range</strong>: (slider only). This determines the numerical value associated with each position on the slider, and the increments along it.</p></li>
-<li><strong>Trial Order</strong>: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</li>
-<li><strong>Image side</strong>: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.</li>
-<li><strong>Images</strong>: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.</li>
-<li><strong>Limited to</strong>: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.</li>
-<li><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.</li>
+<li><p><strong>Trial Order</strong>: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</p></li>
+<li><p><strong>Image side</strong>: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.</p></li>
+<li><p><strong>Images</strong>: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.</p></li>
+<li><p><strong>Limited to</strong>: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.</p></li>
+<li><p><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.</p></li>
 <li><p><strong>Number of images to display</strong>: this specifies the number of images to display per trial. You may wish to display 1, 2 or more depending on your design.</p></li>
 </ul>
 <div id="experiment-info-what-are-these-tabs" class="section level4">
@@ -595,11 +621,7 @@ If you are a student researcher this will mean you will need to contact your sup
 <h4>Notes Specific to 2-AFC</h4>
 <div id="assigning-stimuli-to-trials" class="section level5 unnumbered">
 <h5>Assigning Stimuli to Trials</h5>
-<div class="warning">
-<p>
-NEEDS SOMETHING HERE
-</p>
-</div>
+<p>2-AFC is used as an example in the <a href="experimental-components.html#assignstimexp">assigning stimuli</a> section below. Follow the link to read more.</p>
 </div>
 <div id="interpretting-the-data" class="section level5 unnumbered">
 <h5>Interpretting the Data</h5>
@@ -620,7 +642,7 @@ NEEDS SOMETHING HERE
 </div>
 <div id="afc-with-8-button-strength-of-choice-jnd" class="section level3">
 <h3><span class="header-section-number">6.5.2</span> 2-AFC with 8-Button Strength of Choice (JND)</h3>
-<p>For the most part, the 2-AFC with 8 button strength of choice is largely the same as the binary 2-ACF experiment type in its presentation, but the question being asked and the DV rendered by participants differ.</p>
+<p>For the most part, the 2-AFC with 8 button strength of choice is largely the same as the binary 2-AFC experiment type in its presentation, but the question being asked and the DV rendered by participants differ.</p>
 <p>You will still be asking participants to compare the two stimuli pieces and render a judgement. Instead of asking them to pick one, you will be asking them to pick one <em>and</em> indicate the strength of their choice. This type is also referred to as the large_n JND type in the component information page.</p>
 <center>
 <img src="images/screenshots/jnd.png" />
@@ -635,7 +657,8 @@ NEEDS SOMETHING HERE
 <h4>Notes Specific to 2-AFC with 8-Button Strength of Choice</h4>
 <div id="assigning-stimuli" class="section level5 unnumbered">
 <h5>Assigning Stimuli</h5>
-<p>As in the 2-AFC, the way that you assign stimuli matters. Stimuli assigned to the first column will return a DV from the range of 4 to 7 if chosen and those assigned to the second column will return a DV from the range of 0-3 if chosen, depending on the strength of choice indicated by participants.</p>
+<p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
+<p>As in the <a href="experimental-components.html#assignstimexp">2-AFC</a>, the way that you assign stimuli matters. Stimuli assigned to the first column will return a DV from the range of 4 to 7 if chosen and those assigned to the second column will return a DV from the range of 0-3 if chosen, depending on the strength of choice indicated by participants.</p>
 <center>
 <img src="images/screenshots/stim_jnd.png" />
 </center>
@@ -677,7 +700,8 @@ NEEDS SOMETHING HERE
 <center>
 <img src="images/screenshots/exp_2.png" />
 </center>
-<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section, so I would change the number of total images to 12. Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
+<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section, so I would change the number of total images to 12.
+Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
 <div id="notes-specific-to-labelled-buttons" class="section level4 unnumbered">
 <h4>Notes Specific to Labelled Buttons</h4>
 <div id="length-of-the-scale-setting-text-labels-dv-values-and-scale-anchors" class="section level5 unnumbered">
@@ -697,22 +721,25 @@ NEEDS SOMETHING HERE
 </div>
 <div id="assigning-stimuli-to-trials-1" class="section level5 unnumbered">
 <h5>Assigning Stimuli to Trials</h5>
+<p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
 <p>Assigning stimuli to trials does not impact the DV in the same way as the 2-AFC options do in that the columns do not correspond to the value returned. Notice there are no black panels with DVs or DV ranges specified above the columns:</p>
 <center>
 <img src="images/screenshots/stim_lb.png" />
 </center>
-<p>The value of the DV will come from the buttons of the scale. The DV value is the one that is displayed above the scale when you are viewing the eperiment tab.</p>
+<p>The value of the DV will come from the buttons of the scale. The DV value is the one that is displayed above the scale when you are viewing the experiment tab.</p>
 <center>
 <img src="images/screenshots/exp_12.png" />
 </center>
 </div>
 <div id="interpretting-the-data-1" class="section level5 unnumbered">
 <h5>Interpretting the Data</h5>
-<div class="warning">
-<p>
-NEEDS SOMETHING HERE
-</p>
-</div>
+<p>The DV in the downloaded data will be taken from the numerical value you associated with a specific button when establishing your experiment, not the associated text label:</p>
+<center>
+<img src="images/screenshots/exp_11.png" />
+</center>
+<center>
+<img src="images/screenshots/exp_lb_data.png" />
+</center>
 </div>
 </div>
 <div id="participant-view-2" class="section level4 unnumbered">
@@ -731,11 +758,13 @@ NEEDS SOMETHING HERE
 </center>
 <p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section. In this example I am presenting them one at a time rather than in pairs, so I change the number of images to 24.</p>
 <p>Sliders ranges will accept numerical values over a very wide range (tested -9999 to +9999), but you should be realistic about the values that you set. You should also change the increment to one that is suitable.</p>
+<p>Participants will not be able to view the numerical value associated with the position of the knob.</p>
 <p>Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
 <div id="notes-specific-to-sliders" class="section level4 unnumbered">
 <h4>Notes Specific to Sliders</h4>
 <div id="assigning-stimuli-to-trials-2" class="section level5 unnumbered">
 <h5>Assigning Stimuli to Trials</h5>
+<p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
 <p>Specific columns on the assignment screen do not carry specific DV values, as indicated by the lack of the black panels above them:</p>
 <center>
 <img src="images/screenshots/stim_lb.png" />
@@ -743,11 +772,10 @@ NEEDS SOMETHING HERE
 </div>
 <div id="interpretting-the-data-2" class="section level5 unnumbered">
 <h5>Interpretting the Data</h5>
-<div class="warning">
-<p>
-NEEDS SOMETHING HERE
-</p>
-</div>
+<p>The “dv” column of the data output will correspond to the numerical value associated with the position of the know that the participant set during each of the trials:</p>
+<center>
+<img src="images/screenshots/exp_slider_data.png" />
+</center>
 </div>
 </div>
 <div id="participant-view-3" class="section level4 unnumbered">
@@ -772,26 +800,25 @@ NEEDS SOMETHING HERE
 <h4>Notes Specific to X-AFC</h4>
 <div id="assigning-stimuli-to-trials-3" class="section level5 unnumbered">
 <h5>Assigning Stimuli to Trials</h5>
+<p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
 <p>Despite the lack of black panels above the columns on the assignment page, the DV values do correspond to specific items of stimuli.</p>
 <p>If, for example, participants experiencing the first trial (first row) from the screenshot above choose option 3, the value of 3 will be presented in the data under the DV column.</p>
 </div>
 <div id="interpretting-the-data-3" class="section level5 unnumbered">
 <h5>Interpretting the Data</h5>
-<div class="warning">
-<p>
-NEEDS SOMETHING HERE
-</p>
-</div>
+<p>The value given in the “dv” column will be the number of the item that the participant has chosen out of the X available that you have given them, despite the lack of black panels above the items in the stimuli assignment page.</p>
+<p>The “side” column describes the order of presentation of the X number of stimuli items displayed on the page during that trial.</p>
+<center>
+<img src="images/screenshots/exp_xafc_data.png" />
+</center>
 </div>
 </div>
 <div id="participant-view-4" class="section level4 unnumbered">
 <h4>Participant view</h4>
-<p>This is what the X-AFC looks like, with 3 stimuli items displayed:</p>
-<div class="warning">
-<p>
-new image required
-</p>
-</div>
+<p>This is what the X-AFC looks like, with 3 stimuli items displayed and without a question:</p>
+<center>
+<img src="images/screenshots/exp_xafc.png" />
+</center>
 </div>
 </div>
 <div id="sorting" class="section level3">
@@ -810,7 +837,8 @@ new image required
 <h4>Notes Specific to Sorting Components</h4>
 <div id="assigning-stimuli-and-dv-values" class="section level5 unnumbered">
 <h5>Assigning Stimuli and DV Values</h5>
-<p>For this experiment I am using Ishihara colour deficiency plate test items. These use images of numbers made up of dots in specific colours, which cannot be perceived by those who experience colour perception deficiency. This example contains numbers which the participant should sort into order.</p>
+<p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
+<p>For this experiment I am using Ishihara colour deficiency plate test items <span class="citation">(Ishihara <a href="#ref-ishihara" role="doc-biblioref">1972</a>)</span>. These use images of numbers made up of dots in specific colours, which cannot be perceived by those who experience colour perception deficiency. This example contains numbers which the participant should sort into order.</p>
 <p>If the participant can successfully order the numbers in a small number of changes then we should be able to assume that they can perceive the shape of the number in the circle. Those who cannot experience colour deficiency may make more mistakes in ordering the numbers. The sets used here test for deuteranopia, the most common type of colour deficiency.</p>
 <p>As you can see, I have numbered the stimuli in a systematic way: “ishihara_x_y.jpg”, where x is the number displayed in the circle and y is the set that it belongs in.</p>
 <p>By searching for “ishihara_5” I have found all images which have this string in their file name, resulting in the display of two images of the number 5 from set one and two, displayed on the right of the image below.</p>
@@ -838,7 +866,8 @@ new image required
 <li><strong>trial_name</strong>: name of the trial assigned by you in the stimuli assignment page, or the default of t1, t2, etc.</li>
 <li><strong>trial_n</strong>: the number of the trial, indicating row from the stimuli assignment page.</li>
 <li><strong>order</strong>: the number of the trial encountered by the user, indicating the order which the participant completed the trials.</li>
-<li><strong>dv</strong>: a series of numbers is provided in the sorting experiment. Taking the first data line displayed below, indicating “3:1;2;3;4;5”, the 3 preceding the colon (:) indicates that the user moved the stimuli items 3 times in total to settle on the order that they did. The numbers after the colon, separated by the semi-colons (;) indicate the order that the stimuli items were placed in. In our Ishihara example, the stimuli were assigned in the order of 1,2,3,4 and 5. This means that on this trial the participant was able to place the stimuli in the correct order using only 3 moves.</li>
+<li><strong>dv</strong>: a series of numbers is provided in the sorting experiment. Taking the first data line displayed below, indicating “3:1;2;3;4;5”, the 3 preceding the colon (:) indicates that the user moved the stimuli items 3 times in total to settle on the order that they did. The numbers after the colon, separated by the semi-colons (;) indicate the order that the stimuli items were placed in. In our Ishihara example, the stimuli were assigned in the order of 1,2,3,4 and 5.
+This means that on this trial the participant was able to place the stimuli in the correct order using only 3 moves.</li>
 <li><strong>rt</strong>: reaction time. Only serves as an indicator, as you cannot really predict the conditions of each participant’s internet connection and any latency issues associated with them.</li>
 <li><strong>side</strong>: the original order of the stimuli displayed on the page before the participant manipulated them.</li>
 <li><strong>dt</strong>: date and time of the submission of this line of the data.</li>
@@ -863,9 +892,16 @@ new image required
 <center>
 <img src="images/screenshots/exp_2.png" />
 </center>
-<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. Here you can see that each row (representing an individual trial) will have 3 images presented.</p>
+<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab.
+Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. Here you can see that each row (representing an individual trial) will have 3 images presented.</p>
 <div id="notes-specific-to-slideshows" class="section level4 unnumbered">
 <h4>Notes Specific to Slideshows</h4>
+<div id="assigning-stimuli-1" class="section level5">
+<h5><span class="header-section-number">6.5.7.0.1</span> Assigning Stimuli</h5>
+<p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
+<p>Participants cannot make any responses to the stimuli you are giving them in the slideshow thus there are no specific recommendations for stimuli placement in relation to a DV. Stimuli can still be presented in pairs/groups however.</p>
+<p>You may wish to consider these in relation to any components which may depend on what the slideshow presents and how it is presented.</p>
+</div>
 <div id="interpretting-the-data-output" class="section level5 unnumbered">
 <h5>Interpretting the Data Output</h5>
 <p>The slideshow is a way to present stimuli to participants, <strong>but it does not allow participants to provide any sort of input and as a result it does not return any DV based on a participant response</strong>.</p>
@@ -900,8 +936,69 @@ new image required
 </div>
 <div id="assignstimexp" class="section level2">
 <h2><span class="header-section-number">6.6</span> Assigning Stimuli to Trials</h2>
-<p>Once you have constructed an experiment you will assign stimuli to the trials. This is what the page to assign stimuli to trials looks like for a simple 2-AFC experiment:</p>
+<p>Once you have constructed an experiment you will assign stimuli to the trials. To make this process easier we recommended that you follow a specific naming convention in the <a href="stimuli.html#naming">stimuli</a> section of the stimuli chapter.</p>
+<p>I will use the simplest example to demonstrate how to assign stimuli to trials here- a 2AFC component. You should also check each experimental type’s section to see if there are any additional points you should take note of.</p>
+<p>This is what the page to assign stimuli to trials looks like for a simple 2-AFC experiment:</p>
+<center>
+<img src="images/screenshots/stim_2afc.png" />
+</center>
+<p>Here is am going to present participants with a 2-AFC experiment where they have to select a face they perceive to be more feminine. I have 24 stimuli items, 12 pairs each with a male or a female face <span class="citation">(Mooney <a href="#ref-mooneys" role="doc-biblioref">1957</a>)</span>. I have set my experimental component to have 12 trials in the information page to set up the 12 empty pairs of DV boxes on the page.</p>
+<p>I have named my stimuli items using the convention “mooneyxn.jpg”, where “x” is either m or f (for male and female) and “n” for the number of the pair that I will present them in. So “mooneyf1.jpg” will be presented together with “mooneym1.jpg” as a pair in a single trial:</p>
+<center>
+<img src="images/screenshots/stim_1.png" />
+</center>
+<p>When you save your experimental component you will be taken to the page for assigning stimuli to trials. Here you will find:</p>
+<ul>
+<li>An empty box for each stimuli item</li>
+<li>A trial name (t1:pair_1, t1 standing for “trial one” and “pair_1” being the name that I have set</li>
+<li>Buttons:
+<ul>
+<li>Test the experiment (“Go”)</li>
+<li>Edit the experiment (“Edit”)</li>
+<li>See the component information (“Info”)</li>
+<li>“List” to see the stimuli assigned as a list of details</li>
+<li>“Images” to see the stimuli assigned as images</li>
+</ul></li>
+<li>A search box for you to type in the stimuli item names at the top right of the page</li>
+</ul>
+<p>Here I can use the search box to find all stimuli containing the string “mooneyf”. From this I can double click on the first empty box under the “DV=1” column to automatically insert all 12 images, in order of n (specified above as the number of the pair to be presented together):</p>
+<center>
+<img src="images/screenshots/stim_3.png" />
+</center>
+<div class="info">
+<p>
+Note the numerical order here. It goes “1, 10, 11, 12, 2…” because I have used single digits in my numbering of the numbers 1-9. Ensure that your numbering is consistAnt across stimuli pairs to ensure you keep your correct pairs together.
+</p>
+</div>
+<p>I can also search for “mooneym” and repeat the process for the other image for the male faces under “DV=0”.</p>
+<p>As you can see I have been able to set all my stimuli quickly because of the naming convention I have used. It is also beneficial to store their names in an Excel spreadsheet. Here I have stored them in pairs under column headers. I can use this later when assigning them to trials.</p>
+<p>I have also assigned trial names; this will come in handy should I need to know which trial each data point refers to in my analysis.</p>
+<center>
+<img src="images/screenshots/stim_2.png" />
+</center>
+<p>This example above is where each male face will be compared to a corresponding female face in a trial with two images. You may have more or less than two stimuli items per trial and your spreadsheet should vary accordingly.</p>
+</div>
+<div id="assigning-names-to-trials" class="section level2">
+<h2><span class="header-section-number">6.7</span> Assigning Names to Trials</h2>
+<p>You can set a trial name for each of your trials in your experimental component.</p>
+<p>To do this individually you can click on the “t1” trial name part and type it in manually, or you can use the “fill from list” button to do them in bulk by copying a column of names from an Excel spreadsheet as shown above:</p>
+<center>
+<img src="images/screenshots/exp_fill_from_list.png" />
+</center>
+<p>Click “Fill from List” when you have pasted in your list of trial names to automatically insert all trial names. Ensure the order of trial names matches that of the stimuli given in the trials:</p>
+<center>
+<img src="images/screenshots/stim_2.png" />
+</center>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-ishihara">
+<p>Ishihara, Shinobu. 1972. <em>Tests for Color-Blindness</em>. Tokyo: Japan: Kanehara Shuppan Co., Ltd.</p>
+</div>
+<div id="ref-mooneys">
+<p>Mooney, Craig M. 1957. “Closure as Affected by Viewing Time and Multiple Visual Fixations.” <em>Canadian Journal of Psychology</em> 11 (1): 21–21. <a href="https://doi.org/10.1037/h0083687">https://doi.org/10.1037/h0083687</a>.</p>
 </div>
 </div>
             </section>

@@ -133,9 +133,7 @@ Once you have finished on this page and press "Save" you will be taken to the pa
 
 ##### Assigning Stimuli to Trials {-}
 
-```{block, type = "warning"}
-NEEDS SOMETHING HERE
-```
+2-AFC is used as an example in the [assigning stimuli](#assignstimexp) section below. Follow the link to read more.
 
 ##### Interpretting the Data {-}
 
@@ -153,7 +151,7 @@ When this experimental component is presented to the participants it will look l
 
 ### 2-AFC with 8-Button Strength of Choice (JND)
 
-For the most part, the 2-AFC with 8 button strength of choice is largely the same as the binary 2-ACF experiment type in its presentation, but the question being asked and the DV rendered by participants differ. 
+For the most part, the 2-AFC with 8 button strength of choice is largely the same as the binary 2-AFC experiment type in its presentation, but the question being asked and the DV rendered by participants differ. 
 
 You will still be asking participants to compare the two stimuli pieces and render a judgement. Instead of asking them to pick one, you will be asking them to pick one *and* indicate the strength of their choice. This type is also referred to as the large_n JND type in the component information page.
 
@@ -171,7 +169,9 @@ Once you have finished on this page and press "Save" you will be taken to the pa
 
 ##### Assigning Stimuli {-}
 
-As in the 2-AFC, the way that you assign stimuli matters. Stimuli assigned to the first column will return a DV from the range of 4 to 7 if chosen and those assigned to the second column will return a DV from the range of 0-3 if chosen, depending on the strength of choice indicated by participants.
+Same method as the [2-AFC](#assignstimexp) but with some differences.
+
+As in the [2-AFC](#assignstimexp), the way that you assign stimuli matters. Stimuli assigned to the first column will return a DV from the range of 4 to 7 if chosen and those assigned to the second column will return a DV from the range of 0-3 if chosen, depending on the strength of choice indicated by participants.
 
 <center>![](images/screenshots/stim_jnd.png)</center>
 
@@ -230,19 +230,23 @@ The DV returned in the data is displayed above each of the labelled buttons. Thi
 
 ##### Assigning Stimuli to Trials {-}
 
+Same method as the [2-AFC](#assignstimexp) but with some differences.
+
 Assigning stimuli to trials does not impact the DV in the same way as the 2-AFC options do in that the columns do not correspond to the value returned. Notice there are no black panels with DVs or DV ranges specified above the columns:
 
 <center>![](images/screenshots/stim_lb.png)</center>
 
-The value of the DV will come from the buttons of the scale. The DV value is the one that is displayed above the scale when you are viewing the eperiment tab.
+The value of the DV will come from the buttons of the scale. The DV value is the one that is displayed above the scale when you are viewing the experiment tab.
 
 <center>![](images/screenshots/exp_12.png)</center>
 
 ##### Interpretting the Data {-}
 
-```{block, type = "warning"}
-NEEDS SOMETHING HERE
-```
+The DV in the downloaded data will be taken from the numerical value you associated with a specific button when establishing your experiment, not the associated text label:
+
+<center>![](images/screenshots/exp_11.png)</center>
+
+<center>![](images/screenshots/exp_lb_data.png)</center>
 
 #### Participant View {-}
 
@@ -260,11 +264,15 @@ First, you should complete the experiment information at the top of the page, th
 
 Sliders ranges will accept numerical values over a very wide range (tested -9999 to +9999), but you should be realistic about the values that you set. You should also change the increment to one that is suitable.
 
+Participants will not be able to view the numerical value associated with the position of the knob.
+
 Once you have finished on this page and press "Save" you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.
 
 #### Notes Specific to Sliders {-}
 
 ##### Assigning Stimuli to Trials {-}
+
+Same method as the [2-AFC](#assignstimexp) but with some differences.
 
 Specific columns on the assignment screen do not carry specific DV values, as indicated by the lack of the black panels above them:
 
@@ -272,9 +280,9 @@ Specific columns on the assignment screen do not carry specific DV values, as in
 
 ##### Interpretting the Data {-}
 
-```{block, type = "warning"}
-NEEDS SOMETHING HERE
-```
+The "dv" column of the data output will correspond to the numerical value associated with the position of the know that the participant set during each of the trials:
+
+<center>![](images/screenshots/exp_slider_data.png)</center>
 
 #### Participant View {-}
 
@@ -300,24 +308,25 @@ First, you should complete the experiment information at the top of the page, th
 
 ##### Assigning Stimuli to Trials {-}
 
+Same method as the [2-AFC](#assignstimexp) but with some differences.
+
 Despite the lack of black panels above the columns on the assignment page, the DV values do correspond to specific items of stimuli. 
 
 If, for example, participants experiencing the first trial (first row) from the screenshot above choose option 3, the value of 3 will be presented in the data under the DV column.
 
 ##### Interpretting the Data {-}
 
-```{block, type = "warning"}
-NEEDS SOMETHING HERE
-```
+The value given in the "dv" column will be the number of the item that the participant has chosen out of the X available that you have given them, despite the lack of black panels above the items in the stimuli assignment page. 
+
+The "side" column describes the order of presentation of the X number of stimuli items displayed on the page during that trial.
+
+<center>![](images/screenshots/exp_xafc_data.png)</center>
 
 #### Participant view {-}
 
-This is what the X-AFC looks like, with 3 stimuli items displayed:
+This is what the X-AFC looks like, with 3 stimuli items displayed and without a question:
 
-```{block, type = "warning"}
-new image required
-```
-
+<center>![](images/screenshots/exp_xafc.png)</center>
 
 ### Sorting
 
@@ -337,7 +346,9 @@ Here you can see that each row (representing an individual trial) will have 5 im
 
 ##### Assigning Stimuli and DV Values {-}
 
-For this experiment I am using Ishihara colour deficiency plate test items. These use images of numbers made up of dots in specific colours, which cannot be perceived by those who experience colour perception deficiency. This example contains numbers which the participant should sort into order.
+Same method as the [2-AFC](#assignstimexp) but with some differences.
+
+For this experiment I am using Ishihara colour deficiency plate test items [@ishihara]. These use images of numbers made up of dots in specific colours, which cannot be perceived by those who experience colour perception deficiency. This example contains numbers which the participant should sort into order.
 
 If the participant can successfully order the numbers in a small number of changes then we should be able to assume that they can perceive the shape of the number in the circle. Those who cannot experience colour deficiency may make more mistakes in ordering the numbers. The sets used here test for deuteranopia, the most common type of colour deficiency.
 
@@ -396,6 +407,14 @@ Once you have finished on this page and press "Save" you will be taken to the pa
 
 #### Notes Specific to Slideshows {-}
 
+##### Assigning Stimuli 
+
+Same method as the [2-AFC](#assignstimexp) but with some differences.
+
+Participants cannot make any responses to the stimuli you are giving them in the slideshow thus there are no specific recommendations for stimuli placement in relation to a DV. Stimuli can still be presented in pairs/groups however.
+
+You may wish to consider these in relation to any components which may depend on what the slideshow presents and how it is presented.
+
 ##### Interpretting the Data Output {-}
 
 The slideshow is a way to present stimuli to participants, **but it does not allow participants to provide any sort of input and as a result it does not return any DV based on a participant response**. 
@@ -427,5 +446,58 @@ Images are displayed without a question and the participant cannot make any resp
 
 ## Assigning Stimuli to Trials {#assignstimexp}
 
-Once you have constructed an experiment you will assign stimuli to the trials. This is what the page to assign stimuli to trials looks like for a simple 2-AFC experiment:
+Once you have constructed an experiment you will assign stimuli to the trials. To make this process easier we recommended that you follow a specific naming convention in the [stimuli](#naming) section of the stimuli chapter. 
 
+I will use the simplest example to demonstrate how to assign stimuli to trials here- a 2AFC component. You should also check each experimental type's section to see if there are any additional points you should take note of.
+
+This is what the page to assign stimuli to trials looks like for a simple 2-AFC experiment:
+
+<center>![](images/screenshots/stim_2afc.png)</center>
+
+Here is am going to present participants with a 2-AFC experiment where they have to select a face they perceive to be more feminine. I have 24 stimuli items, 12 pairs each with a male or a female face [@mooneys]. I have set my experimental component to have 12 trials in the information page to set up the 12 empty pairs of DV boxes on the page.
+
+I have named my stimuli items using the convention "mooneyxn.jpg", where "x" is either m or f (for male and female) and "n" for the number of the pair that I will present them in. So "mooneyf1.jpg" will be presented together with "mooneym1.jpg" as a pair in a single trial: 
+
+<center>![](images/screenshots/stim_1.png)</center>
+
+When you save your experimental component you will be taken to the page for assigning stimuli to trials. Here you will find:
+
+- An empty box for each stimuli item
+- A trial name (t1:pair_1, t1 standing for "trial one" and "pair_1" being the name that I have set
+- Buttons:
+  * Test the experiment ("Go")
+  * Edit the experiment ("Edit")
+  * See the component information ("Info")
+  * "List" to see the stimuli assigned as a list of details
+  * "Images" to see the stimuli assigned as images
+- A search box for you to type in the stimuli item names at the top right of the page
+
+Here I can use the search box to find all stimuli containing the string "mooneyf". From this I can double click on the first empty box under the "DV=1" column to automatically insert all 12 images, in order of n (specified above as the number of the pair to be presented together):
+
+<center>![](images/screenshots/stim_3.png)</center>
+
+```{block, type = "info"}
+Note the numerical order here. It goes "1, 10, 11, 12, 2..." because I have used single digits in my numbering of the numbers 1-9. Ensure that your numbering is consistAnt across stimuli pairs to ensure you keep your correct pairs together. 
+```
+
+I can also search for "mooneym" and repeat the process for the other image for the male faces under "DV=0".
+
+As you can see I have been able to set all my stimuli quickly because of the naming convention I have used. It is also beneficial to store their names in an Excel spreadsheet. Here I have stored them in pairs under column headers. I can use this later when assigning them to trials. 
+
+I have also assigned trial names; this will come in handy should I need to know which trial each data point refers to in my analysis.
+
+<center>![](images/screenshots/stim_2.png)</center>
+
+This example above is where each male face will be compared to a corresponding female face in a trial with two images. You may have more or less than two stimuli items per trial and your spreadsheet should vary accordingly.
+
+## Assigning Names to Trials 
+
+You can set a trial name for each of your trials in your experimental component.
+
+To do this individually you can click on the "t1" trial name part and type it in manually, or you can use the "fill from list" button to do them in bulk by copying a column of names from an Excel spreadsheet as shown above:
+
+<center>![](images/screenshots/exp_fill_from_list.png)</center>
+
+Click "Fill from List" when you have pasted in your list of trial names to automatically insert all trial names. Ensure the order of trial names matches that of the stimuli given in the trials:
+
+<center>![](images/screenshots/stim_2.png)</center>

@@ -1,9 +1,5 @@
 # Planning Your Project
 
-```{block, type = "warning"}
-* This page needs to be extensively linked to other pages.
-```
-
 ## Overview
 
 Planning and constructing studies can be a rather daunting task at first, many users of Experimentum are undergraduate students embarking on their first independent research project. 
