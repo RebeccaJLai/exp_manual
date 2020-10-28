@@ -387,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#overview-8"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#common-errors"><i class="fa fa-check"></i>Common Errors</a><ul>
 <li class="chapter" data-level="9.5.2" data-path="knownissues.html"><a href="knownissues.html#data-not-being-saved-despite-questions-being-completed."><i class="fa fa-check"></i><b>9.5.2</b> Data not being saved despite questions being completed.</a></li>
-<li class="chapter" data-level="9.5.3" data-path="knownissues.html"><a href="knownissues.html#n-in-question-names-in-downloaded-data"><i class="fa fa-check"></i><b>9.5.3</b> <code>/n</code> in Question Names in Downloaded Data</a></li>
+<li class="chapter" data-level="9.5.3" data-path="knownissues.html"><a href="knownissues.html#question_n"><i class="fa fa-check"></i><b>9.5.3</b> <code>/n</code> in Question Names in Downloaded Data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#issues"><i class="fa fa-check"></i>Issues…</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#which-do-not-interfere-with-the-operation-of-the-site"><i class="fa fa-check"></i>Which do NOT interfere with the operation of the site</a><ul>
@@ -566,13 +566,16 @@ The following sections will describe each questionnaire type and what they can d
 <h2><span class="header-section-number">5.8</span> Adding/Deleting Questions</h2>
 <div class="warning">
 <p>
-All questions <strong>must</strong> be given unique names within the component they are in. Components cannot be saved if you have questions with duplicate names.
-</p>
-<p>
-This applies to questions added individually or in bulk.
+All questions <strong>must</strong> be given unique names within the component they are in. Components cannot be saved if you have questions with duplicate names. This applies to questions added individually or in bulk.
 </p>
 <p>
 You might find it easier to give each question across the entire study unique names.
+</p>
+<p>
+There is also a <a href="knownissues.html#question_n">known issue</a> where <code>/n</code> is appearing in question names in the downloaded data set. This makes them difficult to process as you must escape the <code>/n</code> character when you try to use the name in R.
+</p>
+<p>
+This is as a result of user error, not a fault in the system. It happens when you insert a new line by pressing enter when entering the question name. <strong>Ensure that you are not putting new lines in your question name to prevent this issue.</strong>
 </p>
 </div>
 <div id="adding-individually" class="section level3">

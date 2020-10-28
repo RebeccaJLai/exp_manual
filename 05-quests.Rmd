@@ -83,11 +83,13 @@ In most cases you should leave this empty. The feedback for the top-most set is 
 ## Adding/Deleting Questions
 
 ```{block, type = "warning"}
-All questions **must** be given unique names within the component they are in. Components cannot be saved if you have questions with duplicate names.
-
-This applies to questions added individually or in bulk.
+All questions **must** be given unique names within the component they are in. Components cannot be saved if you have questions with duplicate names. This applies to questions added individually or in bulk. 
 
 You might find it easier to give each question across the entire study unique names.
+
+There is also a [known issue](#question_n) where `/n` is appearing in question names in the downloaded data set. This makes them difficult to process as you must escape the `/n` character when you try to use the name in R. 
+
+This is as a result of user error, not a fault in the system. It happens when you insert a new line by pressing enter when entering the question name. **Ensure that you are not putting new lines in your question name to prevent this issue.**
 ```
 
 ### Adding Individually
