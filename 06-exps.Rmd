@@ -84,7 +84,9 @@ Check that the number of stimuli displayed on this page are correct. Here, the "
 
 ##### Feedback Tab {-}
 
-Generally, the feedback tab in individual components should be left alone. This will be covered later in the section covering Debriefing.
+<center>![](images/screenshots/exp_feedback.png)</center> 
+
+Generally, the feedback tab in individual components should be left alone, but there are cases where you might want to use this. This is covered in depth in the [Debriefing](#debrief) section.
 
 ## Saving your Component
 

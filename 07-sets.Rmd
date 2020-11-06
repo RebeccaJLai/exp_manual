@@ -33,7 +33,7 @@ This is very similar to the questionnaire and experiment information you would h
 *	**Show to**: gender limitations of this set. If you are allowing for anonymous participation you should not be setting gender limitations.
 *	**Age limits**: Age range limitations. If you are allowing for anonymous participation you should not be setting age limitations.
 *	**Labnotes**: this is a note to tell yourself, your supervisor, other researchers and the admins exactly what this set is about. Please complete this to the fullest of your ability.
-*	**General feedback**: equivalent to the feedback tab in a questionnaire or experiment component. See the Debriefing section before filling in any feedback on components or sets.
+*	**General feedback**: equivalent to the feedback tab in a questionnaire or experiment component. See the [Debriefing](#debrief) section before filling in any feedback on components or sets.
 
 ```{block, type = "info"}
 It may be that you construct a set for each condition of your IV and have participants randomly assigned to them. 

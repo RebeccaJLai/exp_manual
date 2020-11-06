@@ -78,7 +78,9 @@ The questionnaire tab on the lower half of the page is different for each questi
 
 ## Feedback Tab
 
-In most cases you should leave this empty. The feedback for the top-most set is normally where you would put your debriefing information. You can see the later sections on projects and debriefing. 
+<center>![](images/screenshots/quest_feedback.png)</center> 
+
+Generally, the feedback tab in individual components should be left alone, but there are cases where you might want to use this. This is covered in depth in the [Debriefing](#debrief) section.
 
 ## Adding/Deleting Questions
 

@@ -26,15 +26,23 @@ Just like any other component or set, you will need to set the information for t
 
 <center>![](images/screenshots/proj_4.png)</center>
 
-*	**Blurb**: this is a short description of your study that will be displayed to potential participants on the "Studies" page that registered users can access. Ensure that it is informative, appropriate and concise to prevent taking up too much space on the page.
-*	**Intro**: This is the information about the project. This is typically where you would place the information sheet for the study. It can be formatted with Markdown or HTML tags. If you use HTML tags, ensure that your opening and closing tags are matched to prevent data recording errors.
-*	**Show to**: Gender identity-based limitations. If you are planning to use anonymous participation you should not place limitations here.
-*	**Age limits**: age range-based limitations. If you are planning to use anonymous participation you should not place limitations here.
-*	**Labnotes**: These notes inform your future self, your supervisor and admins about your study. Ensure that you fill this in and that it is informative and appropriate.
+- **Contact Email**: this is the email address of the person who will be responsible for participant contact/queries. It will be displayed to participants at the end of the project. If left blank this will default to the registered email address of the researcher who created/owns the project.
+- **Blurb**: this is a short description of your study that will be displayed to potential participants on the "Studies" page that registered users can access. Ensure that it is informative, appropriate and concise to prevent taking up too much space on the page.
+- **Intro**: This is the information about the project. This is typically where you would place the information sheet for the study. It can be formatted with Markdown or HTML tags. If you use HTML tags, ensure that your opening and closing tags are matched to prevent data recording errors.
+- **Debrief**: this is text entry form for the insertion of your debriefing text. If you leave this blank then the feedback from the next highest component will be used. This way you can have different debriefings according to what section of your study your participants have completed. See [debriefing](#debrief) for more information on what feedback panel will be displayed to participants.
+- **Show to**: Gender identity-based limitations. If you are planning to use anonymous participation you should not place limitations here.
+- **Age limits**: age range-based limitations. If you are planning to use anonymous participation you should not place limitations here.
+- **Labnotes**: These notes inform your future self, your supervisor and admins about your study. Ensure that you fill this in and that it is informative and appropriate.
 
 <center>![](images/screenshots/proj_5.png)</center>
 
 ## Viewing and Editing Existing Projects
+
+Navigate to the researcher's page using the menu on the right-hand side of the page. You will then be taken to a page where you can select "Projects":
+
+<center>![](images/screenshots/proj_1.png)</center>
+
+After clicking "Projects" you will be taken to a page with all your currently saved projects. Alternatively you can click in the rectangle in the projects button and type in the project number.
 
 ## Adding Sets and Components
 
@@ -134,6 +142,9 @@ If you wish to enable anonymous participation there are further additions that n
 
 ## Project Structure {#project_structure}
 
+See the section on [planning your project](#planning) on how to plan and implement the structure of your project.
+
+You should test the structure of your study using the methods discussed below to satisfy yourself that the presentation is exactly as you expect.
 
 ## Testing Your Study {#testingyourstudy}
 
@@ -152,6 +163,18 @@ This will run you through your study as if you were a participant. It will also 
 ```{block, type = "warning"}
 You should download and retain test data before your project is activated. This will allow you to filter out the test data from the real data easily at the analysis stage.
 ```
+
+It is also possible to recruit people to help you test your project- we all know that an extra pair or few pairs of eyes can more readily spot problems.
+
+You can do this by using the **&test** URL suffix specified in the [participation](#anon) section of the page further down.
+
+By copying the "Test" URL and sending it to testers, they will be able to access your project (including non-acitvated sections) for testing.
+
+Active sections of your study will be surrounded by white, and inactive sections will be surrounded by yellow:
+
+<center>![](images/screenshots/test_borders.png)</center>
+
+Any data that they render using a test account will be marked as test and should be excluded from your data analysis as specified in the [data](#test_data) section of this manual.
 
 #### Info Page View {-}
 
@@ -220,10 +243,11 @@ Clicking on one of the three buttons will copy the text to the clipboard for you
  
 The different links will lead to different types of sign in pages:
 
-- **requires account**: participants will be required to sign in to a registered account before they can proceed to the study.
-- **ending in "&guest"**: this will take the participant to the project first page with a button to log them in as a guest.
-- **ending in "&auto"**: this will automatically log the user in as a guest and display the dialogue box asking for age and gender identity information.
-- **ending in "&all"**: will display 3 buttons asking the user to choose between logging in to an existing account, registering for an account and logging in as a guest.
+- **Requires Account (no suffix)**: participants will be required to sign in to a registered account before they can proceed to the study.
+- **Auto-login (ending in "&guest")**: this will take the participant to the project first page with a button to log them in as a guest.
+- **Guest login (ending in "&auto")**: this will automatically log the user in as a guest and display the dialogue box asking for age and gender identity information.
+- **All options (ending in "&all")**: will display 4 buttons asking the user to choose between logging in to an existing account, registering for an account and logging in as a guest.
+- **Test (ending in "&test")**: creates a test login for you to test your study. Data will be marked with status "test" so that investigators can remove this data from their analyses. Will present a dialogue box asking for age and gender identity. Pressing "cancel" in this dialogue box will return you to the project login page with the suffix "&all", displaying 4 buttons with login options as specified above.
 
 So, this means that:
 
@@ -237,9 +261,13 @@ So, this means that:
  
 <center>![](images/screenshots/anon_3.png)</center>  
  
-- "**exp.psy.gla.ac.uk/project&myurl&all**" will give the users the following 3 buttons where they can make the choice to login to an existing account, register for an account or login as a guest to complete the project.
+- "**exp.psy.gla.ac.uk/project&myurl&all**" will give the users the following 4 buttons where they can make the choice to login to an existing account, register for an account or login as a guest to complete the project.
 
 <center>![](images/screenshots/anon_4.png)</center> 
+
+- "**exp.psy.gla.ac.uk/project&myurl&test**" will present the user with the tst login dialogue box:
+
+<center>![](images/screenshots/test_dialogue.png)</center> 
  
 ### Participation Credits {#credits}
  

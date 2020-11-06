@@ -40,7 +40,15 @@ This is usually as a result of participants completing multiple studies at the s
 You can combine the CSV files into a single data frame in R when you come to run your analysis if you need to.
 ```
 
-## Test Data
+### Download Logs
+
+Data downloads are now logged. The email address of the user who downloaded the data is displayed under the "Downloads" tab in the project information page and within each questionnaire and experimental component. 
+
+<center>![](images/screenshots/data_log.png)</center><p>
+
+This allows for a transparent data audit trail.
+
+## Test Data {#test_data}
 
 Before your study goes active you should have performed extensive testing of your study. This will have left test data in your project that you will need to remove from your data from real participant’s data. 
 
@@ -62,6 +70,7 @@ We have had previous system users misinterpret the meanings of some of the items
     - Note: “people” includes participants who identify as male, female, non-binary AND anonymous users who have chosen not to disclose their gender identity.
 - Men: this is the number of people who identify as men who have completed the component. Again, unique participants will be shown in brackets.
 - Women: this is the number of people who identify as women who have completed this component. Again, unique participants will be shown in brackets.
+- NB: this is the number of people who identify as non-binary. As before, unique participants are shown in brackets.
 - Median Time: The median time taken for all participants who have run through this component to complete this part.
 - 90th percentile: The 90th percentile time to completion.
 

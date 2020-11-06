@@ -1,6 +1,6 @@
 # Planning Your Project
 
-## Overview
+## Overview {#planning}
 
 Planning and constructing studies can be a rather daunting task at first, many users of Experimentum are undergraduate students embarking on their first independent research project. 
 
@@ -86,7 +86,9 @@ Participants will enter the superset, complete the demographics/consent question
 
 More information on "type" rules can be found in the [sets page](#type_rules).
 
-<center>![](images/screenshots/structure.png)</center>
+<center>![](images/screenshots/structure_1.png)</center>
+
+Now we will go on to discuss the placement of the information sheet and the placement of the debriefing within the project.
 
 ## Information Sheet {#info_sheet}
 
@@ -96,20 +98,62 @@ The information sheet should normally be placed in the introduction section on t
 
 It can be formatted with Markdown or HTML tags. If you use HTML tags, ensure that your opening and closing tags are matched to prevent data recording errors. Here is the flowchart view of where the information sheet should be placed, highlighted in red:
 
-<center>![](images/screenshots/structure.png)</center>
+<center>![](images/screenshots/structure_1.png)</center>
 
 ## Debriefing {#debrief}
 
-Your debriefing information should be placed in the highest possible level component possible. In most cases this will be the top-most superset within the project
+### Debrief Formatting 
+Feedback (in components and sets) and debriefing (in the project) can formatted using Markdown or HTML tags. If you use HTML tags, ensure that your opening and closing tags are matched to prevent errors. 
+
+### Universal Debriefing {-}
+
+Where all participants are to see the same debriefing information your debriefing should be placed in the highest possible level component. We provide them with this universal debrief by placing the debrief in the "Debrief" box of the project information page:
+
+<center>![](images/screenshots/structure_1.png)</center>
+
+<center>![](images/screenshots/proj_3.png)</center>
+
+In this case the same debriefing will be displayed to all participants and this will suit most people's purposes perfectly well.
+
+If this debriefing box is empty the debriefing displayed will be the text in the feedback tab of the last component completed by participants.
+
+### Different Debriefings {-}
+
+In the example I used above I have presented two different experimental components with two different purposes. Reminding ourselves of the example, I used:
+
+- One labelled buttons experiment for yes/no decisions (2 buttons). Here participants will be making judgements about a pair of stimuli voice clips: are they siblings or non-siblings?
+- One labelled buttons experiment for 0-10 similarity ratings (11 buttons). Here participants are judging how similar a pair of stimuli are on a scale from 0-10.
+
+You might find that you want to present different sets of debriefing information depending on what the components the participants actually completed. 
+
+In this case I put the different debriefing sections of each of the components or sets where the particiants branch off into different components with different tasks, explaining to participants what they did and how it relates to the wider aims of the research. This will give them the full picture of the research that they have just contributed to:
 
 <center>![](images/screenshots/structure.png)</center>
 
-This will be displayed to the participants after they have completed the component or components (depending on your design) in the superset. You can see the feedback displayed in a [sample order](#sample_order):
+The feedback tab for experiments looks like this:
+
+<center>![](images/screenshots/exp_feedback.png)</center>
+
+The feedback tab for questionnaires looks like this:
+
+<center>![](images/screenshots/exp_feedback.png)</center>
+
+In both feedback tabs you click on the `{{blank}}` to insert your debriefing text.
+
+### Testing Your Debrief Presentation
+
+#### Where debriefing is in the project information: {-}
+
+You should run through the study as a participant and test the presentation of the debrief. See [here](#participant_view) for instructions on how to do this.
+
+#### Where debriefing is in the components or sets: {-}
+
+Debriefing will be displayed to the participants after they have completed the component or set  depending on what feedback sections you have filled in. You can see  what feedback attached to which component will be displayed by using [sample order](#sample_order), the same way you would when testing the presentation of the components:
 
 <center>![](images/screenshots/sets_14.png)</center>
 
-The debriefing information should be placed in the General Feedback section on the set information, as shown below:
+The sample order indicates that the debriefing from set 734 is the one that is going to be displayed:
 
 <center>![](images/screenshots/feedback.png)</center>
 
-The General Feedback section can be formatted using Markdown or HTML tags. If you use HTML tags, ensure that your opening and closing tags are matched to prevent errors. 
+
