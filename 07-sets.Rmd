@@ -122,8 +122,8 @@ Here you can see that the current set (734) contains other sets (set 666 and sup
 It can be interpreted as follows: 
 
 * Participants enter into set 734 and are passed into set 666, where they will complete components quest_1790 and 1791 in fixed order. 
-* Participants are then passed to set 735, which contains set 292 and set 293, presented in random order. Participants will complete one and then the other in a randomised order. 
-    * Both set 292 and 293 are "random", which means that the components within them are presented in a randomised order within that set.
+* Participants are then passed to set 735, which contains set 292 and set 293, presented in random order. Participants will complete one and then the other in a randomized order. 
+    * Both set 292 and 293 are "random", which means that the components within them are presented in a randomized order within that set.
 
 This is a simple example, but the same principles apply to more complex designs with more components and sets.
 
@@ -133,7 +133,7 @@ Similar information is provided on [Project](#project_structure) information pag
 
 It is also advisable to use the "Test" button at the top of the page to get a "sample order" of the delivery of the project.
 
-Pressing this button simulates how participants willmove through the set:
+Pressing this button simulates how participants will move through the set:
 
 <center>![](images/screenshots/sets_14.png)</center>
 
@@ -147,7 +147,7 @@ Here you can get a run down of what participants will see and in what order. I p
     3. quest_2 (radiopage questionnaire test)
 4. Participants are then passed to set 292, where they complete:
     1. exp 178 (2-AFC test)
-    2. exp 180 (labelled buttons test)
+    2. exp 180 (labeled buttons test)
     3. exp 179 (2-AFC with 8 button strength of choice test)
     4. exp 186 (sorting test)
     5. exp 184 (X-AFC test)
@@ -157,7 +157,7 @@ Here you can get a run down of what participants will see and in what order. I p
 
 As the system does not allow for server side calculations we normally cannot filter participants based on any scoring from questionnaires, experiments or any other sort of criteria. 
 
-There is, however, one simple filteration you can do using sets where participants, upon immediately entering the study, will be asked to self-select into one category or another. 
+There is, however, one simple filtration you can do using sets where participants, upon immediately entering the study, will be asked to self-select into one category or another. 
 
 See the section in [Projects](#filtering) for more information on how this is done.
 

@@ -1,6 +1,6 @@
 --- 
 title: 'Experimentum: Web-based Software for Psychological Studies'
-author: "Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz."
+author: "Lisa DeBruine, Rebecca Lai, Benedict Jones, Gaby Mahrholz, Rifah Abdullah, Nicola Burns."
 date: "`r Sys.Date()`"
 documentclass: book
 link-citations: yes
@@ -86,7 +86,7 @@ Cookies are used for Experimentum to allow us to track user sessions, which allo
 
 Cookies are not tracked beyond a single session, for either registered or anonymous participants. By closing the browser the current session is ended and cookies tracking the session are discarded.
 
-Cookies are not used in any other way by us, and the information is not retained or shared with any other organisations.
+Cookies are not used in any other way by us, and the information is not retained or shared with any other organizations.
 
 ### Data Management {-}
 
@@ -122,11 +122,11 @@ Your study's data is your responsibility. Please ensure that it is protected and
 
 Experimentum saves your data to the University of Glasgow School of Psychology secure servers, which are on-site within the department. Data will be output in Comma Separated Value (.csv) files in "tidy" format and is available for download from by the researcher(s) who own the study, their supervisors and admins **only**.
 
-Whilst data processing questions should be directed to the researcher (or your supervisor(s) and advisors if you are a student/researcher), there are a couple of common tasks that you might find yourself needing to do. See the examples in the section [Commonly used R code](#commoncode) for help with some common code segments.
+Whilst data processing questions should be directed to the researcher (or your supervisor(s) and advisers if you are a student/researcher), there are a couple of common tasks that you might find yourself needing to do. See the examples in the section [Commonly used R code](#commoncode) for help with some common code segments.
 
 ### Consent {-}
 
-Upon registration, users are asked to complete a standardised consent form:
+Upon registration, users are asked to complete a standardized consent form:
 
 <center>![](images/screenshots/consent.png)</center>
  
@@ -136,7 +136,7 @@ Consent forms usually take the form of an additional mixed questionnaire compone
 
 ## Citing Experimentum {-}
 
-Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz. (2020). Experimentum (Version v.0.2). Zenodo. doi:10.5281/zenodo.2634355
+Lisa DeBruine, Rebecca Lai, Benedict Jones, Gaby Mahrholz, Rifah Abdullah, Nicola Burns. (2020). Experimentum (Version v.0.2). Zenodo. doi:10.5281/zenodo.2634355
 
 ## Codebase {-}
 
@@ -151,10 +151,11 @@ The same is provided for this user guide [here](https://github.com/RebeccaJLai/e
 Author contribution statement following the Contributor Roles Taxonomy [(CRediT)](https://www.elsevier.com/authors/journal-authors/policies-and-ethics/credit-author-statement).
 
 * Lisa DeBruine: All except original draft writing.
-* Rebecca Lai: project admin, validation, visualisation, writing draft, writing editing.
+* Rebecca Lai: project admin, validation, visualization, writing draft, writing editing.
 * Benedict Jones: Conceptualization, funding acquisition, investigation, methodology, project admin, resources, supervision, validation.
 * Rifah Abdullah: writing draft, writing editing.
 * Gaby Mahrholtz: writing draft, writing editing.
+* Nicola Burns: writing draft.
 
 ```{r echo=FALSE, message = FALSE}
 

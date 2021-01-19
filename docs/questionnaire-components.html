@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Questionnaire Components | Experimentum: Web-based Software for Psychological Studies</title>
   <meta name="description" content="Chapter 5 Questionnaire Components | Experimentum: Web-based Software for Psychological Studies" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Questionnaire Components | Experimentum: Web-based Software for Psychological Studies" />
   <meta property="og:type" content="book" />
@@ -21,10 +21,10 @@
   
   
 
-<meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Rifah Abdullah, Gaby Mahrholz." />
+<meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Gaby Mahrholz, Rifah Abdullah, Nicola Burns." />
 
 
-<meta name="date" content="2020-11-06" />
+<meta name="date" content="2021-01-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,15 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +67,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +85,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -340,24 +345,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.9" data-path="projs.html"><a href="projs.html#activating-projects-1"><i class="fa fa-check"></i><b>8.9</b> Activating Projects</a><ul>
 <li class="chapter" data-level="8.9.1" data-path="projs.html"><a href="projs.html#checlist"><i class="fa fa-check"></i><b>8.9.1</b> “Is my study ready?”: Student Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="8.10" data-path="projs.html"><a href="projs.html#anon"><i class="fa fa-check"></i><b>8.10</b> Participation</a><ul>
-<li class="chapter" data-level="8.10.1" data-path="projs.html"><a href="projs.html#anonymousregistered-participation"><i class="fa fa-check"></i><b>8.10.1</b> Anonymous/Registered Participation</a></li>
-<li class="chapter" data-level="8.10.2" data-path="projs.html"><a href="projs.html#credits"><i class="fa fa-check"></i><b>8.10.2</b> Participation Credits</a></li>
+<li class="chapter" data-level="8.10" data-path="projs.html"><a href="projs.html#advertising-your-project-on-the-subject-pool"><i class="fa fa-check"></i><b>8.10</b> Advertising Your Project on the Subject Pool</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="projs.html"><a href="projs.html#make-sure-your-ethics-has-been-approved."><i class="fa fa-check"></i><b>8.10.1</b> Make sure your ethics has been approved.</a></li>
+<li class="chapter" data-level="8.10.2" data-path="projs.html"><a href="projs.html#on-the-psychology-intranet-go-to-the-dissertation-section"><i class="fa fa-check"></i><b>8.10.2</b> On the Psychology Intranet, go to the ‘Dissertation’ section</a></li>
+<li class="chapter" data-level="8.10.3" data-path="projs.html"><a href="projs.html#editing-your-advert"><i class="fa fa-check"></i><b>8.10.3</b> Editing Your Advert</a></li>
+</ul></li>
+<li class="chapter" data-level="8.11" data-path="projs.html"><a href="projs.html#credits"><i class="fa fa-check"></i><b>8.11</b> Participation Credits</a><ul>
+<li class="chapter" data-level="8.11.1" data-path="projs.html"><a href="projs.html#automatic-assignment-of-credits"><i class="fa fa-check"></i><b>8.11.1</b> Automatic Assignment of Credits</a></li>
+<li class="chapter" data-level="8.11.2" data-path="projs.html"><a href="projs.html#manual-assignment-of-credits"><i class="fa fa-check"></i><b>8.11.2</b> Manual Assignment of Credits</a></li>
+</ul></li>
+<li class="chapter" data-level="8.12" data-path="projs.html"><a href="projs.html#anon"><i class="fa fa-check"></i><b>8.12</b> Participation</a><ul>
+<li class="chapter" data-level="8.12.1" data-path="projs.html"><a href="projs.html#anonymousregistered-participation"><i class="fa fa-check"></i><b>8.12.1</b> Anonymous/Registered Participation</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>9</b> Data</a><ul>
-<li class="chapter" data-level="9.1" data-path="data.html"><a href="data.html#data-formats"><i class="fa fa-check"></i><b>9.1</b> Data Formats</a><ul>
-<li class="chapter" data-level="9.1.1" data-path="data.html"><a href="data.html#data-outputs"><i class="fa fa-check"></i><b>9.1.1</b> Data Outputs</a></li>
+<li class="chapter" data-level="9.1" data-path="data.html"><a href="data.html#data-analysis-support"><i class="fa fa-check"></i><b>9.1</b> Data Analysis Support</a></li>
+<li class="chapter" data-level="9.2" data-path="data.html"><a href="data.html#data-formats"><i class="fa fa-check"></i><b>9.2</b> Data Formats</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="data.html"><a href="data.html#data-outputs"><i class="fa fa-check"></i><b>9.2.1</b> Data Outputs</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="data.html"><a href="data.html#downloading-your-data"><i class="fa fa-check"></i><b>9.2</b> Downloading Your Data</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="data.html"><a href="data.html#from-individual-components"><i class="fa fa-check"></i><b>9.2.1</b> From Individual Components</a></li>
-<li class="chapter" data-level="9.2.2" data-path="data.html"><a href="data.html#from-the-entire-project"><i class="fa fa-check"></i><b>9.2.2</b> From the Entire Project</a></li>
-<li class="chapter" data-level="9.2.3" data-path="data.html"><a href="data.html#download-logs"><i class="fa fa-check"></i><b>9.2.3</b> Download Logs</a></li>
+<li class="chapter" data-level="9.3" data-path="data.html"><a href="data.html#downloading-your-data"><i class="fa fa-check"></i><b>9.3</b> Downloading Your Data</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="data.html"><a href="data.html#from-individual-components"><i class="fa fa-check"></i><b>9.3.1</b> From Individual Components</a></li>
+<li class="chapter" data-level="9.3.2" data-path="data.html"><a href="data.html#from-the-entire-project"><i class="fa fa-check"></i><b>9.3.2</b> From the Entire Project</a></li>
+<li class="chapter" data-level="9.3.3" data-path="data.html"><a href="data.html#download-logs"><i class="fa fa-check"></i><b>9.3.3</b> Download Logs</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="data.html"><a href="data.html#test_data"><i class="fa fa-check"></i><b>9.3</b> Test Data</a></li>
-<li class="chapter" data-level="9.4" data-path="data.html"><a href="data.html#number-of-participants"><i class="fa fa-check"></i><b>9.4</b> Number of Participants</a></li>
-<li class="chapter" data-level="9.5" data-path="data.html"><a href="data.html#help-with-data"><i class="fa fa-check"></i><b>9.5</b> Help with Data</a><ul>
-<li class="chapter" data-level="9.5.1" data-path="data.html"><a href="data.html#commoncode"><i class="fa fa-check"></i><b>9.5.1</b> Commonly Used Code</a><ul>
+<li class="chapter" data-level="9.4" data-path="data.html"><a href="data.html#test_data"><i class="fa fa-check"></i><b>9.4</b> Test Data</a></li>
+<li class="chapter" data-level="9.5" data-path="data.html"><a href="data.html#number-of-participants"><i class="fa fa-check"></i><b>9.5</b> Number of Participants</a></li>
+<li class="chapter" data-level="9.6" data-path="data.html"><a href="data.html#help-with-data"><i class="fa fa-check"></i><b>9.6</b> Help with Data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="data.html"><a href="data.html#commoncode"><i class="fa fa-check"></i><b>9.6.1</b> Commonly Used Code</a><ul>
 <li class="chapter" data-level="" data-path="data.html"><a href="data.html#first-completion-only"><i class="fa fa-check"></i>First completion only</a></li>
 </ul></li>
 </ul></li>
@@ -395,8 +409,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html"><i class="fa fa-check"></i>Known Issues, Bugs and Common Errors</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#overview-7"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#common-errors"><i class="fa fa-check"></i>Common Errors</a><ul>
-<li class="chapter" data-level="9.5.2" data-path="knownissues.html"><a href="knownissues.html#data-not-being-saved-despite-questions-being-completed."><i class="fa fa-check"></i><b>9.5.2</b> Data not being saved despite questions being completed.</a></li>
-<li class="chapter" data-level="9.5.3" data-path="knownissues.html"><a href="knownissues.html#question_n"><i class="fa fa-check"></i><b>9.5.3</b> <code>/n</code> in Question Names in Downloaded Data</a></li>
+<li class="chapter" data-level="9.6.2" data-path="knownissues.html"><a href="knownissues.html#data-not-being-saved-despite-questions-being-completed."><i class="fa fa-check"></i><b>9.6.2</b> Data not being saved despite questions being completed.</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#issues"><i class="fa fa-check"></i>Issues…</a><ul>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#which-do-not-interfere-with-the-operation-of-the-site"><i class="fa fa-check"></i>Which do NOT interfere with the operation of the site</a><ul>
@@ -410,7 +423,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#email-notifications"><i class="fa fa-check"></i>Email Notifications</a></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#cannot-share-ownership-of-components-with-students"><i class="fa fa-check"></i>Cannot Share Ownership of Components With Students</a></li>
 </ul></li>
-<li class="chapter" data-level="9.5.4" data-path="knownissues.html"><a href="knownissues.html#solved-issues"><i class="fa fa-check"></i><b>9.5.4</b> Solved Issues</a><ul>
+<li class="chapter" data-level="9.6.3" data-path="knownissues.html"><a href="knownissues.html#solved-issues"><i class="fa fa-check"></i><b>9.6.3</b> Solved Issues</a><ul>
+<li><a href="knownissues.html#question_n"><code>\\n</code> in Question Names in Downloaded Data: Solved 19/01/2021</a></li>
 <li class="chapter" data-level="" data-path="knownissues.html"><a href="knownissues.html#oneofequal"><i class="fa fa-check"></i>One of (equal) preventing sets from running</a></li>
 </ul></li>
 </ul></li>
@@ -424,8 +438,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#accessing-supervisees-projects-sets-and-components"><i class="fa fa-check"></i>Accessing Supervisees Projects, Sets and Components</a></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#approving-student-and-researcher-status-requests-1"><i class="fa fa-check"></i>Approving Student and Researcher Status Requests</a></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#activating"><i class="fa fa-check"></i>Activating Studies</a><ul>
-<li class="chapter" data-level="9.5.5" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#is-this-study-ready-student-checklist"><i class="fa fa-check"></i><b>9.5.5</b> Is this study ready?: Student Checklist</a></li>
-<li class="chapter" data-level="9.5.6" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#making-a-study-active"><i class="fa fa-check"></i><b>9.5.6</b> Making a Study Active</a></li>
+<li class="chapter" data-level="9.6.4" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#is-this-study-ready-student-checklist"><i class="fa fa-check"></i><b>9.6.4</b> Is this study ready?: Student Checklist</a></li>
+<li class="chapter" data-level="9.6.5" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#making-a-study-active"><i class="fa fa-check"></i><b>9.6.5</b> Making a Study Active</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#sharing-components"><i class="fa fa-check"></i>Sharing Components</a></li>
 <li class="chapter" data-level="" data-path="supervisor-cheatsheet.html"><a href="supervisor-cheatsheet.html#resetting-passwords"><i class="fa fa-check"></i>Resetting Passwords</a></li>
@@ -433,7 +447,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i>Appendices</a><ul>
 <li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html#appendices-1"><i class="fa fa-check"></i>Appendices</a><ul>
-<li class="chapter" data-level="9.5.7" data-path="appendices.html"><a href="appendices.html#image-sources"><i class="fa fa-check"></i><b>9.5.7</b> Image Sources</a></li>
+<li class="chapter" data-level="9.6.6" data-path="appendices.html"><a href="appendices.html#image-sources"><i class="fa fa-check"></i><b>9.6.6</b> Image Sources</a></li>
 <li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html#software"><i class="fa fa-check"></i>Software</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html#references"><i class="fa fa-check"></i>References</a></li>
@@ -464,6 +478,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">5.1</span> Overview</h2>
 <p>Questionnaires are currently the most used items on Experimentum. They are made up of one or more individual components, available in 3 different types: mixed, radiopage, info and ranking.</p>
 <table>
+<colgroup>
+<col width="7%" />
+<col width="30%" />
+<col width="61%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Questionnaire Type</th>
@@ -517,7 +536,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The reset button is akin to a “revert” button, where any changes made after the last save can be discarded and you return to the last saved version.</p>
 <div class="danger">
 <p>
-The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimise loss of work in the event of an error.
+The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimize loss of work in the event of an error.
 </p>
 <p>
 Please note that the site currently does not support version control, so once you save a change the previous version will be overwritten.
@@ -531,7 +550,7 @@ Please note that the site currently does not support version control, so once yo
 <center>
 <img src="images/screenshots/questionnaire_button.png" />
 </center>
-<p>Alternatively, if you remember the number of the questionnaire component, you can type it in to the grey rectangle in the experiments button. When you press return you will be taken straight to the information page of the questionnaires</p>
+<p>Alternatively, if you remember the number of the questionnaire component, you can type it in to the gray rectangle in the experiments button. When you press return you will be taken straight to the information page of the questionnaires</p>
 <p>To edit the questionnaire, press the “edit” button at the top of the page and you will be taken back into the editable version:</p>
 <center>
 <img src="images/screenshots/exp_5.png" />
@@ -597,14 +616,14 @@ This is as a result of user error, not a fault in the system. It happens when yo
 <p>Experimentum will add a new question by directly duplicating the previous question, with all the same text and attributes. Please ensure that you set a unique name for the new question before you attempt to save the questionnaire as questions with duplicate names will be removed by the system.</p>
 <div class="danger">
 <p>
-The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimise loss of work in the event of an error.
+The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimize loss of work in the event of an error.
 </p>
 </div>
 </div>
 <div id="addfromspreadsheet" class="section level3">
 <h3><span class="header-section-number">5.8.2</span> Adding in Bulk</h3>
-<p>It is also possible to add some types of questions in bulk by using a spreadsheet. Unfortunately, not all types are covered, but the most basic and most frequently used types are.
-Spreadsheet templates are available by clicking “add from spreadsheet” and selecting the underlined type of questionnaire from the options just above the buttons.</p>
+<p>It is also possible to add some types of questions in bulk by using a spreadsheet. Unfortunately, not all types are covered, but the most basic and most frequently used types are.</p>
+<p>Spreadsheet templates are available by clicking “add from spreadsheet” and selecting the underlined type of questionnaire from the options just above the buttons.</p>
 <center>
 <img src="images/screenshots/quest_spread_1.png" />
 </center>
@@ -619,6 +638,11 @@ Double click on the section that says, “Double-click to paste data from a spre
 </center>
 <p>If you do not use the template spreadsheet, but one you have made yourself, ensure that the options that you are specifying match. You can also drag the headers on the entry window from left to right to re-order them if your own spreadsheet does not match the headers here.</p>
 <table>
+<colgroup>
+<col width="4%" />
+<col width="24%" />
+<col width="70%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Column Header:</th>
@@ -664,6 +688,11 @@ Double click on the section that says, “Double-click to paste data from a spre
 </tr>
 </tbody>
 </table>
+<div class="warning">
+<p>
+Please ensure that the “name” column of your spreadsheet is limited to 32 characters per cell and that it contains only alphanumeric, underscore, dash, space and parentheses characters.
+</p>
+</div>
 <p>Each of the three types of questionnaire component has their own template spreadsheet available for download, which are linked in the dialogue box you get when you click to “add from spreadsheet”. If you intend to add questions in bulk you should consult these spreadsheets for guidance in the first instance as examples are given.</p>
 </div>
 <div id="re-order-questions" class="section level3">
@@ -705,7 +734,15 @@ Please note that the site currently does not support version control, so once yo
 <li><strong>dv_name</strong>: this is the name of the dependent variable, the name that will be assigned to the column q_name in the downloaded data indicating which question the participant has answered. You should set one which is unique to this component and perhaps across all components.
 <center>
 <img src="images/screenshots/qname.png" />
-</center></li>
+</center>
+<div class="info">
+<p>
+This field has an upper limit of 32 characters and will only accept alphanumeric characters, spaces, dashes and parentheses to solve a <a href="knownissues.html#question_n">known issue</a>. All other character types are prohibited.
+</p>
+<p>
+If you have previously written a question which has a dv name containing a disallowed character you can retain it unless you attempt to change the dv name field.
+</p>
+</div></li>
 <li><strong>Question</strong>: clicking the part which says “click here to set your question” will allow you to enter the question text that the participants will see, the question that you want to ask them.
 <center>
 <img src="images/screenshots/qtext.png" />
@@ -783,11 +820,11 @@ You can change the response options (from single minutes to increments of 15, fo
 <center>
 <img src="images/screenshots/quest_mixed_11.png" />
 </center></li>
-<li><strong>Long Text</strong>: allows participants to enter free-response text over 255 characters. Returned in the data as character strings. If you do not need more than 255 characters, please use the short text to minimise strain on the server.
+<li><strong>Long Text</strong>: allows participants to enter free-response text over 255 characters. Returned in the data as character strings. If you do not need more than 255 characters, please use the short text to minimize strain on the server.
 <center>
 <img src="images/screenshots/quest_mixed_12.png" />
 </center></li>
-<li><strong>Message</strong>: allows you to put a line of text into a questionnaire which does not require a response amongst other questions. Note that to ensure that this appears where it should that these questions should be presented in a fixed order.
+<li><strong>Message</strong>: allows you to put a line of text into a questionnaire which does not require a response among other questions. Note that to ensure that this appears where it should that these questions should be presented in a fixed order.
 <center>
 <img src="images/screenshots/quest_mixed_13.png" />
 </center></li>
@@ -845,11 +882,11 @@ You can change the response options (from single minutes to increments of 15, fo
 <h3><span class="header-section-number">5.9.3</span> Rank Order</h3>
 <div id="attributes-2" class="section level4 unnumbered">
 <h4>Attributes</h4>
-<p>Ranking questionnaires present a list of text options to participants to put into a specific order, based on some judgement they are asked to make on them.</p>
+<p>Ranking questionnaires present a list of text options to participants to put into a specific order, based on some judgment they are asked to make on them.</p>
 <center>
 <img src="images/screenshots/rank1.png" />
 </center>
-<p>As you can see, there is a single response type associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomise it.</p>
+<p>As you can see, there is a single response type associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomize it.</p>
 <p>Each question will be an option in the list of items to rank order. Participants will be able to drag each text item to rank order them, with the number specified in the column next to the text. The final presentation to participants looks like this:</p>
 <center>
 <img src="images/screenshots/rank2a.png" />
@@ -897,7 +934,7 @@ You can change the response options (from single minutes to increments of 15, fo
 <img src="images/screenshots/quest_stim_2.png" />
 </center>
 <p>The code is:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>img src=<span class="st">&quot;file/path/here.jpg&quot;</span> width=<span class="st">&quot;500px&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="questionnaire-components.html#cb2-1"></a><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>img src=<span class="st">&quot;file/path/here.jpg&quot;</span> width=<span class="st">&quot;500px&quot;</span><span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></span></code></pre></div>
 <p><code>width=500px</code> alters the image displayed by resizing the image to be 500 pixels wide whilst maintaining the aspect ratio.</p>
 <p>This is OK for one or two images, but if you are doing this with many images we would recommend that you resize the stimuli before uploading them.</p>
 <p><code>&lt;center&gt;</code> ensures that the image stays in the middle of the page. <code>&lt;/center&gt;</code> is a “closing tag” and must be put in place to ensure that data for the component is saved to the server.</p>
@@ -907,25 +944,25 @@ You can change the response options (from single minutes to increments of 15, fo
 </center>
 <p>This method works for all types of compatible stimuli, although the code used to display them will vary.</p>
 <p>For audio:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>audio controls<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.mp3&quot;</span> type=<span class="st">&quot;audio/mpeg&quot;</span><span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb3-3" title="3">Your browser does not support the audio element.</a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="op">&lt;</span><span class="er">/</span>audio<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span><span class="st"> </span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="questionnaire-components.html#cb3-1"></a><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>audio controls<span class="op">&gt;</span></span>
+<span id="cb3-2"><a href="questionnaire-components.html#cb3-2"></a><span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.mp3&quot;</span> type=<span class="st">&quot;audio/mpeg&quot;</span><span class="op">&gt;</span></span>
+<span id="cb3-3"><a href="questionnaire-components.html#cb3-3"></a>Your browser does not support the audio element.</span>
+<span id="cb3-4"><a href="questionnaire-components.html#cb3-4"></a><span class="op">&lt;</span><span class="er">/</span>audio<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span><span class="st"> </span></span></code></pre></div>
 <p>Displayed as a small media player:</p>
 <center>
 <img src="images/screenshots/quest_stim_4.png" />
 </center>
 <p>And for video:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>video width=<span class="st">&quot;320&quot;</span> height=<span class="st">&quot;240&quot;</span> controls<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.m4v&quot;</span> type=<span class="st">&quot;video/mp4&quot;</span><span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb4-3" title="3">Your browser does not support the video tag.</a>
-<a class="sourceLine" id="cb4-4" title="4"><span class="op">&lt;</span><span class="er">/</span>video<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="questionnaire-components.html#cb4-1"></a><span class="op">&lt;</span>center<span class="op">&gt;</span><span class="er">&lt;</span>video width=<span class="st">&quot;320&quot;</span> height=<span class="st">&quot;240&quot;</span> controls<span class="op">&gt;</span></span>
+<span id="cb4-2"><a href="questionnaire-components.html#cb4-2"></a><span class="st">  </span><span class="er">&lt;</span>source src=<span class="st">&quot;file/path/here.m4v&quot;</span> type=<span class="st">&quot;video/mp4&quot;</span><span class="op">&gt;</span></span>
+<span id="cb4-3"><a href="questionnaire-components.html#cb4-3"></a>Your browser does not support the video tag.</span>
+<span id="cb4-4"><a href="questionnaire-components.html#cb4-4"></a><span class="op">&lt;</span><span class="er">/</span>video<span class="op">&gt;</span><span class="er">&lt;/</span>center<span class="op">&gt;</span></span></code></pre></div>
 <div class="info">
 <p>
 Whilst you <em>can</em> link to externally hosted stimuli we would recommend that <strong>if possible</strong> you upload your stimuli to our server. This will ensure uninterrupted access to your media.
 </p>
 <p>
-We cannot always host all stimuli. Files larger than 3mb each should be uploaded elsewhere to suitable platforms, such as YouTube, as loading times are often too long for files which exceed this limit.
+We cannot always host all stimuli. Files larger than 3Mb each should be uploaded elsewhere to suitable platforms, such as YouTube, as loading times are often too long for files which exceed this limit.
 </p>
 <p>
 Embedding media from outside sources may require different code than provided above.

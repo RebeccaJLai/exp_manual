@@ -10,35 +10,21 @@ If you discover another issue that is not listed here you can report the issue [
 
 ### Data not being saved despite questions being completed.
 
-In questionnaire components it has been occassionally reported that, despite completing all of the questions, participant data is not being saved and warnings are presented that not all questions have been filled in.
+In questionnaire components it has been occasionally reported that, despite completing all of the questions, participant data is not being saved and warnings are presented that not all questions have been filled in.
 
 This issue has been traced to the use of HTML tags by users when formatting their questionnaires.
 
 If you use HTML tags, you must ensure that you have matching opening and closing tags. Unmatched tags will prevent data from being recorded from this component.
 
 ```{block, type = "workaround"}
-**Solution:** check your HTML formatting, ensure that all opening tags (`< >`) have matching closing tages (`</ >`).
-```
-
-### `/n` in Question Names in Downloaded Data {#question_n}
-
-This is a result of a new line being taken when you have entered the name of your questions during the constuction of the study.
-
-`/n` is a reserved combination of characters, representing a new line being taken in a string. As such, this makes it difficult to process this in R.
-
-You must "escape" the character in order to use it.
-
-```{block, type = "workaround"}
-**Solution:** replace the cells in your spreadsheet that contain the `/n` symbol.
-
-Download [the example spreadsheet and code](examples/recode_slashn.zip) for an example of *escaping* the `/n` so that you can process your data without hassle.
+**Solution:** check your HTML formatting, ensure that all opening tags (`< >`) have matching closing tags (`</ >`).
 ```
 
 ## Issues... {-}
 
 ### Which do NOT interfere with the operation of the site {-}
 
-These issues are bugs which do not prevent the intended function of the action being carried out at the time of their occurrance and are considered to be of low priority.
+These issues are bugs which do not prevent the intended function of the action being carried out at the time of their occurrence and are considered to be of low priority.
 
 #### "The supervisor or supervised could not be found" when changing account type  {- #notfound}
 
@@ -70,7 +56,7 @@ If you have concerns about missing data and have tried examining the data from i
 
 #### My questionnaire/responses to questions won’t save {-}
 
-Occassionally the Javascript that allows us to save questionnaires stops working. 
+Occasionally the Javascript that allows us to save questionnaires stops working. 
 
 We have yet to determine a pattern or cause for this.
 
@@ -126,13 +112,33 @@ If you are using questionnaires you may want to consider creating a spreadsheet 
 
 Log of issues that have been resolved.
 
+#### `\\n` in Question Names in Downloaded Data: Solved 19/01/2021 {- #question_n}
+
+```{block, type = "warning"}
+DV names can no longer use `\\n`. These are now restricted to letters, numbers and underscores.
+
+Previously existing DV names containing `\\n` have had the offending character removed.
+```
+
+This is a result of a new line being taken when you have entered the name of your questions during the construction of the study.
+
+`\\n` is a reserved combination of characters, representing a new line being taken in a string. As such, this makes it difficult to process this in R.
+
+You must "escape" the character in order to use it.
+
+```{block, type = "workaround"}
+**Solution:** replace the cells in your spreadsheet that contain the `\\n` symbol.
+
+Download [the example spreadsheet and code](examples/recode_slashn.zip) for an example of *escaping* the `\\n` so that you can process your data without hassle.
+```
+
 #### One of (equal) preventing sets from running {- #oneofequal}
 
 ```{block, type = "warning"}
 "One of (equal)" decision rule is no longer available for use in sets and projects.
 ```
 
-The "one of (equal)" randomisation. There has been a report of this preventing the set from working. On testing no items in the set were run, and no items shown in the "test" sampling of assignment to items in the set. 
+The "one of (equal)" randomization. There has been a report of this preventing the set from working. On testing no items in the set were run, and no items shown in the "test" sampling of assignment to items in the set. 
 
 ```{block, type = "workaround"}
 Unless there is a *strong theoretical basis* for attempting to recruit equal numbers of men and women into each item within a set it is suggested that you use "one of (random)".

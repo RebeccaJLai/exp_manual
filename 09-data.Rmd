@@ -1,8 +1,10 @@
 # Data
 
-```{block, type = "warning"}
-RGuppies Teams needs to be linked in the last section for R support.
-```
+## Data Analysis Support
+
+The admins are responsible for the smooth operation of the Experimentum site. There may be special workshops offered for students and staff who might require specialized assistance at key points in the academic year. These will be advertised on the Microsoft teams channel ["Experimentum"](https://teams.microsoft.com/l/team/19%3a173a62977b2445529504bc4a5128dca4%40thread.tacv2/conversations?groupId=38922d94-16b9-42ca-97a4-ee9d04a56d6a&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8).
+
+Honours and PGT Students can get assistance for their R code and statistical analyses in the [Honours and PGT Stats and Data Analysis Channel](https://teams.microsoft.com/l/channel/19%3ae88503c22ad3485e83d1759b9db4d3b3%40thread.tacv2/Stats%2520and%2520Data%2520Analysis%2520Help?groupId=a3a7449f-0c8f-477b-bee2-3f9f009432cf&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8).
 
 ## Data Formats
 
@@ -74,7 +76,7 @@ We have had previous system users misinterpret the meanings of some of the items
 - Median Time: The median time taken for all participants who have run through this component to complete this part.
 - 90th percentile: The 90th percentile time to completion.
 
-The button at the top labelled "Guest/Registered Only" allows you to toggle the numbers for those who completed the project as guests/registered and "all".
+The button at the top labeled "Guest/Registered Only" allows you to toggle the numbers for those who completed the project as guests/registered and "all".
 
 The totals row is a **sum** of all of the numbers in each of the columns. As you can see the total for the “people” row shows 18 completions by 5 unique participants, but I have been the only person to complete the study through my testing. The same goes for the men’s and women’s row. The totals do not reflect the true number of participants.
 
@@ -88,7 +90,7 @@ Sessions previous to this date have an end time equal to the last completed ques
 
 ## Help with Data
 
-Aside from issues arising from Experimentum, you should consult your supervisor and the appropriate R Support for assistance in processing and analysing your data.
+Aside from issues arising from Experimentum, you should consult your supervisor and the appropriate R Support for assistance in processing and analyzing your data.
 
 ```{block, type = "bug"}
 There is a known issue with question names being saved with a `/n` in the cell. See [known issues](#knownissues) for an explanation and solution.

@@ -92,7 +92,7 @@ This is likely to be of limited use to most people running studies through the s
 
 ### Icons {-}
 
-Unlike sets, your project information page has a button labelled "Icons". You can use this to assign small icons to things in your set. Here I have searched for a clipart of a beaker, and I can drag that image tile to the set I want to assign it to:
+Unlike sets, your project information page has a button labeled "Icons". You can use this to assign small icons to things in your set. Here I have searched for a clipart of a beaker, and I can drag that image tile to the set I want to assign it to:
 
 <center>![](images/screenshots/proj_9.png)</center>
 
@@ -108,7 +108,7 @@ When you place your items in the project and participants navigate to it, they w
 
 ## Debriefs 
 
-Debreifing information should be put in the feedback tab of the top-most set of the project. See the sections in [Planning Your Study](#debrief) for more information.
+Debriefing information should be put in the feedback tab of the top-most set of the project. See the sections in [Planning Your Study](#debrief) for more information.
 
 ## Project URLs
 
@@ -116,17 +116,17 @@ In order for participants to access your study you will need to provide them wit
 
 Each URL needs to be unique. For Experimentum, full URLs usually follow a set pattern (where XXXXX is a suffix that you assign to your project):
 
-<center>**exp.psy.gla.ac.ukproject?XXXXX**</center><p>
+<center>**exp.psy.gla.ac.uk/project?XXXXX**</center><p>
 
 This URL suffix is set in the project information page in the URL box:
 
 <center>![](images/screenshots/proj_3.png)</center>
 
 ```{block, type = "warning"} 
-In order for your project to be accessible you should enter **only** the URL suffix in the URL box, omitting the "exp.psy.gla.ac.ukproject?" part. 
+In order for your project to be accessible you should enter **only** the URL suffix in the URL box, omitting the "exp.psy.gla.ac.uk/project?" part. 
 ```
 
-Specify the suffix in the box labelled URL. It should not contain special characters, so you can see here where I would have a space I have placed an underscore:
+Specify the suffix in the box labeled URL. It should not contain special characters, so you can see here where I would have a space I have placed an underscore:
 
 <center>![](images/screenshots/proj_14.png)</center>
 
@@ -135,7 +135,7 @@ The text underneath indicates if your chosen suffix is available.
 The suffix does not need to be anything specific, but it should be appropriate for public display.
 
 ```{block, type = "info"}
-This full URL will be what you share with potential participant- **exp.psy.gla.ac.ukproject?XXXXX**.
+This full URL will be what you share with potential participant- **exp.psy.gla.ac.uk/project?XXXXX**.
 
 If you wish to enable anonymous participation there are further additions that need to be made. These are discussed in the section about [anonymous participation](#anon).
 ```
@@ -154,7 +154,7 @@ Before you ask your supervisor to activate your project it is important to test 
 
 #### Participant View {- #participant_view}
 
-It is important that you test your study from th viewpoint of a participant. You can do this by navigating to the project information and pressing the "Go" button at the top of the page:
+It is important that you test your study from the viewpoint of a participant. You can do this by navigating to the project information and pressing the "Go" button at the top of the page:
 
 <center>![](images/screenshots/proj_15.png)</center>
 
@@ -168,7 +168,7 @@ It is also possible to recruit people to help you test your project- we all know
 
 You can do this by using the **&test** URL suffix specified in the [participation](#anon) section of the page further down.
 
-By copying the "Test" URL and sending it to testers, they will be able to access your project (including non-acitvated sections) for testing.
+By copying the "Test" URL and sending it to testers, they will be able to access your project (including non-activated sections) for testing.
 
 Active sections of your study will be surrounded by white, and inactive sections will be surrounded by yellow:
 
@@ -227,6 +227,166 @@ Do not ask admins to activate your study. This is something that your supervisor
 
 The process of activating studies is outlined in the supervisor page under the heading ["Activating Studies"](#activating)
 
+## Advertising Your Project on the Subject Pool
+
+You can advertise your study on the subject pool if you are a staff or student researcher at the University of Glasgow Institute of Neuroscience and School of Psychology (INSoP).
+
+Advertisements are constructed through the [INSoP Intranet](https://intranet.psy.gla.ac.uk/). 
+
+<center>![](images/screenshots/vpn.png)</center>
+
+To access the Intranet off-campus you must use the VPN. See the [IT Services page on the VPN](https://www.gla.ac.uk/myglasgow/it/vpn/).
+
+Technical issues in using the VPN should be dealt with through the [IT Helpdesk](https://www.gla.ac.uk/myglasgow/it/helpdesk/), not Experimentum Admin.
+
+### Make sure your ethics has been approved.
+
+This will change the layout and content of the ‘Dissertation’ section where you previously submitted your ethics documents to be approved.
+
+### On the Psychology Intranet, go to the ‘Dissertation’ section
+
+This will take you to the new Dissertation page for advertising your study to the Level 1 students in the Psychology Subject-Pool.
+
+<center>![](images/screenshots/pool_1.png)</center>
+
+You will be able to require certain gender identities here:
+
+<center>![](images/screenshots/pool_2.png)</center>
+
+And the required age range by dragging the cursor over the age range section:
+
+<center>![](images/screenshots/pool_3.png) </center>
+
+```{block, type = "warning"}
+The gender and age limitations set on the subject pool will determine who can see the advert on the subject pool only and do not have any impact on who can take part in the project. 
+
+If the link is made available elsewhere, or if participants send the link to others, people outside your desired range will still be able to access the Experimentum project.
+```
+
+Next is the "Edit advert" button, which will take you to the advert editor shown below: 
+
+<center>![](images/screenshots/pool_4.png)</center>
+
+Below this you will see the advert status. This tells you if your advert is active or not. 
+
+Once you select online, the advert becomes active and automatically enters the Psychology Subject-Pool. The day your advert becomes active also appears on the right in red. 
+
+<center>![](images/screenshots/pool_5.png)</center>
+
+### Editing Your Advert
+
+Once you click Edit Advert, an information page will pop up on your screen like this:
+
+<center>![](images/screenshots/pool_6.png)</center>
+
+The code at the bottom of the screen tells you what to write in each section of the advert. You will require the following information:
+
+*	**Project Title**: this is where you enter the title of your project, which may or may not be the same as your advertised title.
+
+*	**Advertised Title**: this is the title that participants will see in the Subject-Pool.
+
+*	**Advert**: this is where you create your recruitment message. This must contain a live link to the Experimentum project for automatic credit assignment to work. Do this by using HTML:
+
+```{block, type = "info"} 
+
+Use HTML to provide a live link.
+
+`<a href="https://www.google.com">Click this for Google</a>`
+        
+Replace the ‘https://www.google.com’ with one of the URL’s to your project which is found on your Project Information section on Experimentum in the Projects tab.
+        
+<center>![](images/screenshots/pool_7.png)</center>
+        
+Replace "Click this for Google" with an appropriate display text.
+```
+
+
+*	**Duration**: you can select the duration of your project in set time-blocks on the left or a more specific time on the right where you manually enter the duration of your project.
+
+*	**Payment**: for Level 4 Dissertation Projects, you will not be required to give payment to participants, so this section remains blank. 
+
+```{block, type = "info"}
+Note: Do NOT put participation credits in the "payment" section. Credits have their own section.
+```
+
+*	**Credits**: this is where you select the number of credits to award the Level 1 students who complete your study. Credits can be automatically assigned to participants upon completion of your project. See [Participation Credits](#credits) below for more info.
+
+*	**Giver**: this section remains empty.
+
+```{block, type = "info"}
+All information entered into the Edit Advert section is automatically saved and, if the advert is active, automatically enters the Psychology Subject-Pool.
+```
+
+## Participation Credits {#credits}
+
+### Automatic Assignment of Credits
+ 
+ From 5th October 2020 participants will be able to receive participation credits automatically, provided that you have:
+ 
+ - Posted your advertisement in the INSoP subject pool. 
+ - Used the full experimentum URL (as copied from the project information page and *not* a modified URL such as a "tinyURL") in your advertisement on the subject pool.
+ - The participant accesses your study whilst signed in to the subject pool, using the full experimentum URL in your subject pool advertisement.
+ 
+The full URL is available to copy from the project page. Clicking the buttons here will copy it to your clipboard:
+
+<center>![](images/screenshots/anon1a.png)</center> 
+ 
+```{block, type = "warning"}
+You should not place more than ONE URL in any given subject pool advert.
+```
+ 
+Please ensure that you have adequate participation credits to cover the amount of participation that you expect to receive. If you require further participation credits to be assigned to your account please speak to your supervisor.
+ 
+When credits are allocated they will be issued in the name of the project or advert title from the subject pool:
+
+<center>![](images/screenshots/subj_pool.png)</center> 
+
+The "dissertation" section for L4 students is slightly different to PGR and staff in that there is only one project. Here is a screenshot from an L4 dissertation page:
+
+<center>![](images/screenshots/pool_10.png)</center>
+
+```{block, type = "info"}
+If you run out of credits to give the automatic assignment of credits will still continue despite your balance falling to 0. 
+
+This means that your participants will still receive automatically given credits, but you will not be able to manually assign credits whilst your balance remains as 0.
+
+Speak to your supervisor/ the webmaster if you need more credits to be added to your balance.
+```
+
+### Manual Assignment of Credits
+
+Go to the “Credits for Dissertation” at the top of the Psychology Intranet. This section shows you how many Participation Credits you have and how many participants from the Psychology Subject-Pool have completed your study.
+
+<center>![](images/screenshots/pool_8.png)</center>
+
+You will start off with 60 Credits to give to Level 1 students, and as participants complete your project these credits will slowly diminish.
+
+You can manually assign credits to specific participants by searching up their Participation Key in the search box if, for example, automatic assignment does not work:
+
+<center>![](images/screenshots/pool_9.png)</center>
+
+Underneath this is where you will find the participants who have completed your project (identified by their Participation Key):
+
+<center>![](images/screenshots/pool_10.png)</center>
+
+Additionally there are a number of details given about each completion through the subject pool:
+
+*	**Date and Time**: this is the date and time they completed your project.
+
+*	**Participation Key**: this is the key assigned to random participants to ensure anonymity and the Key you use in the search box to find a participant to manually assign credits.
+
+*	**Credits**: shows you how many credits have been assigned to that participant. 
+
+*	**Status**: when first complete, the status will show as ‘Pending’ due to the 2-week pending of credits to allow for refusal for some reason (but generally, this never happens). This will then change to ‘Permanent’ after the 2 weeks to signify that the students have their credits permanently.
+
+```{block, type = "info"}
+Participants do not need to do anything to change the status of the credits from pending. 
+
+Pending credits will be accepted for the purposes of the L1 participation course requirement.
+```
+
+*	**Comments**: this shows where the participants completed your project from, in this case it will always be Experimentum. The (auto) refers the URL link you used in the advert to link participants to your project. This will change depending on the URL you use, for example, if you use the ‘Guest’ URL, it will say (guest) instead of (auto).
+
 ## Participation {#anon}
 
 ### Anonymous/Registered Participation
@@ -265,30 +425,7 @@ So, this means that:
 
 <center>![](images/screenshots/anon_4.png)</center> 
 
-- "**exp.psy.gla.ac.uk/project&myurl&test**" will present the user with the tst login dialogue box:
+- "**exp.psy.gla.ac.uk/project&myurl&test**" will present the user with the test login dialogue box:
 
 <center>![](images/screenshots/test_dialogue.png)</center> 
  
-### Participation Credits {#credits}
- 
- From 5th October 2020 participants will be able to recieve participation credits automatically, provided that you have:
- 
- - Posted your advertisement in the INSoP subject pool. 
- - Used the full experimentum URL (as copied from the project information page and *not* a modified URL such as a "tinyURL") in your advertisement on the subject pool.
- - The participant accesses your study whilst signed in to the subject pool, using the full experimentum URL in your subject pool advertisement.
- 
-The full URL is available to copy from the project page. Clicking the buttons here will copy it to your clipboard:
-
-<center>![](images/screenshots/anon1a.png)</center> 
- 
-```{block, type = "warning"}
-You should not place more than ONE URL in any given subject pool advert.
-```
- 
-Please ensure that you have adequate participation credits to cover the amount of participation that you expect to recieve. If you require further participation credits to be assigned to your account please speak to your supervisor.
- 
-When credits are allocated they will be issued in the name of the project or advert title from the subject pool:
-
-<center>![](images/screenshots/subj_pool.png)</center> 
-
-

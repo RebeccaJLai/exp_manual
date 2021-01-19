@@ -33,7 +33,7 @@ Once you have entered information about the questionnaire you should save it. Sa
 The reset button is akin to a “revert” button, where any changes made after the last save can be discarded and you return to the last saved version. 
 
 ```{block, type = "danger"}
-The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimise loss of work in the event of an error. 
+The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimize loss of work in the event of an error. 
 
 Please note that the site currently does not support version control, so once you save a change the previous version will be overwritten.
 ```
@@ -46,7 +46,7 @@ You can access your questionnaires by accessing the questionnaires section of th
 
 <center>![](images/screenshots/questionnaire_button.png)</center>
  
-Alternatively, if you remember the number of the questionnaire component, you can type it in to the grey rectangle in the experiments button. When you press return you will be taken straight to the information page of the questionnaires
+Alternatively, if you remember the number of the questionnaire component, you can type it in to the gray rectangle in the experiments button. When you press return you will be taken straight to the information page of the questionnaires
 
 To edit the questionnaire, press the “edit” button at the top of the page and you will be taken back into the editable version:
 
@@ -103,12 +103,13 @@ Pressing the button at the bottom of the page will allow you to add a new questi
 Experimentum will add a new question by directly duplicating the previous question, with all the same text and attributes. Please ensure that you set a unique name for the new question before you attempt to save the questionnaire as questions with duplicate names will be removed by the system.
 
 ```{block, type = "danger"}
-The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimise loss of work in the event of an error. 
+The JavaScript for saving the questionnaire occasionally stops working on some browsers, so we recommend saving the questionnaire after every 3 or so changes to minimize loss of work in the event of an error. 
 ```
 
 ### Adding in Bulk {#addfromspreadsheet}
 
 It is also possible to add some types of questions in bulk by using a spreadsheet. Unfortunately, not all types are covered, but the most basic and most frequently used types are. 
+
 Spreadsheet templates are available by clicking “add from spreadsheet” and selecting the underlined type of questionnaire from the options just above the buttons.
  
 <center>![](images/screenshots/quest_spread_1.png)</center> 
@@ -137,6 +138,10 @@ q_spread <- read_csv("quest_spreadsheet.csv") %>%
   select(-type)
 
 knitr::kable(q_spread)
+```
+
+```{block, type = "warning"}
+Please ensure that the "name" column of your spreadsheet is limited to 32 characters per cell and that it contains only alphanumeric, underscore, dash, space and parentheses characters.
 ```
 
 Each of the three types of questionnaire component has their own template spreadsheet available for download, which are linked in the dialogue box you get when you click to "add from spreadsheet". If you intend to add questions in bulk you should consult these spreadsheets for guidance in the first instance as examples are given.
@@ -171,8 +176,13 @@ As you can see you have the same questionnaire information section at the top, a
 
 *	**Instructions**: when you click the part that says “Click here to set instructions” you will be able to enter text instructions to the participants for this entire component. You will also be able to enter Markdown and HTML code, which allows you to link to and embed additional media or format the text in specific ways. 
     * If you use HTML tags you must ensure that you have matching opening and closing tags, as unmatched ones will prevent the component from recording data.
-*	**dv_name**: this is the name of the dependent variable, the name that will be assigned to the column q_name in the downloaded data indicating which question the participant has answered. You should set one which is unique to this component and perhaps across all components.
-<center>![](images/screenshots/qname.png)</center> 
+*	**dv_name**: this is the name of the dependent variable, the name that will be assigned to the column q_name in the downloaded data indicating which question the participant has answered. You should set one which is unique to this component and perhaps across all components. 
+<center>![](images/screenshots/qname.png)</center>
+```{block, type = "info"}
+This field has an upper limit of 32 characters and will only accept alphanumeric characters, spaces, dashes and parentheses to solve a [known issue](#question_n). All other character types are prohibited. 
+
+If you have previously written a question which has a dv name containing a disallowed character you can retain it unless you attempt to change the dv name field.
+```
 *	**Question**: clicking the part which says “click here to set your question” will allow you to enter the question text that the participants will see, the question that you want to ask them.
 <center>![](images/screenshots/qtext.png)</center> 
 
@@ -216,9 +226,9 @@ You must close this editing mode by clicking the pencil a second time, getting r
 <center>![](images/screenshots/quest_mixed_10.png)</center> 
 *	**Short Text**: allows participants to enter free-response text up to and including 255 characters. Returned in the data as character strings. The maximum number of characters can be changed by changing the number after `maxlength:`.
 <center>![](images/screenshots/quest_mixed_11.png)</center> 
-*	**Long Text**: allows participants to enter free-response text over 255 characters. Returned in the data as character strings. If you do not need more than 255 characters, please use the short text to minimise strain on the server.
+*	**Long Text**: allows participants to enter free-response text over 255 characters. Returned in the data as character strings. If you do not need more than 255 characters, please use the short text to minimize strain on the server.
 <center>![](images/screenshots/quest_mixed_12.png)</center> 
-* **Message**: allows you to put a line of text into a questionnaire which does not require a response amongst other questions. Note that to ensure that this appears where it should that these questions should be presented in a fixed order.
+* **Message**: allows you to put a line of text into a questionnaire which does not require a response among other questions. Note that to ensure that this appears where it should that these questions should be presented in a fixed order.
 <center>![](images/screenshots/quest_mixed_13.png)</center> 
 
 ### Radiopage
@@ -264,11 +274,11 @@ This is the data output here. As you can see where the participant chose the opt
 
 #### Attributes {-}
 
-Ranking questionnaires present a list of text options to participants to put into a specific order, based on some judgement they are asked to make on them.
+Ranking questionnaires present a list of text options to participants to put into a specific order, based on some judgment they are asked to make on them.
 
 <center>![](images/screenshots/rank1.png)</center>
  
-As you can see, there is a single response type associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomise it.
+As you can see, there is a single response type associated with this questionnaire type. The DV in this case will be the rank position assigned by the participants. Setting the order to fixed will set the initial order up on the order you have specified on the questionnaire editing page and random will randomize it.
 
 Each question will be an option in the list of items to rank order. Participants will be able to drag each text item to rank order them, with the number specified in the column next to the text. The final presentation to participants looks like this:
 
@@ -358,7 +368,7 @@ Your browser does not support the video tag.
 ```{block, type="info"}
 Whilst you *can* link to externally hosted stimuli we would recommend that **if possible** you upload your stimuli to our server. This will ensure uninterrupted access to your media.
 
-We cannot always host all stimuli. Files larger than 3mb each should be uploaded elsewhere to suitable platforms, such as YouTube, as loading times are often too long for files which exceed this limit. 
+We cannot always host all stimuli. Files larger than 3Mb each should be uploaded elsewhere to suitable platforms, such as YouTube, as loading times are often too long for files which exceed this limit. 
 
 Embedding media from outside sources may require different code than provided above.
 ```

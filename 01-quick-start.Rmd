@@ -34,7 +34,7 @@ Sets and projects are used for structuring and delivering your project.
 
 ### Sets
 
-Sets create the internal stucture of your study using a combination of grouping of questionnaire and experimental components and decision rules which move participants between them.
+Sets create the internal structure of your study using a combination of grouping of questionnaire and experimental components and decision rules which move participants between them.
 
 For more information see the [sets](#sets) section of this site.
 
