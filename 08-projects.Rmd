@@ -250,9 +250,10 @@ Clicking on one of the three buttons will copy the text to the clipboard for you
  
 The different links will lead to different types of sign in pages:
 
+- **SONA link**: this link is the Sona participation link which is what you will have manually typed into your Sona advert as the study URL. *If you are not using Sona and have not entered a Sona Completion URL in the project information page you will not have this option*.
 - **Requires Account (no suffix)**: participants will be required to sign in to a registered account before they can proceed to the study.
-- **Auto-login (ending in "&guest")**: this will take the participant to the project first page with a button to log them in as a guest.
-- **Guest login (ending in "&auto")**: this will automatically log the user in as a guest and display the dialogue box asking for age and gender identity information.
+- **Guest login (ending in "&guest")**: this will take the participant to the project first page and ask them to log in as a guest by clicking a button. After which point they will be asked to enter gender identity and age infornamtion and proceed to the study. If they close the dialogue box they will be able to push the button to resummon it and start the study.
+- **Auto login (ending in "&auto")**: this will automatically log the participant in with a guest account and display the dialogue box asking for age and gender identity information without them having to click on a button to start the process. If they close the dialogue box there will be no button to manually start the process and will have to reload the page to resummon it and start the study.
 - **All options (ending in "&all")**: will display 4 buttons asking the user to choose between logging in to an existing account, registering for an account and logging in as a guest.
 - **Test (ending in "&test")**: creates a test login for you to test your study. Data will be marked with status "test" so that investigators can remove this data from their analyses. Will present a dialogue box asking for age and gender identity. Pressing "cancel" in this dialogue box will return you to the project login page with the suffix "&all", displaying 4 buttons with login options as specified above.
 
