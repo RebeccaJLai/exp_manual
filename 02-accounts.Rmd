@@ -158,3 +158,6 @@ The account you are making changes to will have to log out and back in again to 
 There is a known issue with changing the statuses of research accounts regarding accounts not being found by the system, [see here](#notfound)
 ```
 
+## Sona Accounts
+
+Sona accounts are set up by the Sona administrator for the department, not by Experimentum admins. If you are unsure who the Sona administrator is, ask in the ["Experimentum" teams channel](https://teams.microsoft.com/l/team/19%3a173a62977b2445529504bc4a5128dca4%40thread.tacv2/conversations?groupId=38922d94-16b9-42ca-97a4-ee9d04a56d6a&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8).

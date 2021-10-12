@@ -34,7 +34,7 @@ Sets and projects are used for structuring and delivering your project.
 
 ### Sets
 
-Sets create the internal structure of your study using a combination of grouping of questionnaire and experimental components and decision rules which move participants between them.
+Sets create the internal structure of your study using a combination of grouping of questionnaire and experimental components and decision rules which move participants between them. You must place individual components within at least one set before placing them in a project, as the set arrangement determines order of presentation of components.
 
 For more information see the [sets](#sets) section of this site.
 
@@ -54,14 +54,15 @@ For more information please see the section with recommendations on how to [test
 
 ## Activating Projects
 
-For students, contact your supervisor to have your project activated. Autonomous researchers and PGR students can activate their own projects.
+For students, contact your supervisor to have your project activated. Autonomous researchers and PGR students who have been given full researcher accounts can activate their own projects.
 
 Instructions for activating projects can be found in the section for [supervisors](#activating).
 
 ```{block, type = "warning"}
-Once a study is activated it cannot be edited without resetting it back to "test" status, essentially deactivating it.
 
-Students should confirm that they are completely happy with the study before they ask you to activate it. This is why the [student checklist](#checklist) has been provided to them.
+You must ensure that your study works as expected before asking your supervisor to activate it. See the [student checklist](#checklist) for things to check before requesting this.
+
+<b><u>Once a study is activated it cannot be edited without resetting it back to "test" status, essentially deactivating it.</b></u>
 
 When you attempt to edit an active item this warning is displayed at the top of the page next to the "Save" button:
 

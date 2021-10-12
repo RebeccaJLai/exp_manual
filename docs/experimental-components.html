@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Experimental Components | Experimentum: Web-based Software for Psychological Studies</title>
   <meta name="description" content="Chapter 6 Experimental Components | Experimentum: Web-based Software for Psychological Studies" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Experimental Components | Experimentum: Web-based Software for Psychological Studies" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Lisa DeBruine, Rebecca Lai, Benedict Jones, Gaby Mahrholz, Rifah Abdullah, Nicola Burns." />
 
 
-<meta name="date" content="2021-01-19" />
+<meta name="date" content="2021-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,74 +50,44 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -185,6 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4" data-path="accounts.html"><a href="accounts.html#requesting-researcher-status"><i class="fa fa-check"></i><b>2.4</b> Requesting Researcher Status</a></li>
 <li class="chapter" data-level="2.5" data-path="accounts.html"><a href="accounts.html#checking-your-account-status"><i class="fa fa-check"></i><b>2.5</b> Checking your account status</a></li>
 <li class="chapter" data-level="2.6" data-path="accounts.html"><a href="accounts.html#approving-student-and-researcher-status-requests"><i class="fa fa-check"></i><b>2.6</b> Approving Student and Researcher Status Requests</a></li>
+<li class="chapter" data-level="2.7" data-path="accounts.html"><a href="accounts.html#sona-accounts"><i class="fa fa-check"></i><b>2.7</b> Sona Accounts</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="stimuli.html"><a href="stimuli.html"><i class="fa fa-check"></i><b>3</b> Stimuli</a><ul>
 <li class="chapter" data-level="3.1" data-path="stimuli.html"><a href="stimuli.html#overview-1"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
@@ -217,8 +188,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="planning-your-project.html"><a href="planning-your-project.html#planning"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
 <li class="chapter" data-level="4.2" data-path="planning-your-project.html"><a href="planning-your-project.html#planning-your-project-1"><i class="fa fa-check"></i><b>4.2</b> Planning Your Project</a></li>
 <li class="chapter" data-level="4.3" data-path="planning-your-project.html"><a href="planning-your-project.html#agegender-limitations"><i class="fa fa-check"></i><b>4.3</b> Age/Gender Limitations</a></li>
-<li class="chapter" data-level="4.4" data-path="planning-your-project.html"><a href="planning-your-project.html#stimuli-1"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
-<li class="chapter" data-level="4.5" data-path="planning-your-project.html"><a href="planning-your-project.html#individual-components"><i class="fa fa-check"></i><b>4.5</b> Individual Components</a></li>
+<li class="chapter" data-level="4.4" data-path="stimuli.html"><a href="stimuli.html#stimuli"><i class="fa fa-check"></i><b>4.4</b> Stimuli</a></li>
+<li class="chapter" data-level="4.5" data-path="planning-your-project.html"><a href="planning-your-project.html#comps"><i class="fa fa-check"></i><b>4.5</b> Individual Components</a></li>
 <li class="chapter" data-level="4.6" data-path="planning-your-project.html"><a href="planning-your-project.html#sets-and-supersets"><i class="fa fa-check"></i><b>4.6</b> Sets and Supersets</a></li>
 <li class="chapter" data-level="4.7" data-path="planning-your-project.html"><a href="planning-your-project.html#info_sheet"><i class="fa fa-check"></i><b>4.7</b> Information Sheet</a></li>
 <li class="chapter" data-level="4.8" data-path="planning-your-project.html"><a href="planning-your-project.html#debrief"><i class="fa fa-check"></i><b>4.8</b> Debriefing</a><ul>
@@ -340,22 +311,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#participant_view"><i class="fa fa-check"></i>Participant View</a></li>
 <li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#info-page-view"><i class="fa fa-check"></i>Info Page View</a></li>
 <li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#sample-order"><i class="fa fa-check"></i>Sample Order</a></li>
+<li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#participants-behind-firewalls"><i class="fa fa-check"></i>Participants behind firewalls</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8.9" data-path="projs.html"><a href="projs.html#activating-projects-1"><i class="fa fa-check"></i><b>8.9</b> Activating Projects</a><ul>
 <li class="chapter" data-level="8.9.1" data-path="projs.html"><a href="projs.html#checlist"><i class="fa fa-check"></i><b>8.9.1</b> “Is my study ready?”: Student Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="8.10" data-path="projs.html"><a href="projs.html#advertising-your-project-on-the-subject-pool"><i class="fa fa-check"></i><b>8.10</b> Advertising Your Project on the Subject Pool</a><ul>
-<li class="chapter" data-level="8.10.1" data-path="projs.html"><a href="projs.html#make-sure-your-ethics-has-been-approved."><i class="fa fa-check"></i><b>8.10.1</b> Make sure your ethics has been approved.</a></li>
-<li class="chapter" data-level="8.10.2" data-path="projs.html"><a href="projs.html#on-the-psychology-intranet-go-to-the-dissertation-section"><i class="fa fa-check"></i><b>8.10.2</b> On the Psychology Intranet, go to the ‘Dissertation’ section</a></li>
-<li class="chapter" data-level="8.10.3" data-path="projs.html"><a href="projs.html#editing-your-advert"><i class="fa fa-check"></i><b>8.10.3</b> Editing Your Advert</a></li>
+<li class="chapter" data-level="8.10" data-path="projs.html"><a href="projs.html#anon"><i class="fa fa-check"></i><b>8.10</b> Participation Types</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="projs.html"><a href="projs.html#anonymousregistered-participation"><i class="fa fa-check"></i><b>8.10.1</b> Anonymous/Registered Participation</a></li>
 </ul></li>
 <li class="chapter" data-level="8.11" data-path="projs.html"><a href="projs.html#credits"><i class="fa fa-check"></i><b>8.11</b> Participation Credits</a><ul>
-<li class="chapter" data-level="8.11.1" data-path="projs.html"><a href="projs.html#automatic-assignment-of-credits"><i class="fa fa-check"></i><b>8.11.1</b> Automatic Assignment of Credits</a></li>
-<li class="chapter" data-level="8.11.2" data-path="projs.html"><a href="projs.html#manual-assignment-of-credits"><i class="fa fa-check"></i><b>8.11.2</b> Manual Assignment of Credits</a></li>
+<li class="chapter" data-level="8.11.1" data-path="projs.html"><a href="projs.html#automatic-assignment-of-credits"><i class="fa fa-check"></i><b>8.11.1</b> Automatic Assignment of Credits</a><ul>
+<li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#setup-your-study-on-experimentum"><i class="fa fa-check"></i>1. Setup your study on Experimentum</a></li>
+<li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#setup-your-advertisement-on-sona-and-connect-to-experimentum"><i class="fa fa-check"></i>2. Setup your advertisement on Sona and connect to Experimentum</a></li>
+<li class="chapter" data-level="" data-path="projs.html"><a href="projs.html#link-experimentum-to-sona"><i class="fa fa-check"></i>3. Link Experimentum to Sona</a></li>
 </ul></li>
-<li class="chapter" data-level="8.12" data-path="projs.html"><a href="projs.html#anon"><i class="fa fa-check"></i><b>8.12</b> Participation</a><ul>
-<li class="chapter" data-level="8.12.1" data-path="projs.html"><a href="projs.html#anonymousregistered-participation"><i class="fa fa-check"></i><b>8.12.1</b> Anonymous/Registered Participation</a></li>
+<li class="chapter" data-level="8.11.2" data-path="projs.html"><a href="projs.html#manual-assignment-of-credits"><i class="fa fa-check"></i><b>8.11.2</b> Manual Assignment of Credits</a></li>
+<li class="chapter" data-level="8.11.3" data-path="projs.html"><a href="projs.html#sona-from-the-participant-perspective"><i class="fa fa-check"></i><b>8.11.3</b> Sona from the participant perspective</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>9</b> Data</a><ul>
@@ -479,11 +451,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Simple behavioural experiments can also be run through Experimentum, using a variety of different stimuli media and with a wide selection of design choices that can be combined. To create a new experiment component, navigate to the “researchers” section by using the menu on the right side of the page.</p>
 <p>This is an overview of the types of experimental components avaible to you:</p>
 <table>
-<colgroup>
-<col width="10%" />
-<col width="41%" />
-<col width="47%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Experiment Type</th>
@@ -552,15 +519,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <img src="images/screenshots/exp_6.png" />
 </center>
 <ul>
-<li><p><strong>Name for Users</strong>: this is the name of this component that will be displayed to users. Please ensure that it is suitable.</p></li>
+<li><strong>Name for Users</strong>: this is the name of this component that will be displayed to users. Please ensure that it is suitable.</li>
 <li><p><strong>Name for Researchers</strong>: this is the name of this component for researchers. It will be displayed on lists and visible to you, your supervisor and admin staff. It should be informative and appropriate.</p></li>
-<li><p><strong>Design</strong>: within or between subjects, allow for multiple completions or single completion only.</p></li>
+<li><strong>Design</strong>: within or between subjects, allow for multiple completions or single completion only.</li>
 <li><p><strong>Slider range</strong>: (slider only). This determines the numerical value associated with each position on the slider, and the increments along it.</p></li>
-<li><p><strong>Trial Order</strong>: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</p></li>
-<li><p><strong>Image side</strong>: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.</p></li>
-<li><p><strong>Images</strong>: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.</p></li>
-<li><p><strong>Limited to</strong>: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.</p></li>
-<li><p><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.</p></li>
+<li><strong>Trial Order</strong>: this indicates how you want Experimentum to display the individual trials contained in this component only. Fixed will display the trials in the order set on the “edit trials” section later. Random will mix the order of question presentation up automatically. Order of presentation will be recorded in your data when you download it.</li>
+<li><strong>Image side</strong>: (2-AFC, 2-AFC with 8 button strength of choice only). Fixed will display images on the side specified in the “edit trials” section later. Random will switch the side of presentation randomly. Side of presentation will be recorded in your data.</li>
+<li><strong>Images</strong>: allows you to present a subset of your stimuli to your participants. For example, if you have 40 pairs of faces from which to choose the more trustworthy, you can present a subset of 20 pairs of faces to each participant by setting this to “Show 20 of 40 total images”.</li>
+<li><strong>Limited to</strong>: limitations will only allow people in a certain age range and with a certain gender identity to complete this component of the study. If you are planning on allowing anonymous participation you should not set limitations as age and gender identity of these users will be unknown, and they will not be allowed to do these sections of the study if they refuse to submit this information.</li>
+<li><strong>Labnotes</strong>: this is a short blurb about this component of your study. You should always add lab notes so that you, your supervisor and the admins will be able to tell what this component is about.</li>
 <li><p><strong>Number of images to display</strong>: this specifies the number of images to display per trial. You may wish to display 1, 2 or more depending on your design.</p></li>
 </ul>
 <div id="experiment-info-what-are-these-tabs" class="section level4">
@@ -731,8 +698,7 @@ If you are a student researcher this will mean you will need to contact your sup
 <center>
 <img src="images/screenshots/exp_2.png" />
 </center>
-<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section, so I would change the number of total images to 12.
-Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
+<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. For example, I have 12 pairs of faces in my Mooney faces set that I uploaded earlier in the uploading stimuli section, so I would change the number of total images to 12. Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials.</p>
 <div id="notes-specific-to-labelled-buttons" class="section level4 unnumbered">
 <h4>Notes Specific to Labelled Buttons</h4>
 <div id="length-of-the-scale-setting-text-labels-dv-values-and-scale-anchors" class="section level5 unnumbered">
@@ -869,7 +835,7 @@ Once you have finished on this page and press “Save” you will be taken to th
 <div id="assigning-stimuli-and-dv-values" class="section level5 unnumbered">
 <h5>Assigning Stimuli and DV Values</h5>
 <p>Same method as the <a href="experimental-components.html#assignstimexp">2-AFC</a> but with some differences.</p>
-<p>For this experiment I am using Ishihara colour deficiency plate test items <span class="citation">(Ishihara <a href="#ref-ishihara" role="doc-biblioref">1972</a>)</span>. These use images of numbers made up of dots in specific colours, which cannot be perceived by those who experience colour perception deficiency. This example contains numbers which the participant should sort into order.</p>
+<p>For this experiment I am using Ishihara colour deficiency plate test items <span class="citation">(Ishihara <a href="#ref-ishihara">1972</a>)</span>. These use images of numbers made up of dots in specific colours, which cannot be perceived by those who experience colour perception deficiency. This example contains numbers which the participant should sort into order.</p>
 <p>If the participant can successfully order the numbers in a small number of changes then we should be able to assume that they can perceive the shape of the number in the circle. Those who cannot experience colour deficiency may make more mistakes in ordering the numbers. The sets used here test for deuteranopia, the most common type of colour deficiency.</p>
 <p>As you can see, I have numbered the stimuli in a systematic way: “ishihara_x_y.jpg”, where x is the number displayed in the circle and y is the set that it belongs in.</p>
 <p>By searching for “ishihara_5” I have found all images which have this string in their file name, resulting in the display of two images of the number 5 from set one and two, displayed on the right of the image below.</p>
@@ -897,8 +863,7 @@ Once you have finished on this page and press “Save” you will be taken to th
 <li><strong>trial_name</strong>: name of the trial assigned by you in the stimuli assignment page, or the default of t1, t2, etc.</li>
 <li><strong>trial_n</strong>: the number of the trial, indicating row from the stimuli assignment page.</li>
 <li><strong>order</strong>: the number of the trial encountered by the user, indicating the order which the participant completed the trials.</li>
-<li><strong>dv</strong>: a series of numbers is provided in the sorting experiment. Taking the first data line displayed below, indicating “3:1;2;3;4;5”, the 3 preceding the colon (:) indicates that the user moved the stimuli items 3 times in total to settle on the order that they did. The numbers after the colon, separated by the semi-colons (;) indicate the order that the stimuli items were placed in. In our Ishihara example, the stimuli were assigned in the order of 1,2,3,4 and 5.
-This means that on this trial the participant was able to place the stimuli in the correct order using only 3 moves.</li>
+<li><strong>dv</strong>: a series of numbers is provided in the sorting experiment. Taking the first data line displayed below, indicating “3:1;2;3;4;5”, the 3 preceding the colon (:) indicates that the user moved the stimuli items 3 times in total to settle on the order that they did. The numbers after the colon, separated by the semi-colons (;) indicate the order that the stimuli items were placed in. In our Ishihara example, the stimuli were assigned in the order of 1,2,3,4 and 5. This means that on this trial the participant was able to place the stimuli in the correct order using only 3 moves.</li>
 <li><strong>rt</strong>: reaction time. Only serves as an indicator, as you cannot really predict the conditions of each participant’s internet connection and any latency issues associated with them.</li>
 <li><strong>side</strong>: the original order of the stimuli displayed on the page before the participant manipulated them.</li>
 <li><strong>dt</strong>: date and time of the submission of this line of the data.</li>
@@ -923,8 +888,7 @@ This means that on this trial the participant was able to place the stimuli in t
 <center>
 <img src="images/screenshots/exp_2.png" />
 </center>
-<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab.
-Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. Here you can see that each row (representing an individual trial) will have 3 images presented.</p>
+<p>First, you should complete the experiment information at the top of the page, then set instructions on the introduction tab. Once you have finished on this page and press “Save” you will be taken to the page that allows you to assign stimuli , assign trial names and (if applicable) individual questions for the trials. Here you can see that each row (representing an individual trial) will have 3 images presented.</p>
 <div id="notes-specific-to-slideshows" class="section level4 unnumbered">
 <h4>Notes Specific to Slideshows</h4>
 <div id="assigning-stimuli-1" class="section level5">
@@ -973,7 +937,7 @@ Once you have finished on this page and press “Save” you will be taken to th
 <center>
 <img src="images/screenshots/stim_2afc.png" />
 </center>
-<p>Here is am going to present participants with a 2-AFC experiment where they have to select a face they perceive to be more feminine. I have 24 stimuli items, 12 pairs each with a male or a female face <span class="citation">(Mooney <a href="#ref-mooneys" role="doc-biblioref">1957</a>)</span>. I have set my experimental component to have 12 trials in the information page to set up the 12 empty pairs of DV boxes on the page.</p>
+<p>Here is am going to present participants with a 2-AFC experiment where they have to select a face they perceive to be more feminine. I have 24 stimuli items, 12 pairs each with a male or a female face <span class="citation">(Mooney <a href="#ref-mooneys">1957</a>)</span>. I have set my experimental component to have 12 trials in the information page to set up the 12 empty pairs of DV boxes on the page.</p>
 <p>I have named my stimuli items using the convention “mooneyxn.jpg”, where “x” is either m or f (for male and female) and “n” for the number of the pair that I will present them in. So “mooneyf1.jpg” will be presented together with “mooneym1.jpg” as a pair in a single trial:</p>
 <center>
 <img src="images/screenshots/stim_1.png" />
@@ -982,14 +946,12 @@ Once you have finished on this page and press “Save” you will be taken to th
 <ul>
 <li>An empty box for each stimuli item</li>
 <li>A trial name (t1:pair_1, t1 standing for “trial one” and “pair_1” being the name that I have set</li>
-<li>Buttons:
-<ul>
+<li>Buttons:</li>
 <li>Test the experiment (“Go”)</li>
 <li>Edit the experiment (“Edit”)</li>
 <li>See the component information (“Info”)</li>
 <li>“List” to see the stimuli assigned as a list of details</li>
 <li>“Images” to see the stimuli assigned as images</li>
-</ul></li>
 <li>A search box for you to type in the stimuli item names at the top right of the page</li>
 </ul>
 <p>Here I can use the search box to find all stimuli containing the string “mooneyf”. From this I can double click on the first empty box under the “DV=1” column to automatically insert all 12 images, in order of n (specified above as the number of the pair to be presented together):</p>
@@ -1029,7 +991,7 @@ Note the numerical order here. It goes “1, 10, 11, 12, 2…” because I have 
 <p>Ishihara, Shinobu. 1972. <em>Tests for Color-Blindness</em>. Tokyo: Japan: Kanehara Shuppan Co., Ltd.</p>
 </div>
 <div id="ref-mooneys">
-<p>Mooney, Craig M. 1957. “Closure as Affected by Viewing Time and Multiple Visual Fixations.” <em>Canadian Journal of Psychology</em> 11 (1): 21–21. <a href="https://doi.org/10.1037/h0083687">https://doi.org/10.1037/h0083687</a>.</p>
+<p>Mooney, Craig M. 1957. “Closure as Affected by Viewing Time and Multiple Visual Fixations.” <em>Canadian Journal of Psychology</em> 11 (1): 21–21. doi:<a href="https://doi.org/10.1037/h0083687">10.1037/h0083687</a>.</p>
 </div>
 </div>
             </section>

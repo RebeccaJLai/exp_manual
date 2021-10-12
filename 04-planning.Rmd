@@ -10,7 +10,7 @@ You may wish to create your account and request the appropriate account status b
 
 Assisting you with the design of your study is the job of your supervisor, since you will be working within their area of expertise and they will know more about what you are aiming for than the admins will. 
 
-When you have settled on a satisfactory design you can planning the implementation of your study and start making it.
+When you have settled on a satisfactory design you can begin planning the implementation of your study and start making it.
 
 ## Planning Your Project
 
@@ -46,7 +46,7 @@ Check out the [stimuli](#stimuli) page for discussions on the required file form
 
 How are these items typically used? This will inform the types of components that you may want to consider using.
 
-## Individual Components
+## Individual Components {#comps}
 
 I personally find it easiest to plan "inside-out", as it's easier for me to think about what components can do in terms of the needs of my design.
 
@@ -70,7 +70,7 @@ As a *minimum* I will need:
 
 ## Sets and Supersets 
 
-Next you need to be thinking about how to place these components into sets and supersets in order to achieve the desired flow of participants through your study.
+Next you need to be thinking about how to place these components into sets and supersets in order to achieve the desired flow of participants through your study. Sets tell the system how participants move through the project and must be used.
 
 I want participants to **either** give me a yes/no relatedness judgement **or** a 0-10 similarity judgement on pairs of speakers. 
 
@@ -84,7 +84,7 @@ I also want **all** participants to complete my demographics questionnaire. This
 
 Participants will enter the superset, complete the demographics/consent questionnaire and then be passed to the set containing the two labelled button experiments. They will then be asked to complete **either** the relatedness judgements **or** the similarity judgements because of the type rules I have set.
 
-More information on "type" rules can be found in the [sets page](#type_rules).
+More information on "type" rules can be found in the [sets page](#type_rules). Once you have created your set you can use a [sample order](#sample_order) to simulate how participants will move through your sets.
 
 <center>![](images/screenshots/structure_1.png)</center>
 

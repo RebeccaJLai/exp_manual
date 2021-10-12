@@ -93,9 +93,9 @@ Students should use the following checklist before they request their supervisor
 
 1.	Checked spelling and grammar across all components, sets and the project.
 2.	Checked the stimuli presentation is correct and as expected within all components.
-3.	Tested the order of presentation of components, including debrief/feedback using the test button outlined in the section [“Testing Your Study”](#testingyourstudy). 
+3.	Tested the order of presentation of components, including debrief/feedback using the test button and sample order button outlined in the section [“Testing Your Study”](#testingyourstudy). 
 4.	Run through the study (multiple times) as if they were a participant.
-5.	Examined the test run data to ensure that they are getting exactly what they expect and that they can successfully interpret it.
+5.	Examined the test run data to ensure that they are getting exactly what they expect and that they can successfully work with and interpret it.
 6.	Saved a copy of their test data so that they can later exclude it, separating the test data from the real data.
 
 ### Making a Study Active
