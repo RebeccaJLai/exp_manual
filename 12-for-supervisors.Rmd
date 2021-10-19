@@ -43,6 +43,10 @@ Admins will **not** absorb the extra workload for supervisors who refuse to use 
 If you do not want to establish your own account and use it to supervise your students you may wish to consider using a different system.
 ```
     
+## Applying for a supervisor account {-}
+
+For instructions on how to apply for a supervisor account please see [here](#super_account)
+
 ## Accessing Supervisees Projects, Sets and Components {-}
 
 Once someone is registered as your supervisee you should be access the items that they have created. This allows you to see every project, set and component that they have made. To do this, navigate to the researcher’s section of the website using the panel on the left after login.

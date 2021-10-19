@@ -58,7 +58,7 @@ Supervisors who want their more senior students to have their own "researcher" a
 Such requests from students on behalf of their supervisor or third party will not be granted.
 ```
 
-### "Supervisor" Accounts
+### "Supervisor" Accounts {#super_account}
 
 If you plan on supervising students using Experimentum you should set up a supervisor account to be able to oversee the construction of their studies, share components and change studies to "active" before data collection can begin. 
 
@@ -71,6 +71,8 @@ Supervision duties in this system should not be passed to another member of staf
 
 See the [Supervisor Cheatsheet](#roles) for a breakdown of the roles of the admins and the supervisors.
 ```
+
+To get your supervisor account, you should request researcher status as indicated in the student and researcher sections above. In the supervisor list your should select either "Rebecca Admin" or "Lisa Admin". You may also wish to contact Rebecca Lai via teams message from your university account to be added to the Staff Room channel of the Experimentum Team.
 
 ### "Test" Accounts 
 
