@@ -78,6 +78,16 @@ If you find an issue with the Experimentum codebase, you can file an issue [here
 If you find an issue with the codebase for this manual, including missing or unclear information, you can file an issue [here](https://github.com/RebeccaJLai/exp_manual/issues).
 ```
 
+##### VPN Access
+
+Access to the researcher areas of the site now require on campus access. 
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
+
+If you have affiliate status with the University of Glasgow, you should be able to use these credentials to log in to the VPN.
+
 ## Privacy Notices {-}
 
 ### Cookies {-}

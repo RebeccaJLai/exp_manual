@@ -6,6 +6,18 @@ The most commonly asked questions, documented here so that you can review the po
 
 Potential workaround for common bugs awaiting a fix are documented in the [Known Issues](#knownissues) chapter.
 
+## Site Access {-}
+
+### I can't access the site? {-}
+
+Access to the researcher areas of the site now require on campus access. If you can see the site, but when you log in and try to access  researcher areas you get a "not found" error you should first make sure that you are either accessing the site from the campus network or using the VPN to connect securely to the campus network.
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
+
+Participants who do not have researcher access will still be able to render data to active studies without issue.
+
 ## About Support {-}
 
 ### I emailed an admin and haven’t received a response {-}

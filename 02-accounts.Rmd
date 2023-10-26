@@ -44,6 +44,14 @@ Your supervisor will be the person who changes your account status and you can c
 
 You may still use this account to participate in experiments, but we advise setting up a separate registered, non-research account for participation to prevent serious data submissions from being removed by other investigators.
 
+#### VPN Access
+
+Access to the researcher areas of the site now require on campus access. This includes student accounts.
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
+
 ### "Researcher" Accounts
 
 For staff and more senior students using Experimentum. Researcher accounts no longer appear in the list of potential supervisors for students. If you have supervision duties, choose a "supervisor" account instead.
@@ -57,6 +65,14 @@ Supervisors who want their more senior students to have their own "researcher" a
 
 Such requests from students on behalf of their supervisor or third party will not be granted.
 ```
+
+#### VPN Access
+
+Access to the researcher areas of the site now require on campus access. This includes researcher accounts.
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
 
 ### "Supervisor" Accounts {#super_account}
 
@@ -73,6 +89,14 @@ See the [Supervisor Cheatsheet](#roles) for a breakdown of the roles of the admi
 ```
 
 To get your supervisor account, you should request researcher status as indicated in the student and researcher sections above. In the supervisor list your should select either "Rebecca Admin" or "Lisa Admin". You may also wish to contact Rebecca Lai via teams message from your university account to be added to the Staff Room channel of the Experimentum Team.
+
+#### VPN Access
+
+Access to the researcher areas of the site now require on campus access. This includes supervisor accounts.
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
 
 ### "Test" Accounts 
 

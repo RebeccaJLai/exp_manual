@@ -6,6 +6,14 @@ The admins are responsible for the smooth operation of the Experimentum site. Th
 
 Honours and PGT Students can get assistance for their R code and statistical analyses in the [Honours and PGT Stats and Data Analysis Channel](https://teams.microsoft.com/l/channel/19%3ae88503c22ad3485e83d1759b9db4d3b3%40thread.tacv2/Stats%2520and%2520Data%2520Analysis%2520Help?groupId=a3a7449f-0c8f-477b-bee2-3f9f009432cf&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8).
 
+## Researcher Access
+
+Access to the researcher areas of the site now require on campus access. Many of the functions of the site detailed here are within the researcher areas of the site.
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
+
 ## Data Formats
 
 Data is downloaded in .CSV files in long format. This means that each line represents a single trial or question.

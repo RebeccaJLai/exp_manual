@@ -42,6 +42,14 @@ Admins will **not** absorb the extra workload for supervisors who refuse to use 
 
 If you do not want to establish your own account and use it to supervise your students you may wish to consider using a different system.
 ```
+ 
+## VPN Access
+
+Access to the researcher areas of the site now require on campus access. This includes student, researcher, supervisor and admin accounts. 
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/). 
     
 ## Applying for a supervisor account {-}
 
