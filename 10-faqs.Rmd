@@ -38,6 +38,18 @@ Members of teaching staff who are supervising students and experiencing delay in
 
 Researcher status will not be granted to students, researchers or members of the public who do not have an official role at the University of Glasgow School of Psychology.
 
+```{block, type = "warning"}
+Please do not create multiple accounts!
+
+If you are applying for a "student" researcher account you must give your supervisor time to accept your request. This is not an automatic process. 
+
+Creating multiple accounts will cause confusion for you, your supervisor and the admin staff.
+
+If there is a delay in accepting your request for "student" status then you should contact your supervisor directly.
+
+If you have an existing account that you created in 3rd year you can change to your dissertation supervisor by going to your account details and selecting a different supervisor for the drop down menu.
+```
+
 ### My supervisor approved my researcher status, but my account doesn’t have updated privileges {-}
 
 If you are logged in when your supervisor makes these changes you will need to log out and back in again for your privileges to be updated correctly. If this does not resolve the issue contact the admins for [support](#support).

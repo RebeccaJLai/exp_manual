@@ -44,6 +44,18 @@ Your supervisor will be the person who changes your account status and you can c
 
 You may still use this account to participate in experiments, but we advise setting up a separate registered, non-research account for participation to prevent serious data submissions from being removed by other investigators.
 
+```{block, type = "warning"}
+Please do not create multiple accounts!
+
+If you are applying for a "student" researcher account you must give your supervisor time to accept your request. This is not an automatic process. 
+
+Creating multiple accounts will cause confusion for you, your supervisor and the admin staff.
+
+If there is a delay in accepting your request for "student" status then you should contact your supervisor directly.
+
+If you have an existing account that you created in 3rd year you can change to your dissertation supervisor by going to your account details and selecting a different supervisor for the drop down menu.
+```
+
 #### VPN Access
 
 Access to the researcher areas of the site now require on campus access. This includes student accounts.

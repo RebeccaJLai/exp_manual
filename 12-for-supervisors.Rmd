@@ -97,6 +97,16 @@ More senior students who are relatively self-sufficient or have their own superv
 In such a case where this is agreed they should request Lisa or Rebecca as their supervisor as any other "researcher" account would.
 ```
 
+```{block, type = "warning"}
+Please do not authorise multiple student accounts for the same student!
+
+Multiple accounts causes confusion at all levels and hinders admin ability to help them when things go wrong.
+
+Students can change supervisor if they have a previously existing account by logging in, going to "My Account" and changing to your name on the supervisors drop-down list.
+
+If you already have this problem, ask the student to pick ONE account to retain as their student researcher account and turn the other accounts to "test" or "registered". If you are having difficulty with this, reach out on the appropriate Teams channels (Help or Staff Room).
+```
+
 ## Activating Studies {- #activating}
 
 ### Is this study ready?: Student Checklist
