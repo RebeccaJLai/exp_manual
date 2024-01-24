@@ -40,15 +40,23 @@ The account being changed must log out and then back in for any changes to take 
 
 These issues are bugs which in some way inhibit the function of the site and are considered high priority for fixes and workarounds.
 
-#### I can't access the site? {-}
+#### Social Media Links to Study Not Working {- #soc_med}
 
-Access to the researcher areas of the site now require on campus access. If you can see the site, but when you log in and try to access  researcher areas you get a "not found" error you should first make sure that you are either accessing the site from the campus network or using the VPN to connect securely to the campus network.
+When posting a link to your study on some social media sites the link may not take the participant to your study. The site may tell you that the study does not exist or is not active.
 
-The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+This is due to some social media mobile phone apps also use their own built in-browser software, which is not compatible with Experimentum. Some will also make changes to the link when it is clicked on, which will direct the user to Experimentum, but it will be sent to a non-existent page resulting in the message that the study does not exist/is not active.
 
-You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
+Meta products (Facebook, Instagram, etc) are the ones that we have the most difficulty with. 
 
-Participants who do not have researcher access will still be able to render data to active studies without issue.
+Experimentum is not compatible with these lite-browsers. This is why the study link won't work directly from them.
+
+```{block, type = "workaround"}
+
+**Workaround:** You can provide the participant with the link to your study for them to copy and paste into their full-fat browser software (such as Samsung Internet, Firefox, Chrome, etc) instead of giving them a clickable link directly to the study.
+
+Alternatively, some users have also had success by using redirection/link shortening services, such as [TinyURL](https://tinyurl.com/app), [Bitly](https://bitly.com/) and [Linktree](https://linktr.ee/).
+
+```
 
 #### Missing Data {-}
 
@@ -118,9 +126,19 @@ At the moment it is not possible to share components with students. This stems f
 If you are using questionnaires you may want to consider creating a spreadsheet with the questions, following the templates discussed in the section about [adding questions in bulk](#addfromspreadsheet).
 ```
 
-### Solved Issues
+### Solved Issues {-}
 
 Log of issues that have been resolved.
+
+#### I can't access the site? {- #vpn}
+
+Access to the researcher areas of the site now require on campus access. If you can see the site, but when you log in and try to access  researcher areas you get a "not found" error you should first make sure that you are either accessing the site from the campus network or using the VPN to connect securely to the campus network.
+
+The means that you must access the site via a connection on the University of Glasgow campus, or if you are not physically on site, use the VPN to create a secure connection between your device and the university network.
+
+You can find more information on how to use the VPN [here](https://www.gla.ac.uk/myglasgow/it/vpn/).
+
+Participants who do not have researcher access will still be able to render data to active studies without issue.
 
 #### `\\n` in Question Names in Downloaded Data: Solved 19/01/2021 {- #question_n}
 

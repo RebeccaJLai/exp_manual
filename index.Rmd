@@ -36,6 +36,8 @@ Admins play a double role. In addition to helping you with Experimentum we are a
 
 As a result of this, all students and staff who are experiencing technical issues should use Microsoft Teams: ["Experimentum"](https://teams.microsoft.com/l/team/19%3a173a62977b2445529504bc4a5128dca4%40thread.tacv2/conversations?groupId=38922d94-16b9-42ca-97a4-ee9d04a56d6a&tenantId=6e725c29-763a-4f50-81f2-2e254f0133c8) to get support. 
 
+You should also check the [known issues](#knownissues) page to determine if your problem is already known and how to fix/work around it.
+
 #### Lost Passwords {- #lost_password}
 
 You can now reset your password without having to consult a system admin. You can do this by going to the login page, supplying your user ID or email address in the "Username" box and pressing the "Reset Password" button, as shown below:

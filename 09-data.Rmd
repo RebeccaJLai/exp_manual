@@ -101,7 +101,11 @@ Sessions previous to this date have an end time equal to the last completed ques
 Aside from issues arising from Experimentum, you should consult your supervisor and the appropriate R Support for assistance in processing and analyzing your data.
 
 ```{block, type = "bug"}
-There is a known issue with question names being saved with a `/n` in the cell. See [known issues](#knownissues) for an explanation and solution.
+There is a known issue with question names being saved with a `/n` in the cell. See [known issues](#question_n) for an explanation and solution.
+
+If you are having problems with collecting data via Facebook, Instagram or other social media sites, please see [known issues](knownissues.html#soc_med) for an explanation and workaround.
+
+If you cannot access the researcher side of the site whilst off-campus, [known issues](#vpn) also gives an explanation and solution.
 ```
 
 ### Commonly Used Code {#commoncode}
